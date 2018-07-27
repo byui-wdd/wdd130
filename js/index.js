@@ -1,42 +1,42 @@
 /* Add Course Specific JavaScript Below */
 const menu = {
   resources: [
-    { url: '/resources/syllabus.html', name: 'Syllabus' },
-    { url: '/resources/dryoarimages.html', name: 'DryOar Images' },
-    { url: '/resources/subpage_content.html', name: 'SubPage Content' },
-    { url: '/resources/design-principles.html', name: 'Design Principles' },
-    { url: '/resources/troubleshooting.html', name: 'Troubleshooting' },
-    { url: '/resources/optimizing-images.html', name: 'Image Optimization' }
+    { url: 'resources/syllabus.html', name: 'Syllabus' },
+    { url: 'resources/dryoarimages.html', name: 'DryOar Images' },
+    { url: 'resources/subpage_content.html', name: 'SubPage Content' },
+    { url: 'resources/design-principles.html', name: 'Design Principles' },
+    { url: 'resources/troubleshooting.html', name: 'Troubleshooting' },
+    { url: 'resources/optimizing-images.html', name: 'Image Optimization' }
   ],
   activites: [
-    { url: '/activities/software-setup.html', name: 'Software Setup', week: 1 },
-    { url: '/activities/aboutme.html', name: 'About Me/HTML Vocab', week: 1 },
-    { url: '/activities/site-plan.html', name: 'Site Planning', week: 2 },
-    { url: '/activities/cssvocab.html', name: 'CSS Vocab', week: 2 },
+    { url: 'activities/software-setup.html', name: 'Software Setup', week: 1 },
+    { url: 'activities/aboutme.html', name: 'About Me/HTML Vocab', week: 1 },
+    { url: 'activities/site-plan.html', name: 'Site Planning', week: 2 },
+    { url: 'activities/cssvocab.html', name: 'CSS Vocab', week: 2 },
     {
-      url: '/activities/1-getting-started.html',
+      url: 'activities/1-getting-started.html',
       name: 'Start the home page',
       week: 3
     },
-    { url: '/activities/2-adding-css.html', name: 'Adding CSS', week: 4 },
-    { url: '/activities/3-more-css.html', name: 'More CSS', week: 5 },
+    { url: 'activities/2-adding-css.html', name: 'Adding CSS', week: 4 },
+    { url: 'activities/3-more-css.html', name: 'More CSS', week: 5 },
     {
-      url: '/activities/css-positioning.html',
+      url: 'activities/css-positioning.html',
       name: 'CSS Positioning',
       week: 6
     },
     {
-      url: '/activities/4-final-touches.html',
+      url: 'activities/4-final-touches.html',
       name: 'Finishing Touches',
       week: 7
     },
     {
-      url: '/activities/your-own-wireframe.html',
+      url: 'activities/your-own-wireframe.html',
       name: 'Wireframing',
       week: 8
     },
-    { url: '/activities/subpage1.html', name: 'Making a Subpage', week: 8 },
-    { url: '/activities/final.html', name: 'DryOar Final', week: 9 }
+    { url: 'activities/subpage1.html', name: 'Making a Subpage', week: 8 },
+    { url: 'activities/final.html', name: 'DryOar Final', week: 9 }
   ]
 };
 
