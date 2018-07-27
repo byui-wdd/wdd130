@@ -43,7 +43,7 @@ const menu = {
 };
 
 function getView(url) {
-  url = localUrl + url;
+  url = baseUrl + url;
   fetch(url).then(response => {
     response.text().then(partial => {
       var tmp = document.implementation.createHTMLDocument();
@@ -63,7 +63,7 @@ function getView(url) {
     });
   });
 }
-getView('../resources/syllabus.html');
+getView(baseUrl + 'resources/syllabus.html');
 
 function buildMenu() {
   const actList = document.getElementById('activitiesList');
