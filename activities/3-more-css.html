@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>W07.02 More CSS: Fonts and Spacing- Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/solarized-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="../images/smallBanner.jpg" alt="Course Banner" />
+        </header>
+        <main>
+            <h1>More CSS: Fonts and Spacing</h1>
+            <p>
+                <span style="font-size: 14pt;">
+                    <strong>See Calendar for due dates</strong>
+                </span>
+            </p>
+            <hr />
+            <h2>Activity Directions</h2>
+            <p>Estimated Time: 45 minutes</p>
+            <div class="callout">
+                <p>This activity will use the following new css concepts or properties (review the links if you do not remember
+                    these from Khan academy):</p>
+                <ul>
+                    <li>
+                        <a href="http://www.w3schools.com/css/css_font.asp" target="_blank">CSS Fonts</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">CSS Box Model</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/css/css_padding.asp" target="_blank">CSS Padding</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/css/css_text.asp" target="_blank">CSS Text Properties</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="callout">
+                <p>Nothing makes a webpage feel like more of a product and less of a project than changing from the default
+                    fonts. You should have chosen one or two fonts when you were putting the site plan together for your
+                    site. Go review that now.</p>
+                <p>If you chose fonts from among the
+                    <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">web-safe list</a>&nbsp;then you can use them just like Khan academy showed you this week. (Here is another
+                    list of the web-safe fonts:&nbsp;
+                    <a href="http://www.cssfontstack.com/" target="_blank">http://www.cssfontstack.com/</a>)</p>
+                <p>If you chose fonts from Google Fonts or elsewhere then we have to make the font available to the web page
+                    first before we can use them.</p>
+                <p>No matter which fonts you are using it is always a good idea to list some fall-back fonts, in case for some
+                    reason your first choice doesn't work correctly...you can control how it degrades. Your second choice
+                    should be similar to your first (and usually web-safe), the third font in the list should usually be
+                    one of the default font families. (serif, san-serif, fantasy, monospace, or script)</p>
+                <p>So for example if I chose Helvetica&nbsp;as my font for body copy I would add something like&nbsp;
+                    <kbd>font-family: Helvetica, Arial, sans-serif;</kbd>&nbsp;to a rule modifying the&nbsp;
+                    <kbd>body</kbd> of my page.</p>
+                <p>If however I wanted to use the font Rock Salt for my headlines, that is not a web safe font and will probably
+                    not be on most computers. I have to do an extra step to make it available.</p>
+                <p>Google Fonts makes it very easy to add your fonts. Find your font in Google Fonts and click the red plus:
+                    Select this Font</p>
+                <div class="fig-block">
+                    <figure>
+                        <img src="../images/googlefont1-new.jpg" alt="googlefont" title="googlefont" />
+                    </figure>
+                </div>
+                <p>Then find the black bar on the bottom of your screen and click on it to expand it. Then click on the "@import"
+                    tab.</p>
+                <div class="fig-block">
+                    <figure>
+                        <img src="../images/googlefont2-new.jpg" alt="googlefont2" title="googlefont2" />
+                    </figure>
+                </div>
+                <p>Copy the line that starts with '@import' and add it to the
+                    <strong>top</strong> of your &lt;style&gt; block. It should look something like this:</p>
+                <pre><code class="html">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My first website&lt;/title&gt;
+        &lt;style&gt;
+          @import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+           ...            
+</code></pre>
+
+                <p>Now you can use that font just like normal, ie:&nbsp;
+                    <kbd>font-family: 'Rock Salt', cursive;</kbd>
+                </p>
+            </div>
+            <h3>Step 01</h3>
+            <p>Based on your font choices from your site plan, add the appropriate&nbsp;
+                <kbd>font-family:</kbd>, and&nbsp;
+                <kbd>@import</kbd>&nbsp;lines to your CSS to change the body font and headline font on your webpage.</p>
+            <h3>Step 02</h3>
+            <p>Often the default font sizes are fine...but there are times when they need to be changed. For example it's good
+                for the links used for navigation to be nice and easy to click, so lets increase their size. Let's make it
+                110% of normal. (Remember the 'em' unit of measurement for fonts. 1em = the normal size of your font...so
+                1.1em = 110%)</p>
+            <div class="callout" style="overflow:auto;">
+                <img src="../images/paddingexample.jpg" alt="paddingexample" title="paddingexample" class="right" />
+                <p>Nice to have those fonts in there :) Now though notice what is happening anywhere that you have made colored
+                    boxes around anything. Here is an example:</p>
+                <p>The font and image are pressed right up against the edge of the border and it looks...not great. Lets fix
+                    it.</p>
+                <p>The space between the content in a box and the edge of a box is called
+                    <a href="http://www.w3schools.com/cssref/pr_padding.asp"
+                        target="_blank">padding</a>. We can add padding to one or all sides. for example if I wanted to add some padding to all
+                    4 sides of the box I would do something like this:&nbsp;
+                    <kbd>padding: 1em;</kbd>&nbsp;(We will learn more about padding next week)</p>
+            </div>
+            <h3>Step 03</h3>
+            <p>Use
+                <kbd>padding</kbd> to space out the content on your page from any edges or borders where it is needed.</p>
+            <h3>Step 04</h3>
+            <p>Proximity is a design principle that we rely on to help to know which elements on our page are related to each
+                other by their distance from each other. Let's make sure that visitors to our site know that the headlines
+                and paragraphs are related to each other by bringing them a little closer together. (The default spacing
+                has them just a little far apart.) Adjust the&nbsp;
+                <kbd>line-height</kbd>&nbsp; and
+                <kbd>margin</kbd>s of your headlines to bring them closer to the paragraphs they belong to. You could even play
+                with the line-height of your paragraphs to see how it affects readability as well.</p>
+            <div class="callout">
+                <p>If you are having a hard time getting your headlines to come closer to your paragraphs try this: right click
+                    on one of your headlines and select "Inspect". An area on your browser should open at either the side
+                    or bottom of the screen that shows both the html and the styles for that element. This is a powerful
+                    tool.</p>
+                <p>When I did this I saw the following:</p>
+                <div class="fig-block">
+                    <figure>
+                        <img src="../images/inspect.jpg" alt="inspect element example" />
+                    </figure>
+
+                </div>
+                <ol>
+                    <li>Notice that browser is showing me the size of the element in pixels.</li>
+                    <li>It's also showing me the area it takes up both for size (blue highlight) and margins (brown highlight).
+                        If there were any padding it would be green.</li>
+                    <li>All the styles are shown. The third arrow shows styles I defined.</li>
+                    <li>The last arrow shows several styles I
+                        <strong>did not</strong> define. Notice it says "user agent stylesheet" That's just another way of saying
+                        "browser default styling".</li>
+                </ol>
+                <figure class="right">
+                    <img src="../images/box-model.jpg" alt="box model example" />
+                    <figcaption>Box Model for the element</figcaption>
+                </figure>
+                <p>The highlighted area and the styles are both showing in different ways that
+                    <kbd>&lt;h2&gt;</kbd> has top and bottom margins defined by default. Those defaults are probably interfering
+                    with your desire to move the headline closer to the paragraph.</p>
+
+                <p>Another way of seeing this can be found if you scroll down in the area showing the styles...you should see
+                    something like in the Box model figure.</p>
+            </div>
+            <div class="callout">
+                <p>If you refer back to the wireframe you will notice that the paragraphs in each of the sections only take
+                    up about half the screen. Let's make them do that now. We can use the&nbsp;
+                    <a href="http://www.w3schools.com/cssref/pr_dim_width.asp"
+                        target="_blank">width</a>&nbsp;property again to do this. You should have placed the headline and paragraph together
+                    in a box and given it a class to identify it. If you didn't do that now. My code looks like this:</p>
+                <div class="fig-block">
+                    <figure>
+                        <img src="../images/codeexample.jpg" alt="codeexample" title="codeexample" />
+                    </figure>
+                </div>
+                <p>It might be helpful to review the&nbsp;
+                    <a href="../images/wireframe-boxes.jpg" target="_blank">wireframe</a>&nbsp;I am basing my page on. Notice how I have grouped and identified things. I placed
+                    the headline, and paragraph in the first section (top-row) in a &lt;div&gt; with a class of leftcol,
+                    then I use that same class for the left column in the second section (middle-row). Then I did the same
+                    thing for the content that will be in the right column (once we learn positioning). This was part of
+                    last week's assignment.</p>
+                <p>If yours doesn't look similar to this you might want to adjust it. Layout will go much easier if your HTML
+                    is well structured. Think of a body and skeleton. If the bones in your elbows bent backwards instead
+                    of forwards you could scratch your own back easily, but you would have a really hard time eating :) You
+                    could get it done, but it's better to have a structure that makes it easy. Poor HTML structure will make
+                    positioning and laying out your site&nbsp;
+                    <strong>much</strong>&nbsp;more work.</p>
+            </div>
+            <h3>Step 05</h3>
+            <p>Review your wireframe and set widths for elements that need it. In my example I would set a width of 48% on the
+                left and right columns, and bottom section to constrain them to a bit less than half the space they have
+                available.</p>
+            <h3>Step 06</h3>
+            <p>Open your website&nbsp;into your browser to make sure the web page displays correctly. Pay special attention
+                to whether your images are all displaying. Once verified, submit the URL for your page to iLearn.&nbsp;</p>
+            <p>Make sure to
+                <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix any errors that show.</p>
+            <h2>Grading</h2>
+            <p>This activity will be graded using the following rubric:</p>
+            <ul>
+                <li>Linked site shows examples of using font-family, font-size, line-height, width, and padding with classes
+                    or ids (6 pts)</li>
+                <li>Fonts of the webpage are changed from the default browser font and a series of 3 fonts have been indicated
+                    in the CSS to control how the font degrades if a desired font is not available. (3pts)</li>
+                <li>The HTML is well formed and without errors. (1 pt)</li>
+            </ul>
+        </main>
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>
+        // <![CDATA[
+        hljs.initHighlightingOnLoad();
+        // ]]>
+
+    </script>
+</body>
+
+</html>

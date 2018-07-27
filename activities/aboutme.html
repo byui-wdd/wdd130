@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>WDD 130 | W01 Getting to Know You- Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="../css/solarized-light.css" /> -->
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="../images/smallBanner.jpg" alt="Course Banner" />
+        </header>
+        <main>
+            <h1>An&nbsp;"About Me" Web Page</h1>
+            <hr />
+            <h2>Activity&nbsp;Instructions</h2>
+            <p>Estimated Time: 60 minutes</p>
+            <p>This week we have two important goals. One to introduce you to HTML, and two to introduce you to each other.
+                With this activity we will accomplish both.</p>
+            <ol class="bigSteps">
+                <li>
+                    <!-- START STEP -->
+                    <h2>Setup</h2>
+                    <p>If you haven&rsquo;t already, make sure to complete the instructions in the&nbsp;
+                        <a href="software-setup.html" target="_blank" rel="noopener noreferrer">Software Setup</a>&nbsp;activity.</p>
+
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Vocabulary</h2>
+                    <p>Let's learn the vocabulary you will need to succeed in this course.</p>
+                    <div class="callout">
+                        <p>HTML has some very specific vocabulary that comes with it. It is important that we become familiar
+                            with it. Spend a few minutes familiarizing yourself with the following list. You will have a
+                            hard time making sense of the instruction given in this course if you don't understand these
+                            terms.
+                        </p>
+                        <dl class="def-list">
+                            <dt>
+                                <strong>Tag</strong>
+                            </dt>
+                            <dd>HTML tags are key words surrounded by angle brackets: ie&nbsp;
+                                <pre><code class="lang-markup html">&lt;body&gt;</code></pre>
+                            </dd>
+                            <dt>
+                                <strong>Element</strong>
+                            </dt>
+                            <dd>An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+                                <pre><code class="lang-markup html">&lt;p&gt;Content&lt;/p&gt;</code></pre>
+                            </dd>
+                            <dt>
+                                <strong>Nesting</strong>
+                            </dt>
+                            <dd>Elements placed inside of other elements are called nested. Nested Elements are indented to make
+                                it easier to see which elements are inside of others.
+                                <pre><code class="language-markup html">&lt;div&gt;
+    &lt;p&gt;Content&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                            </dd>
+                            <dt>
+                                <strong>Parent</strong>
+                            </dt>
+                            <dd>In nesting the parent is the element that contains other elements.</dd>
+                            <dt>
+                                <strong>Child</strong>
+                            </dt>
+                            <dd>In nesting a child element is contained&nbsp;
+                                <em>inside</em>&nbsp;of another element
+                                <pre><code class="lang-markup html">&lt;div&gt;  &lt;-- Parent --&gt; 
+    &lt;p&gt;Content&lt;/p&gt; &lt;-- Child --&gt;
+&lt;/div&gt;</code></pre>
+                            </dd>
+                            <dt>
+                                <strong>Attribute</strong>
+                            </dt>
+                            <dd>Attributes provide additional information about HTML elements. They are placed inside of the
+                                opening tag. The value of the attribute should be wrapped in quotes. ie
+                                <pre><code class="lang-markup html">&lt;p title="A paragraph about where I am from" &gt;Idaho&lt;/p&gt;</code></pre>
+                            </dd>
+                            <dt>
+                                <strong>Semantics</strong>
+                            </dt>
+                            <dd>Semantics is the study of the meanings of words and phrases in a language. Semantic elements
+                                = elements with a meaning. Writing semantic HTML means using the html tag that best describes
+                                the content you are adding to your page.</dd>
+                        </dl>
+                    </div>
+                    <p>Watch for mention of the terms above as you review the following short tutorials.</p>
+
+                    <p>Make sure to tap on the "Try It Yourself" buttons in the tutorials to experiment!</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener noreferrer">Introduction to HTML</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener noreferrer">HTML Basics</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" rel="noopener noreferrer">HTML Elements</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank" rel="noopener noreferrer">HTML Attributes</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">HTML Semantics</a>
+                        </li>
+                    </ul>
+                    <div class="callout">
+                        <h3>Note!</h3>
+                        <p>I do not expect you to memorize all of the tags, etc in these links at this point. The goal is to
+                            familiarize yourself with the concepts and learn to recognize instances of the terms above. The
+                            site that these link to is also a great resource for learning/reviewing HTML and CSS concepts
+                            in general.</p>
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Our first HTML</h2>
+                    <p>Let's write some HTML. Open (log into) Glitch, and create a new file called
+                        <code>aboutme.html</code>. (It needs to be exactly
+                        <code>aboutme.html</code>. No caps, no spaces.) Click on the
+                        <code>aboutme.html</code> file and type the HTML below.</p>
+                    <p>This code contains everything you need for a basic web page. It has most of the items listed above. Tags,
+                        elements, nesting, parent elements, child elements, and semantics. Can you spot them all?</p>
+                    <div class="callout">
+                        <h3>Note!</h3>
+                        <p>I encourage you to not take the shortcut of copy and paste here with the code examples. You will
+                            find that your ability to write HTML will improve dramatically if you type them all out.</p>
+                        <pre><code class="language-markup line-numbers html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;All About Me&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+    &lt;!-- Your code goes here --&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+        </code></pre>
+
+
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Titles and Headlines</h2>
+                    <p>A visitor to a website should not have to guess what the page is about. The &lt;title&gt;&nbsp;says "All
+                        About Me". Although you can see "All About Me" looking at the html, it will not show up on the page.&nbsp;
+                        This is because &lt;title&gt; is in the &lt;head&gt; section and anything in the &lt;head&gt; is
+                        not seen in the browser window.&nbsp; &nbsp;Only items in the &lt;body&gt; section are actually seen
+                        on the page. The &lt;title&gt; shows up as the name of the tab or window.</p>
+                    <p>We can use a headline element on our page so that when someone visits your page, they will know what
+                        your page is about.</p>
+                    <div class="callout">
+                        <p>There are various sizes of headlines: &lt;h1&gt; - &lt;h6&gt; These can be used to establish a hierarchy
+                            for your page. The
+                            <em>smaller</em> the number with the h like &lt;h1&gt; for instance, the
+                            <em>larger</em> the text and the more important the headline should be. An &lt;h1&gt; for example
+                            should be used for the
+                            <em>most important</em> title on the page. You should only use one &lt;h1&gt; on your page.</p>
+                        <p>&lt;h2&gt; tags would be the next level and you can use as many as you need. Think about the structure
+                            of this course. It is broken up into weeks and activities. An outline using headline elements
+                            would look like the following:</p>
+                        <div class="outline">
+                            <h1>WDD 100 (&lt;h1&gt;)</h1>
+                            <h2>Week1 (&lt;h2&gt;)</h2>
+                            <h3>Software Setup (&lt;h3&gt;)</h3>
+                            <h3>Getting to Know you (&lt;h3&gt;)</h3>
+                            <h3>Purpose and Audience (&lt;h3&gt;)</h3>
+                            <h2>Week2 (&lt;h2&gt;)</h2>
+                            <h3>Site Plan (&lt;h3&gt;)</h3>
+                            <h3>Getting Started (&lt;h3&gt;)</h3>
+                            <h2>Week3 (&lt;h2&gt;)</h2>
+                            ...
+                        </div>
+                    </div>
+                    <p>To let&nbsp;visitors to your page know what it is about at a glance, let's add a larger headline to advertise.&nbsp;Let's
+                        use the&nbsp;
+                        <code>&lt;h1&gt;</code>&nbsp;tag for this. Add a line between the&nbsp;
+                        <code>&lt;body&gt;</code>&nbsp;and&nbsp;
+                        <code>&lt;p&gt;</code>&nbsp;elements and add an&nbsp;
+                        <code>&lt;h1&gt;</code>opening tag,&nbsp;and type "About Me".&nbsp; Then enter&nbsp;
+                        <code>&lt;/h1&gt;</code>&nbsp;to close the element. Let's add a sub-heading or two as well.&nbsp; Let's use &lt;h2&gt; (smaller
+                        text) and put your first name and your nickname if you have one.&nbsp; Do this right after the &lt;h1&gt;
+                        About Me&lt;/h1&gt;:
+                    </p>
+                    <div class="callout">
+                        <p>Now your code should look like this:</p>
+                        <pre><code class="language-markup line-numbers html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+            &lt;title&gt;All About Me&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;!-- Your code goes here --&gt;
+        &lt;h1&gt;About Me&lt;/h1&gt;
+        &lt;h2&gt;Your First Name Here&lt;/h2&gt;
+        &lt;h2&gt;Your Nick Name Here (optional)&lt;/h2&gt;
+        &lt;p&gt;Hello World!&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+
+
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Paragraphs</h2>
+                    <p>Next, let's write a few paragraphs to tell little bit about yourself. Here is a list of ideas to talk
+                        about to get you started. Remember however that this will be a public website...so don't put anything
+                        too personal or identifying.</p>
+                    <div class="callout">
+                        <ul>
+                            <li>Your first name and perhaps a nick-name.</li>
+                            <li>What degree and/or career path are you headed down.</li>
+                            <li>What are some of the things you love to do, hobbies.</li>
+                            <li>Are you married, do you have children, grandchildren...&nbsp;</li>
+                            <li>Do you have a current career/job... are you making a change by pursuing your education.</li>
+                            <li>The thing you love most about BYU-Idaho.&nbsp; What degree are you pursuing?&nbsp; AA BS, WDD?</li>
+                            <li>The advantages you see from learning about careers in web design, why you are taking the course,
+                                what you hope to get out of it, and how you will use the information in your personal or
+                                professional life.
+                            </li>
+                            <li>How long have you been a member of the Church of Jesus Christ of Latter Day Saints?&nbsp; Do
+                                you have a favorite quote from one of the leaders of the church?&nbsp; Do you have a favorite
+                                scripture?
+                            </li>
+                            <li>Anything else you may want to share.</li>
+                        </ul>
+                    </div>
+                    <p>Start with the &lt;p&gt; (paragraph) that says "Hello World".&nbsp; Replace that with your own information
+                        and wording. Each time you want a new paragraph (please break it into more than one paragraph!) Add
+                        a new
+                        <code>&lt;p&gt;&lt;/p&gt;</code> element.</p>
+
+                    <p>When you have finished adding your paragraphs you will want to view your webpage. To do this click on
+                        the "Show" button at the top left of the screen. "Show" always starts with the
+                        <strong>
+                            <code>index.html</code>
+                        </strong> page, but you can click on the link we created there to see the
+                        <strong>
+                            <code>aboutme.html</code>
+                        </strong> page instead. Once you are on that page you can hit Refresh on your browser to see additional
+                        changes as you make them. Your page and HTML might look something like the images below:</p>
+                    <div class="fig-block">
+                        <figure>
+                            <img alt="About me html" src="../images/about-me-step5-html.jpg" title="About me html" />
+                            <figcaption>HTML example</figcaption>
+                        </figure>
+                        <figure>
+                            <img alt="About me page" src="../images/about-me-step5-page.jpg" title="About me page" />
+                            <figcaption>Resulting page</figcaption>
+                        </figure>
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Add an image</h2>
+                    <p>Look's good, but it is a little plain.&nbsp;Let's add an image to dress up your page.</p>
+
+                    <p>Before you can put an image on your web page, you have to get it onto a web server. Lucky for us Glitch
+                        makes this easy. We simply need to upload the image from your computer to your assets folder in Glitch.
+                        Click on the assets link and then drag and drop your image to the assets page.&nbsp; Then to put
+                        the image on your page, click on the image and then click on the"copy url" button.&nbsp; That puts
+                        the image link on your clipboard so that you can paste it into the image tag:&nbsp; &nbsp; &nbsp;&nbsp;</p>
+                    <div class="fig-block">
+                        <figure>
+                            <img alt="Glitch adding assets" src="../images/glitch-asset1.png" title="Glitch adding assets" />
+                            <figcaption>Assets Tab</figcaption>
+                        </figure>
+                        <figure>
+                            <img alt="Glitch adding assets" src="../images/glitch-asset2.png" title="Glitch adding assets" />
+                            <figcaption>Adding an Asset</figcaption>
+                        </figure>
+                        <figure>
+                            <img alt="Glitch adding assets" src="../images/about-me-useassets.jpg" title="Glitch adding assets" />
+                            <figcaption>Using an Asset</figcaption>
+                        </figure>
+                    </div>
+
+                    <p>Put your image right after the &lt;h1&gt; line. You will start with the
+                        <code>img</code> tag. Images require additional information in order to work however. We have to tell the browser
+                        where to find the image. We can use an "attribute" for this. (Remember
+                        <strong>attribute</strong> was one of the vocabulary above. If you have forgotten what it is go review).
+                        The attribute we need is
+                        <code>src=""</code>. Add this right after the word
+                        <code>img</code>. So it will look like this:</p>
+                    <pre><code class="html">&lt;img src=""&gt;</code></pre>
+                    <p>Paste the URL you copied for your image into the "" after the
+                        <code>src</code>. The final tag should look something like this:</p>
+                    <pre><code class="html">&lt;img alt="image of me" src="https://cdn.glitch.com/3de58351-6a1f-4d05-80fc-6813c05f9c98%2Ffemaleicon.png"&gt;
+        </code></pre>
+                    <p>Notice that I snuck an extra attribute in on you:
+                        <strong>
+                            <code>alt</code>
+                        </strong>. The
+                        <code>alt</code> attribute should contain a short description of the image. It is shown if the browser can't find
+                        the image or it is read for visually impaired visitors to your site.
+                        <strong>All</strong> of your images should have an
+                        <code>alt</code> attribute. If a tag has multiple attributes, the order of the attributes does not matter.</p>
+
+
+
+                    <p style="text-align: left;">There, that looks great.... you coded a web page about yourself that is simple, informative, and has
+                        a touch of style.</p>
+                    <p style="text-align: left;">Your final page should look something like the pages below but with your information and your actual
+                        image.
+                    </p>
+
+                    <div class="fig-block">
+                        <figure>
+                            <img alt="Final Page" src="../images/about-me-final.jpg" title="Final example" />
+                            <figcaption>Final Example Preview</figcaption>
+                        </figure>
+                        <figure>
+                            <img alt="Final Example HTML" src="../images/about-me-final-html.jpg" title="Final Example HTML" />
+                            <figcaption>Final Example HTML</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Ilearn Profile</h2>
+                    <p>
+                        <strong>In your I-Learn profile,&nbsp;add</strong>&nbsp;a picture that has a
+                        <strong>close up of your face</strong>.&nbsp; This is the image others will see when you make comments on
+                        a discussion board.&nbsp;
+                    </p>
+                    <p>To add a picture of yourself to your I-Learn profile, do the following: </p>
+                    <div class="callout">
+                        <img src="../images/edit-profile.jpg" alt="Ilearn Edit profile screen" class="right" />
+                        <ol>
+                            <li>Click on your name located on the top right corner of the page.</li>
+                            <li>Select the option titled "Profile".</li>
+                            <li>Select "Change Picture" and and upload a picture of yourself from your computer.</li>
+                            <li>Close the window.</li>
+                        </ol>
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h2>Post to the discussion board</h2>
+                    <p>Lastly, go to the Getting to Know You discussion board and do the following things:</p>
+                    <ol>
+                        <li>Make a new post.</li>
+                        <li>Paste in the link to your About Me Web Page. (To find this open your project in Glitch then click
+                            on the Share button below the Project name in the top left corner. The link is there with a handy
+                            "copy" button.)</li>
+                        <li>Add contact information to the discussion board post if you would like to make that available to
+                            your fellow classmates.
+                        </li>
+                        <li>In the group portion of the assignment, view your fellow student's web pages to get to know those
+                            in your class and make comments on at least 5&nbsp; of your peers web pages.&nbsp; Take some
+                            time to get to know your fellow classmates and who knows, you might even make a friend or two!</li>
+                    </ol>
+                    <!-- END STEP -->
+                </li>
+            </ol>
+
+
+            <div class="rubric">
+                <h4>Grading (10 pts)</h4>
+                <p>You must accomplish the following:</p>
+                <ul>
+                    <li>Using your html editor, create a short auto-biography page using a few html tags that contains an image
+                        of you , a title area using headlines with your name (and nick-name), and a few paragraphs telling
+                        some facts and information about you. (150-250 words)</li>
+                    <li>You also must add your image to your profile in iLearn (if it is not already there.).</li>
+                </ul>
+            </div>
+            <p>
+                <!-- end #article -->
+            </p>
+        </main>
+        <script src="../js/course.js"></script>
+        <script src="../js/prism.js"></script>
+        <!-- <script src="../js/highlight.pack.js"></script>
+        <script>// <![CDATA[
+            hljs.initHighlightingOnLoad();
+// ]]></script> -->
+    </div>
+</body>
+
+</html>

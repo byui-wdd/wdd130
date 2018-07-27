@@ -1,0 +1,500 @@
+/******************************************************** The purpose of course.css is to house only the css specific to an individual course. The online.css houses all the default template formatting. ********************************************************/
+
+/* DO NOT DELETE OR MODIFY THIS IMPORT */
+
+/* @import url('https://content.byui.edu/integ/gen/599082e0-3e89-4fd9-ac69-2615865d63c7/0/online.css'); */
+
+/* Add Course Specific css Below */
+
+html {
+  /* background: -webkit-radial-gradient(ellipse, #87c6e0 0%, #00273a 100%) fixed;
+  background: radial-gradient(ellipse, #87c6e0 0%, #00273a 100%) fixed; */
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  color: #0d1e28;
+}
+
+h2 {
+  color: #10808e;
+}
+
+h3 {
+  color: #383838;
+}
+
+h4 {
+  color: #10808e;
+}
+
+h5 {
+  color: #383838;
+}
+
+a {
+  color: #2d5d94;
+  border-bottom: 2px solid #2d5d94;
+}
+
+a:hover {
+  color: #14304f;
+  border-bottom: 2px solid #14304f;
+}
+
+a:visited {
+  color: #14304f;
+  border-bottom: 2px solid #14304f;
+}
+
+#content {
+  /* width: 90%; */
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: white;
+  /* box-shadow: 0 0 12px #000000; */
+}
+
+/*
+<div>
+  <h1><span>WEB</span> Fundamentals</h1>
+  <h2>WDD 130</h2>
+</div> 
+*/
+.headerBanner {
+  padding: 0.2em 0;
+  background-color: #bbd8e4;
+  font-family: 'Lucida Console', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+}
+
+.headerBanner > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0.3em 0;
+  padding: 0.3em;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.headerBanner h1 {
+  color: #bbd8e4;
+  font-size: 3.5em;
+  margin: 5px;
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .headerBanner h1 {
+    font-size: 10vw;
+  }
+}
+.headerBanner h1 > span {
+  font-size: 0.6em;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  transform: rotate(180deg);
+  padding-top: 0.2em;
+  margin-right: -0.2em;
+}
+.headerBanner h2 {
+  align-self: flex-end;
+  margin-right: 1.5em;
+  margin-bottom: 5px;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.headerLogo {
+  background-color: #14304f;
+
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.8em;
+}
+
+.headerLogo h1 {
+  border-left: 1px solid;
+  line-height: 3em;
+  padding-left: 0.6em;
+  color: white;
+}
+.headerLogo .logo {
+  margin-right: 0.6em;
+
+  align-self: center;
+}
+
+main {
+  position: relative;
+  padding: 20px;
+  color: #3e3e3e;
+  /* background-color: #f0f0f0; */
+}
+@media screen and (min-width: 1200px) {
+  /* main {
+    columns: 2;
+    height: 80vh;
+    overflow: scroll;
+  } */
+}
+#mainNav {
+  background-color: #f0f0f0;
+  position: relative;
+}
+#mainNav > input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 3em;
+  cursor: pointer;
+  z-index: 10;
+}
+#mainNav > h2 {
+  margin: 0;
+  text-align: center;
+  line-height: 2em;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 0 3px 3px;
+}
+
+.arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#mainNav > input:checked + h2 > .arrow {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.navLists {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#mainNav > input:checked ~ .navLists {
+  display: flex;
+  opacity: 1;
+}
+nav ol > li,
+nav ul > li {
+  padding: 5px;
+}
+
+#footer {
+  color: #e2e2e2;
+  background-color: #14304f;
+}
+
+/******************************************** SPLASH PAGE STYLING *********************************************/
+
+.splash #article {
+  color: #eaeaea;
+  background-color: #0e4c5f;
+}
+
+.splash h1 {
+  color: #fafafa;
+}
+
+.splash h2 {
+  color: #bbd8e4;
+}
+
+.splash h3 {
+  color: #e3e3e3;
+}
+
+.splash h4 {
+  color: #bbd8e4;
+}
+
+.splash h5 {
+  color: #e3e3e3;
+}
+
+.splash a {
+  color: #a1d7ff;
+  border-bottom: 2px solid #a1d7ff;
+}
+
+.splash a:hover {
+  color: #e59f55;
+  border-bottom: 2px solid #e59f55;
+}
+
+.splash a:visited {
+  color: #e59f55;
+  border-bottom: 2px solid #e59f55;
+}
+
+.splash #footer {
+  color: #e2e2e2;
+  background-color: #4487a3;
+}
+
+/******************************************** FEATURES STYLING *********************************************/
+
+/* Callout box */
+.callout {
+  display: block;
+
+  margin: 15px auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid black;
+  color: #292929;
+  background: antiquewhite;
+}
+
+/* Drop downs */
+
+.drop-down {
+  background: #1c5571;
+}
+
+.drop-down:hover {
+  background: #053349;
+}
+
+/* Rubric table */
+
+/* Column headings */
+
+.rubric tr:first-child th {
+  background-color: #1c5571;
+}
+
+/* Row headings */
+
+.rubric th {
+  background-color: #1e698d;
+}
+
+/* Mouseover popups */
+
+#main .popup {
+  border-bottom: dotted 2px #00273a;
+}
+
+#main .popup span {
+  background: #00273a;
+}
+
+#main .popup:after {
+  border-color: #00273a transparent transparent transparent;
+}
+
+.fig-block {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1em auto;
+}
+
+.fig-block > * {
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+.fig-block figure {
+  text-align: center;
+}
+.fig-block figure > a {
+  text-decoration: none;
+  border-bottom: none;
+}
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+}
+.right {
+  float: right;
+  padding: 0 20px 20px 20px;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.hint {
+  border: 1px solid grey;
+  background: #e0e0e0;
+  padding: 0.5em;
+  position: relative;
+  margin: 1em 0;
+}
+.hint h3 {
+  margin: 0;
+}
+.hint:hover {
+  background: #d0d0d0;
+}
+.hint > div {
+  display: none;
+}
+
+.hint input[type='checkbox'] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hint input[type='checkbox']:checked ~ div {
+  display: block;
+}
+
+.hint i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 10px;
+  top: -3px;
+}
+.hint i:before,
+.hint i:after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.hint i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.hint i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type='checkbox']:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.hint input[type='checkbox']:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.def-list dt {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.def-list dd {
+  padding-left: 1em;
+}
+
+.outline > h2 {
+  margin-left: 1em;
+  color: black;
+  font-size: 1.5em;
+}
+.outline > h3 {
+  margin-left: 2em;
+  color: black;
+  font-size: 1.2em;
+}
+
+.danger {
+  color: red;
+}
+
+.highlight1,
+.rubric {
+  background-color: #ebffcc;
+  padding: 20px;
+}
+
+.gradeTable {
+  border: 2px solid #45818e;
+  max-width: 400px;
+}
+.gradeTable th {
+  background-color: #a2c4c9;
+  text-align: center;
+}
+
+.gradescale {
+  columns: 2 auto;
+  list-style: none;
+  padding: 0;
+}
+.gradescale > li {
+  display: flex;
+  justify-content: space-around;
+}
+
+code {
+  color: #268bd2;
+}
+kbd {
+  color: #b58900;
+}
+
+.bigSteps {
+  list-style: none;
+  counter-reset: my-counter;
+
+  margin: 0;
+  padding: 0;
+}
+.bigSteps > li {
+  counter-increment: my-counter;
+
+  margin-bottom: 0.5rem;
+}
+
+.bigSteps > li::before {
+  content: counter(my-counter);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  font-family: 'Impact', serif;
+  line-height: 1;
+}
+.bigSteps > li:nth-child(-n + 9):before {
+  content: '0' counter(my-counter);
+}
+
+.bigSteps ol {
+  counter-reset: sub-counter;
+  list-style: none;
+}
+.bigSteps ol > li {
+  counter-increment: sub-counter;
+  margin-bottom: 0.6em;
+}
+.bigSteps ol > li::before {
+  content: counters(sub-counter, '.') '.';
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+
+.bigSteps > li > h3,
+.bigSteps > li > h2 {
+  display: inline-block;
+}

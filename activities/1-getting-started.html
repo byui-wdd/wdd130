@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Getting Started: Create the Home Page in HTML - Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/solarized-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="../images/smallBanner.jpg" alt="Course Banner" />
+        </div>
+        <div id="article">
+            <h1>Getting Started: Create the Home Page in HTML</h1>
+            <hr />
+            <div class="activityContent">
+                <h2>Activity Directions</h2>
+                <p>
+                    <span class="highlight">Estimated Time</span>:&nbsp;60 minutes</p>
+                <div class="callout">
+                    <h2>Do you remember?</h2>
+                    <p>The activity will use the following html concepts or tags. These concepts were introduced in the first
+                        <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/v/making-webpages-intro" target="_blank">Khan Academy</a> lesson. (Go do that now if you haven't already!):</p>
+                    <ul>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_elements.asp" target="_blank">HTML Elements</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_attributes.asp" target="_blank">HTMl Attributes</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_headings.asp" target="_blank">HTML Headings</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_paragraphs.asp" target="_blank">HTML Paragraphs</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_images.asp" target="_blank">HTML Images</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/html/html_lists.asp" target="_blank">HTML Lists</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--
+                <ol class="bigSteps">
+                    <li>Make sure that you have followed the <a href="../lesson01/software-setup.html" target="_blank">Software Setup</a> instructions. <a href="#step1">link</a></li>
+                    <li>
+                        Add a <kbd>meta</kbd> element to set the character set for your page to <kbd>utf-8</kbd> <a href="#step2">link</a>
+                    </li>
+                    <li>Change the <code>&lt;title&gt;</code> of your page to be something specifically related to your site. ie I often use this model: Key words about the site | Site name | Page name (Whitewater Rafting Vacations | Dry Oar Boating | Home) <a href="#step3">link</a></li>
+                    <li>Based off of the <a href="../images/wireframe-boxes-labels.jpg" target="_blank">wireframe</a> add semantic HTML elements for each major portion of the page. Minimum should be <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>. Your <code>&lt;main&gt;</code> should also be divided into two sections with <code>&lt;div&gt;</code> elements. <a href="#step4">link</a></li>
+                    <li>Add a logo image in the <code>&lt;header&gt;</code> of your page. Add two more list items in the <code>&lt;nav&gt;</code> for your child page links. <a href="#step5">link</a></li>
+                    <li> <a href="#step6">link</a></li>
+                    <li> <a href="#step7">link</a></li>
+                    <li> <a href="#step8">link</a></li>
+                    <li> <a href="#step9">link</a></li>
+                    <li> <a href="#step10">link</a></li>
+                </ol>
+-->
+
+                <ol class="bigSteps">
+                    <li>
+                        <h3 id="step1">Verify Setup</h3>
+                        <p>If you completed the Software setup activity you should already have an html file ready called index.html.
+                            It should look something like this:</p>
+                        <pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Hello&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;link rel="stylesheet" href="/styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo-box"&gt;&lt;!-- logo will go here --&gt;&lt;/div&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+            </code></pre>
+
+                        <p>If you don't have that, go follow the
+                            <a href="../lesson01/software-setup.html" target="_blank">Software Setup</a> instructions and come back when you are done.</p>
+                        <div class="callout">
+                            <h3>Naming files for the web</h3>
+                            <p>There are a few things to keep in mind as you come up with names for the files and folders that
+                                will make up your website.</p>
+                            <ul>
+                                <li>Always name the first page of your site&nbsp;
+                                    <kbd>index.html</kbd>
+                                </li>
+                                <li>Most web hosts are&nbsp;
+                                    <i>case-sensitive</i>&nbsp;which means there is a difference between&nbsp;
+                                    <kbd>
+                                        <span class="highlight">I</span>ndex.html</kbd>&nbsp;and&nbsp;
+                                    <kbd>index.html</kbd>
+                                </li>
+                                <li>So...Make your filenames all lowercase to avoid problems with case sensitivity.</li>
+                                <li>Avoid spaces and other special characters in your filenames (a-z, 0-9, -, and _ are all safe
+                                    to use)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 id="step2">Add a Meta tag</h3>
+                        <p>From the Khan Academy lesson we learned about&nbsp;
+                            <kbd>&lt;meta charset="utf-8"&gt;</kbd>. Meta tags give the browser information to help it build the
+                            web page. They are always found in the&nbsp;
+                            <kbd>&lt;head&gt;</kbd>&nbsp;with the other information that is for the browser only. Look to make
+                            sure that this line is in the starter code you were given.</p>
+                    </li>
+                    <li>
+                        <h3 id="step3">Change the title</h3>
+                        <p>Let's go ahead and change the title next. The &lt;title&gt; of the page shows at the top of the browser
+                            window or on the tab of a browser window, and in the search listing for a site. Let's pick something
+                            that will make sure people know what the site is, and what page they are currently on. Something
+                            like "Whitewater Rafting Vacations | Dry Oar Boating | Home".</p>
+                        <div class="callout">
+                            <p>We know from the&nbsp;
+                                <a href="../images/wireframe-boxes-labels.jpg" target="_blank">wireframe</a>&nbsp;for the home page for the Dry Oar site that there will be a combination
+                                of images, headlines, and text on the page. The Khan academy lesson for this week taught
+                                you how to add all of those things to a page with HTML. You will need to refer back to your
+                                wireframe and site plan document throughout this activity to make sure you don't forget anything
+                                on the home page.</p>
+                            <p>As you look at the wireframe you will notice a few things. First a box with an X through it indicates
+                                an image will go there. A shaded box around something indicates that it should be colored.
+                                The numbers that are in the corners of some of the boxes indicate sizes. </p>
+                            <p>The wireframe also indicates where our headlines and paragraphs will be, and should show approximately
+                                how much space the text should take up, and the relative sizes of the headlines and paragraph
+                                text. It also helps us to see the organization of the page. Elements are organized into groups.
+                                It will be important that we include html markup to represent those groups, as well as to
+                                get the content on the page.</p>
+                        </div>
+                        <div class="callout">
+                            <h3>Note!</h3>
+                            <p>We will
+                                <strong>NOT</strong> be adding colors and other styles this week. Our only goal is to get all of
+                                the content onto the page that is shown on the wireframe. Our Page will
+                                <strong>NOT</strong> look like the wireframe when we finish this week. Each week will get us closer,
+                                but our page will not look exactly like the wireframe for several weeks, so patience will
+                                be required :)
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 id="step4">"Framing" with semantic elements</h3>
+                        <p>Building a website is actually a lot like building a house. You start with a blueprint (wireframe)
+                            and then you build the foundation and frame for the house. We have already built the foundation.
+                            We did that when we added the
+                            <code>&lt;html&gt;</code>,
+                            <code>&lt;head&gt;</code>, and
+                            <code>&lt;body&gt;</code> elements above. The framing takes the rooms outlined on the blueprint and creates a real space
+                            to put them. We need to do the same thing for our webpage, except for instead of rooms we are
+                            looking at content areas. </p>
+                        <p>The way we "frame" in our webpage is by looking carefully at our wireframe to see what "rooms" we
+                            have. Then we use some special HTML tags to define them.</p>
+                        <div class="callout">
+                            <p>Take a moment to review the
+                                <a href="../images/wireframe-grid-boxes.png" target="_blank">wireframe</a> again to help remember what we are trying to do. Remember that I mentioned
+                                above that we are looking right now at content areas...elements on the page that are related
+                                and grouped. The wireframe has colored boxes to help you to see those relationships. We need
+                                to add some markup to create those containers in our html.</p>
+                            <p>Html has several tags specifically for this purpose. Some have specific semantic meanings and
+                                others don't. We should always try and use the ones with meaning whenever we can. Here is
+                                a list of some of the more common of these tags:&nbsp;
+                                <code>&lt;header&gt;</code>,&nbsp;
+                                <code>&lt;footer&gt;</code>,&nbsp;
+                                <code>&lt;main&gt;</code>,&nbsp;
+                                <code>&lt;section&gt;</code>,&nbsp;
+                                <code>&lt;nav&gt;</code>,&nbsp;
+                                <code>&lt;article&gt;</code>,
+                                <code>&lt;figure&gt;</code>,&nbsp;
+                                <code>&lt;aside&gt;</code>,&nbsp;
+                                <code>&lt;div&gt;</code>, and&nbsp;
+                                <code>&lt;span&gt;</code>.</p>
+                            <p>Last week you were asked to review a short article on
+                                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">HTML Semantics</a>. There is a chart there that does a nice job of showing how those elements
+                                might be used in a simple site layout. Take a minute to go check it out again.
+
+                            </p>
+                            <p>All of these elements behave the same in the browser except for&nbsp;
+                                <code>&lt;span&gt;</code>, but they are used to show different sections of the page. Try to use the more specific
+                                ones first, using a generic&nbsp;
+                                <code>&lt;div&gt;</code>&nbsp;only if none of the others seems to apply to the content you are boxing in.</p>
+                        </div>
+                        <p>Add HTML elements to your body to start outlining content areas. The first we need is at the top
+                            of the page. Notice that there is a box around the logo and navigation bar. Those elements are
+                            related and form the header of the page. Lucky for us if you look in the list of tags above you
+                            will see that there is a
+                            <code>&lt;header&gt;</code> tag! Not only that but the starter code already has one.</p>
+                        <p>Inside of the header you can see a second box around the links for the navigation. Again after reviewing
+                            the list above we see a
+                            <code>&lt;nav&gt;</code> tag...perfect! And again it looks like the instructor was a little too generous with the starter
+                            code because you already have one!</p>
+                        <p>Next let's add an area where the main content for this page will go. On a normal site the header
+                            and footer will stay the same across pages...but the central content will change from page to
+                            page. We need a box to hold that. The
+                            <code>&lt;main&gt;</code> tag was built for just this use. Add a
+                            <code>&lt;main&gt;</code> element to your page right below the
+                            <code>&lt;/header&gt;</code> </p>
+                        <p>The first thing we need inside our new
+                            <code>&lt;main&gt;</code> element is a banner image that will stretch all the way across the screen. Let's add some html
+                            to hold that. In this case a simple
+                            <kbd>&lt;div&gt;</kbd> is probably the right answer.</p>
+                        <div class="callout">
+                            <h4>Tip!</h4>
+                            <p>There will be a lot of code examples in this and other lessons. Avoid the temptation to just
+                                copy/paste them into your page. Type them out! This might seem like a bother, but you will
+                                remember the HTML and CSS we use much better if you do ;)</p>
+                        </div>
+                        <p>Below that banner is a bunch of content. It is seprate from the banner, but related. Let's use an
+                            HTML element to group the content in that section together. Another
+                            <code>&lt;div&gt;</code> would work well again.</p>
+                        <p>Notice that the
+                            <code>&lt;div&gt;</code>s we created for the banner and the rest of the main content look just the same! We need a way
+                            to distinguish between the two elements. The common way to do this in HTML is with a
+                            <kbd>class</kbd> or
+                            <kbd>id</kbd> attributes. Lets add unique classes to each of those divs that describe what will be
+                            inside them. For example for the banner lets add
+                            <kbd>class="banner-box"</kbd> and for the rest of the content add
+                            <kbd>class="home-grid"</kbd> (this name will make more sense later). </p>
+                        <p>Finally we need one more container on our page. This one will hold the footer information. Again
+                            if you refer to the list of semantic elements above you will see a
+                            <code>&lt;footer&gt;</code> element. Add one below
+                            <code>&lt;/main&gt;</code>.</p>
+
+                        <p>At this point my
+                            <code>&lt;body&gt;</code> looks like this:</p>
+                        <pre><code class="html">
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo-box"&gt;&lt;!-- logo will go here --&gt;&lt;/div&gt;
+        &lt;nav&gt; 
+            &lt;!-- navigation here --&gt; 
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;div class="banner-box"&gt; &lt;!-- banner image will go here --&gt; &lt;/div&gt;
+        &lt;div class="home-grid"&gt; &lt;!-- the rest of the main content will go here --&gt; &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;footer&gt; &lt;!-- footer info here --&gt; &lt;/footer&gt;
+&lt;/body&gt;
+
+</code></pre>
+                        <div class="callout">
+                            <p>You may have noticed the lines in my code above that are in grey. They are called comments...notes
+                                to yourself that the browser will ignore. Comments start with &lt;!-- and end with --&gt;
+                                and everything in-between will be ignored. Comments are a great way to remind yourself what
+                                you were thinking when you did something in your page. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3>Adding content.</h3>
+                        <p>To add content you need content! This will come from a few sources. </p>
+                        <ol>
+                            <li>Make sure to have the
+                                <a href="../images/wireframe-grid-boxes.png" target="_blank">wireframe</a> open and handy.</li>
+                            <li>You will find blocks of text you can use embedded in the instructions below. Watch for them!
+                                (You can modify these if you want)</li>
+                            <li>Images can be found here:
+                                <a href="../resources/dryoarimages.html" target="_blank">images-1</a> or here:
+                                <a href="https://www.dropbox.com/sh/r9d1gq256pyuwws/AAD7bMbgW0keCVs5ZLUG3sBDa?dl=0" target="_blank">images-2</a> (or you can find some of your own)</li>
+                        </ol>
+                        <div class="callout">
+                            <p>With that we should now have all of the "framing" done on our webpage. We have a place defined
+                                now for all the content that needs to be on the page. With that done we are now ready to
+                                actually add it! Remember to refer often to the
+                                <a href="../images/wireframe-boxes-labels.jpg" target="_blank">wireframe</a> as you are adding the content. The instructions will make much more sense if
+                                you are looking at the blueprint!</p>
+                        </div>
+                        <!-- END STEP -->
+                    </li>
+                    <li>
+                        <h3 id="step5">Header content</h3>
+                        <p>Let's work on the header first. Visit the image links above and find the logo you would like to use.
+                            Add the
+                            <code>&lt;img&gt;</code>&nbsp;tag to your page inside the&nbsp;
+                            <code>&lt;header&gt;</code>. Remember that the&nbsp;
+                            <code>&lt;img&gt;</code>&nbsp;tag has 2 required attributes.&nbsp;
+                            <kbd>alt</kbd>&nbsp;and&nbsp;
+                            <kbd>src</kbd>.</p>
+                        <p>
+                            <kbd>src</kbd> should indicate the location of the image and
+                            <kbd>alt=""</kbd>&nbsp;should contain a short description about the image and is used primarily for
+                            the screen readers that the visually impaired use to browse the web.</p>
+                        <p class="callout">This image is already the right size and is on a web server, so we just need to figure out what its
+                            URL is to add it to our page. Your browser makes it really easy to do that. If you click with
+                            the right mouse button on any image in the browser your computer will offer you several actions
+                            you can take. The one we are interested in right now is "Copy Image Address".</p>
+                        <p>Copy the address for the logo image and paste the result into the src attribute in our image. the
+                            final tag should look something like this:</p>
+                        <pre><code class="html">&lt;img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar boating logo"&gt;</code></pre>
+                        <div class="callout">
+                            <p>You may be wondering what your site looks like. Remember that you can hit the "Show" button anytime
+                                to see the results of your work.</p>
+                        </div>
+
+                        <div class="callout">
+                            <h4>Indentation</h4>
+                            <p>You may have noticed something else about my code as well. Notice how I am indenting my HTML
+                                elements to help me clearly see which elements are inside of other elements. As your page
+                                gets larger this becomes more and more important. Take a little time to keep your code in
+                                order...you will be happy you did later on.</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3 id="step6">Finish the Menu</h3>
+                        <p>Now it's time to add the list of subpages that will eventually become links and provide our site's
+                            navigation.</p>
+                        <p class="callout">Notice that I said 'list' there. One thing most people don't realize is that most navigation bars
+                            on most websites are made with an unordered list...the same one you learned how to use in this
+                            week's Khan Academy lesson. They are well disguised, but they really are lists.</p>
+                        <p>The starter code provided already had the start of a list for you. Notice the
+                            <code>&lt;ul&gt;</code> element with two
+                            <code>&lt;li&gt;</code> children. Add additional
+                            <code>&lt;li&gt;</code> elements for each link that shows in your siteplan. I would let the
+                            <code>aboutme.html</code> link drop to the bottom of the list.</p>
+
+                        <p> Your
+                            <code>&lt;header&gt;</code> should look something like this:</p>
+
+                        <pre><code class="html">&lt;header&gt;
+ &lt;div class="logo-box"&gt;&lt;img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar boating logo"&gt;&lt;/div&gt;
+ &lt;nav&gt;
+   &lt;ul&gt;
+       &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+       ...the rest of your list...
+       &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/nav&gt;
+&lt;/header&gt;
+</code> </pre>
+                        <!-- END STEP -->
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3 id="step7">Add a Banner</h3>
+                        <img class="right" src="../images/2015-11-11_1525.png" alt="Tiny Partial Circle" title="Tiny Partial Circle" />
+
+                        <p>Next is a wide banner image. Look through the images provided and choose one to add to your page
+                            in the
+                            <code>&lt;div&gt;</code> we added earlier to hold it. A regular sized image will not work here... it&nbsp;
+                            <strong>MUST</strong>&nbsp;be a page wide image. Remember you can see what your site is looking like
+                            anytime by hitting the view at the top of the page.</p>
+                        <p class="clearfix">If your page does not update, click the refresh button (The tiny partial circle by the address line)
+                            &nbsp;on the Chrome&nbsp;browser.&nbsp;</p>
+                        <!-- END STEP -->
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3 id="step8">Add the Main content</h3>
+                        <p>Next we have a collection of a bunch of headlines paragraphs and images. Start right below the banner
+                            in the wireframe (you still have that open right?) and read left to right top to bottom to add
+                            the content.
+                            <strong>All of these elements will go
+                                <em>inside</em> of the
+                                <kdb>home-grid</kdb> div.</strong>
+                        </p>
+                        <p>Using the&nbsp;
+
+                            <code>&lt;h2&gt;</code>&nbsp;tag add the first headline to the page inside of the first
+                            <kdb>home-grid</kdb>
+                            <code>&lt;div&gt;</code>. (There is a headline on the wireframe you can use...or you can make up your own). Give this
+                            <code>&lt;h2&gt;</code> a name with a
+                            <kbd>class</kbd>. Call it
+                            <kbd>home-headline-1</kbd>
+                        </p>
+                        <p> Then use a&nbsp;
+                            <code>&lt;p&gt;</code> tag to add the following text: (or something similar...feel free to edit this :) ) inside of
+                            that same
+                            <code>&lt;div&gt;</code>. Give it a class as well. Call it
+                            <kbd>home-paragraph-1</kbd>
+                        </p>
+                        <kbd class="callout">We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the
+                            dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around
+                            and notice the beauty that surrounds the rivers we love.</kbd>
+
+
+
+                        <p>Finally choose another picture from those provided and add it after the paragraph. Add a class to
+                            it as well of
+                            <kbd>home-right-img</kbd>
+
+                            <p>Here is an example of how your code should look:</p>
+
+                            <pre><code class="html">
+&lt;div class="home-grid"&gt; 
+    &lt;h2 class="home-headline-1"&gt;We run Rivers to relax.&lt;/h2&gt;
+    &lt;p class="home-paragraph-1"&gt;We believe that there is nothing like a river trip for relaxing...  &lt;/p&gt;
+    &lt;img class="home-right-img" src="http://brothert.net/dryoar/images/river-evening.jpg" alt="peaceful evening shot of a river"&gt;
+&lt;/div&gt;    
+
+        </code>
+        </pre>
+                            <p>Check your work to make sure that everything is showing up correctly. Then add another headline,
+                                paragraph, and image. Make sure to use different names for their classes. I would recommend:
+                                <kbd>home-headline-2, home-paragraph-2, home-left-img</kbd>. Text for the paragraph is below:</p>
+                            <kbd class="callout">That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that
+                                that tenseness that comes when you are looking down the tongue of a big string of waves makes
+                                you appreciate the calm beautiful water that always follows even more.</kbd>
+                            <div class="callout">
+                                <h4>Using personal images</h4>
+                                <p>You may be wondering how you might use a picture of your own on a website. It's actually
+                                    pretty easy. An image needs to be on a webserver in order to be used on a website. Glitch
+                                    is our webserver, so if you want to add a picture of your own you just need to upload
+                                    it into Glitch as we did for the About Me activity. You might want to take an early look
+                                    at the
+                                    <a href="..//lesson06/optimizing-images.html" target="_blank">Optimizing Images</a> activity before you do this though. </p>
+                            </div>
+                            <!-- END STEP -->
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3 id="step9">Finishing up the main content</h3>
+                        <p>The next section is a bit different. The headline and paragraph there are going to be kept together
+                            when we do our layout. Whenever you want to move multiple elements together you should group
+                            them by placing them
+                            <em>inside</em> of another element. Let's use a
+                            <code>&lt;section&gt;</code> element for this. Add a
+                            <code>&lt;section&gt;</code> with a class of
+                            <kbd>home-paragraph-3</kbd> then add a headline and paragraph inside of that element like we did above.
+                            We don't necessarily have to add classes to this
+                            <code>&lt;h2&gt;</code> and
+                            <code>&lt;p&gt;</code> since we will learn how to find them based off of their parent later. But you can add them if
+                            you would like. Here is the text for the last paragraph:</p>
+                        <kbd class="callout">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and
+                            let us know which one best suits you. We're waiting to hear from you!</kbd>
+                        <p>And here is what the HTML for this portion of the page should look like.</p>
+                        <pre><code class="html">
+&lt;section class="home-paragraph-3"&gt; 
+    &lt;h2&gt;Come Run with us.&lt;/h2&gt;
+    &lt;p&gt;We invite you to come relax with us on one of the amazing rivers we visit.... &lt;/p&gt;
+&lt;/section&gt;    
+        </code>
+        </pre>
+                        <!-- END STEP -->
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3>Footer content</h3>
+                        <p>Finally let's add the content to the
+                            <code>&lt;footer&gt;</code>. The copyright comes first. Put it into the first element that you should have added in your
+                            <code>&lt;footer&gt;</code>. To make the copyright symbol we use a special code, there are many of these but we will just
+                            learn this one today:
+                            <kbd>&amp;copy;</kbd> Place that right before the 201X so it will look like this:</p>
+                        <pre><code class="html">&lt;p&gt;&amp;copy; 201X Dry Oar&lt;p&gt;</code></pre>
+                        <p>Let's go ahead and add your name and section as part of the footer as well. So the final html for
+                            the footer section should look something like this:</p>
+                        <pre><code class="html">&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 201X Dry Oar - FirstName LastName - Section &lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+                        <p>Make sure to use the current year for the copyright! We will add the icons for the social media links
+                            later.</p>
+
+                        <div class="callout">
+                            <p>
+                                <strong>One more reminder!</strong> Our only goal is to get all of the content onto the page that
+                                is shown on the wireframe. Our Page will
+                                <strong>not</strong> look like the wireframe at this point. Each week will get us closer, but our
+                                page will not look exactly like the wireframe for several weeks, so patience will be required
+                                :)</p>
+                        </div>
+                        <!-- END STEP -->
+                    </li>
+                    <li>
+                        <!-- START STEP -->
+                        <h3>Verify</h3>
+                        <p>Make sure to view your web page online to make sure your changes are correct. Once verified, submit
+                            the URL from your browser that you use to view your page to iLearn.</p>
+                        <div class="callout">
+                            <p>Remember that the URL you should turn in for your site will look something like this (you would
+                                replace 'w16thompsond' with whatever your Glitch project name is):</p>
+                            <pre><code class="html">http://w16thompsond.glitch.me</code></pre>
+                            <p>
+                                <strong>Always</strong> check that URL
+                                <strong>before</strong> you submit your assignments in Ilearn to make sure that all your changes
+                                show.</p>
+
+                        </div>
+                        <!-- END STEP -->
+                    </li>
+
+                </ol>
+
+
+                <div class="rubric">
+                    <h2>Grading</h2>
+                    <p>This activity will be graded using the following rubric:</p>
+                    <ul>
+                        <li>All of the content indicated on the wireframe is included. (Essentially you should have the following:
+                            1 wide banner image, 2 other images, 3 headlines, 3 paragraphs, a logo, a list of words for the
+                            navigation (these will be links eventually) and a copyright) 7pts
+                        </li>
+                        <li>Semantic, structural html used to organize and group html elements where asked for. 3pts</li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- end #article -->
+        </div>
+        <script src="../js/course.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>
+            // <![CDATA[
+            hljs.initHighlightingOnLoad();
+            // ]]>
+        </script>
+    </div>
+</body>
+
+</html>

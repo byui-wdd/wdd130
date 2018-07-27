@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/course.css" />
+</head>
+<body>
+<div id="main">
+<div id="header"><img src="../images/smallBanner.jpg" alt="Course Banner" /></div>
+<div id="article">
+<h1>Troubleshooting</h1>
+<h2>IT'S NOT WORKING!!!!</h2>
+<p>Not sure if you can relate to the headline above...but what should you do if nothing you try seems to work? I have a list of suggestions for you:</p>
+<ol>
+<li>Make sure that you don't have any red lines in your editor. If you do have any it means you have errors in your html somewhere. Look for malformed tags, quotes that aren't closed, mis-nested elements, etc.</li>
+<li>Validate your HTML! Because HTML is a standard, programs can be written to check for errors or poorly written code. Whenever things aren't working the way the activity says they should, and especially if you have red lines in your editor that you can't find the reason for...you should validate.
+<p class="callout">Validating is easy. Goto <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>, then enter in the same url that you would submit in iLearn for your site. It will check for any HTML errors and tell you where they are. Don't panic if it comes back with some really high number. One error can often cascade and create many others. I recommend fixing the first, then re-validating until all are gone.</p>
+</li>
+<li>Validate your CSS! There is also a CSS standard, so you can validate that as well to check for errors. The process is similar, you just need to goto a different site. The CSS validator can be found at: <a href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a>. Follow the same steps...fix the first error then re-validate until clean.</li>
+<li>Communicate with classmates and the instructor. If you are spending multiple hours on any activity you are most likely stuck! Get in touch with someone that can help and have them look at your code.</li>
+<li>I can't stress this enough.  <strong>Don't wait too long to get help!</strong> Everything we do builds on what we have done before. Don't let yourself get behind because one or two early concepts aren't making sense and you didn't ask for help!</li>
+</ol>
+<h2>Practice: HTML Validation</h2>
+<ol>
+    <li>Click on <a href="../resources/dryoar-index-errors.html" target="_blank">this link</a>, then right-click and select "Show Page source" or "View Source". This should show you the code that makes the page. (If you are in IE and you don't see the View Source option try typing ctrl-u...or switch to Chrome :) ). Click in the window that show the code and select it all (cmd-a on Mac, ctrl-a on Windows) and copy the contents (cmd/ctrl-c). Goto your project and create a new file.  Call it <code>errors.html</code> and paste the code into it (cmd/ctrl-v).</li>
+    <li>Next open your index.html file and add a link to this file to your navigation. <code>&lt;li&gt;&lt;a href="errors.html"&gt;Errors&lt;/a&gt;&lt;/li&gt;</code></li>
+    <li>View your page and click on the new Errors link. Copy that address and goto <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a> and paste your URL into the Address box.  Hit "Check" </li>
+    <li>You should see a list of several errors that are in the HTML of that file.  Find and correct all of the errors. Help each other out!</li>
+</ol>
+<h2>Tips</h2>
+<ul>
+    <li>Start with the top of the list and work down.  Often fixing one issue will resolve multiple errors.</li>
+    <li>As you fix an error copy/paste the corrected code into the validator and re-check.</li>
+    <li>Remember that an Element is: an opening tag, closing tag, and everything in between.  Look at this example:
+    <pre><code>
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;Contact Us&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+        <p>The entire block of code is a "nav element" since everything is inside of the opening and closing <code>nav</code> tags. <code>&lt;li&gt;Home&lt;/li&gt;</code> is also an element and would be called an "li element". </p></li>
+        <li>Elements are often nested (placed inside of each other).</li>
+    <li>An element inside of another element would be considered a <em>child</em> of the parent element. Referring to our example above, The <code>li</code> elements are the <em>children</em> of the <code>&lt;ul&gt;</code> element, and the <code>&lt;ul&gt;</code> element is the <em>child</em> of the <code><code>&lt;nav&gt;</code></code></li>
+    <li>Note that the validator will tell you the line and column where it found the error.  Use this as a starting point when searching out the issues.</li>
+</ul>
+<!-- end #article --></div>
+<script src="../js/course.js"></script>
+</div>
+</body>
+</html>
