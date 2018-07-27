@@ -93,10 +93,10 @@ function buildMenu() {
 }
 buildMenu();
 
-document.getElementById('one').addEventListener('click', e => {
-  document.querySelector('main').scrollBy({
-    top: 0, // could be negative value
-    left: document.body.scrollWidth,
-    behavior: 'smooth'
-  });
-});
+// document.getElementById('one').addEventListener('click', e => {
+//   document.querySelector('main').scrollBy({
+//     top: 0, // could be negative value
+//     left: document.body.scrollWidth,
+//     behavior: 'smooth'
+//   });
+// });
