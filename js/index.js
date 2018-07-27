@@ -43,10 +43,15 @@ const menu = {
 };
 
 function getView(url) {
-  fetch(baseUrl + url).then(response => {
+  url = localUrl + url;
+  fetch(url).then(response => {
     response.text().then(partial => {
       var tmp = document.implementation.createHTMLDocument();
       tmp.body.innerHTML = partial;
+      const images = document.querySelectorAll('img');
+      images.forEach(image => {
+        image.src = baseUrl + image.src;
+      });
       tmp.querySelector('main');
       // console.dir(tmp.querySelector('main'));
       const container = document.getElementById('partialContainer');
