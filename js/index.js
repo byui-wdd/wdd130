@@ -1,4 +1,6 @@
 /* Add Course Specific JavaScript Below */
+const baseUrl = 'https://byui-cit.github.io/wdd130/';
+const localUrl = '/';
 const menu = {
   resources: [
     { url: 'resources/syllabus.html', name: 'Syllabus' },
@@ -41,7 +43,7 @@ const menu = {
 };
 
 function getView(url) {
-  fetch(url).then(response => {
+  fetch(baseUrl + url).then(response => {
     response.text().then(partial => {
       var tmp = document.implementation.createHTMLDocument();
       tmp.body.innerHTML = partial;
