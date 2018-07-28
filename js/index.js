@@ -64,7 +64,7 @@ function getView(url) {
     });
   });
 }
-getView(baseUrl + 'resources/syllabus.html');
+getView('resources/syllabus.html');
 
 function buildMenu() {
   const actList = document.getElementById('activitiesList');
