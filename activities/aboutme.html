@@ -13,8 +13,12 @@
 
 <body>
     <div id="content">
-        <header>
-            <img src="../images/smallBanner.jpg" alt="Course Banner" />
+        <header class="headerBanner">
+            <div>
+                <h1>
+                    <span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
         </header>
         <main>
             <h1>An&nbsp;"About Me" Web Page</h1>
@@ -124,10 +128,23 @@
                 <li>
                     <!-- START STEP -->
                     <h2>Our first HTML</h2>
-                    <p>Let's write some HTML. Open (log into) Glitch, and create a new file called
-                        <code>aboutme.html</code>. (It needs to be exactly
-                        <code>aboutme.html</code>. No caps, no spaces.) Click on the
-                        <code>aboutme.html</code> file and type the HTML below.</p>
+
+                    <p>Let's write some HTML. Open (log into) Thimble, and create a new HTML file. Then rename the file
+                        <kbd>aboutme.html</kbd>. (It needs to be exactly
+                        <kbd>aboutme.html</kbd>. No caps, no spaces.) Click on the
+                        <kbd>aboutme.html</kbd> file to open it in the editor and remove all of the contents. Then type the HTML
+                        below.
+                    </p>
+                    <div class="fig-block ">
+                        <figure>
+                            <img alt="Create a file" src="../images/thimble-create-file.jpg" title="Create a file" />
+                            <figcaption>Creating a file in Thimble</figcaption>
+                        </figure>
+                        <figure>
+                            <img alt="rename a file" src="../images/thimble-rename.jpg" title="Rename a file" />
+                            <figcaption>Renaming a file in Thimble</figcaption>
+                        </figure>
+                    </div>
                     <p>This code contains everything you need for a basic web page. It has most of the items listed above. Tags,
                         elements, nesting, parent elements, child elements, and semantics. Can you spot them all?</p>
                     <div class="callout">
@@ -156,8 +173,7 @@
     &lt;/main&gt;
 &lt;/body&gt;
 
-&lt;/html&gt;
-        </code></pre>
+&lt;/html&gt;</code></pre>
 
 
                     </div>
@@ -166,21 +182,28 @@
                 <li>
                     <!-- START STEP -->
                     <h2>Titles and Headlines</h2>
-                    <p>A visitor to a website should not have to guess what the page is about. The &lt;title&gt;&nbsp;says "All
-                        About Me". Although you can see "All About Me" looking at the html, it will not show up on the page.&nbsp;
-                        This is because &lt;title&gt; is in the &lt;head&gt; section and anything in the &lt;head&gt; is
-                        not seen in the browser window.&nbsp; &nbsp;Only items in the &lt;body&gt; section are actually seen
-                        on the page. The &lt;title&gt; shows up as the name of the tab or window.</p>
+                    <p>A visitor to a website should not have to guess what the page is about. The
+                        <code>&lt;title&gt;</code> says "All About Me". Although you can see "All About Me" looking at the html, it will not show up
+                        on the page.&nbsp; This is because
+                        <code>&lt;title&gt;</code> is in the
+                        <code>&lt;head&gt;</code> section and anything in the
+                        <code>&lt;head&gt;</code> is not seen in the browser window. Only items in the
+                        <code>&lt;body&gt;</code> section are actually seen on the page. The
+                        <code>&lt;title&gt;</code> shows up as the name of the tab or window.</p>
                     <p>We can use a headline element on our page so that when someone visits your page, they will know what
                         your page is about.</p>
                     <div class="callout">
-                        <p>There are various sizes of headlines: &lt;h1&gt; - &lt;h6&gt; These can be used to establish a hierarchy
-                            for your page. The
-                            <em>smaller</em> the number with the h like &lt;h1&gt; for instance, the
-                            <em>larger</em> the text and the more important the headline should be. An &lt;h1&gt; for example
-                            should be used for the
-                            <em>most important</em> title on the page. You should only use one &lt;h1&gt; on your page.</p>
-                        <p>&lt;h2&gt; tags would be the next level and you can use as many as you need. Think about the structure
+                        <p>There are various sizes of headlines:
+                            <code>&lt;h1&gt;</code> -
+                            <code>&lt;h6&gt;</code> These can be used to establish a hierarchy for your page. The
+                            <em>smaller</em> the number with the h like
+                            <code>&lt;h1&gt;</code> for instance, the
+                            <em>larger</em> the text and the more important the headline should be. An
+                            <code>&lt;h1&gt;</code> for example should be used for the
+                            <em>most important</em> title on the page. You should only use one
+                            <code>&lt;h1&gt;</code> on your page.</p>
+                        <p>
+                            <code>&lt;h2&gt;</code> tags would be the next level and you can use as many as you need. Think about the structure
                             of this course. It is broken up into weeks and activities. An outline using headline elements
                             would look like the following:</p>
                         <div class="outline">
@@ -203,8 +226,9 @@
                         <code>&lt;p&gt;</code>&nbsp;elements and add an&nbsp;
                         <code>&lt;h1&gt;</code>opening tag,&nbsp;and type "About Me".&nbsp; Then enter&nbsp;
                         <code>&lt;/h1&gt;</code>&nbsp;to close the element. Let's add a sub-heading or two as well.&nbsp; Let's use &lt;h2&gt; (smaller
-                        text) and put your first name and your nickname if you have one.&nbsp; Do this right after the &lt;h1&gt;
-                        About Me&lt;/h1&gt;:
+                        text) and put your first name and your nickname if you have one.&nbsp; Do this right after the
+                        <code>&lt;h1&gt;
+                        About Me&lt;/h1&gt;</code>:
                     </p>
                     <div class="callout">
                         <p>Now your code should look like this:</p>
@@ -230,8 +254,7 @@
         &lt;p&gt;Hello World!&lt;/p&gt;
     &lt;/main&gt;
     &lt;/body&gt;
-&lt;/html&gt;
-        </code></pre>
+&lt;/html&gt;</code></pre>
 
 
                     </div>
@@ -270,12 +293,12 @@
                     <p>When you have finished adding your paragraphs you will want to view your webpage. To do this click on
                         the "Show" button at the top left of the screen. "Show" always starts with the
                         <strong>
-                            <code>index.html</code>
+                            <kbd>index.html</kbd>
                         </strong> page, but you can click on the link we created there to see the
                         <strong>
-                            <code>aboutme.html</code>
-                        </strong> page instead. Once you are on that page you can hit Refresh on your browser to see additional
-                        changes as you make them. Your page and HTML might look something like the images below:</p>
+                            <kbd>aboutme.html</kbd>
+                        </strong> page instead. Once you are on that page you can hit Refresh on your browser to see additional changes
+                        as you make them. Your page and HTML might look something like the images below:</p>
                     <div class="fig-block">
                         <figure>
                             <img alt="About me html" src="../images/about-me-step5-html.jpg" title="About me html" />
@@ -293,46 +316,48 @@
                     <h2>Add an image</h2>
                     <p>Look's good, but it is a little plain.&nbsp;Let's add an image to dress up your page.</p>
 
-                    <p>Before you can put an image on your web page, you have to get it onto a web server. Lucky for us Glitch
-                        makes this easy. We simply need to upload the image from your computer to your assets folder in Glitch.
-                        Click on the assets link and then drag and drop your image to the assets page.&nbsp; Then to put
-                        the image on your page, click on the image and then click on the"copy url" button.&nbsp; That puts
-                        the image link on your clipboard so that you can paste it into the image tag:&nbsp; &nbsp; &nbsp;&nbsp;</p>
+                    <p>Before you can put an image on your web page, you have to get it onto a web server. Lucky for us Thimble
+                        makes this easy. We simply need to upload the image from your computer to your project in Thimble.
+                        To do this simply drag the image file onto the browser window where you have Thimble open. Many images
+                        do not have reader friendly names. You can see in the image below I uploaded an image called
+                        <kbd>IMG_5684.jpg</kbd> to my project. I'm going to rename it just like I did the HTML file we created
+                        earlier to something a little easier to remember. If you click on the image name it will open in
+                        the editor so you can see what it is.</p>
+                    <p>It also include a couple of nice bits of info. At the top you will see some colors that Thimble extracted
+                        from your image. Below the image you can see an HTML example of how you would use this image in your
+                        page.
+                    </p>
                     <div class="fig-block">
                         <figure>
-                            <img alt="Glitch adding assets" src="../images/glitch-asset1.png" title="Glitch adding assets" />
-                            <figcaption>Assets Tab</figcaption>
+                            <img alt="Thimble adding images" src="../images/thimble-rename-image.jpg" title="Thimble adding images" />
+                            <figcaption>Rename an Image</figcaption>
                         </figure>
                         <figure>
-                            <img alt="Glitch adding assets" src="../images/glitch-asset2.png" title="Glitch adding assets" />
-                            <figcaption>Adding an Asset</figcaption>
+                            <img alt="Thimble image details" src="../images/thimble-image-detail.jpg" title="Thimble image details" />
+                            <figcaption>Image details</figcaption>
                         </figure>
-                        <figure>
-                            <img alt="Glitch adding assets" src="../images/about-me-useassets.jpg" title="Glitch adding assets" />
-                            <figcaption>Using an Asset</figcaption>
-                        </figure>
+
                     </div>
 
                     <p>Put your image right after the &lt;h1&gt; line. You will start with the
-                        <code>img</code> tag. Images require additional information in order to work however. We have to tell the browser
+                        <code>&lt;img&gt;</code> tag. Images require additional information in order to work however. We have to tell the browser
                         where to find the image. We can use an "attribute" for this. (Remember
                         <strong>attribute</strong> was one of the vocabulary above. If you have forgotten what it is go review).
                         The attribute we need is
-                        <code>src=""</code>. Add this right after the word
-                        <code>img</code>. So it will look like this:</p>
+                        <kbd>src=""</kbd>. Add this right after the word
+                        <kbd>img</kbd>. So it will look like this:</p>
                     <pre><code class="html">&lt;img src=""&gt;</code></pre>
-                    <p>Paste the URL you copied for your image into the "" after the
+                    <p>Enter the name of your image into the "" after the
                         <code>src</code>. The final tag should look something like this:</p>
-                    <pre><code class="html">&lt;img alt="image of me" src="https://cdn.glitch.com/3de58351-6a1f-4d05-80fc-6813c05f9c98%2Ffemaleicon.png"&gt;
-        </code></pre>
-                    <p>Notice that I snuck an extra attribute in on you:
+                    <pre><code class="language-markup html">&lt;img src="r2d2.jpg" alt="Image of me?" /&gt;</code></pre>
+                    <p>Notice that Thimble and I included an extra attribute:
                         <strong>
-                            <code>alt</code>
+                            <kbd>alt</kbd>
                         </strong>. The
-                        <code>alt</code> attribute should contain a short description of the image. It is shown if the browser can't find
-                        the image or it is read for visually impaired visitors to your site.
+                        <kbd>alt</kbd> attribute should contain a short description of the image. It is shown if the browser can't
+                        find the image or it is read for visually impaired visitors to your site.
                         <strong>All</strong> of your images should have an
-                        <code>alt</code> attribute. If a tag has multiple attributes, the order of the attributes does not matter.</p>
+                        <kbd>alt</kbd> attribute. If a tag has multiple attributes, the order of the attributes does not matter.</p>
 
 
 
@@ -347,10 +372,10 @@
                             <img alt="Final Page" src="../images/about-me-final.jpg" title="Final example" />
                             <figcaption>Final Example Preview</figcaption>
                         </figure>
-                        <figure>
+                        <!-- <figure>
                             <img alt="Final Example HTML" src="../images/about-me-final-html.jpg" title="Final Example HTML" />
                             <figcaption>Final Example HTML</figcaption>
-                        </figure>
+                        </figure> -->
 
                     </div>
 
@@ -368,10 +393,11 @@
                     <div class="callout">
                         <img src="../images/edit-profile.jpg" alt="Ilearn Edit profile screen" class="right" />
                         <ol>
-                            <li>Click on your name located on the top right corner of the page.</li>
-                            <li>Select the option titled "Profile".</li>
-                            <li>Select "Change Picture" and and upload a picture of yourself from your computer.</li>
-                            <li>Close the window.</li>
+                            <li>Click on on the Account button located at the top left corner of the page.</li>
+                            <li>Select the option titled "Profile" and then the button "Edit Profile"</li>
+                            <li>Click directly on the placeholder image and either take a picture or upload a picture of yourself
+                                from your computer.</li>
+                            <li>Save your changes and close the window.</li>
                         </ol>
                     </div>
                     <!-- END STEP -->
@@ -382,9 +408,24 @@
                     <p>Lastly, go to the Getting to Know You discussion board and do the following things:</p>
                     <ol>
                         <li>Make a new post.</li>
-                        <li>Paste in the link to your About Me Web Page. (To find this open your project in Glitch then click
-                            on the Share button below the Project name in the top left corner. The link is there with a handy
-                            "copy" button.)</li>
+                        <li> Paste in the link to your About Me Web Page. (To find this open your project in Thimble then click
+                            on the "Publish" button in the top right corner of the window. If you haven't yet you must publish
+                            your site so it can be seen publicly on the web.
+                            <em>Everytime</em> you make changes that you would like the instructor or someone else to see you
+                            must "Update Published Version". After the site has been published, the link can be found near
+                            the "Update Published Version" button.)
+                            <div class="fig-block">
+                                <figure>
+                                    <img alt="Publish" src="../images/thimble-publish.png" title="Publish" />
+                                    <figcaption>Publish your project</figcaption>
+                                </figure>
+                                <figure>
+                                    <img alt="Re-publish" src="../images/thimble-republish.png" title="Republish" />
+                                    <figcaption>Re-publish your project</figcaption>
+                                </figure>
+
+                            </div>
+                        </li>
                         <li>Add contact information to the discussion board post if you would like to make that available to
                             your fellow classmates.
                         </li>
