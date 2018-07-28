@@ -48,12 +48,12 @@ function getView(url) {
     response.text().then(partial => {
       var tmp = document.implementation.createHTMLDocument();
       tmp.body.innerHTML = partial;
-      const images = document.querySelectorAll('img');
+      const images = tmp.querySelectorAll('img');
       images.forEach(image => {
         const imgParts = image.src.split('/');
         image.src = baseUrl + 'images/' + imgParts[imgParts.length - 1];
       });
-      tmp.querySelector('main');
+      //tmp.querySelector('main');
       // console.dir(tmp.querySelector('main'));
       const container = document.getElementById('partialContainer');
       container.innerHTML = '';
