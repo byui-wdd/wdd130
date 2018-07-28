@@ -50,7 +50,8 @@ function getView(url) {
       tmp.body.innerHTML = partial;
       const images = document.querySelectorAll('img');
       images.forEach(image => {
-        image.src = baseUrl + image.src;
+        const imgParts = image.src.split('/');
+        image.src = baseUrl + 'images/' + imgParts[imgParts.length - 1];
       });
       tmp.querySelector('main');
       // console.dir(tmp.querySelector('main'));
