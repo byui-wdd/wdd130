@@ -7,7 +7,7 @@
 
     <title>WDD 130 Site Planning</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-
+    <link rel="stylesheet" href="../css/prism-light.css" />
     <link rel="stylesheet" href="../css/course.css">
 </head>
 
@@ -114,14 +114,26 @@
                     <!-- START STEP -->
                     <h3> Template</h3>
 
-                    <p>Begin by downloading the template for the siteplan. The template contains an outline and additional instructions.
-                        The instructions are in red and are intended to be removed
-                        <em>after</em> you have followed them. Make sure to read
-                        <strong>and</strong> follow them. When you are finished with your site plan, there should be no red directions
-                        on the pages (except for the wireframe directions on the last page).</p>
+                    <p>Begin by logging into your editor (Thimble) and click on the
+                        <kbd>exercises</kbd> folder. Look for two files:
+                        <kbd>site-plan.html</kbd> and
+                        <kbd>site-plan.css</kbd>. Open the
+                        <kbd>site-plan.html</kbd> file. You will notice lots of HTML comments in the file. See an example below:</p>
+                    <pre><code class="lang-markup">&lt;!-- In the header above, add your name and class number. For example if you are in section 3 you would put WDD 100.03 --&gt;</code></pre>
                     <p>
-                        <a href="../resources/NewDryOarSitePlan.docx">Site Plan Template</a>
-                    </p>
+                        <strong>Read all of the comments!</strong> They include important instructions. You will also see portions
+                        of text wrapped in square brackets like this: </p>
+                    <pre><code class="lang-markup">&lt;h2&gt;WDD 130-[section]&lt;/h2&gt;</code></pre>
+                    <p>In this case you will be expected to replace the
+                        <kbd>[section]</kbd> with your information. There shouldn't be any square brackets left in the file when
+                        you are done!</p>
+                    <p>Take a minute right now to review both of the site-plan files. The HTML one should look somewhat familiar
+                        from last week. Try to follow what is going on in that file and guess what each line will do. The
+                        CSS one will be new. Look over it as an example of CSS and try to identify examples of the CSS terms
+                        introduced in the
+                        <a href="cssvocab.html">CSS Vocabulary</a> activity, but you are not expected to understand everything that is going on there
+                        at this point. (Go and complete the vocabulary activity right now if you have not done it!)</p>
+
                     <!-- END STEP -->
                 </li>
                 <li>
@@ -149,8 +161,13 @@
                     <p>We need to do this now for our website. One problem: the purpose really needs to be defined by the site
                         owner and not the site builder. So for this step and the next imagine that you are the owner of the
                         business and have decided that it is time for you to have an online presence.&nbsp;
-                        <strong>Develop a purpose statement that clearly defines your goals for the website</strong>. (at least 100
-                        words)
+                        <strong>Develop a purpose statement that clearly defines your goals for the website</strong>. Find the portion
+                        of the
+                        <kbd>site-plan.html</kbd> file for the purpose. (It should be around line 22-23). It looks like this:</p>
+                    <pre><code class="lang-markup">&lt;h3&gt;Purpose&lt;/h3&gt;
+&lt;p&gt;[Your purpose here]&lt;/p&gt;  &lt;!-- change this --&gt;</code></pre>
+                    <p>Replace
+                        <kbd>[Your purpose here]</kbd> with your purpose statement. (at least 100 words)
                     </p>
                     <!-- END STEP -->
                 </li>
@@ -171,6 +188,7 @@
                         <li>What are their needs that aren't being met?</li>
                         <li>How will my audience usually access my site (desktop, laptop, mobile device)? (at least 100 words)</li>
                     </ul>
+                    <p>Add your Audience to your siteplan just like you did for the Purpose above.</p>
                     <!-- END STEP -->
                 </li>
                 <li>
@@ -225,30 +243,41 @@
                         schemes for the color you chose. Feel free to lock other colors and generate until you end up with
                         3-4 colors you like.
                     </p>
-                    <div class="right">
-                        <img src="../images/coolors-hexcode.png" alt="" title="colorscheme" />
-                    </div>
+
                     <!-- END STEP -->
                 </li>
                 <li>
                     <!-- START STEP -->
                     <h3>Record the color codes</h3>
+                    <div class="right">
+                        <img src="../images/coolors-hexcode.png" alt="" title="colorscheme" />
+                    </div>
                     <p>Once you have built your palette note that at the bottom of each color column there is a 6 digit "number".
                         This is what is known as a hexadecimal color code and is usually preceded by a "#". These codes are
                         the most common way to represent colors on the web. Copy that code for the 3-4 colors you would like
-                        to use into the Site plan document. Place the color you want to use the most often as the primary.</p>
+                        to use into the Site plan document (around line 50-60). Place the color you want to use the most
+                        often as the primary.</p>
+                    <p>After entering the codes into the HTML file switch to the
+                        <kbd>site-plan.css</kbd> file. Look at lines 8-11. Notice that there is a place to record your colors
+                        there as well. Do so, then look at the Preview. You should see your colors showing in different areas!</p>
                     <!-- END STEP -->
                 </li>
                 <li>
                     <!-- START STEP -->
-                    <h3>Export your color scheme</h3>
+                    <h3>Save your color scheme</h3>
                     <div class="right">
                         <img src="../images/exportcolors.jpg" alt="" title="Pallete2" width="211" height="152" />
                     </div>
-                    <p>Then click the "Export" link in the top right corner. This will open a new window with your palette.
-                        Click on the PNG box to save a picture of your colors to your desktop. This will make an image that
-                        you can drag into your Site Plan on the Color page to replace the placeholder image. You will also
-                        want to save your chosen palette URL from coolers.co in case you need to make any changes later.</p>
+                    <p>You should save your chosen palette URL from coolers.co in case you need to make any changes later. Copy
+                        the URL of your scheme. (mine looked like this: https://coolors.co/b7d3f2-afafdc-8a84e2-84afe6-79beee)
+                        and paste it into your
+                        <kbd>site-plan.html</kbd>
+                        <strong>in two places</strong> Look around line 50-60 for the line that looks like this: </p>
+                    <pre><code class="lang-markup">Palette URL: &lt;a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank"&gt;https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c&lt;/a&gt;</code></pre>
+                    <p>Notice that when working with links in HTML the destination of the link goes in the
+                        <kbd>src</kbd> attribute. Then the part you click on goes inside of the
+                        <code>&lt;a&gt;</code> element. Often those will be different...but in this case we are going to make them both the URL
+                        to your color scheme.</p>
                     <!-- END STEP -->
                 </li>
                 <li>
@@ -303,10 +332,48 @@
                     <!-- START STEP -->
                     <h3>Choose your fonts</h3>
                     <p>Choose one or two fonts to use for the site and record them along with your
-                        <i>reasoning for choosing</i> them in the Site Plan. Then try applying the colors you chose above to
-                        your fonts. See if there are two colors in your scheme that can be used as text color/background
-                        color where the text remains readable (you need a high contrast between the colors). Black and White
-                        are always fair game even if they aren't in your color scheme :)</p>
+                        <em>reasoning for choosing</em> them in the Site Plan. Then we need to enter your fonts into the CSS
+                        file as well so we can really see what they will look like.</p>
+                    <p>If any of your fonts are from Google then look at line 4 in
+                        <kbd>site-plan.html</kbd>. This line lets our page know where to find the fonts we need. Change the example
+                        font names there to your fonts. Notice that if your font name has any spaces in it you shuold replace
+                        them with '+'. Looks at my example:</p>
+                    <p>I want to use the following two fonts from Google:
+                        <kbd>IM Fell French Canon SC</kbd> and
+                        <kbd>Lato</kbd>
+                    </p>
+                    <pre><code class="lang-css">
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+                        </code></pre>
+                    <p>Notice in the
+                        <code>@import</code> my first font got changed to:
+                        <kbd>IM+Fell+French+Canon+SC</kbd> (spaces replaced with +). My second font was a simple one word font
+                        to it was added just as it was with a
+                        <kbd>|</kbd> (shift + \) separating my fonts.
+                    </p>
+
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Color your fonts</h3>
+                    <p>Often you want your text to appear on a colored background. Let's pick some colors from your pallette
+                        that will work well together.</p>
+                    <p>See if there are two colors in your scheme that can be used as text color/background color where the
+                        text remains readable (you need a high contrast between the colors). Black and White are always fair
+                        game even if they aren't in your color scheme :)</p>
+                    <p>Switch to the
+                        <kbd>site-plan.css</kbd> file and look at lines 18-22. Should look like this:</p>
+                    <pre><code class="lang-css">--headline-color-on-white: black;  /* headlines on a white background */ 
+--headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+--paragraph-color-on-white: black; /* paragraph text on a white background */ 
+--paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+--text-background-color: #000000;</code></pre>
+                    <p>Change the
+                        <code>--text-background-color</code> and then
+                        <code>--headline-color-on-color</code> and
+                        <code>--paragraph-color-on-color</code> values. If done correctly you should see an example of your colors together in the Preview of your
+                        page in Thimble. If any of the text is hard to read then try different colors.</p>
                     <!-- END STEP -->
                 </li>
                 <li>
@@ -314,9 +381,9 @@
                     <h3>Style your navigation</h3>
                     <p>Finally from your
                         <em>color palette</em> choose the colors you would like to use for your navigational links (normal, hover,
-                        active, and visited) and enter those colors. You should also describe your navigation styles with
-                        an image or text. If you would like specific styling for other links on the pages you can provide
-                        those on the Links section under HTML elements. </p>
+                        active, and visited) and enter those colors in lines 23-26 in the
+                        <kbd>site-plan.css</kbd> file. If you would like specific styling for other links on the pages you can
+                        provide those on the Links section under HTML elements. </p>
                     <p>Think of the two child pages you will be creating (these may change as time goes on) and put the names
                         in each of the two empty boxes in the nav bar image. (In the directions, there are several page suggestions
                         listed. You can choose two of those or come up with your own, but the names should be one or two
@@ -333,7 +400,7 @@
                     <!-- START STEP -->
                     <h3>Submit to Ilearn</h3>
                     <!--<p>Go to the next page to access &ldquo;W03.03 Site Planning 2: Site Plan&rdquo; and click &ldquo;Upload.&rdquo;</p>-->
-                    <p>Upload the document with your completed site plan to ILearn</p>
+                    <p>Re-publish your site in Thimble, and upload your URL into Ilearn</p>
                     <!-- END STEP -->
                 </li>
 
@@ -347,27 +414,23 @@
                 <p>You must accomplish the following:</p>
                 <ul>
                     <li>Using&nbsp;the Site Plan template, follow the directions to create the Site Plan for your White Water
-                        Rafting business.&nbsp; Complete all pages except the wireframe page.</li>
-                    <li>Make sure that you have your title page with the Title of the Site Plan, your name and WDD100-Section
-                        number.
-                    </li>
-                    <li>The next page is the Purpose Statement and Target Audience Statement (each statement must be a minimum
-                        of 100 words + and be complete.</li>
-                    <li>You will pick a logo for your website from the images provided and the color palette you plan to use
-                        for your site from coolors.co</li>
-                    <li>Choose the Fonts you initially plan to use and then complete the nav bar (add the 2 other pages you plan
-                        to use), and the site map (the same names that you used in the nav bar should also fill out the site
-                        map boxes.&nbsp; Make sure you do not remove the nav bar image and the site map image.</li>
-                    <li>Once finished, remove all directions from the site plan (all of the red text), except for the directions
-                        for the wireframes. We will do that section later. Last, neaten the Site Plan before you submit it.&nbsp;
-                        Put each section on its own page and make sure that it is all the way to the top of the page.&nbsp;
-                        Also, remove any blank pages in the Plan and after the plan.</li>
+                        Rafting business.&nbsp; All of the [square bracket] sections should be replaced with actual content.
+                        (3 pts)</li>
+
+                    <li>Purpose Statement and Target Audience Statement included (each statement must be a minimum of 100 words
+                        + and be complete. (5 pts)</li>
+                    <li>Colors chosen and indicated in the site plan. CSS updated to show colors. (5 pts)</li>
+                    <li>Fonts chosen and indicated in the site plan. CSS updated to show your fonts (5 pts)</li>
+                    <li>Nav bar styled (add the 2 other pages you plan to use), and the site map (the same names that you used
+                        in the nav bar should also fill out the site map boxes. (2 pts)</li>
+
                 </ul>
             </div>
         </main>
         <!-- end #article -->
     </div>
     <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
 </body>
 
 </html>

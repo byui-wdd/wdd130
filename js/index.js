@@ -13,7 +13,7 @@ const menu = {
   activites: [
     { url: 'activities/software-setup.html', name: 'Software Setup', week: 1 },
     { url: 'activities/aboutme.html', name: 'About Me/HTML Vocab', week: 1 },
-    { url: 'activities/site-plan.html', name: 'Site Planning', week: 2 },
+    { url: 'activities/site-planning.html', name: 'Site Planning', week: 2 },
     { url: 'activities/cssvocab.html', name: 'CSS Vocab', week: 2 },
     {
       url: 'activities/1-getting-started.html',

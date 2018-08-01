@@ -5,17 +5,22 @@
     <meta charset="utf-8">
     <title>WDD 130: CSS Vocabulary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/solarized-light.css" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
     <link rel="stylesheet" href="../css/course.css" />
 
 </head>
 
 <body>
-    <div id="main">
-        <div id="header">
-            <img src="../images/smallBanner.jpg" alt="Course Banner" />
-        </div>
-        <div id="article">
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1>
+                    <span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+
+        </header>
+        <main>
             <h1>CSS Vocabulary</h1>
             <hr />
             <h2>Activity&nbsp;Instructions</h2>
@@ -47,11 +52,9 @@
                                     <li>#id</li>
                                 </ol>
                                 <p>For example, if we have the following HTML:</p>
-                                <pre><code class="html">
-        &lt;p&gt;No class or id on this paragraph&lt;/p&gt;
-        &lt;p class="green"&gt;This paragraph has a class&lt;/p&gt;
-        &lt;p class="green" id="paragraph3"&gt;This paragraph has a class and an id &lt;/p&gt;
-                                    </code></pre>
+                                <pre><code class="lang-markup html">&lt;p&gt;No class or id on this paragraph&lt;/p&gt;
+&lt;p class="green"&gt;This paragraph has a class&lt;/p&gt;
+&lt;p class="green" id="paragraph3"&gt;This paragraph has a class and an id &lt;/p&gt;</code></pre>
                                 <p>We could select all of the paragraphs by using the element selector:
                                     <code>p</code> (Notice that there is no preface...we simply use the tag name)
                                 </p>
@@ -62,47 +65,46 @@
                                 <p>...and we could select just the last paragraph by using its ID as a selector like this:
                                     <code>#paragraph3</code> (Notice that we preface the ID with a hashtag)
                                 </p>
-                                <pre><code class="css">p /* element selector: all paragraphs */
-        .green /* class selector: all paragraphs with an attribute class="green" */
-        #paragraph3 /* id selector: the paragraph with the attribute id="paragraph3" */
-                                </code></pre>
+                                <pre><code class="lang-css">p /* element selector: all paragraphs */
+.green /* class selector: all paragraphs with an attribute class="green" */
+#paragraph3 /* id selector: the paragraph with the attribute id="paragraph3" */</code></pre>
                             </dd>
                             <dt>
                                 <strong>Property</strong>
                             </dt>
                             <dd>What we want to change about the element(s) selected by our selector. ie
-                                <pre><code class="css">background-color</code></pre>
+                                <pre><code class="lang-css">background-color</code></pre>
                             </dd>
                             <dt>
                                 <strong>Value</strong>
                             </dt>
                             <dd>How we want to change a property
-                                <pre><code class="css">green</code></pre>
+                                <pre><code class="lang-css">green</code></pre>
                             </dd>
                             <dt>
                                 <strong>Declaration</strong>
                             </dt>
                             <dd>A combination of a property and value with a colon. Declarations must end with a semi-colon (;)
-                                <pre><code class="css">background-color: green;</code></pre>
+                                <pre><code class="lang-css">background-color: green;</code></pre>
                             </dd>
                             <dt>
                                 <strong>Declaration Block</strong>
                             </dt>
                             <dd>One or more declarations will be combined into a block using curly braces: {}
-                                <pre><code class="css">{
-            background-color: green;
-            margin: 5px;    
-        }</code></pre>
+                                <pre><code class="lang-css">{
+    background-color: green;
+    margin: 5px;    
+}</code></pre>
                             </dd>
                             <dt>
                                 <strong>Rule (or Rule-set)</strong>
                             </dt>
                             <dd>A rule is the combination of a selector and declaration block. The example below would select
                                 all elements with a class="green" and turn their background green!
-                                <pre><code class="css">.green {
-            background-color: green;
-            margin: 5px;    
-        }</code></pre>
+                                <pre><code class="lang-css">.green {
+    background-color: green;
+    margin: 5px;    
+}</code></pre>
                             </dd>
                             <dt>
                                 <strong>Units</strong>
@@ -190,13 +192,10 @@
 
 
 
-        </div>
+        </main>
         <!-- end #article -->
         <script src="../js/course.js"></script>
-        <script src="../js/highlight.pack.js"></script>
-        <script>// <![CDATA[
-            hljs.initHighlightingOnLoad();
-// ]]></script>
+        <script src="../js/prism.js"></script>
     </div>
 </body>
 
