@@ -24,28 +24,35 @@
             <hr />
             <h2>Activity Directions</h2>
             <p>Estimated time: 90 minutes</p>
-            <p>This week we will continue with the webpage we started in the previous activities. Open up the index.html
+            <p>This week we will continue with the webpage we started in the previous activities. Open up the
+                index.html
                 file from last week in your editor to begin.</p>
 
 
             <div class="callout">
-                <p>We got all the content in our page last week....but you might of noticed it doesn't look too great. Remember
-                    that HTML is responsible to get content on a page, but to style it we use CSS. Make sure you have completed
+                <p>We got all the content in our page last week....but you might of noticed it doesn't look too great.
+                    Remember
+                    that HTML is responsible to get content on a page, but to style it we use CSS. Make sure you have
+                    completed
                     the
-                    <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/p/css-basics" target="_blank">Intro
+                    <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/p/css-basics"
+                        target="_blank">Intro
                         to CSS</a> and
-                    <a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/p/html-links" target="_blank">More
+                    <a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/p/html-links"
+                        target="_blank">More
                         HTML Tags</a> Khan Academy lessons before continuing.</p>
             </div>
             <div class="callout">
-                <p>The first part of this activity will use the following html concepts or properties (review the links if
+                <p>The first part of this activity will use the following html concepts or properties (review the links
+                    if
                     you do not remember these from Khan academy):</p>
                 <ul>
                     <li>
                         <a href="http://www.w3schools.com/html/html5_new_elements.asp" target="_blank">HTML5 Elements</a>
                     </li>
                     <li>
-                        <a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">HTML Semantics</a>
+                        <a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">HTML
+                            Semantics</a>
                     </li>
                     <li>
                         <a href="http://www.w3schools.com/html/html_blocks.asp" target="_blank">HTMl Block and Inline</a>
@@ -62,64 +69,85 @@
                     <!-- START STEP -->
                     <h3>Review Wireframe</h3>
                     <p>First review the&nbsp;
-                        <a href="../images/wireframe-grid-boxes.png" target="_blank">wireframe</a>&nbsp;again to help remember
-                        what we are trying to do. Last week we added all of our content to our page, along with some extra
+                        <a href="../images/wireframe-grid-boxes.png" target="_blank">wireframe</a>&nbsp;again to help
+                        remember
+                        what we are trying to do. Last week we added all of our content to our page, along with some
+                        extra
                         HTML to group up related content as necessary.</p>
-                    <p>As we added those structural tags last week did you notice anything about them? Whenever possible
-                        we tried to use tags that actually described what the content they would hold. This concept of using
+                    <p>As we added those structural tags last week did you notice anything about them? Whenever
+                        possible
+                        we tried to use tags that actually described what the content they would hold. This concept of
+                        using
                         tags with meaning is called
                         <a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">semantics</a>.
                         This becomes very important as pages become larger and more complex. </p>
                     <div class="callout">
                         <h4>Semantics</h4>
-                        <p>So how do you know which of the semantic elements you should use when adding or grouping content?
+                        <p>So how do you know which of the semantic elements you should use when adding or grouping
+                            content?
                             or when a simple
                             <code>&lt;div&gt;</code> is the right answer? We shouldn't try to make everything a
-                            <code>&lt;section&gt;</code> (a section is a portion of the page that contains at least a headline,
-                            paragraph, and possibly an image that cannot stand on it's own), and html becomes really hard
+                            <code>&lt;section&gt;</code> (a section is a portion of the page that contains at least a
+                            headline,
+                            paragraph, and possibly an image that cannot stand on it's own), and html becomes really
+                            hard
                             to read when everything is just in a generic
                             <code>&lt;div&gt;</code>. Here is a
                             <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" target="_blank">flowchart</a>
                             that might help. </p>
-                        <p>That flowchart talks about using the grouping elements, but what about other tags like &lt;p&gt;
-                            or &lt;h2&gt; or &lt;ul&gt;? At the end of the day, writing semantic HTML means that if you need
-                            to add a headline to your page you will use a &lt;h2&gt; and not a &lt;p&gt; or a &lt;div&gt;.
-                            If you are adding a list of something use a &lt;ul&gt; or &lt;ol&gt; and not a bunch of &lt;p&gt;s.
-                            If you do need a paragraph you don't use &lt;h1&gt; or any of it's siblings...even if you want
+                        <p>That flowchart talks about using the grouping elements, but what about other tags like
+                            &lt;p&gt;
+                            or &lt;h2&gt; or &lt;ul&gt;? At the end of the day, writing semantic HTML means that if you
+                            need
+                            to add a headline to your page you will use a &lt;h2&gt; and not a &lt;p&gt; or a
+                            &lt;div&gt;.
+                            If you are adding a list of something use a &lt;ul&gt; or &lt;ol&gt; and not a bunch of
+                            &lt;p&gt;s.
+                            If you do need a paragraph you don't use &lt;h1&gt; or any of it's siblings...even if you
+                            want
                             the paragraph to be big! Always use the tag that best describes the content.</p>
                     </div>
 
                     <h2>Note</h2>
                     <p>At this point do not expect your page to
-                        <em>look</em> like the wireframe. We are laying a foundation, but have not learned how to position
+                        <em>look</em> like the wireframe. We are laying a foundation, but have not learned how to
+                        position
                         elements yet. Don't worry if your page does not look like the wireframe at this point.</p>
                     <!-- END STEP -->
                 </li>
                 <li>
                     <!-- START STEP -->
                     <h3>Internal links</h3>
-                    <p>Your page has an unordered list in the <code>&lt;nav&gt;</code> element containing links. You were
-                        asked to add a couple more links last week for the child pages that you will be completing later.
-                        Make sure that they are links and not just plain text. Ensure each item in the list is a link by
+                    <p>Your page has an unordered list in the <code>&lt;nav&gt;</code> element containing links. You
+                        were
+                        asked to add a couple more links last week for the child pages that you will be completing
+                        later.
+                        Make sure that they are links and not just plain text. Ensure each item in the list is a link
+                        by
                         wrapping just the text (not the&nbsp;
                         <code>&lt;li&gt;</code>!) in an&nbsp;
                         <a href="http://www.w3schools.com/tags/tag_a.asp" target="_blank">
                             <code>&lt;a&gt;</code>
                         </a>&nbsp;tag. The&nbsp;
                         <code>&lt;a&gt;</code>tag has one required attribute if you recall from Khan Academy:
-                        <kbd>href=""</kbd>. This is where we tell the browser where the link should take us to. These will
+                        <kbd>href=""</kbd>. This is where we tell the browser where the link should take us to. These
+                        will
                         all be other pages on our site, but they don't exist yet. Let's just put
-                        <kbd>index.html</kbd>&nbsp;in there for now. That way the link will work if it's clicked on. We will
+                        <kbd>index.html</kbd>&nbsp;in there for now. That way the link will work if it's clicked on. We
+                        will
                         replace those with actual pages as we build them.</p>
                     <p>Each list item should look something like this:&nbsp;
                         <code>&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
                     </p>
 
                     <div class="callout">
-                        <p>If you recall from the Khan academy lesson from this week links can be used to travel to different
-                            pages on the same site, to pages on a different site, and even to different places on the same
+                        <p>If you recall from the Khan academy lesson from this week links can be used to travel to
+                            different
+                            pages on the same site, to pages on a different site, and even to different places on the
+                            same
                             web page.</p>
-                        <p>It is often considered a good practice if you have a link that takes you away from the current
+                        <p>It is often considered a good practice if you have a link that takes you away from the
+                            current
                             site to have it open in a new window or tab. This can be done with the&nbsp;
                             <kbd>target="_blank"</kbd>&nbsp;attribute.</p>
                     </div>
@@ -129,11 +157,14 @@
                     <!-- START STEP -->
                     <h3>External links</h3>
 
-                    <p>Lets add some external links to social media to our site. Khan Academy taught this week that more
-                        than just text can be used to create links. In this case it would be appropriate to make an image
+                    <p>Lets add some external links to social media to our site. Khan Academy taught this week that
+                        more
+                        than just text can be used to create links. In this case it would be appropriate to make an
+                        image
                         the link instead.</p>
                     <div class="callout">
-                        <p>Here a some icons (images) for some common social media sites that you can use for this next step.
+                        <p>Here a some icons (images) for some common social media sites that you can use for this next
+                            step.
                             Or you can go find some of your own.</p>
                         <p>
                             <img src="../images/icons/facebook.png" alt="Facebook" title="Facebook" />
@@ -152,17 +183,25 @@
                             <img src="../images/icons/color/pinterest.png" alt="pinterest" title="pinterest" />
                         </p>
                     </div>
-                    <p>Select 3 social media sites and create a link to them in the footer of your page using an image. Make
-                        sure the link opens in a new window/tab. Add a <code>&lt;div class="social"&gt;</code> first to the
-                        <code>&lt;footer&gt;</code> below the <code>&lt;p&gt;</code> element that should already be there
+                    <p>Select 3 social media sites and create a link to them in the footer of your page using an image.
+                        Make
+                        sure the link opens in a new window/tab. Add a <code>&lt;div class="social"&gt;</code> first to
+                        the
+                        <code>&lt;footer&gt;</code> below the <code>&lt;p&gt;</code> element that should already be
+                        there
                         to hold all of your social links.</p>
                     <div class="callout">
-                        <p>When we added images before we found the URL of the image (right click, copy image address) and
-                            used that. In this case it would be better to download the image to our computer and then upload
+                        <p>When we added images before we found the URL of the image (right click, copy image address)
+                            and
+                            used that. In this case it would be better to download the image to our computer and then
+                            upload
                             it to our host as part of the site.</p>
-                        <p>If you right click on any of the images above you will see an option "Save image as..." Do that.
-                            Login to Thimble and drag each of the files you need into the browser window to upload them.
-                            Then you can click on the image to see an example of what the <code>&lt;img&gt;</code> tag should
+                        <p>If you right click on any of the images above you will see an option "Save image as..." Do
+                            that.
+                            Login to Thimble and drag each of the files you need into the browser window to upload
+                            them.
+                            Then you can click on the image to see an example of what the <code>&lt;img&gt;</code> tag
+                            should
                             look like.</p>
                         <p>The whole img tag with a src like above would look like this: </p>
                         <pre><code class="lang-markup">
@@ -170,28 +209,33 @@
                         </code> </pre>
 
                     </div>
-                    <p>If you don't remember how to use an image as a link from the Khan lesson, then review this page: <a
-                            href="http://www.w3schools.com/html/html_links.asp" target="_blank">HTML Links</a> </p>
+                    <p>If you don't remember how to use an image as a link from the Khan lesson, then review this page:
+                        <a href="http://www.w3schools.com/html/html_links.asp" target="_blank">HTML Links</a> </p>
                     <!-- END STEP -->
                 </li>
                 <li>
                     <!-- START STEP -->
                     <h3>Adding CSS</h3>
-                    <p>We've been doing a lot with HTML so far...and in fact we have now added almost all the html we will
+                    <p>We've been doing a lot with HTML so far...and in fact we have now added almost all the html we
+                        will
                         need! I think it's high time we got to CSS!</p>
                     <div class="callout">
 
-                        <p>The second half of the activity will use the following new html/css concepts or tags (review the
+                        <p>The second half of the activity will use the following new html/css concepts or tags (review
+                            the
                             links if you do not remember these from Khan academy):</p>
                         <ul>
                             <li>
-                                <a href="http://www.w3schools.com/css/css_howto.asp" target="_blank">External Style Sheet</a>
+                                <a href="http://www.w3schools.com/css/css_howto.asp" target="_blank">External Style
+                                    Sheet</a>
                             </li>
                             <li>
-                                <a href="http://www.w3schools.com/css/css_syntax.asp" target="_blank">CSS Syntax</a> (Including
+                                <a href="http://www.w3schools.com/css/css_syntax.asp" target="_blank">CSS Syntax</a>
+                                (Including
                                 class and id selectors) </li>
                             <li>
-                                <a href="http://www.w3schools.com/css/css_background.asp" target="_blank">Background Colors</a>
+                                <a href="http://www.w3schools.com/css/css_background.asp" target="_blank">Background
+                                    Colors</a>
                             </li>
                             <li>
                                 <a href="http://www.w3schools.com/css/css_text.asp" target="_blank">Text Colors</a>
@@ -203,7 +247,8 @@
                                 <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">CSS Margin</a>
                             </li>
                             <li>
-                                <a href="http://www.w3schools.com/css/css_align.asp" target="_blank">CSS Centering</a> (Top
+                                <a href="http://www.w3schools.com/css/css_align.asp" target="_blank">CSS Centering</a>
+                                (Top
                                 half of the page)</li>
 
 
@@ -216,23 +261,28 @@
                     <!-- START STEP -->
                     <h3>External Stylesheets</h3>
                     <p>Let's add some styles! The Khan Academy lessons start out by having you add CSS in the&nbsp;
-                        <kbd>&lt;head&gt;</kbd>&nbsp;portion of your page. There is actually a better way, and we are already
+                        <kbd>&lt;head&gt;</kbd>&nbsp;portion of your page. There is actually a better way, and we are
+                        already
                         setup to do it. We will use an external stylesheet instead of the Internal method Khan uses.</p>
                     <p>You may have noticed the line in your HTML that looks like this:</p>
                     <pre><code class="lang-markup">&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
                     <p>You may have also noticed a file in your list called
                         <kbd>style.css</kbd>. The
-                        <kbd>link</kbd> tag tells the html file where to find the CSS it should use to style the page. We
+                        <kbd>link</kbd> tag tells the html file where to find the CSS it should use to style the page.
+                        We
                         will enter all of our CSS in the
-                        <kbd>style.css</kbd> file. If you open up that file you will notice a bit of CSS already written.
+                        <kbd>style.css</kbd> file. If you open up that file you will notice a bit of CSS already
+                        written.
                         Let's remove that so that we start with a clean slate.</p>
                     <!-- END STEP -->
                 </li>
                 <li>
                     <!-- START STEP -->
                     <h3>Adding some color</h3>
-                    <p>Headlines are usually important bits of text that are supposed to stand out. Size is one way to accomplish
-                        that, color is another. Let's change the color of our headlines to make them stand out more. Let's
+                    <p>Headlines are usually important bits of text that are supposed to stand out. Size is one way to
+                        accomplish
+                        that, color is another. Let's change the color of our headlines to make them stand out more.
+                        Let's
                         add some color to our&nbsp;
                         <code>&lt;h2&gt;</code> elements first. In the&nbsp;
                         <kbd>style.css</kbd> file let's make a CSS rule to do that.
@@ -246,22 +296,29 @@
                             <strong>declaration block</strong>. Inside those braces we place one or more
                             <strong>declarations</strong>: pairs of 'property to change: value to change it to'</p>
                         <p>So in this example to change the background color of our&nbsp;
-                            <code>&lt;h2&gt;</code>&nbsp;after adding the new rule our style block would look like this:
+                            <code>&lt;h2&gt;</code>&nbsp;after adding the new rule our style block would look like
+                            this:
                             (you should use one of your selected colors, probably not salmon)</p>
                         <pre><code class="lang-css">h2 {
     background-color: salmon;
 }    </code></pre>
-                        <p>It's worth taking a moment and talking about what valid options you have to designate color. The
+                        <p>It's worth taking a moment and talking about what valid options you have to designate color.
+                            The
                             3 main ways are hexadecimal, rgb, and predefined color names. Take a moment to visit&nbsp;
-                            <a href="http://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank">W3Schools: CSS
+                            <a href="http://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank">W3Schools:
+                                CSS
                                 colors
                             </a>&nbsp;to get a brief outline about the differences. Also take a look at this&nbsp;
-                            <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">list of color names</a>&nbsp;that
+                            <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">list of color
+                                names</a>&nbsp;that
                             your browser will understand.</p>
                     </div>
-                    <p>For consistency we really should have ALL of our headlines be this same color. We could copy/paste
-                        our <kbd>h2</kbd> rule and just change the selector, but that's a lot of duplication. Instead let's
-                        modify our existing rule to add the selectors for <kbd>h1, h3, h4, h5, h6</kbd>. One rule can accomplish
+                    <p>For consistency we really should have ALL of our headlines be this same color. We could
+                        copy/paste
+                        our <kbd>h2</kbd> rule and just change the selector, but that's a lot of duplication. Instead
+                        let's
+                        modify our existing rule to add the selectors for <kbd>h1, h3, h4, h5, h6</kbd>. One rule can
+                        accomplish
                         what we need with the right selectors!</p>
                     <!-- END STEP -->
                 </li>
@@ -290,14 +347,19 @@
     &lt;/div&gt;
 &lt;/body&gt;</code></pre>
                     <div class="callout">
-                        <p>Right now the paragraphs of text on our site can stretch out as far as the browser is wide. On
-                            very wide screens that can leave things very thin and not very attractive. We should use the&nbsp;
-                            <a href="http://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a> or <a href="http://www.w3schools.com/cssref/pr_dim_max-width.asp"
-                                target="_blank">max-width</a> property to fix this.</p>
+                        <p>Right now the paragraphs of text on our site can stretch out as far as the browser is wide.
+                            On
+                            very wide screens that can leave things very thin and not very attractive. We should use
+                            the&nbsp;
+                            <a href="http://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a> or <a
+                                href="http://www.w3schools.com/cssref/pr_dim_max-width.asp" target="_blank">max-width</a>
+                            property to fix this.</p>
                         <p>Where do we apply the width however? We could apply it to all&nbsp;
-                            <code>&lt;p&gt;</code>&nbsp;tags, but what if we have a paragraph that needs to be wider or more
+                            <code>&lt;p&gt;</code>&nbsp;tags, but what if we have a paragraph that needs to be wider or
+                            more
                             narrow than what we choose? We could make a class and apply it to all&nbsp;
-                            <code>&lt;p&gt;</code>&nbsp;elements individually, and that would work, but there is an easier
+                            <code>&lt;p&gt;</code>&nbsp;elements individually, and that would work, but there is an
+                            easier
                             way.
                         </p>
                     </div>
@@ -306,17 +368,23 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Setting a width</h3>
-                    <p>Apply a width to your whole page to keep it from stretching across the whole browser window by making
+                    <p>Apply a width to your whole page to keep it from stretching across the whole browser window by
+                        making
                         a css rule for the div we added in the last step with the id of
                         <kbd>content</kbd>. In that rule let's set the max-width of the page to 960px. Doing it on that
                         <code>&lt;div&gt;</code> will make sure that no element on the page can be wider than that.</p>
                     <div class="callout">
-                        <p>Why <kbd>max-width</kbd> instead of just <kbd>width</kbd> you may be asking yourself? Setting
-                            a <kbd>width</kbd> on an element will make it so that is ALWAYS that size. We never know what
-                            size of a screen someone might be looking at our page with...so forcing something to always be
-                            a size is a bit dangerous. The fact is that we don't care what size the content of our page is,
+                        <p>Why <kbd>max-width</kbd> instead of just <kbd>width</kbd> you may be asking yourself?
+                            Setting
+                            a <kbd>width</kbd> on an element will make it so that is ALWAYS that size. We never know
+                            what
+                            size of a screen someone might be looking at our page with...so forcing something to always
+                            be
+                            a size is a bit dangerous. The fact is that we don't care what size the content of our page
+                            is,
                             as long as it's not <em>wider</em> than 960px. It can certainly be narrower. Using <kbd>max-width</kbd>
-                            allows for that. Our page can be whatever size the screen is...unless the screen is wider than our limit...then it will stop
+                            allows for that. Our page can be whatever size the screen is...unless the screen is wider
+                            than our limit...then it will stop
                             growing!
                         </p>
                     </div>
@@ -329,9 +397,12 @@
                         <em>
                             <a href="http://www.w3schools.com/html/html_blocks.asp" target="_blank">Block and Inline</a>
                         </em>.</p>
-                    <p>Block elements are greedy. By default they take up 100% of the space they have available, meaning
-                        they will not allow any other element to share the line they are on...thus forcing line breaks around
-                        themselves. Most of the semantic elements we use for grouping related content fall into the block
+                    <p>Block elements are greedy. By default they take up 100% of the space they have available,
+                        meaning
+                        they will not allow any other element to share the line they are on...thus forcing line breaks
+                        around
+                        themselves. Most of the semantic elements we use for grouping related content fall into the
+                        block
                         category, as well as&nbsp;
                         <code>&lt;h1&gt;</code>&nbsp;-&nbsp;
                         <code>&lt;h6&gt;</code>,&nbsp;
@@ -339,14 +410,17 @@
                         <code>&lt;div&gt;</code>,&nbsp;
                         <code>&lt;ul&gt;</code>, and&nbsp;
                         <code>&lt;li&gt;</code>.</p>
-                    <p>Inline elements like to share. They will allow as many other elements to share the line they are on
+                    <p>Inline elements like to share. They will allow as many other elements to share the line they are
+                        on
                         until it is full...then they wrap. Some examples of inline elements are&nbsp;
                         <code>&lt;a&gt;</code>,&nbsp;
                         <code>&lt;img&gt;</code>,&nbsp;
                         <code>&lt;span&gt;</code>,&nbsp;
                         <code>&lt;strong&gt;</code>and plain text</p>
-                    <p>Another way to think of this is that block elements (if we are working in a top down, left to right
-                        language like english) flow vertically down the page, while inline elements flow horizontally from
+                    <p>Another way to think of this is that block elements (if we are working in a top down, left to
+                        right
+                        language like english) flow vertically down the page, while inline elements flow horizontally
+                        from
                         left to right across the page.</p>
 
                     <p>The default block or inline behavior of a tag can be changed with the CSS&nbsp;
@@ -364,25 +438,36 @@
 
                     </div>
                     <p>
-                        <img src="../images/index-top.png" alt="index-top" title="index-top" style="float: right;" /> Look
-                        at the top of your home page (Screenshot to the right). Take a moment to consider why it looks this
-                        way? Why is the list of links down below the logo? Why does each link show on it's own line? Most
-                        importantly, the wireframe shows the links on the same line as the logo and each link in the same
+                        <img src="../images/index-top.png" alt="index-top" title="index-top" style="float: right;" />
+                        Look
+                        at the top of your home page (Screenshot to the right). Take a moment to consider why it looks
+                        this
+                        way? Why is the list of links down below the logo? Why does each link show on it's own line?
+                        Most
+                        importantly, the wireframe shows the links on the same line as the logo and each link in the
+                        same
                         line as each other, how can we make them do that?
                     </p>
-                    <p>(For the first question if you answered "because list items (<kbd>li</kbd>) and unordered lists (
-                        <kbd>ul</kbd>) are block elements" you are right! We will need to wait a bit on the answer for the
+                    <p>(For the first question if you answered "because list items (<kbd>li</kbd>) and unordered lists
+                        (
+                        <kbd>ul</kbd>) are block elements" you are right! We will need to wait a bit on the answer for
+                        the
                         second question :) )</p>
 
 
                     <h2 class="figcaption">Centering</h2>
                     <div class="callout">
-                        <p>We set the width, but the page still doesn't look right. It would look better if it were centered
-                            instead of left aligned. Centering with CSS is not hard, but can be confusing. This is because
-                            block and inline elements are centered differently. Block elements are centered by setting a
+                        <p>We set the width, but the page still doesn't look right. It would look better if it were
+                            centered
+                            instead of left aligned. Centering with CSS is not hard, but can be confusing. This is
+                            because
+                            block and inline elements are centered differently. Block elements are centered by setting
+                            a
                             width and adjusting the left and right margin (
-                            <a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank">Margin</a> is the space
-                            between elements on a page, or between the element and the edge of the browser window). Inline
+                            <a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank">Margin</a> is the
+                            space
+                            between elements on a page, or between the element and the edge of the browser window).
+                            Inline
                             elements are centered by using the
                             <a href="http://www.w3schools.com/cssref/pr_text_text-align.asp" target="_blank">text-align</a>
                             property.</p>
@@ -394,12 +479,16 @@
                     <h3>Block centering</h3>
                     <p>Let's center our content. The
                         <kbd>&lt;div&gt;</kbd> we set the width on is a block element, that means we will need to use
-                        <kbd>margin</kbd> to center it. The idea is to set a width (we did this in the last step) Then tell
-                        the browser to take whatever margin is available and split it between the left and right of the element.
+                        <kbd>margin</kbd> to center it. The idea is to set a width (we did this in the last step) Then
+                        tell
+                        the browser to take whatever margin is available and split it between the left and right of the
+                        element.
                         This is a lot easier than it sounds. Add
                         <kbd>margin: 0 auto;</kbd> to the CSS rule for
-                        <kbd>#content</kbd>. We gave it 2 values. The first says to set the top and bottom margins to 0 and
-                        the second says to set the left and right margins to auto: meaning to split any margin available
+                        <kbd>#content</kbd>. We gave it 2 values. The first says to set the top and bottom margins to 0
+                        and
+                        the second says to set the left and right margins to auto: meaning to split any margin
+                        available
                         between the left and right.
                     </p>
                     <!-- END STEP -->
@@ -407,10 +496,13 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Inline Centering</h3>
-                    <p>While we are centering let's try an inline element now. On the wireframe the bottom section text is
+                    <p>While we are centering let's try an inline element now. On the wireframe the bottom section text
+                        is
                         centered. Apply the
-                        <kbd>text-align: center;</kbd> style to the bottom section (you should have placed that headline
-                        and paragraph in a box earlier). You should have added a class that box last week with a meaningful
+                        <kbd>text-align: center;</kbd> style to the bottom section (you should have placed that
+                        headline
+                        and paragraph in a box earlier). You should have added a class that box last week with a
+                        meaningful
                         name like <kbd>home-paragraph-3</kbd>. Use that to apply the style.
                     </p>
 
@@ -421,19 +513,24 @@
                     <h3>Setting a background color</h3>
                     <p>Our next step is to add a background color to the entire page to liven it up a bit.</p>
                     <div class="callout">
-                        <p>If we want to do something to the entire page...what should the selector for our rule be? We actually
-                            have a couple of options in this case. Our entire page is inside two elements. <code>&lt;body&gt;</code>                            and
-                            <code>&lt;div id="content"&gt;</code>. Either could work to set the color, but in this case lets
-                            use our <code>&lt;div id="content"&gt;</code>.</p>
+                        <p>If we want to do something to the entire page...what should the selector for our rule be? We
+                            actually
+                            have a couple of options in this case. Our entire page is inside two elements. <code>&lt;body&gt;</code>
+                            and
+                            <code>&lt;div id="content"&gt;</code>. Either could work to set the color, but there would
+                            be some differences. In this case we set a width on the <code>&lt;div id="content"&gt;</code>
+                            element...so if we set the <kbd>background-color</kbd> there then we might end up with
+                            uncolored background at some widths...not good. To make sure that the background is always
+                            colored where we expect it to be let's set it at the <code>&lt;body&gt;</code> element.</p>
                     </div>
-                    <p>We already have a css tule for <kbd>content</kbd>, so we can add a declaration to change <kbd>background-color</kbd>
-                        to that. In the style guide you should have chosen a background color to use. Go get the hex code for that color and add
+                    <p>If you don't already have one, add a css rule for <kbd>body</kbd>, so we can add a declaration
+                        to change <kbd>background-color</kbd>
+                        to that. In the style guide you should have chosen a background color to use. Go get the hex
+                        code for that color and add
                         it to your css. My rule looks like this. Yours should be similar:
                     </p>
-                    <pre><code class="lang-css">#content {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: #396e94;
+                    <pre><code class="lang-css">body {
+       background-color: #396e94;
 }
 
                     </code></pre>
@@ -443,11 +540,14 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Link color</h3>
-                    <p>The color you changed the background of the&nbsp; page to may have made your links hard to read. In
-                        the site plan you should have chosen a color for your navigation links. Add the following line to
+                    <p>The color you changed the background of the&nbsp; page to may have made your links hard to read.
+                        In
+                        the site plan you should have chosen a color for your navigation links. Add the following line
+                        to
                         your css rule to change the&nbsp;
                         <kbd>color</kbd>&nbsp;for the text in the&nbsp;
-                        <code>&lt;nav&gt;</code>&nbsp;. Again replace the color with one from your chosen palette. Pick something
+                        <code>&lt;nav&gt;</code>&nbsp;. Again replace the color with one from your chosen palette. Pick
+                        something
                         that looks good with the background color and that is easily readable.</p>
                     <pre><code class="lang-css">nav {
     color: #ee1010;
@@ -455,25 +555,32 @@
         </code></pre>
                     <p>What changed? Nothing!!? Read below for an explanation why.</p>
                     <div class="callout">
-                        <p>Take a look at your page. Pay particular attention to our new links. Did the color change? Your
-                            carefully chosen color is probably still blue or purple! CSS stands for Cascading Style Sheets.
-                            the Cascading part means that you can have more than one set of styles apply to an element, and
+                        <p>Take a look at your page. Pay particular attention to our new links. Did the color change?
+                            Your
+                            carefully chosen color is probably still blue or purple! CSS stands for Cascading Style
+                            Sheets.
+                            the Cascading part means that you can have more than one set of styles apply to an element,
+                            and
                             that they will cascade down with the rules closest to the element taking precedence.</p>
                         <p>We applied a color change at the&nbsp;
                             <code>&lt;nav&gt;</code>&nbsp;level, but&nbsp;
                             <code>&lt;a&gt;</code>&nbsp;tags have some default styling as well and the
                             <code>&lt;a&gt;</code>&nbsp;is closer to the text we want styled than the&nbsp;
-                            <code>&lt;nav&gt;</code>&nbsp;is so those styles override ours. If we want the links to change
-                            back to the color we chose we will need to move our rule closer...override the default styling
+                            <code>&lt;nav&gt;</code>&nbsp;is so those styles override ours. If we want the links to
+                            change
+                            back to the color we chose we will need to move our rule closer...override the default
+                            styling
                             of the&nbsp;
-                            <code>&lt;a&gt;</code>&nbsp;itself most likely. W3Schools has some more info on the idea of&nbsp;
+                            <code>&lt;a&gt;</code>&nbsp;itself most likely. W3Schools has some more info on the idea
+                            of&nbsp;
                             <a href="http://www.w3schools.com/css/css_howto.asp" target="_blank">cascading</a>.</p>
 
                     </div>
                     <p>
                         <em>Really</em> change the color of your navigation link text by adding a rule with
                         <code>"nav a"</code> as the selector. Then add your
-                        <code>color: #whatever your color is;</code> to that rule. (We will learn more about that combo selector
+                        <code>color: #whatever your color is;</code> to that rule. (We will learn more about that combo
+                        selector
                         in a week or two)</p>
                     <p>Your new css rule should look something like this (change the color to one of your colors)</p>
                     <pre><code class="lang-css">nav a {
@@ -485,9 +592,12 @@
                 <li>
                     <!-- START STEP -->
                     <h3>More background color</h3>
-                    <p>Depending on the color you chose for your background, our paragraphs may have become difficult to
-                        read. Let's change the background behind those back to white to fix this. All of our paragraphs are
-                        inside of the <code>&lt;main&gt;</code> element. That would be a good place to set our white color.
+                    <p>Depending on the color you chose for your background, our paragraphs may have become difficult
+                        to
+                        read. Let's change the background behind those back to white to fix this. All of our paragraphs
+                        are
+                        inside of the <code>&lt;main&gt;</code> element. That would be a good place to set our white
+                        color.
                         Add a rule using <kbd>main</kbd> as the selector to your CSS to do that.
 
                         <!-- END STEP -->
@@ -555,17 +665,21 @@ h1,h2,h3,h4,h5,h6 {
                 <li>
                     <!-- START STEP -->
                     <h3>Check your work</h3>
-                    <p>Publish your site and check the sharable link to make sure the web page displays correctly. Pay special
-                        attention to whether your images are all displaying. Once verified, submit the URL for your page
+                    <p>Publish your site and check the sharable link to make sure the web page displays correctly. Pay
+                        special
+                        attention to whether your images are all displaying. Once verified, submit the URL for your
+                        page
                         to iLearn. The URL should look something like this:
                         <pre><code class="lang-markup">https://thimbleprojects.org/matkat/483355</code></pre>
                     </p>
                     <div class="callout">
                         <p>Make sure to
-                            <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix any
+                            <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix
+                            any
                             errors that show.</p>
                         <p>See the
-                            <a href="../resources/troubleshooting.html" target="_blank">Troubleshooting</a> activity to learn
+                            <a href="../resources/troubleshooting.html" target="_blank">Troubleshooting</a> activity to
+                            learn
                             more.
                         </p>
                         <!-- END STEP -->
@@ -581,13 +695,16 @@ h1,h2,h3,h4,h5,h6 {
                 <h2>Grading</h2>
                 <p>This activity will be graded using the following rubric:</p>
                 <ul>
-                    <li>Links added for the navigation and social icons. (The links in the navigation can link to the index.html
-                        page or #, since we haven't created the other pages yet. The social links should work and link to
+                    <li>Links added for the navigation and social icons. (The links in the navigation can link to the
+                        index.html
+                        page or #, since we haven't created the other pages yet. The social links should work and link
+                        to
                         somewhere though.) (4 pts)</li>
                     <li>Uses images for the social media links (2 pts)</li>
                     <li>CSS used to change the colors of backgrounds and text. 3pts</li>
                     <li>At least one class or ID used to apply a style. 2pts</li>
-                    <li>Examples of centering of text (inline elements) and boxes (block elements) shown on the page. (2
+                    <li>Examples of centering of text (inline elements) and boxes (block elements) shown on the page.
+                        (2
                         pts)
                     </li>
                     <li>The HTML is well formed and without errors (It validates). (2 pt)</li>
