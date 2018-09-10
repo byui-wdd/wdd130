@@ -377,6 +377,7 @@ figcaption {
   margin-top: 16px;
   right: 10px;
   top: -3px;
+  border: 0;
 }
 .hint i:before,
 .hint i:after {
