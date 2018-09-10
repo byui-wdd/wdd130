@@ -104,7 +104,7 @@ a:visited {
 .headerBanner h1 > span {
   font-size: 0.6em;
   writing-mode: vertical-lr;
-  text-orientation: upright;
+
   transform: rotate(180deg);
   padding-top: 0.2em;
   margin-right: -0.2em;
