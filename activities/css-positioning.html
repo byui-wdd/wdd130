@@ -3,28 +3,72 @@
 
 <head>
     <meta charset="utf-8">
-    <title>W08.03 CSS Positioning Activity - Instructions</title>
+    <title>WDD 130 | CSS Positioning Activity</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="../css/prism-light.css" />
     <link href="../css/course.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/solarized-light.css">
+
 </head>
 
 <body>
-    <div id="main">
-        <header id="header"><img alt="Course Banner" src="../images/smallBanner.jpg" /></header>
-        <main id="article">
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1>
+                    <span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+
+        </header>
+        <main>
             <h1>CSS Positioning Activity</h1>
             <hr />
             <h2>Activity&nbsp;Instructions</h2>
-            <h3>Step 01</h3>
-            <p>Copy the html below and paste it into a new file in your editor. Name it <em>positioning.html</em>. Copy the CSS into another file called <em>positionstyles.css</em>.</p>
-            <h3>Step 02</h3>
-            <p>Modify the css to make the boxes in the html match the patterns in the images for each activity.</p>
-            <h3>Step 03</h3>
-            <p>Open your positioning.html website&nbsp;in your browser to make sure the web page displays correctly. Pay special attention to whether your styles&nbsp;are all displaying. Once verified, submit the URL to your page in ILearn.</p>
-            <div class="callout">
-                <p>Your URL will be a little longer this time around. You will start with your normal URL, but this time we don't want the index.html file...we want positioning.html, so you URL should reflect that. For example if I normally submitted http://thompsonw16.updog.co as my URL, for this assignment I would submit http://thompsonw16.updog.co/<strong>positioning.html</strong></p>
-            </div>
+            <ol class="bigSteps">
+                <li>
+                    <!-- START STEP -->
+                    <h3>Verify</h3>
+                    <p>Log into your editer and verify that you have the files <kbd>positioning.html</kbd> and <kbd>positionstyles.css</kbd>
+                        as part of your project. These should have come when you did the remix step at the beginning of
+                        the semester.</p>
+                    <!-- END STEP  -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Solve the challenges</h3>
+                    <p>Modify the css to make the boxes in the html match the patterns in the images for each activity.</p>
+
+                    <!-- END STEP  -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Verify</h3>
+                    <p>Open your positioning.html website&nbsp;in your browser to make sure the web page displays
+                        correctly.
+                        Pay special attention to whether your styles&nbsp;are all displaying. Once verified, submit the
+                        URL to
+                        your page in ILearn.</p>
+                    <div class="callout">
+                        <p>Your URL will be a little longer this time around. You will start with your normal URL, but
+                            this
+                            time we don't want the index.html file...we want positioning.html, so you URL should
+                            reflect that.
+                            For example if I normally submitted http://thompsonw16.updog.co as my URL, for this
+                            assignment I
+                            would submit http://thompsonw16.updog.co/<strong>positioning.html</strong></p>
+                    </div>
+                    <!-- END STEP  -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+
+
+                    <!-- END STEP  -->
+                </li>
+            </ol>
+
+
+
             <h3>Grading</h3>
             <p>This activity will be graded using the following rubric:</p>
             <ul>
@@ -33,16 +77,30 @@
             <div class="callout">
                 <h3>Tips</h3>
                 <ol>
-                    <li>Don't overuse <kbd>position</kbd>. At first it might seem to be the answer to your positioning prayers, but it can quickly become a nightmare if overused. Try to solve layout problems with other methods first...and fallback to position only if they don't work.</li>
-                    <li>Remember that <kbd>margin</kbd> is a great way to shift things around short distances. (and <kbd>margin-top: -50px;</kbd> would move an element <strong>up</strong> by 50px)</li>
-                    <li>When using <kbd>float</kbd> remember that the element that you are floating must come before the other elements in the HTML. Also remember to <kbd>clear</kbd> your floats when you want things to stop floating.</li>
-                    <li>Flexbox is a great way to position elements.  Most of these can be most easily solved by using it. Remember that to use flexbox find the elements you want to adjust, then find their parent.  Use <code>display: flex;</code> on that parent. Also, here a couple of good resources to help you with Flexbox: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Tricks Guide to Flexbox</a>, and <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a></li>
-                    <li>You should be able to solve all of these positioning problems <strong>without</strong> modifying the HTML. If you find yourself tempted to tweak the HTML you are probably working too hard :)</li>
-                    <li>If you are struggling with an activity, start by simply making the boxes the right size and shape. It will often help you to see where to go next.</li>
-                    <li>...and did I mention that you <strong>should not</strong> modify the HTML?  I was pretty serious about that :)</li>
+                    <li>Don't overuse <kbd>position</kbd>. At first it might seem to be the answer to your positioning
+                        prayers, but it can quickly become a nightmare if overused. Try to solve layout problems with
+                        other methods first...and fallback to position only if they don't work.</li>
+                    <li>Remember that <kbd>margin</kbd> is a great way to shift things around short distances. (and
+                        <kbd>margin-top: -50px;</kbd> would move an element <strong>up</strong> by 50px)</li>
+                    <li>When using <kbd>float</kbd> remember that the element that you are floating must come before
+                        the other elements in the HTML. Also remember to <kbd>clear</kbd> your floats when you want
+                        things to stop floating.</li>
+                    <li>Flexbox is a great way to position elements. Most of these can be most easily solved by using
+                        it. Remember that to use flexbox find the elements you want to adjust, then find their parent.
+                        Use <code>display: flex;</code> on that parent. Also, here a couple of good resources to help
+                        you with Flexbox: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Tricks
+                            Guide to Flexbox</a>, and <a href="https://flexboxfroggy.com/" target="_blank">Flexbox
+                            Froggy</a></li>
+                    <li>You should be able to solve all of these positioning problems <strong>without</strong>
+                        modifying the HTML. If you find yourself tempted to tweak the HTML you are probably working too
+                        hard :)</li>
+                    <li>If you are struggling with an activity, start by simply making the boxes the right size and
+                        shape. It will often help you to see where to go next.</li>
+                    <li>...and did I mention that you <strong>should not</strong> modify the HTML? I was pretty serious
+                        about that :)</li>
                 </ol>
             </div>
-            <pre><code class="html">
+            <pre><code class="lang-markup">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;!-- HTML - Name: positioning.html --&gt;
@@ -124,7 +182,7 @@
     &lt;/body&gt;
 &lt;/html&gt;
                 </code></pre>
-            <pre><code class="css">
+            <pre><code class="lang-css">
         
 /* CSS - Name: "positionstyles.css" */
 /* Activity 1 styles */
@@ -346,13 +404,12 @@
   transform: translate(2px, 0) rotate(-45deg);
 }
  </code></pre>
-            
+
         </main>
         <!-- end #article -->
     </div>
     <script src="../js/course.js"></script>
-    <script src="../js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/prism.js"></script>
 </body>
 
 </html>
