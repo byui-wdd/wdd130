@@ -22,19 +22,31 @@ const menu = {
     },
     { url: 'activities/2-adding-css.html', name: 'Adding CSS', week: 4 },
     { url: 'activities/3-more-css.html', name: 'More CSS', week: 5 },
+    { url: 'activities/elevator-pitch.html', name: 'Elevator Pitch', week: 5 },
     {
       url: 'activities/css-positioning.html',
       name: 'CSS Positioning',
       week: 6
     },
+
     {
       url: 'activities/4-final-touches.html',
       name: 'Finishing Touches',
       week: 7
     },
     {
+      url: 'activities/personal-site-plan.html',
+      name: 'Personal Site PLan',
+      week: 7
+    },
+    {
       url: 'activities/your-own-wireframe.html',
       name: 'Wireframing',
+      week: 8
+    },
+    {
+      url: 'activities/personal-site-content.html',
+      name: 'Personal Site Plan 2: Content',
       week: 8
     },
     { url: 'activities/subpage1.html', name: 'Making a Subpage', week: 8 },
