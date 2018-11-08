@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>WDD 130 | Dry Oar Enhancements</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Dry Oar Enhancements</h1>
+        <hr />
+        <p>
+          Pick at least two of the following enhancements to make to your page.
+        </p>
+        <div class="fig-block">
+                <figure>
+                  <img
+                    alt="Enhancements"
+                    src="../images/enchancements.jpg"
+                    title="Enhancements"
+                  />
+                  <figcaption>Enhancements</figcaption>
+                </figure>
+        <h2>Activity Directions</h2>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3 id="logo">Snazzy Logo</h3>
+            <p>
+              The first enhancement option is to dress the logo up a bit. We can
+              use a fun css property called
+              <a
+                href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp"
+                target="_blank"
+                >Border Radius</a
+              >
+              to create an effect that will make out logo look like the top of
+              an oar!
+            </p>
+            <p>
+              Check your HTML. The instructions will epext your logo img to be
+              inside of a <kbd>div</kbd> with a class of <kbd>logo-box</kbd>
+            </p>
+            <pre><code class="lang-markup">&ltdiv class="logo-box"&gt;&lt;img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar Logo"&gt;&lt/div&gt;</code></pre>
+            <p>
+              If you check out the link above you will learn that border-radius
+              can accept 1, 2, or 4 arguments. We will use 4 arguments for ours.
+              We want the top two corners rounded and the bottom two square.
+              Create a rule in your css for the <kbd>.logo-box</kbd> class like
+              this:
+            </p>
+            <pre><code class="lang-css">
+.logo-box {
+    background-color: white;
+    border-radius: 50px 50px 0 0;   
+}
+</code></pre>
+            <p>
+              This rule will set the top left and top-right corners of our
+              logo-box to be rounded (50px radius), but leave the bottom-right
+              and bottom-left corners not rounded (radius 0). Pplay around with
+              those numbers a bit to get a feel for how
+              <kbd>border-radius</kbd> works.
+            </p>
+            <p>
+              Our logo image is currently not fitting entirely inside the
+              colored shape. We need to expand the shape a bit to make it fit.
+              Padding is always a great way to get more space on the
+              <em>inside</em> of an element. Let's add some.
+            </p>
+            <pre><code class="lang-css">
+.logo-box {
+    background-color: white;
+    border-radius: 50px 50px 0 0 ;   
+    padding: 0.5em;
+}</code></pre>
+            <p>
+              That's better! Now the image is completely inside the shape. Feel
+              free to experiment here as well.
+            </p>
+            <p>
+              One last thing that would be nice would be a border around our new
+              shape. Add a border to finish off the new logo.
+            </p>
+            <pre><code class="lang-css">
+    .logo-box {
+        background-color: white;
+        border-radius: 50px 50px 0 0 ;   
+        padding: 0.5em;
+        border: 1px solid #a43312;
+    }</code></pre>
+            <p>
+              You should use one of the colors from your palette for the border.
+              You could even try changing the white background in my example to
+              something from your palette as well.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3 id="cta">Call to Action</h3>
+            <p>
+              A 'Call to Action' is usually something that stands out on a
+              website. It fights for the users attention and helps them to know
+              what they should do next. In this case what we would like our
+              visitors to do is book a trip. Let's make a call to action to make
+              that easier for our users.
+            </p>
+            <p>
+              Your HTML should currently have a <kbd>div</kbd> with class of
+              <kbd>banner-box</kbd> like this (your image can be different):
+            </p>
+            <pre><code class="lang-markup">
+&lt;div class="banner-box"&gt;
+    &lt;img class="banner" src="http://brothert.net/dryoar/images/river-wide.JPG" alt="wide shot of the salmon river"&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <p>
+              We need to add some more content to that section. We need a
+              headline and a button grouped together. Something like this:
+            </p>
+            <pre><code class="lang-markup">
+&lt;div class="banner-box"&gt;
+    &lt;img class="banner" src="http://brothert.net/dryoar/images/river-wide.JPG" alt="wide shot of the salmon river"&gt;
+    &lt;div class="action"&gt;
+        &lt;h3&gt;
+            Plan your next adventure with us!
+        &lt;/h3&gt;
+        &lt;button&gt;Contact Us&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            <p>
+              If you refer to the image above, you will see that the call to action needs to have a few things done to it:
+            </p>
+            <ol>
+                <li>It should have a semi-transparent background color. We want to be able to see some of the colors of the background to come through, but the text should also be readable.</li>
+                <li>The headline styling should match that of the rest of the page (color, font, etc)</li>
+                <li>The button should be big and bold! We want it to catch the user's attention. Use a color from your palette.</li>
+                <li>The text and button should be centered</li>
+                <li>Have enough white space to look good. (padding, margin)</li>
+                
+                <li>It needs to be placed on top of the banner image...on the left side.</li>
+                
+            </ol>
+            <p>For colors we have been using hexidecimal codes.  This is not the only way to indicate color in CSS however. You can also use an RGB designation. A light grey in RGB for example would look like this: <code>rgb(240,240,240)</code>. There is also another version of the RGB method...<kbd>rgba()</kbd>. It takes 4 numbers. The last one indicates how <em>transparent</em> your color should be. It will be between 1-0. Let's use this to give our element a semi-transparent background. Make a rule using the <kbd>.action</kbd> class.</p>
+            <pre><code class="lang-css">.action {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+</code></pre>
+            <p>
+              Next we need to make our button really stand out. Try the following rule as a starting point, but feel free to adapt it to your liking (especially the color):
+            </p>
+            <pre><code class="lang-css">.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.2em;
+}
+</code></pre>
+                    <p>
+                            This should all be things you are familiar with, but if you have an question about what any of those lines are doing change them! Selectively breaking and then fixing things is a great way to learn HTML/CSS.
+                          </p>
+                    <p>Next we should add some padding and margin to our element. Things are feeling pretty smooshed as they are currently. Try this as a starting point:</p>
+                    <pre><code class="lang-css">.action {
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+</code></pre>
+            <p>I slipped the centering in that set of CSS as well. At this point your element shuold be looking pretty good. The next step is to position the call to action on top of the banner. We have seen that CSS Grid can be used to position overlapping elements, so let's use that.</p>
+            <p>Our Grid container will be our <kbd>banner-box</kbd> div. We need a new rule setting up grid. In this case we really only need two columns. Equally sized. So add the following rule:</p>
+            <pre><code class="lang-css">.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    </code></pre>
+    <p>Now all that is left is to place the two grid children. The background image shuold be in row 1 and should span both columns. The call to action should also be in row 1 (we only have one row) and be in just column 1. Use the <code>grid-column</code> and <code>grid-row</code> properties to place these elements on our grid.</p>
+    <p>At this point your CSS should look something like this. You should replace the colors with your colors, and you may need to adjust the padding, margin, font-size, etc to make it work in your page.</p>
+    <pre><code class="lang-css">
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    
+.banner-box img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+    
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+    
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.2em;
+}
+    </code></pre>
+            
+            
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3 id="headline">Fancy Headlines</h3>
+            <p>
+              Headlines are a fun way to dress up your site. We often stick with the defualt <kbd>solid</kbd> style, but there are <a href="https://www.w3schools.com/cssref/pr_border-left_style.asp" target="_blank"> many more styles</a> to choose from. For this example I will use the <kbd>double</kbd> border style, but look through the list at that link and experiment!
+            </p>
+            <p>Adding a border to your headlines is pretty straightforward. But in this case I don't really want a border all the way around, but just on the top and bottom. That can be done with the <code>border-top</code> and <code>border-bottom</code> properties.</p>
+            <pre><code class="lang-css">h2 {
+    border-top: 5px double;
+    border-bottom: 5px double;
+}</code></pre>
+<p>I needed 5px before I could see that there really was a double border. You should also add some padding to give your new headlines more presence as well. <kbd>.5em</kbd> worked well for me.</p>
+<p>Experiment with different styles, border widths, padding amounts, and colors until you find something you like.</p>
+
+            <!-- END STEP -->
+          </li>
+
+          <li>
+            <!-- START STEP -->
+            <h3 id="images ">"3D" Images</h3>
+            <p>
+              It is easier than you might think to give your images a '3D' treatment. Just a clever use of <code>border</code> and <code><a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">box-shadow</a></code>.
+            </p>
+            <p>Start this enhancement by adding a light grey border and some padding to your images. My images had classes of <kbd>home-left-img</kbd> and <kbd>home-right-img</kbd> so my rule looks like this:</p>
+            <pre><code class="lang-css">.home-left-img,
+.home-right-img {
+    border: 1px solid #ccc;
+    padding: 10px;
+}</code></pre>
+<p>If you check that out you will aready begin to see the illusion starting to form. One last step to complete it...add box-shadow in a darker grey.</p>
+<pre><code class="lang-css">.home-left-img,
+.home-right-img {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+}</code></pre>
+<p>Again all the values here are fair game for experimentation. Play around, break it! Then fix it.</p>
+            <!-- END STEP -->
+          </li>
+        </ol>
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>

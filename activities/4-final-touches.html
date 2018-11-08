@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Finishing Touches - Instructions</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="../css/prism-light.css" />
-    <link href="../css/course.css" rel="stylesheet">
-</head>
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div id="content">
-        <header class="headerBanner">
-            <div>
-                <h1>
-                    <span>WEB</span> Fundamentals</h1>
-                <h2>WDD 130</h2>
-            </div>
-        </header>
-        <main>
-            <h1>Layout the Home Page</h1>
-            <hr />
-            <h2>Activity&nbsp;Instructions</h2>
-            <p>Estimated Time: 90 minutes</p>
-            <div class="callout">
-                <p>This activity will use the following css concepts or properties (review the links if you do not
-                    remember
-                    these):
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Complete
-                            guide to CSS Grid</a> or
-                        <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">W3Schools CSS Grid</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank">margin</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/cssref/pr_padding.asp" target="_blank">padding</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/css/css_combinators.asp" target="_blank">CSS Descendant
-                            Selectors</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/cssref/pr_dim_line-height.asp" target="_blank">CSS
-                            Line-height</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">CSS pseudo
-                            classes</a>
-                    </li>
-
-                </ul>
-            </div>
-            <p>We have made a lot of improvements to our page over the last few weeks. This week we finally take on the
-                layout.
-                After we finish the layout of our page it should look very similar to the wireframe, and will be close
-                to
-                complete.
-            </p>
-            <div class="callout">
-                <p>Review again the
-                    <a href="../images/wireframe-grid.png" target="_blank">wireframe</a> for the Dry Oar site.</p>
-            </div>
-            <div class="callout">
-                <p>The instructions below are expecting a certain structure in your HTML to work. If you followed the
-                    instructions
-                    in the
-                    <a href="getting-started.html" target="_blank">Getting Started</a> activity you should have it. It
-                    should look similar to the following:</p>
-                <pre><code class="lang-markup">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Layout the Home Page</h1>
+        <hr />
+        <h2>Activity&nbsp;Instructions</h2>
+        <p>Estimated Time: 90 minutes</p>
+        <div class="callout">
+          <p>
+            This activity will use the following css concepts or properties
+            (review the links if you do not remember these):
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                >Complete guide to CSS Grid</a
+              >
+              or
+              <a
+                href="https://www.w3schools.com/css/css_grid.asp"
+                target="_blank"
+                >W3Schools CSS Grid</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/cssref/pr_margin.asp"
+                target="_blank"
+                >margin</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/cssref/pr_padding.asp"
+                target="_blank"
+                >padding</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/css/css_combinators.asp"
+                target="_blank"
+                >CSS Descendant Selectors</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/cssref/pr_dim_line-height.asp"
+                target="_blank"
+                >CSS Line-height</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/css/css_pseudo_classes.asp"
+                target="_blank"
+                >CSS pseudo classes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p>
+          We have made a lot of improvements to our page over the last few
+          weeks. This week we finally take on the layout. After we finish the
+          layout of our page it should look very similar to the wireframe, and
+          will be close to complete.
+        </p>
+        <div class="callout">
+          <p>
+            Review again the
+            <a href="../images/wireframe-grid.png" target="_blank">wireframe</a>
+            for the Dry Oar site.
+          </p>
+        </div>
+        <div class="callout">
+          <p>
+            The instructions below are expecting a certain structure in your
+            HTML to work. If you followed the instructions in the
+            <a href="getting-started.html" target="_blank">Getting Started</a>
+            activity you should have it. It should look similar to the
+            following:
+          </p>
+          <pre><code class="lang-markup">
 &lt;main&gt;
     &lt;div class="banner-box"&gt;
         &lt;img src="river-wide.JPG" alt="wide shot of the salmon river"&gt;
@@ -94,284 +121,345 @@
     &lt;/div&gt;
 &lt;/main&gt;
 </code> </pre>
-                <p>Make any changes necessary to have yours match what is above. (HTML only...your images and text can
-                    be different)</p>
-            </div>
-            <ol class="bigSteps">
-                <li>
-                    <h3>Banner width</h3>
-                    <p>First let's consider the banner. According to the wireframe it should extend all the way across
-                        the width
-                        of the page. Depending on which image you are using yours may or may not be doing that. Let's
-                        set
-                        a width of 100% on that image. Find the
-                        <code>&lt;div&gt;</code> that contains your banner image. You should have added a class calling
-                        it something like
-                        <kbd>banner-box</kbd>. We can use that class to apply our width.</p>
-                    <div class="callout">
-                        <p>You might have tried something like:</p>
-                        <pre><code class="lang-css">.banner-box {
+          <p>
+            Make any changes necessary to have yours match what is above. (HTML
+            only...your images and text can be different)
+          </p>
+        </div>
+        <ol class="bigSteps">
+          <li>
+            <h3>Banner width</h3>
+            <p>
+              First let's consider the banner. According to the wireframe it
+              should extend all the way across the width of the page. Depending
+              on which image you are using yours may or may not be doing that.
+              Let's set a width of 100% on that image. Find the
+              <code>&lt;div&gt;</code> that contains your banner image. You
+              should have added a class calling it something like
+              <kbd>banner-box</kbd>. We can use that class to apply our width.
+            </p>
+            <div class="callout">
+              <p>You might have tried something like:</p>
+              <pre><code class="lang-css">.banner-box {
     width: 100%;
 }                                    </code> </pre>
-                        <p>to set the banner width. If you did you will find that it didn't work! Why not? Well...that
-                            would
-                            apply the width to the element with the class of
-                            <kbd>banner-box</kbd>. Guess what? As a
-                            <code>&lt;div&gt;</code> it already had a width of 100%! What we need to do is apply the
-                            width to the image
-                            <em>inside</em> of the element with the class of
-                            <kbd>banner-box</kbd>. Does that make sense? We can do that by changing our selector
-                            slightly: </p>
-                        <pre><code class="lang-css">.banner-box img {
+              <p>
+                to set the banner width. If you did you will find that it didn't
+                work! Why not? Well...that would apply the width to the element
+                with the class of <kbd>banner-box</kbd>. Guess what? As a
+                <code>&lt;div&gt;</code> it already had a width of 100%! What we
+                need to do is apply the width to the image <em>inside</em> of
+                the element with the class of <kbd>banner-box</kbd>. Does that
+                make sense? We can do that by changing our selector slightly:
+              </p>
+              <pre><code class="lang-css">.banner-box img {
     width: 100%;
 }                        </code></pre>
-                    </div>
-                </li>
+            </div>
+          </li>
 
-                <li>
-                    <h3>Visualizing the Grid</h3>
-                    <p>Now let's tackle the main portion of the site. We will be using the CSS Grid you learned last
-                        week to
-                        accomplish this. The first step is to look at the
-                        <a href="../images/wireframe-grid-column-lines.png" target="_blank">wireframe</a> and see if we
-                        can visualize how a grid (columns and rows) would fit around the elements
-                        on the page. Open it up, you may even want to print it out and draw some lines on it. </p>
-                    <div class="callout">
-                        <p>In case your powers of visualization are a bit rusty...you can see my result below for the
-                            columns.</p>
-                        <section class="hint">
-                            <input type="checkbox">
-                            <h4>Wireframe with Gridlines</h4>
-                            <i></i>
-                            <div>
-                                <div class="fig-block">
-                                    <figure>
-                                        <img alt="Wireframe with gridlines" src="../images/wireframe-grid-column-lines.png"
-                                            title="Wireframe with gridlines" />
-                                    </figure>
-                                </div>
-                                <p>Notice how I used 5 equal columns...and each element can be fit in one or more
-                                    columns.
-                                </p>
-                            </div>
-                        </section>
+          <li>
+            <h3>Visualizing the Grid</h3>
+            <p>
+              Now let's tackle the main portion of the site. We will be using
+              the CSS Grid you learned last week to accomplish this. The first
+              step is to look at the
+              <a
+                href="../images/wireframe-grid-column-lines.png"
+                target="_blank"
+                >wireframe</a
+              >
+              and see if we can visualize how a grid (columns and rows) would
+              fit around the elements on the page. Open it up, you may even want
+              to print it out and draw some lines on it.
+            </p>
+            <div class="callout">
+              <p>
+                In case your powers of visualization are a bit rusty...you can
+                see my result below for the columns.
+              </p>
+              <section class="hint">
+                <input type="checkbox" />
+                <h4>Wireframe with Gridlines</h4>
+                <i></i>
+                <div>
+                  <div class="fig-block">
+                    <figure>
+                      <img
+                        alt="Wireframe with gridlines"
+                        src="../images/wireframe-grid-column-lines.png"
+                        title="Wireframe with gridlines"
+                      />
+                    </figure>
+                  </div>
+                  <p>
+                    Notice how I used 5 equal columns...and each element can be
+                    fit in one or more columns.
+                  </p>
+                </div>
+              </section>
 
-                        <p>And here is another image showing columns, rows, and gaps.</p>
-                        <section class="hint">
-                            <input type="checkbox">
-                            <h4>Layout with Grid lines</h4>
-                            <i></i>
-                            <div>
-                                <div class="fig-block">
-                                    <figure>
-                                        <img alt="Wireframe with gridlines" src="../images/finished-layout-with-grid-lines.jpg"
-                                            title="Wireframe with gridlines" />
-                                    </figure>
-                                </div>
+              <p>And here is another image showing columns, rows, and gaps.</p>
+              <section class="hint">
+                <input type="checkbox" />
+                <h4>Layout with Grid lines</h4>
+                <i></i>
+                <div>
+                  <div class="fig-block">
+                    <figure>
+                      <img
+                        alt="Wireframe with gridlines"
+                        src="../images/finished-layout-with-grid-lines.jpg"
+                        title="Wireframe with gridlines"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </section>
+              <p>
+                After you have a good idea of what the grid needs to look like
+                (numbers and sizes of rows and columns), either by figuring it
+                out on your own or by reviewing the two images above, continue
+                on to the next step.
+              </p>
+            </div>
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Defining the Grid</h3>
+            <p>
+              Let's try css grid to do this.
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                >CSS Grid</a
+              >
+              (&lt;- open this link and keep it handy) is good when we have
+              several elements that need to be placed into specific spots on a
+              page. Before you start you may want to go review the
+              <a
+                href="https://www.smashingmagazine.com/2018/05/guide-css-layout/#grid-layout"
+                target="_blank"
+                >portion on Grid</a
+              >
+              from the article you read last week.
+            </p>
 
-                            </div>
-                        </section>
-                        <p>After you have a good idea of what the grid needs to look like (numbers and sizes of rows
-                            and columns),
-                            either by figuring it out on your own or by reviewing the two images above, continue on to
-                            the
-                            next step.</p>
-
-                    </div>
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Defining the Grid</h3>
-                    <p>Let's try css grid to do this.
-                        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Grid</a>
-                        (&lt;- open this link and keep it handy) is good when we have several elements that
-                        need to be placed into specific spots on a page. Before you start you may want to go review the
-                        <a href="https://www.smashingmagazine.com/2018/05/guide-css-layout/#grid-layout" target="_blank">portion
-                            on Grid</a> from the article you read last week.</p>
-
-                    <p>Locate the
-                        <code>&lt;div&gt;</code> inside of
-                        <code>&lt;main&gt;</code> that contains most of our content. You should have given it a class
-                        earlier like
-                        <kbd>home-grid</kbd> (give it that class now if you didn't before). If you don't already have a
-                        rule in
-                        your CSS with that selecter add one now. Add the following property:
-                        <code>display: grid;</code>, to modify that section of your page to turn it into a grid
-                        container. In my case that rule would
-                        look like the following:</p>
-                    <pre><code class="lang-css">.home-grid {
+            <p>
+              Locate the <code>&lt;div&gt;</code> inside of
+              <code>&lt;main&gt;</code> that contains most of our content. You
+              should have given it a class earlier like
+              <kbd>home-grid</kbd> (give it that class now if you didn't
+              before). If you don't already have a rule in your CSS with that
+              selecter add one now. Add the following property:
+              <code>display: grid;</code>, to modify that section of your page
+              to turn it into a grid container. In my case that rule would look
+              like the following:
+            </p>
+            <pre><code class="lang-css">.home-grid {
     display: grid;
 }    
     </code></pre>
-                    <p> Now all of the immediate children will become grid-items or children.</p>
+            <p>
+              Now all of the immediate children will become grid-items or
+              children.
+            </p>
 
-                    <p>Next we need to define our columns. Above you should have found that this layout works best with
-                        5 equally
-                        sized columns. To define this in grid we use the
-                        <code>grid-template-columns</code> property. It is a property of the grid container, so we can
-                        add it to out
-                        <code>.grid-main</code> rule set. We don't know exactly how wide each column should be...only
-                        that they need to be equal.
-                        We can use the
-                        <kdb>fr</kdb> unit to do this.
-                        <kbd>1fr</kbd> = one equal portion of a space.</p>
-                    <pre><code class="lang-css">.home-grid {
+            <p>
+              Next we need to define our columns. Above you should have found
+              that this layout works best with 5 equally sized columns. To
+              define this in grid we use the
+              <code>grid-template-columns</code> property. It is a property of
+              the grid container, so we can add it to out
+              <code>.grid-main</code> rule set. We don't know exactly how wide
+              each column should be...only that they need to be equal. We can
+              use the <kdb>fr</kdb> unit to do this. <kbd>1fr</kbd> = one equal
+              portion of a space.
+            </p>
+            <pre><code class="lang-css">.home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }    
     </code></pre>
-                    <p>(If you remember the
-                        <code>repeat()</code> method from the Grid videos, you could shorten
-                        <kbd>1fr 1fr 1fr 1fr 1fr</kbd> to
-                        <kbd>repeat(5, 1fr)</kbd>. But either will work.)</p>
+            <p>
+              (If you remember the <code>repeat()</code> method from the Grid
+              videos, you could shorten <kbd>1fr 1fr 1fr 1fr 1fr</kbd> to
+              <kbd>repeat(5, 1fr)</kbd>. But either will work.)
+            </p>
 
-                    <div class="callout">
-                        <p>You should see an immediate change once you define your columns. The browser will try to
-                            start placing
-                            items into cells. It will do this even though we have not yet defined any rows!</p>
-                        <h4>Explicit vs Implicit Grids</h4>
-                        <p>Grids can be constructed either
-                            <em>explicitly</em>: you define everything about the grid, column number and widths, row
-                            number and
-                            heights, and where every item should be placed, or
-                            <em>implicitly</em>: you let the browser make as many of the decisions as possible. Most
-                            grids are
-                            a mix of both. All grids need to have some columns defined, but after that the browsers
-                            will
-                            <em>implicitly</em> create rows as needed.</p>
-                        <p>If you review the 'Layout with grid lines' image above you will see that the rows are not
-                            all the
-                            same height. You may have been wondering how you are to know how big to make each row? I'll
-                            let
-                            you in on a little secret: you don't have to know in many cases. You can often let the
-                            browser
-                            figure it out!
-                        </p>
-                        <p>My workflow when creating a new Grid layout is usually the following:</p>
-                        <ol>
-                            <li>Review my wireframe to begin visualizing the grid I need to make.</li>
-                            <li>Define columns...and then see how close I am to achieving my desired layout!</li>
-                            <li>Explicitly place items
-                                <em>as needed</em>
-                            </li>
-                            <li>Explicitly create rows
-                                <em>if needed</em>
-                            </li>
-                            <li>Adjust alignment
-                                <em>as needed</em>
-                            </li>
-                        </ol>
-                        <p>Let the browser do as much of the work as you can is my advice!</p>
-                    </div>
-                    <!-- end step -->
+            <div class="callout">
+              <p>
+                You should see an immediate change once you define your columns.
+                The browser will try to start placing items into cells. It will
+                do this even though we have not yet defined any rows!
+              </p>
+              <h4>Explicit vs Implicit Grids</h4>
+              <p>
+                Grids can be constructed either <em>explicitly</em>: you define
+                everything about the grid, column number and widths, row number
+                and heights, and where every item should be placed, or
+                <em>implicitly</em>: you let the browser make as many of the
+                decisions as possible. Most grids are a mix of both. All grids
+                need to have some columns defined, but after that the browsers
+                will <em>implicitly</em> create rows as needed.
+              </p>
+              <p>
+                If you review the 'Layout with grid lines' image above you will
+                see that the rows are not all the same height. You may have been
+                wondering how you are to know how big to make each row? I'll let
+                you in on a little secret: you don't have to know in many cases.
+                You can often let the browser figure it out!
+              </p>
+              <p>
+                My workflow when creating a new Grid layout is usually the
+                following:
+              </p>
+              <ol>
+                <li>
+                  Review my wireframe to begin visualizing the grid I need to
+                  make.
                 </li>
                 <li>
-                    <!-- start step -->
-                    <h3>Place the items</h3>
-                    <p>In our layout implicitly (automatically) created rows will be just fine. But most of our items
-                        will have
-                        to be explicitly placed to get them into the right spots. Let's place the first together.</p>
-                    <!-- placement with grid-column/grid/row -->
+                  Define columns...and then see how close I am to achieving my
+                  desired layout!
+                </li>
+                <li>Explicitly place items <em>as needed</em></li>
+                <li>Explicitly create rows <em>if needed</em></li>
+                <li>Adjust alignment <em>as needed</em></li>
+              </ol>
+              <p>
+                Let the browser do as much of the work as you can is my advice!
+              </p>
+            </div>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Place the items</h3>
+            <p>
+              In our layout implicitly (automatically) created rows will be just
+              fine. But most of our items will have to be explicitly placed to
+              get them into the right spots. Let's place the first together.
+            </p>
+            <!-- placement with grid-column/grid/row -->
 
-                    <p>Find the first headline. It should have a class of
-                        <code>home-headline-1</code>, if it does not, add that class to it. Make a rule in your css for
-                        that class. Use the
-                        <kbd>grid-column</kbd> and
-                        <kbd>grid-row</kbd> properties to assign this item to a portion of the grid. If you review this
-                        <a href="../images/finished-layout-with-grid-lines.jpg" target="_blank">layout image</a> again
-                        you will see that the headline is in row 1, and only needs one row of space.
-                        It also starts in column 1, but needs 3 columns of space to fit. To place it correctly in the
-                        grid
-                        you could use the following:</p>
-                    <pre><code class="lang-css">.home-headline-1 {
+            <p>
+              Find the first headline. It should have a class of
+              <code>home-headline-1</code>, if it does not, add that class to
+              it. Make a rule in your css for that class. Use the
+              <kbd>grid-column</kbd> and <kbd>grid-row</kbd> properties to
+              assign this item to a portion of the grid. If you review this
+              <a
+                href="../images/finished-layout-with-grid-lines.jpg"
+                target="_blank"
+                >layout image</a
+              >
+              again you will see that the headline is in row 1, and only needs
+              one row of space. It also starts in column 1, but needs 3 columns
+              of space to fit. To place it correctly in the grid you could use
+              the following:
+            </p>
+            <pre><code class="lang-css">.home-headline-1 {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
 }    
     </code></pre>
-                    <p>Continue placing the rest of the items into the correct rows/columns.</p>
-                    <!-- placement with grid-template-area -->
-                    <!--
-                  <h2>Grid-area method</h2>
-                  <p>We are going to use the <kbd>grid-template-area</kbd> method of positioning our items on the grid. The first step to do this is to apply area names to each of the items. We need to create a rule for each of the grid items we need to place. Basically anything that is a <em>direct child</em> for the <kbd>home-grid</kbd> element (our grid container). When you are done you should have 7 rules defined. Each rule should look something like below:</p>
-                   <pre><code class="lang-css">
-    .home-headline-1 {
-        grid-area: hl-1;
-    }    
-    </code> </pre>
-                 <p>Change the selector (classname) and area name as needed. Classname should match the class we put on each element earlier in the course. Area name can be anything you want (no spaces or special characters!) but should be unique. I would try to keep them short.</p>
-                 <p>Once all of our items have area names on them we can place them. Add a <kbd>grid-template-area</kbd> property to your <code>.home-grid</code> rule in your CSS.  It acts as a sort of text map of our layout. Each cell in our grid will be represented with either a dot or one of our <kbd>grid-area</kbd>s.  Below is an example with the first item placed:</p>
-                  <pre><code class="lang-css">
-     .home-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-area: "hl-1 hl-1 hl-1 . ."
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . .";
-    }    
-    </code> </pre>
-    <p>If you refer back to the layout image again you will see that the first headline starts in the first column, first row...and takes up 3 columns from there.  So we placed that <kbd>grid-area</kbd> name in those 3 spots in the template map. All of the empty cells are represented with dots. To add the first image to the layout (assuming your first image has a <kbd>grid-area: img-1</kbd>), we would change the above to the following:</p>
-                       <pre><code class="lang-css">
-     .home-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-area: "hl-1 hl-1 hl-1 img-1 img-1"
-                            ". . . img-1 img-1"
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . ."
-                            ". . . . .";
-    }    
-    </code> </pre>        
-                 
-                 <p>Notice that the image spans two rows as well as two columns. So we replaced <strong>four</strong> dots with the correct area name. To finish the layout replace the correct dots with your <kbd>grid-area</kbd> names.</p>
-                  
-    -->
-                    <div class="callout">
-                        <p>If your images are not resizing to fit in the box you have them in make sure you have the
-                            following
-                            rule in your css: </p>
-                        <pre><code class="lang-css">img {
+            <p>
+              Continue placing the rest of the items into the correct
+              rows/columns.
+            </p>
+            <!-- placement with grid-template-area -->
+            <!--
+                            <h2>Grid-area method</h2>
+                            <p>We are going to use the <kbd>grid-template-area</kbd> method of positioning our items on the grid. The first step to do this is to apply area names to each of the items. We need to create a rule for each of the grid items we need to place. Basically anything that is a <em>direct child</em> for the <kbd>home-grid</kbd> element (our grid container). When you are done you should have 7 rules defined. Each rule should look something like below:</p>
+                             <pre><code class="lang-css">
+              .home-headline-1 {
+                  grid-area: hl-1;
+              }
+              </code> </pre>
+                           <p>Change the selector (classname) and area name as needed. Classname should match the class we put on each element earlier in the course. Area name can be anything you want (no spaces or special characters!) but should be unique. I would try to keep them short.</p>
+                           <p>Once all of our items have area names on them we can place them. Add a <kbd>grid-template-area</kbd> property to your <code>.home-grid</code> rule in your CSS.  It acts as a sort of text map of our layout. Each cell in our grid will be represented with either a dot or one of our <kbd>grid-area</kbd>s.  Below is an example with the first item placed:</p>
+                            <pre><code class="lang-css">
+               .home-grid {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                  grid-template-area: "hl-1 hl-1 hl-1 . ."
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . .";
+              }
+              </code> </pre>
+              <p>If you refer back to the layout image again you will see that the first headline starts in the first column, first row...and takes up 3 columns from there.  So we placed that <kbd>grid-area</kbd> name in those 3 spots in the template map. All of the empty cells are represented with dots. To add the first image to the layout (assuming your first image has a <kbd>grid-area: img-1</kbd>), we would change the above to the following:</p>
+                                 <pre><code class="lang-css">
+               .home-grid {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                  grid-template-area: "hl-1 hl-1 hl-1 img-1 img-1"
+                                      ". . . img-1 img-1"
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . ."
+                                      ". . . . .";
+              }
+              </code> </pre>
+
+                           <p>Notice that the image spans two rows as well as two columns. So we replaced <strong>four</strong> dots with the correct area name. To finish the layout replace the correct dots with your <kbd>grid-area</kbd> names.</p>
+            -->
+            <div class="callout">
+              <p>
+                If your images are not resizing to fit in the box you have them
+                in make sure you have the following rule in your css:
+              </p>
+              <pre><code class="lang-css">img {
     max-width: 100%;
 }      
             </code> </pre>
-                        <p>This will make sure that none of your images can ever be larger than the box they are in.</p>
-                    </div>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Grid Gap</h3>
-                    <p>Looking good! One thing is bugging me though. The headlines and paragraphs are in some cases
-                        squished
-                        up against the images. If you refer back to the
-                        <a href="../images/finished-layout-with-grid-lines.jpg" target="_blank">layout image</a> again
-                        you will notice some space between the columns and rows. This is called a
-                        <kbd>gap</kbd> and can be added with the
-                        <code>grid-gap</code> property. This is a property that gets applied to the grid container. So
-                        add a grid gap of
-                        <kbd>1em</kbd> to your grid. </p>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Navigation: Check your header HTML </h3>
+              <p>
+                This will make sure that none of your images can ever be larger
+                than the box they are in.
+              </p>
+            </div>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Grid Gap</h3>
+            <p>
+              Looking good! One thing is bugging me though. The headlines and
+              paragraphs are in some cases squished up against the images. If
+              you refer back to the
+              <a
+                href="../images/finished-layout-with-grid-lines.jpg"
+                target="_blank"
+                >layout image</a
+              >
+              again you will notice some space between the columns and rows.
+              This is called a <kbd>gap</kbd> and can be added with the
+              <code>grid-gap</code> property. This is a property that gets
+              applied to the grid container. So add a grid gap of
+              <kbd>1em</kbd> to your grid.
+            </p>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Navigation: Check your header HTML</h3>
 
-
-                    <p>We've done a lot of work on our site over the last few weeks and it's looking pretty close to
-                        that wireframe
-                        now. The next portion that needs our attention is the header. I have to admit I'll be really
-                        happy
-                        when we get that fixed up!</p>
-                    <p>The code that I am basing this activity on looks like this: (you may want to adjust yours if it
-                        is not
-                        similar)
-                    </p>
-                    <pre><code class="lang-markup">
+            <p>
+              We've done a lot of work on our site over the last few weeks and
+              it's looking pretty close to that wireframe now. The next portion
+              that needs our attention is the header. I have to admit I'll be
+              really happy when we get that fixed up!
+            </p>
+            <p>
+              The code that I am basing this activity on looks like this: (you
+              may want to adjust yours if it is not similar)
+            </p>
+            <pre><code class="lang-markup">
 &lt;header&gt;
     &lt;div class="logo-box"&gt;
         &lt;img  src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar Logo"&gt;&lt;/div&gt;
@@ -386,175 +474,199 @@
     &lt;/nav&gt;
 &lt;/header&gt;
                     </code></pre>
-                    <p>The top of my page looks like this:</p>
-                    <div class="fig-block">
-                        <figure>
-                            <img alt="Example Header Code" width="50%" src="../images/header-start.jpg" style="display: block; margin-left: auto; margin-right: auto;"
-                                title="Example Header Code" />
-                        </figure>
-                    </div>
+            <p>The top of my page looks like this:</p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Example Header Code"
+                  width="50%"
+                  src="../images/header-start.jpg"
+                  style="display: block; margin-left: auto; margin-right: auto;"
+                  title="Example Header Code"
+                />
+              </figure>
+            </div>
 
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Logo and navigation placement</h3>
-                    <p>Let's start with getting the logo and the list of links to line up in a row first. There are
-                        several
-                        ways we could do this...but since we are most familiar with Grid...we'll use that. This is
-                        really
-                        just a simple grid with one row and two columns! The only tricky part is identifying which
-                        element
-                        will be the Grid container and which are the grid items.</p>
-                    <p>We want to move the
-                        <kdb>nav</kdb> and
-                        <kdb>logo-box</kdb> elements. Their parent is the
-                        <code>&lt;header&gt;</code> element. That is where we will start. Create a rule targeting the
-                        <code>header</code> in your CSS if you don't already have one. Add the properties to turn on
-                        grid and define some columns.</p>
-                    <div class="callout">
-                        <p>How big should the columns be this time? We have a small issue. This time the columns will
-                            not be
-                            the same size. We know how big the column with the logo needs to be (the size of the
-                            logo...around
-                            110px), but we don't know the size for the navigation! We really just want it to be
-                            whatever
-                            is left. CSS Grid has an option to indicate that:
-                            <kbd>auto</kbd>.</p>
-                    </div>
-                    <p>Here is an example of how your
-                        <code>header</code> rule might look:</p>
-                    <pre><code class="lang-css">header {
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Logo and navigation placement</h3>
+            <p>
+              Let's start with getting the logo and the list of links to line up
+              in a row first. There are several ways we could do this...but
+              since we are most familiar with Grid...we'll use that. This is
+              really just a simple grid with one row and two columns! The only
+              tricky part is identifying which element will be the Grid
+              container and which are the grid items.
+            </p>
+            <p>
+              We want to move the <kdb>nav</kdb> and
+              <kdb>logo-box</kdb> elements. Their parent is the
+              <code>&lt;header&gt;</code> element. That is where we will start.
+              Create a rule targeting the <code>header</code> in your CSS if you
+              don't already have one. Add the properties to turn on grid and
+              define some columns.
+            </p>
+            <div class="callout">
+              <p>
+                How big should the columns be this time? We have a small issue.
+                This time the columns will not be the same size. We know how big
+                the column with the logo needs to be (the size of the
+                logo...around 110px), but we don't know the size for the
+                navigation! We really just want it to be whatever is left. CSS
+                Grid has an option to indicate that: <kbd>auto</kbd>.
+              </p>
+            </div>
+            <p>
+              Here is an example of how your <code>header</code> rule might
+              look:
+            </p>
+            <pre><code class="lang-css">header {
     display: grid;
     grid-template-columns: 110px auto;        
 }
                 </code></pre>
-                    <p>Just like that your logo and links should have moved onto the same row.</p>
-                    <div class="fig-block">
-                        <figure>
-                            <img alt="Header Step 8" src="../images/header-grid-2.png" title="Header step 8" />
-                            <figcaption>Header step 8</figcaption>
-                        </figure>
-
-                    </div>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Navigation link layout</h3>
-                    <p>Let's make our links flow across the page horizontally next. It's important to remind ourselves
-                        why they
-                        currently look the way they do...list items are block elements. So one way to make them flow
-                        horizontally
-                        would be to change them to inline-block elements instead...but we also saw above that Grid can
-                        be
-                        used to make columns act as rows as well...and we also gain some nifty alignment tools. Let's
-                        use
-                        that to layout our navigation. Again remember that for grid we need to identify the items we
-                        want
-                        to move around (in this case the
-                        <code>&lt;li&gt;</code>), then find their parent (in this case the
-                        <code>&lt;ul&gt;</code>) The parent is where we will put our
-                        <code>display:grid;</code> Write a CSS rule using a selector to
-                        <strong>only</strong> affect the list that is inside of a
-                        <kbd>nav</kbd> element and add that now.</p>
-                    <div class="callout">
-                        <p>We learned about several new ways to
-                            <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">select</a>
-                            elements with CSS this week in Khan Academy. One of them allows us to combine multiple
-                            selectors together. For step 1 above we could use a simple
-                            <kbd>ul</kbd> as our selector, but that would change all lists on the page, and we may not
-                            want that.
-                            It would be better to get
-                            <strong>only</strong> the lists that are inside of a
-                            <kbd>nav</kbd>. We can do that by using "
-                            <code>nav ul</code>" as our selector instead of just
-                            <code>ul</code>. Many of the steps of this activity will require similar selectors.</p>
-                    </div>
-                    <p>We also need to define our columns. The easiest way to do this would be to count the number of
-                        items
-                        in our list, and create that many
-                        <kbd>1fr</kbd> sized columns. This would certainly work, but it is a bit rigid. If someone
-                        views our page
-                        on a smaller screen the links might start looking squished. What would be nicer is to have the
-                        browser
-                        define
-                        <em>as many columns as will fit in the current width</em>. There is actually a way to do this!
-                        Take a
-                        look at the example below</p>
-                    <pre><code class="lang-css">nav ul {
+            <p>
+              Just like that your logo and links should have moved onto the same
+              row.
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Header Step 8"
+                  src="../images/header-grid-2.png"
+                  title="Header step 8"
+                />
+                <figcaption>Header step 8</figcaption>
+              </figure>
+            </div>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Navigation link layout</h3>
+            <p>
+              Let's make our links flow across the page horizontally next. It's
+              important to remind ourselves why they currently look the way they
+              do...list items are block elements. So one way to make them flow
+              horizontally would be to change them to inline-block elements
+              instead...but we also saw above that Grid can be used to make
+              columns act as rows as well...and we also gain some nifty
+              alignment tools. Let's use that to layout our navigation. Again
+              remember that for grid we need to identify the items we want to
+              move around (in this case the <code>&lt;li&gt;</code>), then find
+              their parent (in this case the <code>&lt;ul&gt;</code>) The parent
+              is where we will put our <code>display:grid;</code> Write a CSS
+              rule using a selector to <strong>only</strong> affect the list
+              that is inside of a <kbd>nav</kbd> element and add that now.
+            </p>
+            <div class="callout">
+              <p>
+                We learned about several new ways to
+                <a
+                  href="http://www.w3schools.com/cssref/css_selectors.asp"
+                  target="_blank"
+                  >select</a
+                >
+                elements with CSS this week in Khan Academy. One of them allows
+                us to combine multiple selectors together. For step 1 above we
+                could use a simple <kbd>ul</kbd> as our selector, but that would
+                change all lists on the page, and we may not want that. It would
+                be better to get <strong>only</strong> the lists that are inside
+                of a <kbd>nav</kbd>. We can do that by using "
+                <code>nav ul</code>" as our selector instead of just
+                <code>ul</code>. Many of the steps of this activity will require
+                similar selectors.
+              </p>
+            </div>
+            <p>
+              We also need to define our columns. The easiest way to do this
+              would be to count the number of items in our list, and create that
+              many <kbd>1fr</kbd> sized columns. This would certainly work, but
+              it is a bit rigid. If someone views our page on a smaller screen
+              the links might start looking squished. What would be nicer is to
+              have the browser define
+              <em>as many columns as will fit in the current width</em>. There
+              is actually a way to do this! Take a look at the example below
+            </p>
+            <pre><code class="lang-css">nav ul {
     list-style: none; /* removes the bullets! */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));          
 }
                 </code></pre>
-                    <p>Let's break that down. It uses the
-                        <kbd>repeat</kbd> method, but instead of giving a number of columns like in the past we use the
-                        keyword
-                        <kbd>auto-fit</kbd>. This tells the browser to create as many columns as it can fit in the
-                        space available.
-                        Then instead of giving a specific size for each column, we used the
-                        <kbd>minmax</kbd> method. This tells the browser to create columns that are
-                        <kbd>1fr</kbd> big,
-                        <em>but no column can be smaller than
-                            <kbd>6em</kbd>
-                        </em>.</p>
-                    <p>So using a bit of math to illustrate: If we have 4 links and the browser window is currently
-                        <kbd>60em</kbd> (about 960px):
-                        <kbd>60em / 4 = 15em</kbd> this is way bigger than
-                        <kbd>6em</kbd> so we would get four equally sized columns (1fr) of
-                        <kbd>15em</kbd>. If the browser window size were only
-                        <kbd>20em</kbd> (around 320px) then
-                        <kbd>20em / 4 = 5em</kbd>. This is smaller than our minimum of
-                        <kbd>6em</kbd> so it can't fit all four columns. It will instead create 3 equal columns on the
-                        first row,
-                        and one more on a second row. </p>
-                    <p>Why
-                        <kbd>6em</kbd> for the minimum you may be asking? Well it was based on the length of my longest
-                        link (Rates/Dates).
-                        Any smaller than that and the words got squished. If your links are longer you may have to use
-                        more
-                        than
-                        <kbd>6em</kbd> as your minimum.</p>
-                    <div class="fig-block">
-                        <figure>
-                            <img alt="Header Step 9" src="../images/header-grid-3.png" title="Header step 9" />
-                            <figcaption>Header step 9</figcaption>
-                        </figure>
-
-                    </div>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Finishing up the navigation</h3>
-                    <p>The links are moving in the right direction now...but the alignment isn't quite right, and the
-                        row is
-                        a bit bigger than we want it to be. The row is easy to fix. It's actually caused by the
-                        unordered
-                        list we used for our links. Lists (and many other elements) have some default styling that come
-                        with
-                        them. In this case there is some margin automatically added to the top and bottom of the list
-                        that
-                        is causing us problems. Let's turn it off by adding
-                        <code>margin: 0</code> to our
-                        <code>nav ul</code> rule.</p>
-                    <p>One final issue...the links are aligned at the top of the row. They would look better in the
-                        middle (or
-                        bottom). Vertical alignment for Grid items is controlled with the
-                        <kbd>align-items</kbd> property. We can add
-                        <code>align-items: center;</code> to our Grid container (in this case would be the
-                        <code>header</code> rule) to fix this issue.</p>
-                    <div class="callout">
-                        <p>If you are having issues getting your header and navigation to turn out right. Click below
-                            to see
-                            my css code.</p>
-                        <section class="hint">
-                            <input type="checkbox">
-                            <h4>Header CSS</h4>
-                            <i></i>
-                            <div>
-                                <pre><code class="lang-css">header {
+            <p>
+              Let's break that down. It uses the <kbd>repeat</kbd> method, but
+              instead of giving a number of columns like in the past we use the
+              keyword <kbd>auto-fit</kbd>. This tells the browser to create as
+              many columns as it can fit in the space available. Then instead of
+              giving a specific size for each column, we used the
+              <kbd>minmax</kbd> method. This tells the browser to create columns
+              that are <kbd>1fr</kbd> big,
+              <em>but no column can be smaller than <kbd>6em</kbd> </em>.
+            </p>
+            <p>
+              So using a bit of math to illustrate: If we have 4 links and the
+              browser window is currently <kbd>60em</kbd> (about 960px):
+              <kbd>60em / 4 = 15em</kbd> this is way bigger than
+              <kbd>6em</kbd> so we would get four equally sized columns (1fr) of
+              <kbd>15em</kbd>. If the browser window size were only
+              <kbd>20em</kbd> (around 320px) then <kbd>20em / 4 = 5em</kbd>.
+              This is smaller than our minimum of <kbd>6em</kbd> so it can't fit
+              all four columns. It will instead create 3 equal columns on the
+              first row, and one more on a second row.
+            </p>
+            <p>
+              Why <kbd>6em</kbd> for the minimum you may be asking? Well it was
+              based on the length of my longest link (Rates/Dates). Any smaller
+              than that and the words got squished. If your links are longer you
+              may have to use more than <kbd>6em</kbd> as your minimum.
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Header Step 9"
+                  src="../images/header-grid-3.png"
+                  title="Header step 9"
+                />
+                <figcaption>Header step 9</figcaption>
+              </figure>
+            </div>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Finishing up the navigation</h3>
+            <p>
+              The links are moving in the right direction now...but the
+              alignment isn't quite right, and the row is a bit bigger than we
+              want it to be. The row is easy to fix. It's actually caused by the
+              unordered list we used for our links. Lists (and many other
+              elements) have some default styling that come with them. In this
+              case there is some margin automatically added to the top and
+              bottom of the list that is causing us problems. Let's turn it off
+              by adding <code>margin: 0</code> to our <code>nav ul</code> rule.
+            </p>
+            <p>
+              One final issue...the links are aligned at the top of the row.
+              They would look better in the middle (or bottom). Vertical
+              alignment for Grid items is controlled with the
+              <kbd>align-items</kbd> property. We can add
+              <code>align-items: center;</code> to our Grid container (in this
+              case would be the <code>header</code> rule) to fix this issue.
+            </p>
+            <div class="callout">
+              <p>
+                If you are having issues getting your header and navigation to
+                turn out right. Click below to see my css code.
+              </p>
+              <section class="hint">
+                <input type="checkbox" />
+                <h4>Header CSS</h4>
+                <i></i>
+                <div>
+                  <pre><code class="lang-css">header {
     align-items: center;
     display: grid;
     grid-template-columns: 110px auto;
@@ -572,138 +684,162 @@ nav ul {
     margin: 0; 
 }
                        </code></pre>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Adding link interaction</h3>
-                    <div class="callout">
-                        <p>Our page is looking great! Only a couple of last tasks left. First is to address a usability
-                            issue.
-                            You should never make a user guess about what elements are links and what aren't. We should
-                            give
-                            them plenty of visual hints.</p>
-                        <p>One thing we can take advantage of is
-                            <a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">pseudo-classes</a>.
-                            Click on that link and look at the examples there...go on...I'll wait.</p>
-                        <p> Pseudo classes let us target specific states of elements, such as link. Links have 4
-                            states: link
-                            (normal, nothing has happened), visited (link has been clicked on), active (link is
-                            currently
-                            being clicked), and hover (mouse is on link, but not clicking)</p>
-                        <p>The way we would change a link on hover is to add a rule like this:
-                            <kbd>a:hover { color: green; }</kbd>. This would change the color of all links to green on
-                            hover.</p>
-                    </div>
-                    <p>Let's set up some hover events to let our visitors know without a doubt that our navbar is
-                        indeed a navbar
-                        with clickable things. My example is going to stay simple, but you should refer back to your
-                        site
-                        plan to see how you had planned to style your links.</p>
-                    <p>For this example we are going to simply add an underline to the link on hover. Add another rule
-                        to your
-                        CSS that looks like
-                        <kbd>nav a:hover{ }</kbd>. This will only be active when the mouse is on the links in our
-                        navbar. Change
-                        something about your link in that rule.</p>
-                    <div class="callout">
-                        <p>There are a couple of common things that can happen when you mouse over a link. You could do
-                            something
-                            very simple and just add (or remove) an underline on hover (text-decoration: none). You
-                            could
-                            also change the color of the link text, or change the color of link and background. Refer
-                            back
-                            to your site plan or try a few different effects, just remember the purpose: to make sure
-                            the
-                            visitor knows what are links and what aren't.</p>
-                    </div>
+                </div>
+              </section>
+            </div>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Adding link interaction</h3>
+            <div class="callout">
+              <p>
+                Our page is looking great! Only a couple of last tasks left.
+                First is to address a usability issue. You should never make a
+                user guess about what elements are links and what aren't. We
+                should give them plenty of visual hints.
+              </p>
+              <p>
+                One thing we can take advantage of is
+                <a
+                  href="http://www.w3schools.com/css/css_pseudo_classes.asp"
+                  target="_blank"
+                  >pseudo-classes</a
+                >. Click on that link and look at the examples there...go
+                on...I'll wait.
+              </p>
+              <p>
+                Pseudo classes let us target specific states of elements, such
+                as link. Links have 4 states: link (normal, nothing has
+                happened), visited (link has been clicked on), active (link is
+                currently being clicked), and hover (mouse is on link, but not
+                clicking)
+              </p>
+              <p>
+                The way we would change a link on hover is to add a rule like
+                this: <kbd>a:hover { color: green; }</kbd>. This would change
+                the color of all links to green on hover.
+              </p>
+            </div>
+            <p>
+              Let's set up some hover events to let our visitors know without a
+              doubt that our navbar is indeed a navbar with clickable things. My
+              example is going to stay simple, but you should refer back to your
+              site plan to see how you had planned to style your links.
+            </p>
+            <p>
+              For this example we are going to simply add an underline to the
+              link on hover. Add another rule to your CSS that looks like
+              <kbd>nav a:hover{ }</kbd>. This will only be active when the mouse
+              is on the links in our navbar. Change something about your link in
+              that rule.
+            </p>
+            <div class="callout">
+              <p>
+                There are a couple of common things that can happen when you
+                mouse over a link. You could do something very simple and just
+                add (or remove) an underline on hover (text-decoration: none).
+                You could also change the color of the link text, or change the
+                color of link and background. Refer back to your site plan or
+                try a few different effects, just remember the purpose: to make
+                sure the visitor knows what are links and what aren't.
+              </p>
+            </div>
 
-                    <div class="callout">
-                        <h3>Notice!</h3>
-                        <p>Most of the time CSS doesn't care much about spaces. You can have them or not. Sometimes it
-                            does
-                            care though and pseudo-classes are one of them.
-                            <code>nav a:hover</code> will work just fine...
-                            <code>nav a: hover</code> will not. Make sure to
-                            <strong>not</strong> add spaces around the : on your pseudo-selector.</p>
-                    </div>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Footer</h3>
-                    <p>The last thing to do now is to finish the footer. According to the wireframe the copyright
-                        should be
-                        on the left, the social media icons on the right, the whole footer should be 55px high, and
-                        there
-                        should be space around the icons. This is similar to what we have done before. You should be
-                        able
-                        to figure it out.
-                    </p>
-                    <p>Review the tips on last weeks positioning activity if you get stuck. (Hint: there are several
-                        ways to
-                        do this, but since we have spent the most time with CSS Grid I would recommend that to get
-                        things
-                        into the right locations, then
-                        <kbd>padding, margin, or width</kbd> on the different elements in the footer may be needed to
-                        finish it
-                        off.)
-                    </p>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Enhancements</h3>
-                    <p>At this point your site is mostly done. There is much that could be done to dress it up a bit
-                        though.
-                        From the list below pick two items and follow the instructions to enhance your page. </p>
-                    <div class="fig-block">
-                        <figure>
-                            <img alt="Enhancements" src="../images/enchancements.jpg" title="Enhancements" />
-                            <figcaption>Enhancements</figcaption>
-                        </figure>
-
-                    </div>
-                    <ol>
-                        <li>
-                            <a href="enhancements.html#logo" target="_blank">Snazzy Logo</a>
-                        </li>
-                        <li>
-                            <a href="enhancements.html#cta" target="_blank">Call to Action</a>
-                        </li>
-                        <li>
-                            <a href="enhancements.html#headline" target="_blank">Fancy Headlines</a>
-                        </li>
-                        <li>
-                            <a href="enhancements.html#images" target="_blank">"3D" images</a>
-                        </li>
-                    </ol>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Responsive Design</h3>
-                    <p>Nearly there. Congratulations on making it this far! Your page should be looking great in a the
-                        browser
-                        on your laptop. What does it look like on a smaller screen like a mobile phone though? Reduce
-                        the
-                        width of your browser window to see. The page is still readable...which is good, but it doesn't
-                        look
-                        great.
-                        <em>Responsive design</em> is a process that most web designers apply to their sites to make
-                        them look
-                        great on a wide variety of screen sizes. One of the key parts to a responsive design is a
-                        <kbd>@media</kbd> query. These let us change our CSS based on the width of the browser window
-                        and other
-                        things as well.</p>
-                    <p>For example we can make our page responsive by adding a simple media query to it. Add the
-                        following to
-                        the
-                        <strong>bottom</strong> of your CSS:</p>
-                    <pre><code class="lang-css">@media screen and (max-width: 550px) { 
+            <div class="callout">
+              <h3>Notice!</h3>
+              <p>
+                Most of the time CSS doesn't care much about spaces. You can
+                have them or not. Sometimes it does care though and
+                pseudo-classes are one of them. <code>nav a:hover</code> will
+                work just fine... <code>nav a: hover</code> will not. Make sure
+                to <strong>not</strong> add spaces around the : on your
+                pseudo-selector.
+              </p>
+            </div>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Footer</h3>
+            <p>
+              The next thing to do now is to finish the footer. According to the
+              wireframe the copyright should be on the left, the social media
+              icons on the right, the whole footer should be 55px high, and
+              there should be space around the icons. This is similar to what we
+              have done before. You should be able to figure it out.
+            </p>
+            <p>
+              Review the tips on last weeks positioning activity if you get
+              stuck. (Hint: there are several ways to do this, but since we have
+              spent the most time with CSS Grid I would recommend that to get
+              things into the right locations, then
+              <kbd>padding, margin, or width</kbd> on the different elements in
+              the footer may be needed to finish it off.)
+            </p>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Enhancements</h3>
+            <p>
+              At this point your site is mostly done. There is much that could
+              be done to dress it up a bit though. From the list below pick two
+              items and follow the instructions to enhance your page.
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Enhancements"
+                  src="../images/enchancements.jpg"
+                  title="Enhancements"
+                />
+                <figcaption>Enhancements</figcaption>
+              </figure>
+            </div>
+            <ol>
+              <li>
+                <a href="enhancements.html#logo" target="_blank">Snazzy Logo</a>
+              </li>
+              <li>
+                <a href="enhancements.html#cta" target="_blank"
+                  >Call to Action</a
+                >
+              </li>
+              <li>
+                <a href="enhancements.html#headline" target="_blank"
+                  >Fancy Headlines</a
+                >
+              </li>
+              <li>
+                <a href="enhancements.html#images" target="_blank"
+                  >"3D" images</a
+                >
+              </li>
+            </ol>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Responsive Design</h3>
+            <p>
+              Nearly there. Congratulations on making it this far! Your page
+              should be looking great in a the browser on your laptop. What does
+              it look like on a smaller screen like a mobile phone though?
+              Reduce the width of your browser window to see. The page is still
+              readable...which is good, but it doesn't look great.
+              <em>Responsive design</em> is a process that most web designers
+              apply to their sites to make them look great on a wide variety of
+              screen sizes. One of the key parts to a responsive design is a
+              <kbd>@media</kbd> query. These let us change our CSS based on the
+              width of the browser window and other things as well.
+            </p>
+            <p>
+              For example we can make our page responsive by adding a simple
+              media query to it. Add the following to the
+              <strong>bottom</strong> of your CSS:
+            </p>
+            <pre><code class="lang-css">@media screen and (max-width: 550px) { 
 /* beginning of media query */
     .home-grid {
     display: block;
@@ -712,55 +848,66 @@ nav ul {
 /* end of media query */ 
 } 
                     </code></pre>
-                    <p>This could be read: "If the max width of the screen gets smaller than 550px, then use this CSS
-                        instead
-                        of what you may have seen above". Notice that all I'm changing is turning off grid! After
-                        adding
-                        this, check your page again at wide and narrow widths.</p>
-                    <p>If you are not happy with the navigation at small widths you could modify the rule in your media
-                        query
-                        to change it's behavior.</p>
-                    <pre><code class="lang-css">.home-grid, nav ul {
+            <p>
+              This could be read: "If the max width of the screen gets smaller
+              than 550px, then use this CSS instead of what you may have seen
+              above". Notice that all I'm changing is turning off grid! After
+              adding this, check your page again at wide and narrow widths.
+            </p>
+            <p>
+              If you are not happy with the navigation at small widths you could
+              modify the rule in your media query to change it's behavior.
+            </p>
+            <pre><code class="lang-css">.home-grid, nav ul {
     display: block;
 }
                     </code></pre>
-                    <p>If you did the call to action enhancement above then you will also want to add the
-                        <kbd>.banner-box</kbd> selector to the media query rule as well:</p>
-                    <pre><code class="lang-css">.home-grid, nav ul, .banner-box {
+            <p>
+              If you did the call to action enhancement above then you will also
+              want to add the <kbd>.banner-box</kbd> selector to the media query
+              rule as well:
+            </p>
+            <pre><code class="lang-css">.home-grid, nav ul, .banner-box {
     display: block;
 }
                     </code></pre>
-                    <!-- end step -->
-                </li>
-                <li>
-                    <!-- start step -->
-                    <h3>Publish and submit</h3>
-                    <p>Enter the view URL to your site into a browser to make sure the webpage displays correctly. Once
-                        verified,
-                        submit the URL for this assignment in ILearn. Remember that the URL should look like:
-                        http://projectname.glitch.com</p>
+            <!-- end step -->
+          </li>
+          <li>
+            <!-- start step -->
+            <h3>Publish and submit</h3>
+            <p>
+              Enter the view URL to your site into a browser to make sure the
+              webpage displays correctly. Once verified, submit the URL for this
+              assignment in ILearn. Remember that the URL should look like:
+              http://projectname.glitch.com
+            </p>
 
-                    <!-- end step -->
-                </li>
-            </ol>
-            <div class="rubric">
-                <h3>Grading</h3>
-                <p>This activity will be graded using the following rubric:</p>
-                <ul>
-                    <li>Positioning of elements looks like that in the wireframe (6 pts)</li>
-                    <li>Two of the enhancements from the list above have been added (4 pts)</li>
-                    <li>Navigation links are interactive (change on hover) (5 pt)</li>
-                    <li>The HTML is well formed and without errors and the page is visually appealing. (5 pts)</li>
-                </ul>
-            </div>
-
-
-
-        </main>
+            <!-- end step -->
+          </li>
+        </ol>
+        <div class="rubric">
+          <h3>Grading</h3>
+          <p>This activity will be graded using the following rubric:</p>
+          <ul>
+            <li>
+              Positioning of elements looks like that in the wireframe (6 pts)
+            </li>
+            <li>
+              Two of the enhancements from the list above have been added (4
+              pts)
+            </li>
+            <li>Navigation links are interactive (change on hover) (5 pt)</li>
+            <li>
+              The HTML is well formed and without errors and the page is
+              visually appealing. (5 pts)
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
     <!-- end #article -->
     <script src="../js/course.js"></script>
     <script src="../js/prism.js"></script>
-</body>
-
+  </body>
 </html>
