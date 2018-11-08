@@ -50,7 +50,13 @@ const menu = {
       week: 8
     },
     { url: 'activities/subpage1.html', name: 'Making a Subpage', week: 8 },
-    { url: 'activities/final.html', name: 'DryOar Final', week: 9 }
+    { url: 'activities/final.html', name: 'DryOar Final', week: 9 },
+    { url: 'activities/forms.html', name: 'HTML Forms', week: 10 },
+    {
+      url: 'activities/personal-site-html.html',
+      name: 'Personal Site HTML',
+      week: 10
+    }
   ]
 };
 
