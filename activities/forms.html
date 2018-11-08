@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>WDD 130 | Forms</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="../css/prism-light.css" />
-    <link href="../css/course.css" rel="stylesheet">
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="content">
-        <header class="headerBanner">
-            <div>
-                <h1>
-                    <span>WEB</span> Fundamentals</h1>
-                <h2>WDD 130</h2>
-            </div>
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Working with HTML Forms</h1>
+        <hr />
 
-        </header>
-        <main>
-            <h1>Working with HTML Forms</h1>
-            <hr />
+        <p>
+          Forms in HTML are a very important topic. They provide the primary
+          means to get input back from the users of our sites. Functional forms
+          would have two parts. The actual HTML form styled with CSS, and then
+          some code running on a server that the form data would get sent to.
+          The Server part is very important to building a <em>working</em> form,
+          but is beyond the scope of this course. We will be focussing on the
+          HTML and CSS part of building forms. Our form will not do much when
+          submitted, and that's ok.
+        </p>
 
-            <p>Forms in HTML are a very important topic. They provide the primary means to get input back from the
-                users of our sites. Functional forms would have two parts. The actual HTML form styled with CSS, and
-                then some code running on a server that the form data would get sent to. The Server part is very
-                important to building a <em>working</em> form, but is beyond the scope of this course. We will be
-                focussing on the HTML and CSS part of building forms. Our form will not do much when submitted, and
-                that's ok.</p>
+        <h2>Activity Directions</h2>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3>MDN Forms article</h3>
+            <p>
+              The Mozilla Developer Network (<a
+                href="https://developer.mozilla.org/en-US/docs/MDN/About"
+                target="_blank"
+                >MDN</a
+              >) is a great resource for learning more about working with the
+              Web. To begin learning about forms complete this tutorial
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form"
+                target="_blank"
+                >Your First Form</a
+              >
+              on MDN.
+            </p>
+            <p>
+              Create a file in your Thimble project called
+              <kbd>forms.html</kbd> where you will complete the activity above.
+            </p>
 
-
-            <h2>Activity Directions</h2>
-            <ol class="bigSteps">
-                <li>
-                    <!-- START STEP -->
-                    <h3>MDN Forms article</h3>
-                    <p>The Mozilla Developer Network (<a href="https://developer.mozilla.org/en-US/docs/MDN/About"
-                            target="_blank">MDN</a>) is a great resource for learning more about working with the Web.
-                        To begin learning about forms complete this tutorial <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form"
-                            target="_blank">Your First Form</a> on MDN.</p>
-                    <p>Create a file in your Thimble project called <kbd>forms.html</kbd> where you will complete the
-                        activity above.</p>
-
-
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Functional Forms</h3>
-                    <p>Our form currently doesn't do anything (or maybe even gives you an error) if you submit it. If
-                        you would like it to do <em>something</em> we need to add a bit of code to your project.</p>
-                    <p>Before your form let's add an element to hold a success message when the form has been
-                        submitted.
-                        Add a <code>&lt;div&gt;</code> element with an <kbd>id="feedback"</kbd> <strong>above</strong>
-                        your form element.</p>
-                    <pre><code class="lang-markup">&lt;div id="feedback"&gt;&lt/div&gt;
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Functional Forms</h3>
+            <p>
+              Our form currently doesn't do anything (or maybe even gives you an
+              error) if you submit it. If you would like it to do
+              <em>something</em> we need to add a bit of code to your project.
+            </p>
+            <p>
+              Before your form let's add an element to hold a success message
+              when the form has been submitted. This element will be empty and
+              invisible until the form is submitted...then we will use some
+              Javascript to change it. Add a <code>&lt;div&gt;</code> element
+              with an <kbd>id="feedback"</kbd> <strong>above</strong> your form
+              element.
+            </p>
+            <pre><code class="lang-markup">&lt;div id="feedback"&gt;&lt/div&gt;
 </code></pre>
-                    <p>The exercise had you create a <code>&lt;style&gt;</code> element to hold the styling it wanted
-                        for the form. Add the following CSS to that below the other styles.</p>
-                    <pre><code class="lang-css">#feedback {
+            <p>
+              The exercise had you create a <code>&lt;style&gt;</code> element
+              to hold the styling it wanted for the form. Add the following CSS
+              to that below the other styles.
+            </p>
+            <pre><code class="lang-css">#feedback {
     background-color: antiquewhite;
     position: absolute;
     top: 0;
@@ -75,8 +95,11 @@
     margin-top: 3em;
 }
                     </code></pre>
-                    <p>Finally <strong>below</strong> your form element add the following code:</p>
-                    <pre><code class="lang-markup">&lt;script&gt;
+            <p>
+              Finally <strong>below</strong> your form element add the following
+              code:
+            </p>
+            <pre><code class="lang-markup">&lt;script&gt;
     // get the feedback div element so we can do something with it.
     const feedbackElement = document.getElementById('feedback');
     // get the form so we can read what was entered in it.
@@ -94,52 +117,61 @@
     });
 &lt;/script&gt;
                     </code></pre>
-                    <p>If everything is working correctly you should see a message appear at the top of the form upon
-                        submission.</p>
-                    <div class="callout">
-                        <p>The code above is something we have not seen before. It is Javascript. I added lots of
-                            comments
-                            if you want to try and understand what is going on. Javascript can be used to make our page
-                            more interactive, to change based on user actions, but is quite different from HTML and
-                            CSS. Don't worry if it doesn't make
-                            sense. The purpose of this class is not to teach Javascript, but I wanted to give you a
-                            small
-                            introduction...and forms are more fun if they <em>do</em> something!</p>
-                    </div>
-
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Optional: Continue</h3>
-                    <p>We have just scratched the surface with forms. The next two steps in the MDN tutorial are also
-                        great and will teach you much more about the details of working with forms. It is not require
-                        to complete them, but it would be worth your time if you do!</p>
-
-                    <!-- END STEP  -->
-                </li>
-
-                <li>
-                    <!-- START STEP -->
-                    <h3>Publish</h3>
-                    <p>Publish your site and submit the link to your <kbd>form.html</kbd> to Ilearn.</p>
-
-                    <!-- END STEP  -->
-                </li>
-
-            </ol>
-            <div class="rubric">
-                <h2>Grading</h2>
-                <ol>
-                    <li>MDN tutorial completed successfully. (6pts)</li>
-                    <li>Form displays a message when submitted. (4pts)</li>
-                </ol>
+            <p>
+              If everything is working correctly you should see a message appear
+              at the top of the form upon submission.
+            </p>
+            <div class="callout">
+              <p>
+                The code above is something we have not seen before. It is
+                Javascript. I added lots of comments if you want to try and
+                understand what is going on. Javascript can be used to make our
+                page more interactive, to change based on user actions, but is
+                quite different from HTML and CSS. Don't worry if it doesn't
+                make sense. The purpose of this class is not to teach
+                Javascript, but I wanted to give you a small introduction...and
+                forms are more fun if they <em>do</em> something!
+              </p>
             </div>
-        </main>
-        <!-- end #article -->
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Continue learning</h3>
+            <p>
+              We have just scratched the surface with forms. The next two steps
+              in the MDN tutorial are also great and will teach you much more
+              about the details of working with forms. You do not have to
+              complete them, but spend some time reviewing the form elements
+              they introduce.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+
+          <li>
+            <!-- START STEP -->
+            <h3>Publish</h3>
+            <p>
+              Publish your site and submit the link to your
+              <kbd>form.html</kbd> to Ilearn.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+        </ol>
+        <div class="rubric">
+          <h2>Grading</h2>
+          <ol>
+            <li>MDN tutorial completed successfully. (6pts)</li>
+            <li>Form displays a message when submitted. (4pts)</li>
+          </ol>
+        </div>
+      </main>
+      <!-- end #article -->
     </div>
     <script src="../js/course.js"></script>
     <script src="../js/prism.js"></script>
-</body>
-
+  </body>
 </html>
