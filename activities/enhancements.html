@@ -142,7 +142,7 @@
 &lt;/div&gt;
 </code></pre>
             <p>
-              If you refer to the image above, you will see that the call to action needs to have a few things done to it:
+              If you refer to the image at the top of this page, you will see that the call to action needs to have a few things done to it:
             </p>
             <ol>
                 <li>It should have a semi-transparent background color. We want to be able to see some of the colors of the background to come through, but the text should also be readable.</li>
@@ -151,7 +151,7 @@
                 <li>The text and button should be centered</li>
                 <li>Have enough white space to look good. (padding, margin)</li>
                 
-                <li>It needs to be placed on top of the banner image...on the left side.</li>
+                <li>It needs to be placed on top of the banner image...on whichever side it looks better. For the banner image I chose it looks better on the left</li>
                 
             </ol>
             <p>For colors we have been using hexidecimal codes.  This is not the only way to indicate color in CSS however. You can also use an RGB designation. A light grey in RGB for example would look like this: <code>rgb(240,240,240)</code>. There is also another version of the RGB method...<kbd>rgba()</kbd>. It takes 4 numbers. The last one indicates how <em>transparent</em> your color should be. It will be between 1-0. Let's use this to give our element a semi-transparent background. Make a rule using the <kbd>.action</kbd> class.</p>
@@ -187,7 +187,7 @@
     grid-template-columns: 1fr 1fr;
 }
     </code></pre>
-    <p>Now all that is left is to place the two grid children. The background image shuold be in row 1 and should span both columns. The call to action should also be in row 1 (we only have one row) and be in just column 1. Use the <code>grid-column</code> and <code>grid-row</code> properties to place these elements on our grid.</p>
+    <p>Now all that is left is to place the two grid children. The background image should be in row 1 and should span both columns. The call to action should also be in row 1 (we only have one row) and be in column 1 if you want it on the left, column 2 for the right. Use the <code>grid-column</code> and <code>grid-row</code> properties to place these elements on our grid.</p>
     <p>At this point your CSS should look something like this. You should replace the colors with your colors, and you may need to adjust the padding, margin, font-size, etc to make it work in your page.</p>
     <pre><code class="lang-css">
 .banner-box {
@@ -196,7 +196,7 @@
 }
     
 .banner-box img {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
     grid-row: 1;
 }
     
