@@ -28,6 +28,11 @@ const menu = {
       name: 'CSS Positioning',
       week: 6
     },
+    {
+      url: 'resources/layout-resources.html',
+      name: 'CSS Layout Reading',
+      week: 6
+    },
 
     {
       url: 'activities/4-final-touches.html',
@@ -51,11 +56,26 @@ const menu = {
     },
     { url: 'activities/subpage1.html', name: 'Making a Subpage', week: 8 },
     { url: 'activities/final.html', name: 'DryOar Final', week: 9 },
+    {
+      url: 'activities/person-site-plan-complete.html',
+      name: 'Completed Personal Site Plan',
+      week: 9
+    },
     { url: 'activities/forms.html', name: 'HTML Forms', week: 10 },
     {
       url: 'activities/personal-site-html.html',
       name: 'Personal Site HTML',
       week: 10
+    },
+    {
+      url: 'activities/css-positioning-2.html',
+      name: 'Layour Revisited',
+      week: 11
+    },
+    {
+      url: 'activities/personal-site-home.html',
+      name: 'Personal Site Home',
+      week: 11
     }
   ]
 };
