@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>WDD 130 | Using Javascript</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Using Javascript on the web</h1>
+        <hr />
+
+        <p>
+          HTML and CSS are only two parts of a modern website. HTML is
+          responsible for the content on a site, CSS for the style. The third
+          part, Javascript, handles interactions and making things dynamic. This
+          activity will introduce some ways in which we can make our sites more
+          dynamic using Javascript.
+        </p>
+        <p>
+          We actually saw a small example of this last week with the forms
+          exercise. We used Javascript to change the page based on an action of
+          the user. This week will explain a little more about how that worked.
+        </p>
+
+        <h2>Activity Directions</h2>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3>The Script tag</h3>
+            <p>
+              There are a couple of special HTML elements:
+              <code>&lt;style&gt;</code> and <code>&lt;script&gt;</code>.
+              Normally when we make an HTML element whatever we put in that
+              element is still HTML. <code>&lt;style&gt;</code> and
+              <code>&lt;script&gt;</code> are not this way however. Whatever we
+              put into a <code>&lt;style&gt;</code> element is actually
+              <kbd>CSS</kbd>, and whatever we put into a
+              <code>&lt;script&gt;</code> element is <kbd>Javascript</kbd>!
+              Adding Javascript to our page is as simple as adding a
+              <code>&lt;script&gt;</code> element.
+            </p>
+            <p>
+              Open one of your projects up in your editor...either your Dry Oar
+              project or your personal project, either will work, and make sure
+              that you are editing the <kbd>index.html</kbd> page. At the bottom
+              of the file, right before the closing body tag
+              (<code>&lt;/body&gt;</code>) add a script element (<code
+                >&lt;script&gt; &lt;/script&gt;</code
+              >)
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Elements in Javascript</h3>
+            <p>
+              The first thing we need to learn about Javascript is that we can
+              grab any element in our HTML page with it. In fact before we can
+              really do anything we need to identify the element that we want to
+              change and get access to it with code. There are several ways to
+              do this, but we are only going to focus on one in this activity:
+              <code>document.querySelector()</code>. <kbd>document</kbd> is just
+              how we reference the current open html page,
+              <kbd>querySelector()</kbd> is some pre-written code that is
+              provided to us by the browser that will do all the work of finding
+              the element we specify. Inside the <kbd>( )</kbd> we can place any
+              CSS selector, just like those we have been using all semester.
+              <code>document.querySelector()</code> will grab the
+              <em>first</em> match it finds.
+            </p>
+            <p>
+              Let's try it. Add the following code to your
+              <code>&lt;script&gt;</code> element.
+            </p>
+            <pre><code class="lang-markup">&lt;script&gt;
+    let myElement = document.querySelector('p');
+    myElement.innerHTML = "I've changed!";
+&lt;/script&gt;
+</code></pre>
+            <p>
+              If you look at your page you should see that the text in the first
+              paragraph (<code>p</code> selector) on the page has changed! Try
+              changing the selector to see what other elements you can change on
+              your page. Look at the
+              <a
+                href="https://www.w3schools.com/cssref/css_selectors.asp"
+                target="_blank"
+                >selectors</a
+              >
+              you have used in your CSS for ideas.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Variables</h3>
+            <p>
+              If you look back at the first line in the example above you should
+              see this:
+              <pre><code class="lang-javascript">let myElement = document.querySelector('p');</code></pre> We have
+              talked about the <code>document.querySelector('p')</code> part,
+              but not the first part: <code>let myElement =</code>. This is a
+              variable declaration. Turns out that often in programming we need
+              to do multiple actions to something. A variable allows us to
+              'store' an element that we have grabbed, or other things as well.
+              Then we can use it as many times as needed to accomplish our task.</p>
+              <p>
+              <code>let</code> tells the browser that we want to use a variable,
+              then name follows...in this case our variable name is
+              <code>myElement</code>. This could be anything we want (letters,
+              numbers, _ and - only). Then we see the '=' This is known as the
+              assighnment operator in programming terms. It sets the value of
+              the thing on the left to the thing on the right.
+            </p>
+            <p>
+              Variables are extremely useful. We can put all sorts of things in
+              them, elements, numbers, words, sentences...
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Making changes</h3>
+            <p>
+              The next line in our code was this:
+            </p>
+            <pre><code class="lang-javascript">myElement.innerHTML = "I've changed!";</code></pre>
+            <p>Elements are complex things, with many parts. One of those parts is called <code>innerHTML</code>. It is really just a special variable, it holds the actual contents of the element, and we can change it!</p>
+            <p>What we change it to doesn't have to be limited to text either. We could have done this instead:</p>
+            <pre><code class="lang-javascript">myElement.innerHTML = "&lt;strong&gt;I've changed!&lt;/strong&gt;";</code></pre>
+            <p>The contents of the element are not the only thing we can change. We can also change the style of the element and which classes are attached to it. Let's look at a couple more examples</p>
+            <pre><code class="lang-javascript">myElement.style.color = "red";</code></pre>
+            <p>...and just like that the words should be red.</p>
+            <pre><code class="lang-javascript">myElement.classList.add('amazing');</code></pre>
+            <p>You will need to add the following CSS to your stylesheet in order to see anything change from the last example.</p>
+            <pre><code class="lang-css">.amazing {
+  animation: rotate 2s infinite;
+}
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+            </code></pre>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Functions and Events</h3>
+            <p>
+              So far all the Javascript we have written has executed immediately when the page loads. Often it is nice to have more control over when things happen. Like when a user clicks a button for example. 
+            </p>
+            <p>We can use <kbd>functions</kbd> to write code that can be run whenever needed, and <kbd>events</kbd> to let us know when the functions need to be used.</p>
+            <div class="callout"><p>To make sure that any code you have written does not interfere with the code we will now write, go ahead and clear out everything in your <code>&lt;script&gt;</code> element now. </p></div>
+            <p>If we look at the example above, we can change it to a function like this:</p>
+            <pre><code class="lang-javascript">function iHaveThePower() {
+    let myElement = document.querySelector('p');
+    myElement.innerHTML = "I've changed!";
+    myElement.classList.add('amazing');
+}  
+            </code></pre>
+            <p>We use the <kbd>function</kbd> keyword to let the computer know what we are doing, then we give our function a name. As you can see from the name I chose...this can be just about anything you want. It just can't have any spaces. Then you add <code>( )</code>. The code that we want to run then goes inside of a curly brace block <code>{ }</code>.</p>
+            <p>Now those lines of code will only run when we use the function. We would use or call our function like this:<code>iHaveThePower()</code>. Note that the <kbd>()</kbd> at the end of the function name are important!</p>
+            <p>So the code to create (declare) the function and use (call) the function would look like this:</p>
+            <pre><code class="lang-javascript">function iHaveThePower() {
+  let myElement = document.querySelector('p');
+  myElement.innerHTML = "I've changed!";
+  myElement.classList.add('amazing');
+}  
+iHaveThePower();</code></pre>
+<p>We now can use this code whenever we want. Currently it's still running immediately however. Let's use an event to change that. Remove the <code>iHaveThePower();</code> line at this point.</p>
+<p>Events are things that the user does. They can click, move the mouse, type, among other things. The <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">full list of events</a> is actually quite long, but we are going to focus on just <a href="https://www.w3schools.com/js/js_events.asp" target="_blank">a few of them</a>.</p>
+<p>When a user moves the mouse over an element, the browser will fire a <kbd>onmouseover</kbd> event. We can use this to trigger the function we just wrote. Choose an element on your page...one that you can find easily and add the following attribute to it. For my example I'm using the <kbd>header</kbd> on my page.</p>
+<pre><code class="lang-markup">&lt;header onmouseover="iHaveThePower();"&gt;&lt;/header&gt;</code></pre>
+<p>To tell the browser to watch or listen for an event to happen we can use the appropriate attribute as we did above. The value of the attribute is whatever javascript code we want to run if and when the event happens. In this case we want it to use our function. Hover over the element you selected and see if it works.</p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Putting it all together</h3>
+            <p>
+              Giving feedback to your user is always a good thing. One nice thing we can do for them is to make the link to the page they are currently on be styled a bit differently from the other links. So if they come so the site from a search engine for example they know where they are in the site. Let's use our new knowledge of Javascript to do this for our page.
+            </p>
+            <p>You will need to add a CSS rule to your stylesheet, and you will also need a couple of functions. The first function I will give you now, the other we will write together.Add the following CSS (you should change the actual color to somehting that will look good with your page):</p>
+            <pre><code class="lang-css">.active:link, .active:visited { color: red; }</code></pre>
+            <p>Then add the following function to your script element:</p>
+            <pre><code class="lang-javascript">function getPageName() {
+  const url = window.location.pathname;
+  const filename = url.substring(url.lastIndexOf('/') + 1);
+  return filename;
+}            </code></pre>
+<p>This function will look at the URL of the current page, and grab the name of the HTML file. We will need that to know which link to change.</p>
+<p>Make a new function called <kbd>setActive</kbd> below the <kbd>getPageName()</kbd> function. It should look like this:</p>
+<pre><code class="lang-javascript">function setActive() {
+
+}
+</code></pre>
+<p>We have a few things to do now to accomplish this task.</p>
+<ol>
+  <li>Use the provided function to get the name of the current page, and store it in a variable.</li>
+  <li>Use the page name to grab the correct link element on our page.</li>
+  <li>Add the class <kbd>active</kbd> to that element.</li>
+</ol>
+<p>We can do step one in one line of code like this:</p>
+<pre><code class="lang-javascript">function setActive() {
+    let currentPageName = getPageName();
+  }
+  </code></pre>
+  <p>The next step however is a bit trickier. We know that we can use <kbd>document.querySelector()</kbd> to find any element, but what selector? We will need to use an <a href="https://www.w3schools.com/cssref/sel_attribute_value.asp" target="_blank">attribute selector</a>. We can find any element that has an attribute of <code>[attribute=somevalue]</code>. If we were currently on the <kbd>index.html</kbd> page the selector for the right link would look like this:<code>a[href="index.html"]</code>. We need <kbd>index.html</kbd> to be the filename stored in our variable from step one however. Not a problem...we can glue text together using <kbd>+</kbd> in Javascript. Putting this all together we would get this: </p>
+  <pre><code class="lang-javascript">function setActive() {
+  let currentPageName = getPageName();
+  const activeLink = document.querySelector('a[href="'+currentPageName+'"]');
+}
+    </code></pre>
+    <p>One more step. It's actually very similar to something we did before. We just need to add a class to the element we just found and stored in the <code>activeLink</code> variable.</p>
+    <pre><code class="lang-javascript">function setActive() {
+  let currentPageName = getPageName();
+  const activeLink = document.querySelector('a[href="'+currentPageName+'"]');
+  activeLink.classList.add('active');
+}
+      </code></pre>
+      <p>And done!  almost...We have created the function, but we haven't used it yet. This is something that we really want to have happen as soon as the html page is finsihed loading. Turns out there is an event for that <kbd>onload</kbd>. Add the following to your <kbd>body</kbd> element: <code>onload="setActive();</code></p>
+      <p>At this point if everything worked correctly you should see the link for the current page you are on change! To finish this so it works for all your pages you wold need to add the <kbd>script</kbd> element with your code to each page, and then add the <kbd>onload</kbd> listener to each <code>body</code></p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Publish</h3>
+            <p>
+              Publish your site and submit the link  to Ilearn.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+        </ol>
+        <div class="rubric">
+          <h2>Grading</h2>
+          <ol>
+            <li>Active page link styled different from other links. (10pts)</li>
+            
+          </ol>
+        </div>
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
