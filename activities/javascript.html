@@ -198,7 +198,7 @@ iHaveThePower();</code></pre>
             <p>
               Giving feedback to your user is always a good thing. One nice thing we can do for them is to make the link to the page they are currently on be styled a bit differently from the other links. So if they come so the site from a search engine for example they know where they are in the site. Let's use our new knowledge of Javascript to do this for our page.
             </p>
-            <p>You will need to add a CSS rule to your stylesheet, and you will also need a couple of functions. The first function I will give you now, the other we will write together.Add the following CSS (you should change the actual color to somehting that will look good with your page):</p>
+            <p>You will need to add a CSS rule to your stylesheet, and you will also need a couple of functions. The first function I will give you now, the other we will write together. Add the following CSS (you should change the actual color to something that will look good with your page):</p>
             <pre><code class="lang-css">.active:link, .active:visited { color: red; }</code></pre>
             <p>Then add the following function to your script element:</p>
             <pre><code class="lang-javascript">function getPageName() {
@@ -223,7 +223,7 @@ iHaveThePower();</code></pre>
     let currentPageName = getPageName();
   }
   </code></pre>
-  <p>The next step however is a bit trickier. We know that we can use <kbd>document.querySelector()</kbd> to find any element, but what selector? We will need to use an <a href="https://www.w3schools.com/cssref/sel_attribute_value.asp" target="_blank">attribute selector</a>. We can find any element that has an attribute of <code>[attribute=somevalue]</code>. If we were currently on the <kbd>index.html</kbd> page the selector for the right link would look like this:<code>a[href="index.html"]</code>. We need <kbd>index.html</kbd> to be the filename stored in our variable from step one however. Not a problem...we can glue text together using <kbd>+</kbd> in Javascript. Putting this all together we would get this: </p>
+  <p>The next step however is a bit trickier. We know that we can use <kbd>document.querySelector()</kbd> to find any element, but what selector? In this case we will need to use an <a href="https://www.w3schools.com/cssref/sel_attribute_value.asp" target="_blank">attribute selector</a>. With it we can find any element that has an attribute of <code>[attribute=somevalue]</code>. If we were currently on the <kbd>index.html</kbd> page the selector for the right link would look like this:<code>a[href="index.html"]</code>. It won't always be <kbd>index.html</kbd> though, so we need <kbd>index.html</kbd> to be the filename stored in our variable from step one. Not a problem...we can glue bits of text together using <kbd>+</kbd> in Javascript. Putting this all together we would get this: </p>
   <pre><code class="lang-javascript">function setActive() {
   let currentPageName = getPageName();
   const activeLink = document.querySelector('a[href="'+currentPageName+'"]');
@@ -236,7 +236,7 @@ iHaveThePower();</code></pre>
   activeLink.classList.add('active');
 }
       </code></pre>
-      <p>And done!  almost...We have created the function, but we haven't used it yet. This is something that we really want to have happen as soon as the html page is finsihed loading. Turns out there is an event for that <kbd>onload</kbd>. Add the following to your <kbd>body</kbd> element: <code>onload="setActive();</code></p>
+      <p>And done!  almost...We have created the function, but we haven't used it yet. This is something that we really want to have happen as soon as the html page is finished loading. Turns out there is an event for that <kbd>onload</kbd>. Add the following to your <kbd>body</kbd> element: <code>onload="setActive();</code></p>
       <p>At this point if everything worked correctly you should see the link for the current page you are on change! To finish this so it works for all your pages you wold need to add the <kbd>script</kbd> element with your code to each page, and then add the <kbd>onload</kbd> listener to each <code>body</code></p>
             <!-- END STEP -->
           </li>
