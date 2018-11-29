@@ -231,6 +231,20 @@ align-items: center;
               across. You were also shown how to align both inline and block
               elements. Let's review that again now.
             </p>
+            <div class="callout">
+              <p>
+                For this part of the activity your mind might jump to Grid as a
+                way to solve this. You could actually do it with Grid, but in
+                this case we want to try something different. You will
+                <strong>not</strong> need a Grid for this part.
+              </p>
+              <p>
+                Since we are not using Grid, the alignment properties we studied
+                above (justify-items, justify-content, align-items, and
+                align-content) <strong>will not</strong> work. They only work
+                inside of a Grid!
+              </p>
+            </div>
             <p>
               Block elements first: block elements take up 100% of the width
               available to them. So if we want to align them we first have to
@@ -295,10 +309,16 @@ align-items: center;
               margins appropriately.
             </p>
             <p>
-              Next we need to align the paragraphs. We could add a
-              <kbd>class</kbd> to each paragraph and change them that way...but
-              that is a lot of extra typing, and there is another way. We can
-              take advantage of complex selectors. Specifially the
+              Next we need to align the paragraphs. We can use the
+              <code>text-align</code> property to align the text inside the
+              paragraphs. We set the <code>text-align</code> property on a block
+              like a <code>p</code> or <code>h1</code> for example and it will
+              affect everything <em>inside</em> of that block.
+            </p>
+            <p>
+              We could add a <kbd>class</kbd> to each paragraph and change them
+              that way...but that is a lot of extra typing, and there is another
+              way. We can take advantage of complex selectors. Specifically the
               <a
                 href="https://www.w3schools.com/cssref/sel_nth-of-type.asp"
                 target="_blank"
@@ -321,6 +341,19 @@ p:nth-of-type(3) { /* third paragraph */}
               differently than the others. For those paragraphs we will need to
               be more specific. Target just paragraphs that are in the
               <code>.block4</code> element.
+            </p>
+            <p>
+              We can use the
+              <a
+                href="https://www.w3schools.com/cssref/sel_element_element.asp"
+                target="_blank"
+                >descendant selector</a
+              >
+              to do this. (&lt;-- If you don't remember what that is check out
+              the link. We used some of these when we styled the menu for the
+              Dry Oar Site so you could also review the
+              <a href="4-final-touches.html" target="_blank">Final Touches</a>
+              activity from Week 7 as well).
             </p>
 
             <!-- END STEP -->
