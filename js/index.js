@@ -76,6 +76,16 @@ const menu = {
       url: 'activities/personal-site-home.html',
       name: 'Personal Site Home',
       week: 11
+    },
+    {
+      url: 'activities/javascript.html',
+      name: 'Using Javascript on the Web',
+      week: 12
+    },
+    {
+      url: 'activities/personal-site-sub1.html',
+      name: 'Personal Site Page Two',
+      week: 12
     }
   ]
 };
