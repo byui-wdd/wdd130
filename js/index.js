@@ -86,6 +86,11 @@ const menu = {
       url: 'activities/personal-site-sub1.html',
       name: 'Personal Site Page Two',
       week: 12
+    },
+    {
+      url: 'activities/final.html',
+      name: 'Final',
+      week: 13
     }
   ]
 };
