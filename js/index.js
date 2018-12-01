@@ -78,8 +78,8 @@ const menu = {
       week: 11
     },
     {
-      url: 'activities/javascript.html',
-      name: 'Using Javascript on the Web',
+      url: 'activities/card.html',
+      name: 'Creating a Media Card component',
       week: 12
     },
     {
