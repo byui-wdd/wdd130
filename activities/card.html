@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Building a simple media card</h1>
+
+        <hr />
+        <h2>Activity Instructions</h2>
+        <p>Estimated Time: 60 minutes</p>
+
+        <p>
+          This activity is an opportunity to pull together many of the things
+          you have learned this semester by writing the HTML and CSS to build a
+          simple media card UI. Below is a mockup of what our component should
+          look like when done.
+        </p>
+        <div class="fig-block">
+          <figure>
+            <img
+              alt="Media Card example"
+              src="../images/card-2.png"
+              title="Media Card example"
+            />
+            <figcaption>Media Card example</figcaption>
+          </figure>
+        </div>
+        <ol class="bigSteps">
+          <li>
+            <!-- BEGIN STEP -->
+            <h3>Set the foundation</h3>
+
+            <p>
+              Review the mockup above. It looks like there are three groupings
+              of content. The image above, the paragraph, and the buttons and
+              time on the bottom. We need to add the HTML elements to define
+              those areas.
+            </p>
+            <p>
+              Create a new file in your editor and name it <kbd>card.html</kbd>.
+              Remove anything that might be in the <code>body</code> element and
+              add an <code>&lt;article&gt;</code> element abd give it a
+              <kbd>class</kbd> of <kbd>card</kbd>. This will be the basis of our
+              media component.
+            </p>
+            <p>
+              Next add an image. You can use
+              <kbd>https://loremflickr.com/320/240</kbd> for the <kbd>src</kbd>.
+              It will pull a random image of the correct size for our component.
+            </p>
+            <p>
+              Next add a paragraph. You can pull to contents of it from the
+              mockup above.
+            </p>
+            <p>
+              Finally add a <code>&lt;footer&gt;</code>. It should have two
+              buttons in it (give one a class of <kbd>viewButton</kbd> and the
+              other a class of <kbd>editButton</kbd>), and a span which will
+              hold the time.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- BEGIN STEP -->
+            <h3>Base style.</h3>
+
+            <p>
+              For our CSS to keep it simple we will use a
+              <code>&lt;style&gt;</code> element in the
+              <code>&lt;head&gt;</code>. All of your CSS should go in that
+              element. Begin by adding the following rule to the top of your css
+              as well. It will make the image work correctly.
+            </p>
+            <pre><code class="lang-css">img {
+  max-width: 100%;
+}</code></pre>
+
+            <p>
+              Next add a <code>.card</code> class. Make the width of our card
+              <kbd>320px</kbd>
+            </p>
+            <p>
+              You should also notice that the card has a white background, a
+              slight shadow, and rounded corners. Rounded corners can be
+              accompished with the
+              <a
+                href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp"
+                target="_blank"
+                >border-radius</a
+              >
+              property. It can take 1 or 4 values. If one then it will apply the
+              same curve to all four corners. This is what we want here.
+            </p>
+            <p>
+              The shadow under the card can be done with the
+              <a
+                href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp"
+                target="_blank"
+                >css3_pr_box-shadow</a
+              >
+              property. Check out the preceeding link for details...but for now
+              I will give you some settings that will work for us.
+            </p>
+            <pre><code class="lang-css">.card {
+  width: 320px;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 3px;
+  background-color: white;       
+}
+     </code></pre>
+            <p>That will get you started.</p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- BEGIN STEP -->
+            <h3>Finishing up</h3>
+
+            <p>
+              For the rest of the styling the following details will be helpful:
+            </p>
+            <ul>
+              <li>
+                Set your font to a nice <kbd>sans-serif</kbd> font. Arial or
+                Helvetica should work.
+              </li>
+              <li>
+                If you give <kbd>border-radius</kbd> 4 values, it starts with
+                the top left corner and goes clockwise. So
+                <kbd>3px 0 0 3px</kbd> would curve the top-left and bottom-left
+                corner for example.
+              </li>
+              <li>
+                For the grey colors <kbd>#888</kbd> is a nice medium grey, and
+                <kbd>#ccc</kbd> is a nice light grey
+              </li>
+              <li>
+                Remember that the space between two elements is controlled by
+                <code>margin</code>. The space between the contents of an
+                element and the border of the element is controlled by
+                <code>padding</code>. You will need to add padding to many of
+                the elements to get your component to look like the mockup.
+              </li>
+              <li>
+                As you work on rounding the corners of the card, if you have
+                issues with the top corners it is probably the corners of the
+                image covering up the rounded corners of the box. You can use
+                the
+                <a
+                  href="https://www.w3schools.com/cssref/pr_pos_overflow.asp"
+                  target="_blank"
+                  >overflow</a
+                >
+                property to fix this. Adding <code>overflow: hidden</code> to
+                the card will make any content that falls outside of that
+                element be hidden (like the square corners of your image).
+              </li>
+            </ul>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- BEGIN STEP -->
+            <h3>Upload to ILearn</h3>
+
+            <p>Upload your link to ILearn.</p>
+            <!-- END STEP -->
+          </li>
+        </ol>
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
