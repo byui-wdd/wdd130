@@ -1,292 +1,414 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>WDD 130 | More CSS: Fonts and Spacing- Instructions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/prism-light.css" />
     <link rel="stylesheet" href="../css/course.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="content">
-        <header class="headerBanner">
-            <div>
-                <h1>
-                    <span>WEB</span> Fundamentals</h1>
-                <h2>WDD 130</h2>
-            </div>
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>More CSS: Fonts and Spacing</h1>
 
-        </header>
-        <main>
-            <h1>More CSS: Fonts and Spacing</h1>
-
-            <hr />
-            <h2>Activity Directions</h2>
-            <p>Estimated Time: 45 minutes</p>
-            <div class="callout">
-                <p>This activity will use the following new css concepts or properties (review the links if you do not
-                    remember
-                    these from Khan academy):</p>
-                <ul>
-                    <li>
-                        <a href="http://www.w3schools.com/css/css_font.asp" target="_blank">CSS Fonts</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">CSS Box Model</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/css/css_padding.asp" target="_blank">CSS Padding</a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/css/css_text.asp" target="_blank">CSS Text Properties</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="callout">
-                <p>Nothing makes a webpage feel like more of a product and less of a project than changing from the
-                    default
-                    fonts. You should have chosen one or two fonts when you were putting the site plan together for
-                    your
-                    site. Go review that now.</p>
-                <p>If you chose fonts from among the
-                    <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">web-safe list</a>&nbsp;then
-                    you can use them just like Khan academy showed you this week. (Here is another
-                    list of the web-safe fonts:&nbsp;
-                    <a href="http://www.cssfontstack.com/" target="_blank">http://www.cssfontstack.com/</a>)</p>
-                <p>If you chose fonts from Google Fonts or elsewhere then we have to make the font available to the web
-                    page
-                    first before we can use them.</p>
-                <p>No matter which fonts you are using it is always a good idea to list some fall-back fonts, in case
-                    for some
-                    reason your first choice doesn't work correctly...you can control how it degrades. Your second
-                    choice
-                    should be similar to your first (and usually web-safe), the third font in the list should usually
-                    be
-                    one of the default font families. (serif, san-serif, fantasy, monospace, or script)</p>
-                <p>So for example if I chose Helvetica&nbsp;as my font for body copy I would add something like&nbsp;
-                    <kbd>font-family: Helvetica, Arial, sans-serif;</kbd>&nbsp;to a rule modifying the&nbsp;
-                    <kbd>body</kbd> of my page.</p>
-                <p>If however I wanted to use the font Rock Salt for my headlines, that is not a web safe font and will
-                    probably
-                    not be on most computers. I have to do an extra step to make it available.</p>
-                <p>Google Fonts makes it very easy to add your fonts. Find your font in Google Fonts and click the red
-                    plus:
-                    Select this Font</p>
-                <div class="fig-block">
-                    <figure>
-                        <img src="../images/googlefont1-new.jpg" alt="googlefont" title="googlefont" />
-                    </figure>
-                </div>
-                <p>Then find the black bar on the bottom of your screen and click on it to expand it. Then click on the
-                    "@import"
-                    tab.</p>
-                <div class="fig-block">
-                    <figure>
-                        <img src="../images/googlefont2-new.jpg" alt="googlefont2" title="googlefont2" />
-                    </figure>
-                </div>
-                <p>Copy the line that starts with '@import' and add it to the
-                    <strong>top</strong> of your <kbd>style.css</kbd> file. It should look something like this:</p>
-                <pre><code class="lang-markup">
+        <hr />
+        <h2>Activity Directions</h2>
+        <p>Estimated Time: 45 minutes</p>
+        <div class="callout">
+          <p>
+            This activity will use the following new css concepts or properties
+            (review the links if you do not remember these from Khan academy):
+          </p>
+          <ul>
+            <li>
+              <a
+                href="http://www.w3schools.com/css/css_font.asp"
+                target="_blank"
+                >CSS Fonts</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/css/css_boxmodel.asp"
+                target="_blank"
+                >CSS Box Model</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/css/css_padding.asp"
+                target="_blank"
+                >CSS Padding</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.w3schools.com/css/css_text.asp"
+                target="_blank"
+                >CSS Text Properties</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="callout">
+          <p>
+            Nothing makes a webpage feel like more of a product and less of a
+            project than changing from the default fonts. You should have chosen
+            one or two fonts when you were putting the site plan together for
+            your site. Go review that now.
+          </p>
+          <p>
+            If you chose fonts from among the
+            <a
+              href="http://www.w3schools.com/cssref/css_websafe_fonts.asp"
+              target="_blank"
+              >web-safe list</a
+            >&nbsp;then you can use them just like Khan academy showed you this
+            week. (Here is another list of the web-safe fonts:&nbsp;
+            <a href="http://www.cssfontstack.com/" target="_blank"
+              >http://www.cssfontstack.com/</a
+            >)
+          </p>
+          <p>
+            If you chose fonts from Google Fonts or elsewhere then we have to
+            make the font available to the web page first before we can use
+            them.
+          </p>
+          <p>
+            No matter which fonts you are using it is always a good idea to list
+            some fall-back fonts, in case for some reason your first choice
+            doesn't work correctly...you can control how it degrades. Your
+            second choice should be similar to your first (and usually
+            web-safe), the third font in the list should usually be one of the
+            default font families. (serif, san-serif, fantasy, monospace, or
+            script)
+          </p>
+          <p>
+            So for example if I chose Helvetica&nbsp;as my font for body copy I
+            would add something like&nbsp;
+            <kbd>font-family: Helvetica, Arial, sans-serif;</kbd>&nbsp;to a rule
+            modifying the&nbsp; <kbd>body</kbd> of my page.
+          </p>
+          <p>
+            If however I wanted to use the font Rock Salt for my headlines, that
+            is not a web safe font and will probably not be on most computers. I
+            have to do an extra step to make it available.
+          </p>
+          <p>
+            Google Fonts makes it very easy to add your fonts. Find your font in
+            Google Fonts and click the red plus: Select this Font
+          </p>
+          <div class="fig-block">
+            <figure>
+              <img
+                src="../images/googlefont1-new.jpg"
+                alt="googlefont"
+                title="googlefont"
+              />
+            </figure>
+          </div>
+          <p>
+            Then find the black bar on the bottom of your screen and click on it
+            to expand it. Then click on the "@import" tab.
+          </p>
+          <div class="fig-block">
+            <figure>
+              <img
+                src="../images/googlefont2-new.jpg"
+                alt="googlefont2"
+                title="googlefont2"
+              />
+            </figure>
+          </div>
+          <p>
+            Copy the line that starts with '@import' and add it to the
+            <strong>top</strong> of your <kbd>style.css</kbd> file. It should
+            look something like this:
+          </p>
+          <pre><code class="lang-markup">
 @import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 ...the rest of your css...            
 </code></pre>
 
-                <p>Now you can use that font just like normal, ie:&nbsp;
-                    <kbd>font-family: 'Rock Salt', cursive;</kbd>
-                </p>
+          <p>
+            Now you can use that font just like normal, ie:&nbsp;
+            <kbd>font-family: 'Rock Salt', cursive;</kbd>
+          </p>
+        </div>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3>Change your Body font</h3>
+            <p>
+              Based on your font choices from your site plan, add the
+              appropriate&nbsp; <kbd>font-family:</kbd>, and&nbsp;
+              <kbd>@import</kbd>&nbsp;lines to your CSS to change the body font
+              and headline font on your webpage.
+            </p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Adjusting font size</h3>
+            <p>
+              Often the default font sizes are fine...but there are times when
+              they need to be changed. For example it's good for the links used
+              for navigation to be nice and easy to click, so lets increase
+              their size. Let's make it 110% of normal. (Remember the 'em' unit
+              of measurement for fonts. 1em = the normal size of your font...so
+              1.1em = 110%)
+            </p>
+            <div class="callout" style="overflow:auto;">
+              <img
+                src="../images/paddingexample.jpg"
+                alt="paddingexample"
+                title="paddingexample"
+                class="right"
+              />
+              <p>
+                Nice to have those fonts in there :) Now though notice what is
+                happening anywhere that you have made colored boxes around
+                anything. Here is an example:
+              </p>
+              <p>
+                The font and image are pressed right up against the edge of the
+                border and it looks...not great. Lets fix it.
+              </p>
+              <p>
+                The space between the content in a box and the edge of a box is
+                called
+                <a
+                  href="http://www.w3schools.com/cssref/pr_padding.asp"
+                  target="_blank"
+                  >padding</a
+                >. We can add padding to one or all sides. for example if I
+                wanted to add some padding to all 4 sides of the box I would do
+                something like this:&nbsp; <kbd>padding: 1em;</kbd>&nbsp;(We
+                will learn more about padding next week)
+              </p>
             </div>
-            <ol class="bigSteps">
-                <li>
-                    <!-- START STEP -->
-                    <h3>Change your Body font</h3>
-                    <p>Based on your font choices from your site plan, add the appropriate&nbsp;
-                        <kbd>font-family:</kbd>, and&nbsp;
-                        <kbd>@import</kbd>&nbsp;lines to your CSS to change the body font and headline font on your
-                        webpage.</p>
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Adjusting font size</h3>
-                    <p>Often the default font sizes are fine...but there are times when they need to be changed. For
-                        example
-                        it's good
-                        for the links used for navigation to be nice and easy to click, so lets increase their size.
-                        Let's make
-                        it
-                        110% of normal. (Remember the 'em' unit of measurement for fonts. 1em = the normal size of your
-                        font...so
-                        1.1em = 110%)</p>
-                    <div class="callout" style="overflow:auto;">
-                        <img src="../images/paddingexample.jpg" alt="paddingexample" title="paddingexample" class="right" />
-                        <p>Nice to have those fonts in there :) Now though notice what is happening anywhere that you
-                            have made
-                            colored
-                            boxes around anything. Here is an example:</p>
-                        <p>The font and image are pressed right up against the edge of the border and it looks...not
-                            great.
-                            Lets fix
-                            it.</p>
-                        <p>The space between the content in a box and the edge of a box is called
-                            <a href="http://www.w3schools.com/cssref/pr_padding.asp" target="_blank">padding</a>. We
-                            can add
-                            padding to one or all sides. for example if I wanted to add some padding to all
-                            4 sides of the box I would do something like this:&nbsp;
-                            <kbd>padding: 1em;</kbd>&nbsp;(We will learn more about padding next week)</p>
-                    </div>
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Adding Padding</h3>
-                    <p>Use
-                        <kbd>padding</kbd> to space out the content on your page from any edges or borders where it is
-                        needed.</p>
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Paying attention to promixity</h3>
-                    <p>Proximity is a design principle that we rely on to help to know which elements on our page are
-                        related to each other by their distance from each other. Right now the headlines are the exact
-                        same distance from the images as they are from the paragraphs. This can cause confusion in
-                        visitor's minds. Do the headlines describe the images or the text? It's hard to know currently.</p>
-                    <p>Let's make sure that visitors to our site know that
-                        the headlines and paragraphs are related to each other by bringing them a little closer
-                        together. Adjust the&nbsp;
-                        <kbd>line-height</kbd>&nbsp; and
-                        <kbd>margin</kbd>s of your headlines to bring them closer to the paragraphs they belong to. You
-                        could even play with the line-height of your paragraphs to see how it affects readability as
-                        well.</p>
-                    <p>When you are done the headlines should be closer to the paragraphs than they are to the images.</p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Adding Padding</h3>
+            <p>
+              Use <kbd>padding</kbd> to space out the content on your page from
+              any edges or borders where it is needed.
+            </p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Paying attention to promixity</h3>
+            <p>
+              Proximity is a design principle that we rely on to help to know
+              which elements on our page are related to each other by their
+              distance from each other. Right now the headlines are the exact
+              same distance from the images as they are from the paragraphs.
+              This can cause confusion in visitor's minds. Do the headlines
+              describe the images or the text? It's hard to know currently.
+            </p>
+            <p>
+              Let's make sure that visitors to our site know that the headlines
+              and paragraphs are related to each other by bringing them a little
+              closer together. Adjust the&nbsp; <kbd>line-height</kbd>&nbsp; and
+              <kbd>margin</kbd>s of your headlines to bring them closer to the
+              paragraphs they belong to. You could even play with the
+              line-height of your paragraphs to see how it affects readability
+              as well.
+            </p>
+            <p>
+              When you are done the headlines should be closer to the paragraphs
+              than they are to the images.
+            </p>
 
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Why isn't it working?</h3>
-                    <p>Using <kbd>line-height</kbd>&nbsp; and
-                        <kbd>margin</kbd> on the headline were you able to get the headline closer to the paragraph
-                        than it is to the image? You probably didn't, so what is going on?</p>
-                    <p>The screenshots for this next section are from the Chrome browser. It may help if you switch to
-                        that browser for this section if you are not already using it. Make sure that you have also
-                        completed the <a href="https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/using-the-browser-developer-tools"
-                            target="_blank">Web development tools</a> section on Khan Academy before proceeding.</p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Why isn't it working?</h3>
+            <p>
+              Using <kbd>line-height</kbd>&nbsp; and <kbd>margin</kbd> on the
+              headline were you able to get the headline closer to the paragraph
+              than it is to the image? You probably didn't, so what is going on?
+            </p>
+            <p>
+              The screenshots for this next section are from the Chrome browser.
+              It may help if you switch to that browser for this section if you
+              are not already using it. Make sure that you have also completed
+              the
+              <a
+                href="https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/using-the-browser-developer-tools"
+                target="_blank"
+                >Web development tools</a
+              >
+              section on Khan Academy before proceeding.
+            </p>
 
-
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Browser developer tools</h3>
-                    <p>If you are having a hard time getting your headlines to come closer to your paragraphs try
-                        this:
-                        right click
-                        on one of your headlines and select "Inspect". An area on your browser should open at
-                        either the side or bottom of the screen that shows both the html and the styles for that
-                        element. This is
-                        a powerful tool.</p>
-                    <p>When I did this I saw the following:</p>
-                    <div class="fig-block">
-                        <figure>
-                            <img src="../images/inspect1.jpg" alt="inspect element example" />
-                        </figure>
-
-                    </div>
-                    <ol>
-                        <li>Notice that browser is showing me the size of the element in pixels.</li>
-                        <li>It's also showing me where the element I have inspected is both in the code (right) and in
-                            the browser window (left). On the left it shows the area it takes up both for size (blue
-                            highlight) and margins (brown highlight). If there were any padding it would be green. If
-                            you look at the code you will probably see a bunch of stuff in the html that you don't
-                            remember adding to your page! Thimble added that to help it do what it needs to do. You can
-                            ignore everything prefixed with 'data-'</li>
-                        <li>All the styles are shown. The third arrow shows styles I defined.</li>
-                        <li>This arrow shows several styles I
-                            <strong>did not</strong> define. Notice it says "user agent stylesheet" That's just
-                            another way of saying "browser default styling".</li>
-                        <li>Finally we get a graphical representation of the <a href="http://www.w3schools.com/css/css_boxmodel.asp"
-                                target="_blank">CSS Box Model</a></li>
-                    </ol>
-
-                    <p>The highlighted area, styles, and the box model are all showing in different ways that an
-                        <kbd>&lt;h2&gt;</kbd> has top and bottom margins defined by default. Those defaults are
-                        probably interfering with your desire to move the headline closer to the paragraph.</p>
-
-
-
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>More Inspecting</h3>
-                    <p>Now select the paragraph element below the title we are working with. Right-click on the
-                        paragraph and select "Inspect" again. This will target that element in the DOM inspector. (Or
-                        just click on the paragraph element in the HTML Element pane)</p>
-                    <div class="fig-block">
-                        <figure>
-                            <img src="../images/inspect2.jpg" alt="box model example" />
-                            <figcaption>A paragraph element in the developer tools</figcaption>
-                        </figure>
-                    </div>
-                    <p>What do you see? If you noticed that this paragraph (in fact ALL paragraphs) also have some
-                        default top and bottom margin great job! :)</p>
-                    <p>When two elements by each other both have top and bottom margins, the browser collapses the
-                        smaller margin and keeps the larger. So before we changed anything the bottom margin of the
-                        <code>&lt;h2&gt;</code> was about 22px (see first inspect figure above), and the <code>&lt;p&gt;</code>
-                        had a top margin of 18px. The space between the elements would be 22px. If we changed the
-                        bottom margin of
-                        the <code>&lt;h2&gt;</code> to 0 then the space between the two elements would still be
-                        18px...because of the <code>&lt;p&gt;</code> default styles. To get the two elements to move
-                        closer together then, we need to address both margins!</p>
-                    <p>We have two choices here: we could set a rule for both the headlines AND the paragraphs and
-                        adjust margins on both, or we can take advantage of the fact that margins can be NEGATIVE.</p>
-                    <p>A positive margin pushes two elements apart, a negative one pulls them closer together.</p>
-                    <p>In your browser tools try adding a negative <kbd>margin-bottom</kbd> to the <code>&lt;h2&gt;</code>
-                        we are trying to style. Once you find a value that looks good, add a rule to your <kdb>style.css</kdb>
-                        to fix all your headlines that have paragraphs following them.</p>
-                    <!-- END STEP  -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h3>Check your site</h3>
-                    <p>Re-publish your site and check the sharable URL to make sure the web page displays correctly.
-                        Pay
-                        special
-                        attention
-                        to whether your images are all displaying. Once verified, submit the URL for your page to
-                        iLearn.&nbsp;</p>
-                    <p>Make sure to
-                        <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix any
-                        errors
-                        that show.</p>
-                    <!-- END STEP  -->
-                </li>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Browser developer tools</h3>
+            <p>
+              If you are having a hard time getting your headlines to come
+              closer to your paragraphs try this: right click on one of your
+              headlines and select "Inspect". An area on your browser should
+              open at either the side or bottom of the screen that shows both
+              the html and the styles for that element. This is a powerful tool.
+            </p>
+            <p>When I did this I saw the following:</p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  src="../images/inspect1.jpg"
+                  alt="inspect element example"
+                />
+              </figure>
+            </div>
+            <ol>
+              <li>
+                Notice that browser is showing me the size of the element in
+                pixels.
+              </li>
+              <li>
+                It's also showing me where the element I have inspected is both
+                in the code (right) and in the browser window (left). On the
+                left it shows the area it takes up both for size (blue
+                highlight) and margins (brown highlight). If there were any
+                padding it would be green. If you look at the code you will
+                probably see a bunch of stuff in the html that you don't
+                remember adding to your page! Glitch added that to help it do
+                what it needs to do. You can ignore everything prefixed with
+                'data-'
+              </li>
+              <li>
+                All the styles are shown. The third arrow shows styles I
+                defined.
+              </li>
+              <li>
+                This arrow shows several styles I
+                <strong>did not</strong> define. Notice it says "user agent
+                stylesheet" That's just another way of saying "browser default
+                styling".
+              </li>
+              <li>
+                Finally we get a graphical representation of the
+                <a
+                  href="http://www.w3schools.com/css/css_boxmodel.asp"
+                  target="_blank"
+                  >CSS Box Model</a
+                >
+              </li>
             </ol>
 
-            <div class="rubric">
-                <h2>Grading</h2>
-                <p>This activity will be graded using the following rubric:</p>
-                <ul>
-                    <li>Linked site shows examples of using font-family, font-size, line-height, width, and padding
-                        with
-                        classes
-                        or ids (6 pts)</li>
-                    <li>Fonts of the webpage are changed from the default browser font and a series of 3 fonts have
-                        been
-                        indicated
-                        in the CSS to control how the font degrades if a desired font is not available. (3pts)</li>
-                    <li>The HTML is well formed and without errors. (1 pt)</li>
-                </ul>
+            <p>
+              The highlighted area, styles, and the box model are all showing in
+              different ways that an <kbd>&lt;h2&gt;</kbd> has top and bottom
+              margins defined by default. Those defaults are probably
+              interfering with your desire to move the headline closer to the
+              paragraph.
+            </p>
+
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>More Inspecting</h3>
+            <p>
+              Now select the paragraph element below the title we are working
+              with. Right-click on the paragraph and select "Inspect" again.
+              This will target that element in the DOM inspector. (Or just click
+              on the paragraph element in the HTML Element pane)
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img src="../images/inspect2.jpg" alt="box model example" />
+                <figcaption>
+                  A paragraph element in the developer tools
+                </figcaption>
+              </figure>
             </div>
-        </main>
+            <p>
+              What do you see? If you noticed that this paragraph (in fact ALL
+              paragraphs) also have some default top and bottom margin great
+              job! :)
+            </p>
+            <p>
+              When two elements by each other both have top and bottom margins,
+              the browser collapses the smaller margin and keeps the larger. So
+              before we changed anything the bottom margin of the
+              <code>&lt;h2&gt;</code> was about 22px (see first inspect figure
+              above), and the <code>&lt;p&gt;</code> had a top margin of 18px.
+              The space between the elements would be 22px. If we changed the
+              bottom margin of the <code>&lt;h2&gt;</code> to 0 then the space
+              between the two elements would still be 18px...because of the
+              <code>&lt;p&gt;</code> default styles. To get the two elements to
+              move closer together then, we need to address both margins!
+            </p>
+            <p>
+              We have two choices here: we could set a rule for both the
+              headlines AND the paragraphs and adjust margins on both, or we can
+              take advantage of the fact that margins can be NEGATIVE.
+            </p>
+            <p>
+              A positive margin pushes two elements apart, a negative one pulls
+              them closer together.
+            </p>
+            <p>
+              In your browser tools try adding a negative
+              <kbd>margin-bottom</kbd> to the <code>&lt;h2&gt;</code> we are
+              trying to style. Once you find a value that looks good, add a rule
+              to your <kdb>style.css</kdb> to fix all your headlines that have
+              paragraphs following them.
+            </p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Check your site</h3>
+            <p>
+              Preview your site to make sure the web page displays correctly.
+              Pay special attention to whether your images are all displaying.
+              Once verified, submit the URL for your page to iLearn.&nbsp;
+            </p>
+            <p>
+              Make sure to
+              <a href="https://validator.w3.org/" target="_blank">validate</a>
+              your page as well and fix any errors that show.
+            </p>
+            <!-- END STEP  -->
+          </li>
+        </ol>
+
+        <div class="rubric">
+          <h2>Grading</h2>
+          <p>This activity will be graded using the following rubric:</p>
+          <ul>
+            <li>
+              Linked site shows examples of using font-family, font-size,
+              line-height, width, and padding with classes or ids (6 pts)
+            </li>
+            <li>
+              Fonts of the webpage are changed from the default browser font and
+              a series of 3 fonts have been indicated in the CSS to control how
+              the font degrades if a desired font is not available. (3pts)
+            </li>
+            <li>The HTML is well formed and without errors. (1 pt)</li>
+          </ul>
+        </div>
+      </main>
     </div>
     <script src="../js/course.js"></script>
     <script src="../js/prism.js"></script>
-</body>
-
+  </body>
 </html>
