@@ -1,185 +1,236 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>WDD 130: CSS Vocabulary</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/prism-light.css" />
     <link rel="stylesheet" href="../css/course.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="content">
-        <header class="headerBanner">
-            <div>
-                <h1>
-                    <span>WEB</span> Fundamentals</h1>
-                <h2>WDD 130</h2>
-            </div>
-
-        </header>
-        <main>
-            <h1>CSS Vocabulary</h1>
-            <hr />
-            <h2>Activity&nbsp;Instructions</h2>
-            <p>Estimated Time: 30 minutes</p>
-            <p>Just like with HTML, CSS also has some important vocabulary that you should be familiar with as we move forward.
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>CSS Vocabulary</h1>
+        <hr />
+        <h2>Activity&nbsp;Instructions</h2>
+        <p>Estimated Time: 30 minutes</p>
+        <p>
+          Just like with HTML, CSS also has some important vocabulary that you
+          should be familiar with as we move forward.
+        </p>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h2>Vocabulary list</h2>
+            <p>
+              Let's learn the CSS vocabulary you will need to succeed in this
+              course.
             </p>
-            <ol class="bigSteps">
-                <li>
-                    <!-- START STEP -->
-                    <h2>Vocabulary list</h2>
-                    <p>Let's learn the CSS vocabulary you will need to succeed in this course.</p>
-                    <div class="callout">
-                        <p>CSS has some very specific vocabulary that comes with it. It is important that we become familiar
-                            with it. Spend a few minutes familiarizing yourself with the following list. You will have a
-                            hard time making sense of the instruction given in this course if you don't understand these
-                            terms.
-                        </p>
+            <div class="callout">
+              <p>
+                CSS has some very specific vocabulary that comes with it. It is
+                important that we become familiar with it. Spend a few minutes
+                familiarizing yourself with the following list. You will have a
+                hard time making sense of the instruction given in this course
+                if you don't understand these terms.
+              </p>
 
-                        <dl class="def-list">
-
-                            <dt>
-                                <strong>Selector</strong>
-                            </dt>
-                            <dd>How you specify to the browser which HTML element(s) should be changed. We will focus primarily
-                                on 3 kinds of selectors in this class:
-                                <ol>
-                                    <li>element</li>
-                                    <li>.class</li>
-                                    <li>#id</li>
-                                </ol>
-                                <p>For example, if we have the following HTML:</p>
-                                <pre><code class="lang-markup html">&lt;p&gt;No class or id on this paragraph&lt;/p&gt;
+              <dl class="def-list">
+                <dt><strong>Selector</strong></dt>
+                <dd>
+                  How you specify to the browser which HTML element(s) should be
+                  changed. We will focus primarily on 3 kinds of selectors in
+                  this class:
+                  <ol>
+                    <li>element</li>
+                    <li>.class</li>
+                    <li>#id</li>
+                  </ol>
+                  <p>For example, if we have the following HTML:</p>
+                  <pre><code class="lang-markup html">&lt;p&gt;No class or id on this paragraph&lt;/p&gt;
 &lt;p class="green"&gt;This paragraph has a class&lt;/p&gt;
 &lt;p class="green" id="paragraph3"&gt;This paragraph has a class and an id &lt;/p&gt;</code></pre>
-                                <p>We could select all of the paragraphs by using the element selector:
-                                    <code>p</code> (Notice that there is no preface...we simply use the tag name)
-                                </p>
-                                <p>We could select just the second and third paragraphs by using the class attribute on them
-                                    as a selector like this:
-                                    <code>.green</code> (Notice that we preface the class name with a period)
-                                </p>
-                                <p>...and we could select just the last paragraph by using its ID as a selector like this:
-                                    <code>#paragraph3</code> (Notice that we preface the ID with a hashtag)
-                                </p>
-                                <pre><code class="lang-css">p /* element selector: all paragraphs */
+                  <p>
+                    We could select all of the paragraphs by using the element
+                    selector: <code>p</code> (Notice that there is no
+                    preface...we simply use the tag name)
+                  </p>
+                  <p>
+                    We could select just the second and third paragraphs by
+                    using the class attribute on them as a selector like this:
+                    <code>.green</code> (Notice that we preface the class name
+                    with a period)
+                  </p>
+                  <p>
+                    ...and we could select just the last paragraph by using its
+                    ID as a selector like this: <code>#paragraph3</code> (Notice
+                    that we preface the ID with a hashtag)
+                  </p>
+                  <pre><code class="lang-css">p /* element selector: all paragraphs */
 .green /* class selector: all paragraphs with an attribute class="green" */
 #paragraph3 /* id selector: the paragraph with the attribute id="paragraph3" */</code></pre>
-                            </dd>
-                            <dt>
-                                <strong>Property</strong>
-                            </dt>
-                            <dd>What we want to change about the element(s) selected by our selector. ie
-                                <pre><code class="lang-css">background-color</code></pre>
-                            </dd>
-                            <dt>
-                                <strong>Value</strong>
-                            </dt>
-                            <dd>How we want to change a property
-                                <pre><code class="lang-css">green</code></pre>
-                            </dd>
-                            <dt>
-                                <strong>Declaration</strong>
-                            </dt>
-                            <dd>A combination of a property and value with a colon. Declarations must end with a semi-colon (;)
-                                <pre><code class="lang-css">background-color: green;</code></pre>
-                            </dd>
-                            <dt>
-                                <strong>Declaration Block</strong>
-                            </dt>
-                            <dd>One or more declarations will be combined into a block using curly braces: {}
-                                <pre><code class="lang-css">{
+                </dd>
+                <dt><strong>Property</strong></dt>
+                <dd>
+                  What we want to change about the element(s) selected by our
+                  selector. ie
+                  <pre><code class="lang-css">background-color</code></pre>
+                </dd>
+                <dt><strong>Value</strong></dt>
+                <dd>
+                  How we want to change a property
+                  <pre><code class="lang-css">green</code></pre>
+                </dd>
+                <dt><strong>Declaration</strong></dt>
+                <dd>
+                  A combination of a property and value with a colon.
+                  Declarations must end with a semi-colon (;)
+                  <pre><code class="lang-css">background-color: green;</code></pre>
+                </dd>
+                <dt><strong>Declaration Block</strong></dt>
+                <dd>
+                  One or more declarations will be combined into a block using
+                  curly braces: {}
+                  <pre><code class="lang-css">{
     background-color: green;
     margin: 5px;    
 }</code></pre>
-                            </dd>
-                            <dt>
-                                <strong>Rule (or Rule-set)</strong>
-                            </dt>
-                            <dd>A rule is the combination of a selector and declaration block. The example below would select
-                                all elements with a class="green" and turn their background green!
-                                <pre><code class="lang-css">.green {
+                </dd>
+                <dt><strong>Rule (or Rule-set)</strong></dt>
+                <dd>
+                  A rule is the combination of a selector and declaration block.
+                  The example below would select all elements with a
+                  class="green" and turn their background green!
+                  <pre><code class="lang-css">.green {
     background-color: green;
     margin: 5px;    
 }</code></pre>
-                            </dd>
-                            <dt>
-                                <strong>Units</strong>
-                            </dt>
-                            <dd>Many properties require a value with units. Some units are absolute meaning that they are always
-                                the same size. Other units are relative meaning that their size changes based on something
-                                else (like the size of the text or the width or the browser or an element). Common CSS units
-                                are: px (absolute), em (relative, based off of font size), and % (relative, based off of
-                                width) </dd>
-                        </dl>
-                    </div>
-                    <!-- END STEP -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h2>Look deeper</h2>
-                    <p>Watch for mention of the terms above as you review the following tutorials.</p>
+                </dd>
+                <dt><strong>Units</strong></dt>
+                <dd>
+                  Many properties require a value with units. Some units are
+                  absolute meaning that they are always the same size. Other
+                  units are relative meaning that their size changes based on
+                  something else (like the size of the text or the width or the
+                  browser or an element). Common CSS units are: px (absolute),
+                  em (relative, based off of font size), and % (relative, based
+                  off of width)
+                </dd>
+              </dl>
+            </div>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Look deeper</h2>
+            <p>
+              Watch for mention of the terms above as you review the following
+              tutorials.
+            </p>
 
-                    <p>Make sure to tap on the "Try It Yourself" buttons in the tutorials to experiment!</p>
-                    <ul>
-                        <li>
-                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener noreferrer">Introduction to CSS</a>
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank" rel="noopener noreferrer">CSS Syntax</a>
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank" rel="noopener noreferrer">CSS Units</a>
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener noreferrer">CSS Selectors</a> Look over this list, pay particular attention to the element, class, and id
-                            selectors. (we won't use all of these types in this class!)
-                        </li>
-                        <li>
-                            <a href="https://www.w3schools.com/cssref/default.asp" target="_blank" rel="noopener noreferrer">CSS Properties</a> Look over this list and click on a few that look interesting.
-                        </li>
+            <p>
+              Make sure to tap on the "Try It Yourself" buttons in the tutorials
+              to experiment!
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3schools.com/css/css_intro.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Introduction to CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/css/css_syntax.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Syntax</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/cssref/css_units.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Units</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/cssref/css_selectors.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Selectors</a
+                >
+                Look over this list, pay particular attention to the element,
+                class, and id selectors. (we won't use all of these types in
+                this class!)
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/cssref/default.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Properties</a
+                >
+                Look over this list and click on a few that look interesting.
+              </li>
+            </ul>
 
+            <div class="callout">
+              <h3>Note!</h3>
+              <p>
+                Just like with the HTML, I do not expect you to memorize all of
+                the properties, etc in these links at this point. The goal is to
+                familiarize yourself with the concepts and learn to recognize
+                instances of the terms above. The site that these link to is
+                also a great resource for learning/reviewing HTML and CSS
+                concepts in general.
+              </p>
+            </div>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Review</h2>
+            <p>
+              Visit this site:
+              <a
+                href="http://apps.workflower.fi/vocabs/css/en#unit"
+                target="_blank"
+                >CSS Vocabulary</a
+              >
+              and see how many instances of the terms you learned above you can
+              find. After looking on your own, select each term from our list
+              one at a time on the right and see if you found all the instances.
+              This list has more vocabulary on it than I asked you to learn.
+              Don't let this overwhelm or distract you. Focus on the list above.
+            </p>
 
-                    </ul>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Take the Quiz</h2>
+            <p>
+              Just like with the HTML quiz you <strong>must pass</strong> this
+              quiz before you can move on to the next week. You can take this
+              quiz as many times as you need.
+            </p>
+            <!-- END STEP -->
+          </li>
+        </ol>
 
-
-                    <div class="callout">
-                        <h3>Note!</h3>
-                        <p>Just like with the HTML, I do not expect you to memorize all of the properties, etc in these links
-                            at this point. The goal is to familiarize yourself with the concepts and learn to recognize instances
-                            of the terms above. The site that these link to is also a great resource for learning/reviewing
-                            HTML and CSS concepts in general.</p>
-                    </div>
-                    <!-- END STEP -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h2>Review</h2>
-                    <p>Visit this site:
-                        <a href="http://apps.workflower.fi/vocabs/css/en#unit" target="_blank">CSS Vocabulary</a> and see how many instances of the terms you learned above you can find. After
-                        looking on your own, select each term from our list one at a time on the right and see if you found
-                        all the instances. This list has more vocabulary on it than I asked you to learn. Don't let this
-                        overwhelm or distract you. Focus on the list above.
-                    </p>
-
-                    <!-- END STEP -->
-                </li>
-                <li>
-                    <!-- START STEP -->
-                    <h2>Take the Quiz</h2>
-                    <p>Just like with the HTML quiz you
-                        <strong>must pass</strong> this quiz before you can move on to the next week. You can take this quiz as many
-                        times as you need.</p>
-                    <!-- END STEP -->
-                </li>
-            </ol>
-
-
-
-            <!-- <div class="highlight1">
+        <!-- <div class="highlight1">
                     <h4>Grading (10 pts)</h4>
                     <p>You must accomplish the following:</p>
                     <ul>
@@ -189,14 +240,10 @@
                         <li>You also must add your image to your profile in iLearn (if it is not already there.).</li>
                     </ul>
                 </div> -->
-
-
-
-        </main>
-        <!-- end #article -->
-        <script src="../js/course.js"></script>
-        <script src="../js/prism.js"></script>
+      </main>
+      <!-- end #article -->
+      <script src="../js/course.js"></script>
+      <script src="../js/prism.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
