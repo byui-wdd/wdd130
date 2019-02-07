@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Working with Wireframes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/prism-light.css" />
     <link rel="stylesheet" href="../css/course.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="content">
-        <header class="headerBanner">
-            <div>
-                <h1>
-                    <span>WEB</span> Fundamentals</h1>
-                <h2>WDD 130</h2>
-            </div>
-        </header>
-        <main>
-            <h1>Working with Wireframes</h1>
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Working with Wireframes</h1>
 
-            <p>Last week you got a look at a <a href="../images/wireframe-grid.png" target="_blank">wireframe</a> while building
-                out your site plan. Wireframes are valuable tools in web design. They help visualize what should be on a
-                page, and where each piece of content should be in relation to each other. We need to stop however and learn
-                a little bit about how to read a wireframe, and how to take a wireframe and convert it into HTML.</p>
-            <p>We will <strong>not</strong> be learning to make wireframes at this point. Only use them.</p>
-            <ol class="bigSteps">
-                <li>
-                    <h3>Reading wireframes</h3>
-                    <p>First visit <a href="https://fuzzymath.com/blog/how-to-read-a-wireframe/" target="_blank">How to read
-                            a wireframe</a> and psend some time looking at the infographic to familiarize yourself with what
-                        you can expect to find on a wireframe.</p>
-                </li>
-                <li>
-                    <h3>From Wireframe to Website</h3>
-                    <p>Next watch the videos <strong>two</strong> through <strong>five</strong> in this playlist: <a href="https://www.youtube.com/playlist?list=PLWjCJDeWfDdfoSnpsDRhTgz6VrVPvYqvR"
-                            target="_blank">From Wireframe to Website</a> (~10 minutes). This is a great example of what we need
-                        to do with our wireframe this week...convert it into HTML. Pay careful attention to how HTML elements
-                        are used in two ways: to display content, and group and show relationships between content.</p>
-                </li>
-                <li>
-                    <h3>Practice</h3>
-                    <p>Visit this <a href="https://dribbble.com/shots/978949-Responsive-Wireframe-Templates-GIF/attachments/113429"
-                            target="_blank">wireframe example</a> and convert it into HTML. You are welcome to help each other
-                        out with this task. You may find the following resources helpful.</p>
-                    <ul>
-                        <li><a href="https://loremflickr.com" target="_blank">LoremFlickr</a>: Placeholder image generator.
-                            We need something to use as images for our page. This is a quick and easy way to get some. Usage:
-                            <pre><code class="lang-markup">&lt;img src="https://loremflickr.com/320/240?random=1" /&gt;</code> </pre>                            This
-                            would give you a random image that was 320px X 240px large. If you want the images to always
-                            be different (we need several) change the "1" at the end to a different number for each image.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Important!</h3>
-                    <p>Remember that our goal is not to produce a finished version of the example site. It will look much
-                        like the site in the videos looked by video five...very rough. We are only trying to make sure we
-                        get all of the markup to include all of the content represented in the wireframe. Your finished page
-                        <strong>WILL NOT</strong> look like the wireframe.</p>
-                </li>
-            </ol>
+        <p>
+          Last week you got a look at a
+          <a href="../images/wireframe-grid.png" target="_blank">wireframe</a>
+          while building out your site plan. Wireframes are valuable tools in
+          web design. They help visualize what should be on a page, and where
+          each piece of content should be in relation to each other. We need to
+          stop however and learn a little bit about how to read a wireframe, and
+          how to take a wireframe and convert it into HTML.
+        </p>
+        <p>
+          We will <strong>not</strong> be learning to make wireframes at this
+          point. Only using them.
+        </p>
+        <ol class="bigSteps">
+          <li>
+            <h3>Reading wireframes</h3>
+            <p>
+              First visit
+              <a
+                href="https://fuzzymath.com/blog/how-to-read-a-wireframe/"
+                target="_blank"
+                >How to read a wireframe</a
+              >
+              and spend some time looking at the infographic to familiarize
+              yourself with what you can expect to find on a wireframe.
+            </p>
+          </li>
+          <li>
+            <h3>From Wireframe to Website</h3>
+            <p>
+              Next watch the videos <strong>two</strong> through
+              <strong>five</strong> in this playlist:
+              <a
+                href="https://www.youtube.com/playlist?list=PLWjCJDeWfDdfoSnpsDRhTgz6VrVPvYqvR"
+                target="_blank"
+                >From Wireframe to Website</a
+              >
+              (~10 minutes). This is a great example of what we need to do with
+              our wireframe this week...convert it into HTML. Pay careful
+              attention to how HTML elements are used in two ways: to display
+              content, and group and show relationships between content.
+            </p>
+          </li>
+          <li>
+            <h3>Practice</h3>
+            <p>
+              Visit this
+              <a
+                href="https://dribbble.com/shots/978949-Responsive-Wireframe-Templates-GIF/attachments/113429"
+                target="_blank"
+                >wireframe example</a
+              >
+              and convert it into HTML. You will probably want to create a new
+              HTML file in your project to do this in. You are welcome to help
+              each other out with this task. You may find the following
+              resources helpful.
+            </p>
+            <ul>
+              <li>
+                <a href="https://loremflickr.com" target="_blank">LoremFlickr</a
+                >: Placeholder image generator. We need something to use as
+                images for our page. This is a quick and easy way to get some.
+                Usage:
+                <pre><code class="lang-markup">&lt;img src="https://loremflickr.com/320/240?random=1" /&gt;</code> </pre>
+                This would give you a random image that was 320px X 240px large.
+                If you want the images to always be different (we need several)
+                change the "1" at the end to a different number for each image.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Important!</h3>
+            <p>
+              Remember that our goal is not to produce a finished version of the
+              example site. It will look much like the site in the videos looked
+              by video five...very rough. We are only trying to make sure we get
+              all of the markup to include all of the content represented in the
+              wireframe. Your finished page <strong>WILL NOT</strong> look like
+              the wireframe.
+            </p>
+          </li>
+        </ol>
 
-            <!-- end #article -->
-        </main>
-        <script src="../js/course.js"></script>
-        <script src="../js/prism.js"></script>
+        <!-- end #article -->
+      </main>
+      <script src="../js/course.js"></script>
+      <script src="../js/prism.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
