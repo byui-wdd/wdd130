@@ -94,7 +94,7 @@
           <p>
             The instructions below are expecting a certain structure in your
             HTML to work. If you followed the instructions in the
-            <a href="getting-started.html" target="_blank">Getting Started</a>
+            <a href="1-getting-started.html" target="_blank">Getting Started</a>
             activity you should have it. It should look similar to the
             following:
           </p>
@@ -270,8 +270,8 @@
               that this layout works best with 5 equally sized columns. To
               define this in grid we use the
               <code>grid-template-columns</code> property. It is a property of
-              the grid container, so we can add it to out
-              <code>.grid-main</code> rule set. We don't know exactly how wide
+              the grid container, so we can add it to our
+              <code>.home-grid</code> rule set. We don't know exactly how wide
               each column should be...only that they need to be equal. We can
               use the <kdb>fr</kdb> unit to do this. <kbd>1fr</kbd> = one equal
               portion of a space.
@@ -360,8 +360,8 @@
               the following:
             </p>
             <pre><code class="lang-css">.home-headline-1 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
 }    
     </code></pre>
             <p>
@@ -569,7 +569,7 @@
                   target="_blank"
                   >select</a
                 >
-                elements with CSS this week in Khan Academy. One of them allows
+                elements with CSS previously in Khan Academy. One of them allows
                 us to combine multiple selectors together. For step 1 above we
                 could use a simple <kbd>ul</kbd> as our selector, but that would
                 change all lists on the page, and we may not want that. It would

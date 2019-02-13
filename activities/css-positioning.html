@@ -76,7 +76,7 @@
             <p>
               The first step with using CSS Grid is to identify which elements
               we are trying to move (these will be the Grid Items or Children)
-              and then find their parent (this will be the GRid container or
+              and then find their parent (this will be the Grid container or
               parent). CSS Grid is turned on at the parent. Once we do that
               <em>all</em> of the direct children of that element become Grid
               Items. Because of this it is helpful if all of the elements we
@@ -145,6 +145,13 @@
     grid-template-columns: 1fr 1fr;
 }
                         </code></pre>
+            <div class="callout">
+              <p>
+                Glitch might mark the <code>grid-template-columns</code> as an
+                error. It's not, if you look at the page you should see that it
+                worked!
+              </p>
+            </div>
             <p>
               As soon as you define those columns you should see a change. It
               should look similar to the figure below:
@@ -158,7 +165,7 @@
                 <figcaption>Exercise 1 halfway there!</figcaption>
               </figure>
             </div>
-            <p>IT's actually a lot closer to finished than it might appear!</p>
+            <p>It's actually a lot closer to finished than it might appear!</p>
             <!-- END STEP  -->
           </li>
           <li>
@@ -354,7 +361,7 @@
     &lt;/div&gt;
     &lt;div class="activity"&gt;
         &lt;h2&gt;Activity 2&lt;/h2&gt;
-        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 2&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;Remember that there are 2 ways to shift elements around slightly on the page.  Margins and position:relative.  Either would work for this. If you choose margin remember that you can use a &lt;em&gt;negative&lt;/em&gt; margin. (ie margin-top: -20px;)&lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;margin-top, margin-left&lt;/li&gt;&lt;li&gt;...or...&lt;/li&gt;&lt;li&gt;position:relative; left:, top: &lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 2&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;Remember that the best way to shift elements around slightly on the page is with Margins.  You could also use Grid.  Either would work for this. If you choose margin remember that you can use a &lt;em&gt;negative&lt;/em&gt; margin. (ie margin-top: -20px;)&lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;margin-top, margin-left&lt;/li&gt;&lt;li&gt;...or...&lt;/li&gt;&lt;li&gt;grid-template-columns: 50px 50px 50px 50px 50px&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
         &lt;p&gt;Overlap and stagger the squares like in &lt;a href="https://byui-cit.github.io/wdd130/images/example2.png" target="_blank"&gt;this&lt;/a&gt; image.&lt;/p&gt;
         &lt;div class="content2" &gt;
         &lt;div class="red2" &gt;&lt;/div&gt;
@@ -401,7 +408,7 @@
     &lt;/div&gt;
     &lt;div class="activity"&gt;
         &lt;h2&gt;Activity 6&lt;/h2&gt;
-        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 6&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;This one is all about visualizing the grid behind the layout. If you are having a hard time doing that first: all the sizes are even multiples of 100, and second here is another example with the lines drawn: &lt;a href="https://byui-cit.github.io/wdd130/images/example6-hint.png" target="_blank"&gt;example 6 with lines&lt;/a&gt;. For this one you will find it easiest if you use px for the column width. You can also use &lt;kbd&gt;z-index&lt;/kbd&gt; to control the element layering.    &lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;display:grid;&lt;/li&gt;&lt;li&gt;grid-template-columns:&lt;/li&gt;&lt;li&gt;grid-column:&lt;/li&gt;&lt;li&gt;grid-row:&lt;/li&gt;&lt;li&gt;z-index:&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 6&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;This one is all about visualizing the grid behind the layout. If you are having a hard time doing that first: all the sizes are even multiples of 100, and second here is another example with the lines drawn: &lt;a href="https://byui-cit.github.io/wdd130/images/example6-hint.png" target="_blank"&gt;example 6 with lines&lt;/a&gt;. For this one you will find it easiest if you use px for the column width. You can also use &lt;kbd&gt;z-index&lt;/kbd&gt; to control the element layering.    &lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;display:grid;&lt;/li&gt;&lt;li&gt;grid-template-columns:&lt;/li&gt;&lt;li&gt;grid-column:&lt;/li&gt;&lt;li&gt;grid-row:&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.w3schools.com/cssref/pr_pos_z-index.asp" target="_blank"&gt;z-index:&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
         Duplicate the positioning in &lt;a href="https://byui-cit.github.io/wdd130/images/example6.png" target="_blank"&gt;this&lt;/a&gt; image.
         &lt;div class="content6" &gt;
         &lt;div class="red6" &gt;&lt;/div&gt;
@@ -632,6 +639,10 @@
 }
 .hint input[type=checkbox]:checked ~ i:after {
   transform: translate(2px, 0) rotate(-45deg);
+}
+.hint a {
+  position: relative;
+  z-index: 1;
 }
  </code></pre>
       </main>
