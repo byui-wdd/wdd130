@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>BYU-Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Week 01: Setup Software Used In Course</h1>
+        <hr />
+        <h2><strong>Activity&nbsp;Instructions</strong></h2>
+
+        <p>Estimated Time: 15 minutes</p>
+        <p>
+          One of our goals for this class is to allow you to create a real
+          website accessible with a browser.&nbsp; This, as you will discover in
+          the readings and videos for this week, requires you to have what is
+          known as a host.&nbsp; Most hosts cost money, but not all.&nbsp; For
+          this class, we will be using a free service called GitHub Pages. We will create our pages using the Microsoft Visual Studio Code editor and upload our files to GitHub from there so they can be seen on GitHub Pages. We can then share the website with an instructor or fellow student for
+          collaboration.
+        </p>
+        <p>
+          There are a few steps we will need to go through to get everything set up. This week we will only be installing VSCode with some extensions and next week we will finish with the Git, GitHub, and GitHub Pages steps.
+        </p>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h2>Glitch Login</h2>
+            <p>
+              Visit the
+              <a
+                href="https://code.visualstudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visual Studio Code</a
+              >
+              website and then watch the following video to step you through the install process. Also, note the information on file management within VSCode. This is an important part of web development.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zeh0DTJ5iog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="callout">
+              <p>
+                See your instructor is you have any trouble installing VSCode.
+              </p>
+            </div>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Remix (copy) the starter project</h2>
+            <p>
+              Next we need to create a&nbsp;project for you to use this
+              semester. Glitch gives you the ability to use an existing project
+              as a starting point. After logging in to Glitch, visit
+              <a
+                href="https://glitch.com/edit/#!/wdd130-starter"
+                target="_blank"
+                >this project</a
+              >
+              and click on the "Remix to Edit" button on
+              the screen. This will create a copy of the project that you own
+              and can edit. This is where we will be doing much of our work for
+              the class.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Become familiar with the interface</h2>
+            <p>
+              After creating a project you should see something similar to the
+              following:
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Glitch editor"
+                  src="../images/glitch-project-tour.jpeg"
+                  title="Glitch editor"
+                />
+                <figcaption>Create a New Project</figcaption>
+              </figure>
+            </div>
+            <ol>
+              <li>
+                This is the random name that Glitch chose for your project. You
+                can change this by clicking on the name. You will also find
+                settings that effect the editor (changing theme, wrap text, etc)
+                in here. Checking the "Wrap Text" box is recommended.
+              </li>
+              <li>
+                This is the list of files in the project. Notice that
+                <kbd>index.html</kbd> is selected and open in the editor. The
+                <kbd>README.md</kbd> file contains information about the
+                different files in the project. Click on the filename to open it
+                in the editor and spend a few minutes reading through that.
+              </li>
+              <li>
+                This is the code editor. It is where we will spend most of our
+                time writing HTML and CSS
+              </li>
+              <li>
+                This is where you will click to preview your page. It will
+                either open a new tab or a new pane next to the editor where you
+                can see the results of the code you write.
+              </li>
+              <li>This is where you can add a new file to your project.</li>
+            </ol>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Review the <kbd>index.html</kbd> file</h2>
+            <p>
+              The HTML code that is currently in the <kbd>index.html</kbd> file
+              should look similar to below:
+            </p>
+            <pre><code class="lang-markup html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt;WDD 130&lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;link rel="stylesheet" href="/styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;header&gt;
+    &lt;div&gt;&lt;!-- logo will go here --&gt;&lt;/div&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="exercises/site-plan.html"&gt;Site Plan&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                    </code></pre>
+
+            <p>
+              It's ok if this doesn't make sense yet. We will eventually learn
+              about what each line in this code does. For now let's take a look
+              at the page this code created. Make sure that the
+              <kbd>index.html</kbd> file is selected in the list of files and
+              click on the "Show" button. You should see a very basic page with
+              only three links.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <!-- <li>
+            
+            <h2>Glitch Settings</h2>
+            <p>
+              Let's make one more change to the Glitch settings. In the top
+              right corner of the screen there are two icons. The far right one
+              let's you see some information about Glitch...it usually looks
+              like a fish. The other is for some User options. Click on that
+              one. You should see something similar to the image below. Uncheck
+              "Refresh App", and check "Wrap Text"
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Glitch settings"
+                  src="../images/glitch-settings.png"
+                  title="Glitch settings"
+                />
+                <figcaption>Change default settings</figcaption>
+              </figure>
+            </div>
+            <p>
+              You can also change Glitch to use a dark theme instead of the
+              light one from that menu as well if you prefer that.
+            </p>
+           
+          </li> -->
+          <li>
+            <!-- START STEP -->
+            <h2>About me</h2>
+            <p>
+              Let's practice writing a little HTML of our own now. Visit the
+              <a href="aboutme.html">Getting to know you activity</a> for the
+              rest of the instructions and requirements for this activity.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+        </ol>
+
+        <h2><strong>Other Software</strong></h2>
+        <div>
+          <p>
+            Here is a list of other software we will use this semester. These
+            are all web based and require no installation. Some would require
+            account creation. Your instructor will give you more details when it
+            is time to use them:
+          </p>
+          <ul>
+            <li>
+              <a href="http://wireframe.cc" rel="nofollow" target="_blank"
+                >Wireframe.cc</a
+              >
+              Lightweight online tool for creating wireframes, or
+            </li>
+            <li>
+              <a
+                href="https://app.moqups.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Moqups</a
+              >
+              Another wireframe creation choice.&nbsp; They also have a free
+              educational account available.&nbsp; Obtain by sending an email
+              and requesting with your byui.edu school email account.
+              <!-- <a href="../resources/moqup-setup.html" target="_blank"
+                >Here are more detailed instructions</a
+              >
+              for that process. -->
+            </li>
+            <li>
+              <a
+                href="https://coolors.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Coolers.co</a
+              >&nbsp; &nbsp; A&nbsp;color theme chooser
+            </li>
+          </ul>
+        </div>
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
