@@ -53,7 +53,9 @@ a:visited {
   color: #14304f;
   border-bottom: 2px solid #14304f;
 }
-
+p{
+  line-height: 1.5em;
+}
 #content {
   /* width: 90%; */
   max-width: 950px;
@@ -61,7 +63,14 @@ a:visited {
   background-color: white;
   /* box-shadow: 0 0 12px #000000; */
 }
-
+iframe {
+  display: block;
+  margin: 15px auto;
+}
+li {
+  padding: 5px;
+  line-height: 1.5em;
+}
 /*
 <div>
   <h1><span>WEB</span> Fundamentals</h1>
