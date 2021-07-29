@@ -153,6 +153,12 @@ main {
   color: #3e3e3e;
   /* background-color: #f0f0f0; */
 }
+.fm img {
+  width: 200px;
+}
+.fm .wide {
+  width: 400px;
+}
 @media screen and (min-width: 1200px) {
   /* main {
     columns: 2;
