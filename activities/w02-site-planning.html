@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>WDD 130 Site Planning</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Creating a Site Plan</h1>
+        <hr />
+        <h2>Activity&nbsp;Instructions</h2>
+        <p>Estimated Time: 60 minutes</p>
+        <h3>What is a Site Plan?</h3>
+        <p>
+          Developing a site plan is a critical step in any web design process.
+          Site plans help establish the purpose of the site, the voice, and
+          overall look and feel...and then they help you apply those
+          consistently across your site.
+        </p>
+        <p>
+          Site plans come in many shapes and sizes, and level of detail. Here is
+          a list of common elements in a site plan
+        </p>
+        <ul>
+          <li>Statement of purpose and goals</li>
+          <li>Definition of audience</li>
+          <li>
+            personas and scenarios - Who will use the site and how will they use
+            it?
+          </li>
+          <li>
+            A Style guide:
+            <ul>
+              <li>
+                Branding information - how to use the branding for the site
+                correctly
+              </li>
+              <li>Typography choices and justification</li>
+              <li>Color palette</li>
+              <li>
+                Specific styling of elements on the site...ie headings, lists,
+                paragraphs, forms, links, buttons, etc
+              </li>
+              <li>A site map</li>
+              <li>
+                Wireframes showing general layout and content for major pages
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          We will be making a simplified site plan for our web site. Ours will
+          focus on the sections for Purpose, audience and a partial style guide.
+          Since the style guide will be the largest portion lets take a look at
+          a few examples to get a better idea about how they are put together.
+        </p>
+        <h3>Examples</h3>
+        <h4>FamilySearch</h4>
+        <div class="fig-block">
+          <figure>
+            <a href="https://www.familysearch.org/" target="_blank">
+              <img
+                alt="Family Search Home"
+                height="239"
+                src="../images/familysearch.jpg"
+                title="familysearch Home"
+                width="388"
+              />
+            </a>
+            <figcaption>
+              <a href="http://familysearch.com/" target="_blank"
+                >FamilySearch Home</a
+              >
+            </figcaption>
+          </figure>
+          <figure>
+            <a
+              href="https://familysearch.org/reference/styleguide/"
+              target="_blank"
+            >
+              <img
+                alt="FamilySearch Style Guide"
+                height="239"
+                src="../images/familysearch-style.jpg"
+                title="familysearch Style Guide"
+                width="369"
+              />
+            </a>
+            <figcaption>
+              <a
+                href="https://familysearch.org/reference/styleguide/"
+                target="_blank"
+                >FamilySearch Style Guide</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <p>
+          FamilySearch has a nice styleguide viewable by anyone. Notice how many
+          colors they use! As you browse around the actual site do you think
+          it's too many or does it work? Notice that they also have a section
+          about font sizes and paragraph and headline styling, but it never
+          really mentions which fonts they use.
+        </p>
+        <p>
+          Take a moment and think about the purpose and audience of the site.
+          Does the site accomplish the purpose well and cater to its audience?
+          What do you like/dislike about this site? Share your thoughts with the
+          class.
+        </p>
+        <h4>A List Apart</h4>
+        <div class="fig-block">
+          <figure>
+            <a href="http://alistapart.com/" target="_blank">
+              <img
+                alt="A List Apart Home"
+                height="215"
+                src="../images/alistapart.jpg"
+                title="A List Apart Home"
+                width="393"
+              />
+            </a>
+            <figcaption>
+              <a href="http://alistapart.com/" target="_blank"
+                >A List Apart Home</a
+              >
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="../resources/ala/index.html" target="_blank">
+              <img
+                alt="A List Apart Style Guide"
+                height="215"
+                src="../images/alistapart-style.jpg"
+                title="A List Apart Style Guide"
+                width="389"
+              />
+            </a>
+            <figcaption>
+              <a href="../resources/ala/index.html" target="_blank"
+                >A List Apart Style Guide</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <p>
+          A List Apart is a website by web designers for web designers. Much of
+          it's content comes from guest authors so having a well defined style
+          guide is essential to keep everything consistent. The different fonts
+          and colors are clearly defined, then it defines the styling for the
+          many different elements you might find in an article...it even
+          includes example html!
+        </p>
+        <p>
+          Take a moment and think about the purpose and audience of the site.
+          Does the site accomplish the purpose well and cater to it's audience?
+          What do you like/dislike about this site? Share your thoughts with the
+          class.
+        </p>
+
+        <h2>Activity Directions</h2>
+        <p>
+          All of those examples were much bigger and more complex than what we
+          will do for our site. However even though our site will be a simple 2
+          page website for a White Water Rafting Company, this planning phase is
+          still important and you are expected to produce a site plan that is
+          complete and professional looking.
+        </p>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3>Template</h3>
+
+            <p>
+              Begin by logging into your editor (Glitch). Look for two files:
+              <kbd>site-plan.html</kbd> and <kbd>site-plan.css</kbd>. Open the
+              <kbd>site-plan.html</kbd> file. You will notice lots of HTML
+              comments in the file. See an example below:
+            </p>
+            <pre><code class="lang-markup">&lt;!-- In the header above, add your name and class number. For example if you are in section 3 you would put WDD 100.03 --&gt;</code></pre>
+            <p>
+              <strong>Read all of the comments!</strong> They include important
+              instructions. You will also see portions of text wrapped in square
+              brackets like this:
+            </p>
+            <pre><code class="lang-markup">&lt;h2&gt;WDD 130-[section]&lt;/h2&gt;</code></pre>
+            <p>
+              In this case you will be expected to replace the
+              <kbd>[section]</kbd> with your information. There shouldn't be any
+              square brackets left in the file when you are done!
+            </p>
+            <p>
+              Take a minute right now to review both of the site-plan files. The
+              HTML one should look somewhat familiar from last week. Try to
+              follow what is going on in that file and guess what each line will
+              do. The CSS one will be new. Look over it as an example of CSS and
+              try to identify examples of the CSS terms introduced in the
+              <a href="cssvocab.html">CSS Vocabulary</a> activity, but you are
+              not expected to understand everything that is going on there at
+              this point. (Go and complete the vocabulary activity right now if
+              you have not done it!)
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Purpose Statement</h3>
+
+            <p>
+              From the beginning, websites have always been about displaying
+              content. This is the underlying purpose behind every site on the
+              internet, or at least it should be. In order to determine which
+              content you should put on the site it is critical to determine the
+              purpose or goals of the site. The content should support that
+              purpose. At a high level these purposes can take many forms:
+            </p>
+            <ul>
+              <li>
+                <strong>Build Revenue&nbsp;</strong>Build revenues for your
+                new/existing business or
+              </li>
+              <li>
+                <strong>Share Information&nbsp;</strong>Share corporate or
+                educational information or
+              </li>
+              <li>
+                <strong>Share Opinions&nbsp;</strong>Share opinions on a subject
+                or
+              </li>
+              <li>
+                <strong>Share Personal Interests&nbsp;</strong>Share personal
+                interests with family and friends
+              </li>
+            </ul>
+            <p>
+              All websites should have a purpose, and that purpose should be
+              more than 'My teacher is making me do this.' :) Earlier (see
+              above) you should have spent some time analyzing a few websites to
+              try and determine what their purpose is, and who their audience
+              is.
+            </p>
+
+            <p>
+              We need to do this now for our website. One problem: the purpose
+              really needs to be defined by the site owner and not the site
+              builder. So for this step and the next imagine that you are the
+              owner of the business and have decided that it is time for you to
+              have an online presence.&nbsp;
+              <strong
+                >Develop a purpose statement that clearly defines your goals for
+                the website</strong
+              >. Find the portion of the <kbd>site-plan.html</kbd> file for the
+              purpose. (It should be around line 22-23). It looks like this:
+            </p>
+            <pre><code class="lang-markup">&lt;h3&gt;Purpose&lt;/h3&gt;
+&lt;p&gt;[Your purpose here]&lt;/p&gt;  &lt;!-- change this --&gt;</code></pre>
+            <p>
+              Replace <kbd>[Your purpose here]</kbd> with your purpose
+              statement. (at least 100 words)
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Audience Statement</h3>
+
+            <p>
+              Another important factor to keep in mind when planning a website,
+              is the audience for the site. Remember, that websites are all
+              about content. The purpose helps define what content you should
+              include, and the content should target your specific audience or
+              audiences (websites can have more than one).
+            </p>
+            <p>
+              <strong
+                >Write a statement specifically identifying your target
+                audience</strong
+              >. Try to answer these questions:
+            </p>
+            <ul>
+              <li>
+                Who are the target customers? Describe their life (or business)
+                situation (age, financial situation, interests, etc)
+              </li>
+              <li>What do they want?</li>
+              <li>What are their needs that aren't being met?</li>
+              <li>
+                How will my audience usually access my site (desktop, laptop,
+                mobile device)? (at least 100 words)
+              </li>
+            </ul>
+            <p>
+              Add your Audience to your siteplan just like you did for the
+              Purpose above.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Choose a logo</h3>
+            <p>
+              Choosing a logo.&nbsp; One Dry Oar logo is in the document.&nbsp;
+              You can keep that one, create a logo of your own, or choose from
+              the image choices in the link below:
+            </p>
+            <ul>
+              <li>
+                <strong>
+                  <a href="../resources/dryoarlogos.html" target="_blank"
+                    >dry oar images</a
+                  >
+                </strong>
+              </li>
+            </ul>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Color Theory</h3>
+            <div class="callout">
+              <p>
+                Color plays an essential role in any website and so the colors
+                you use should be chosen deliberately. There are volumes of
+                material on color theory that can help with these choices.
+              </p>
+              <p>To learn more about color theory try these sites</p>
+              <ul>
+                <li>
+                  <a
+                    href="http://www.colormatters.com/color-and-design/basic-color-theory"
+                    rel="nofollow"
+                    target="_blank"
+                    >http://www.colormatters.com/color-and-design/basic-color-theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.worqx.com/color/color_basics.htm"
+                    rel="nofollow"
+                    target="_blank"
+                    >http://www.worqx.com/color/color_basics.htm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/"
+                    rel="nofollow"
+                    target="_blank"
+                    >http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/</a
+                  >
+                  - This one specifically addresses color in design
+                </li>
+              </ul>
+            </div>
+            <p>
+              Visit
+              <a
+                href="https://coolors.co/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                >coolers.co</a
+              >
+              and keeping your site purpose and audience in mind build a color
+              scheme using it. Start by thinking of a color you like or think
+              will work well for your site.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Using Coolors.co</h3>
+            <p>
+              You will see 5 color stripes. Each color has 4 items on that show
+              when you hover over them: Alternative Shades, drag, adjust, and
+              lock. Play around with one color until you end up with something
+              like you imagined above... <strong>then lock it</strong>. Hit the
+              space bar on your keyboard to generate different complementary
+              color schemes for the color you chose. Feel free to lock other
+              colors and generate until you end up with 3-4 colors you like.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Record the color codes</h3>
+            <div class="right">
+              <img
+                src="../images/coolors-hexcode.png"
+                alt=""
+                title="colorscheme"
+              />
+            </div>
+            <p>
+              Once you have built your palette note that at the bottom of each
+              color column there is a 6 digit "number". This is what is known as
+              a hexadecimal color code and is usually preceded by a "#". These
+              codes are the most common way to represent colors on the web. Copy
+              that code for the 3-4 colors you would like to use into the Site
+              plan document (around line 50-60). Place the color you want to use
+              the most often as the primary.
+            </p>
+            <p>
+              After entering the codes into the HTML file switch to the
+              <kbd>site-plan.css</kbd> file. Look at lines 8-11. Notice that
+              there is a place to record your colors there as well. Do so, then
+              look at the Preview. You should see your colors showing in
+              different areas!
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Save your color scheme</h3>
+            <div class="right">
+              <img
+                src="../images/exportcolors.jpg"
+                alt=""
+                title="Pallete2"
+                width="211"
+                height="152"
+              />
+            </div>
+            <p>
+              You should save your chosen palette URL from coolers.co in case
+              you need to make any changes later. Copy the URL of your scheme.
+              (mine looked like this:
+              https://coolors.co/b7d3f2-afafdc-8a84e2-84afe6-79beee) and paste
+              it into your <kbd>site-plan.html</kbd>
+              <strong>in two places</strong> Look around line 40-60 for the line
+              that looks like this:
+            </p>
+            <pre><code class="lang-markup">Palette URL: &lt;a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank"&gt;https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c&lt;/a&gt;</code></pre>
+            <p>
+              Notice that when working with links in HTML the destination of the
+              link goes in the <kbd>src</kbd> attribute. Then the part you click
+              on goes inside of the <code>&lt;a&gt;</code> element. Often those
+              will be different...but in this case we are going to make them
+              both the URL to your color scheme.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>About Fonts</h3>
+
+            <p>
+              It's time now to choose a font or fonts that you will use for your
+              site. Along with the colors you choose, fonts have the next
+              largest (or maybe even larger in some cases) impact on the look
+              and feel of your site. To help you think about this watch the
+              following short video and review the tips below.
+            </p>
+            <div class="videoWrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/sByzHoiYFX0"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+            <div class="callout">
+              <p>Here are a few tips:</p>
+              <ul>
+                <li>
+                  Make sure the main font you use (the one that most of the text
+                  is in) is very readable.
+                </li>
+                <li>
+                  It is OK, and often desirable to have more than 1 font on a
+                  page, but if you use more than 2 make sure you have a good
+                  reason for it.
+                </li>
+                <li>
+                  If you use 2 fonts make sure there is good contrast between
+                  them...ie make sure they are different enough that they will
+                  never be mistaken for the same font. A common pattern is to
+                  have a very readable font from one font-family (serif,
+                  san-serif, script, monospace, fantasy) for all the body copy
+                  (paragraphs), and a font from another family for the titles
+                  and headlines.
+                </li>
+                <li>
+                  While you should usually sacrifice creativeness for
+                  readability for paragraphs, you can usually get away with
+                  something more fun for headlines. They are usually larger in
+                  size and only a few words in length, so feel free to
+                  experiment a bit more here.
+                </li>
+                <li>
+                  For a page that loads very quickly you should stick with
+                  web-safe fonts. These are fonts that can be found on every
+                  computer. (Not all fonts are on every computer.) A list can be
+                  found on
+                  <a
+                    href="http://www.w3schools.com/cssref/css_websafe_fonts.asp"
+                    target="_blank"
+                    >W3Schools</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.google.com/fonts" target="_blank"
+                    >Google has a large list of Fonts</a
+                  >
+                  that can be used on websites as well. Using them will add a
+                  small amount of time to the speed at which the page
+                  loads...but often it is worth it to get the right font.
+                </li>
+                <li>
+                  Here are a couple of links to articles with more great tips.
+                  <ul>
+                    <li>
+                      <a
+                        href="http://webdesign.tutsplus.com/articles/choosing-the-right-font-a-practical-guide-to-typography-on-the-web--webdesign-15"
+                        target="_blank"
+                        >Tutsplus: Choosing the right font</a
+                      >
+                    </li>
+                    <li style="list-style: none;"></li>
+                    <li>
+                      <a
+                        href="http://www.smashingmagazine.com/2010/12/what-font-should-i-use-five-principles-for-choosing-and-using-typefaces/"
+                        target="_blank"
+                        >Smashing Magazine: What font should I use?</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Choose your fonts</h3>
+            <p>
+              Choose one or two fonts to use for the site and record them along
+              with your <em>reasoning for choosing</em> them in the Site Plan.
+              Then we need to enter your fonts into the CSS file as well so we
+              can really see what they will look like.
+            </p>
+            <p>
+              If any of your fonts are from Google then look at line 4 in
+              <kbd>site-plan.css</kbd>. This line lets our page know where to
+              find the fonts we need. Change the example font names there to
+              your fonts. Notice that if your font name has any spaces in it you
+              should replace them with '+'. Look at my example:
+            </p>
+            <p>
+              I want to use the following two fonts from Google:
+              <kbd>IM Fell French Canon SC</kbd> and <kbd>Lato</kbd>
+            </p>
+            <pre><code class="lang-css">
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+                        </code></pre>
+            <p>
+              Notice in the <code>@import</code> my first font got changed to:
+              <kbd>IM+Fell+French+Canon+SC</kbd> (spaces replaced with +). My
+              second font was a simple one word font to it was added just as it
+              was with a <kbd>|</kbd> (shift + \) separating my fonts.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Color your fonts</h3>
+            <p>
+              Often you want your text to appear on a colored background. Let's
+              pick some colors from your pallette that will work well together.
+            </p>
+            <p>
+              See if there are two colors in your scheme that can be used as
+              text color/background color where the text remains readable (you
+              need a high contrast between the colors). Black and White are
+              always fair game even if they aren't in your color scheme :) You can always visit <a href='https://contrast-ratio.com' target="_blank">contrast-ratio.com</a> to make sure your text and the background of the text have a passing ratio.
+            </p>
+            </p>
+            <p>
+              Switch to the <kbd>site-plan.css</kbd> file and look at lines
+              18-22. Should look like this:
+            </p>
+            <pre><code class="lang-css">--headline-color-on-white: black;  /* headlines on a white background */ 
+--headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+--paragraph-color-on-white: black; /* paragraph text on a white background */ 
+--paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+--text-background-color: #000000;</code></pre>
+            <p>
+              Change the <code>--text-background-color</code> and then
+              <code>--headline-color-on-color</code> and
+              <code>--paragraph-color-on-color</code> values. If done correctly
+              you should see an example of your colors together in the Preview
+              of your page in Glitch. If any of the text is hard to read then
+              try different colors.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Style your navigation</h3>
+            <p>
+              Finally from your <em>color palette</em> choose the colors you
+              would like to use for your navigational links (normal, hover,
+              active, and visited) and enter those colors in lines 23-26 in the
+              <kbd>site-plan.css</kbd> file. If you would like specific styling
+              for other links on the pages you can provide those on the Links
+              section under HTML elements.
+            </p>
+            <p>
+              Think of two child pages you would be interested in creating
+              (these may change as time goes on) and put the names in each of
+              the two empty boxes in the nav bar image. (In the directions,
+              there are several page suggestions listed. You can choose two of
+              those or come up with your own, but the names should be one or two
+              words max.) We will eventually build only one of these pages.
+            </p>
+            <p>
+              The next section is the site map. It also has 3 boxes: home and
+              two empty boxes. Put the same two child page names you chose for
+              the nav bar boxes.... these MUST be the same names for both parts.
+            </p>
+            <p>
+              The last page has a wireframe. The wireframe shows what the page
+              will look like, how it will be laid out. We will not be changing
+              the wireframe yet, just review it. In the following weeks you will
+              use the wireframe provided to help you to create the home page for
+              the site. Even later in the semester you will create wireframes
+              for the two pages you selected above, and build them as well.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Submit to Ilearn</h3>
+            <!--<p>Go to the next page to access &ldquo;W03.03 Site Planning 2: Site Plan&rdquo; and click &ldquo;Upload.&rdquo;</p>-->
+            <p>Check your site in Glitch, and upload your URL into Ilearn</p>
+            <!-- END STEP -->
+          </li>
+        </ol>
+
+
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
