@@ -18,7 +18,7 @@
         </div>
       </header>
       <main>
-        <h1>Getting Started: Create the Home Page in HTML</h1>
+        <h1>Create the HTML for the Home Page</h1>
         <hr />
         <div class="activityContent">
           <h2>Activity Directions</h2>
@@ -196,7 +196,7 @@
                   and&nbsp; <code>&lt;span&gt;</code>.
                 </p>
                 <p>
-                  w3schools.com explains what these container elements contain in: 
+                  w3schools.com explains what these elements contain in: 
                   <a
                     href="https://www.w3schools.com/html/html5_semantic_elements.asp"
                     target="_blank"
@@ -217,18 +217,21 @@
                 <!-- START STEP -->
                 <h3>Header</h3>
               <p>
-                Add HTML elements to your body to start outlining content areas.
-                The first we need is at the top of the page. Notice that there
+                Add HTML elements to your body to start outlining content areas. Make sure and indent child elements within parent elements. As the page gets larger you will be happy you did. It helps a lot with organization and being able to see mistakes quickly.
+              </p>
+              <p>
+                The first element we need is at the top of the page. Notice that there
                 is a box around the logo and navigation bar. Those elements are
                 related and form the header of the page. Lucky for us if you
                 look in the list of tags above you will see that there already is a
                 <code>&lt;header&gt;</code> tag!
                 If you have the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements inside the header, let's delete them. We are going to have an <code>&lt;a&gt;</code> and <code>&lt;nav&gt;</code> element as the children inside of  the &lt;header&gt; instead.
               </p>
-              <p>Add an <code>&lt;img&gt;</code> element for the logo. Let's give it a class, <kbd>class="logo"</kbd>. We want to differentiate this &lt;img&gt; tag from all others on the page. We will eventually have the logo inside the images folder and it will be called logo.png. So we will add the source attribute and value as <kbd>src="images/logo.png"</kbd> We always need an alt attribute with every images so add <kbd>alt="Dry Oar Logo"</kbd></p>
-              <p>User usually expect the logo to take them to the home page of the site so we will make the &lt;img&gt; element the content of an &lt;a&gt; element with the hypertext reference of going to the home page <kbd>href="index.html"</kbd> and add <kbd>id="logo_link"</kbd></p>
-              <p>And the &lt;nav&gt; element is the perfect semantic tag for the navigation or menu for our page. We will have 4 pages eventually. So we will add 4 &lt;a&gt; elements inside the &lt;nav&gt;</p>
-              <p>We know the hypertext reference for the home page, and we will all have a contactus.html page, and include our site plan as well, but we don't know the name of our second page so we'll leave the value of the href with a placeholder of a hashtag # and the content as Page 2 for now.  </p>
+              <p>Add an <code>&lt;img&gt;</code> element for the logo. Let's give it a class, <kbd>class="logo"</kbd>. We want to differentiate this <code>&lt;img&gt;</code> tag from all others on the page. We will eventually have the logo inside the images folder and it will be called logo.png. It won't show up on the screen until we do that. There are two required attributes for images. We will add the source attribute and value as <kbd>src="images/logo.png"</kbd>. And we always need an alt attribute with every images so add <kbd>alt="Dry Oar Logo"</kbd></p>
+              <p>User usually expect the logo to take them to the home page of the site so we will make the <code>&lt;img&gt;</code> element the content of an <code>&lt;a&gt;</code> element with the hypertext reference of going to the home page <kbd>href="index.html"</kbd> and add <kbd>id="logo_link"</kbd></p>
+              <p>The <code>&lt;nav&gt;</code> element is the perfect semantic tag for the navigation or menu. We will have 4 pages eventually. So we will add 4 <code>&lt;a&gt;</code> elements inside the <code>&lt;nav&gt;</code></p>
+              <p>We know the hypertext reference for the home page, and we will all have a contactus.html page eventually, and we'll include our site plan as well, but we don't know the name of our second page so we'll leave the value of the href with a placeholder of a hashtag # and the content as Page 2 for now.  </p>
+              <p>Home pages are always expect as the first link and Contact or About Us pages are usually last on a menu.</p>
               <pre><code class="lang-markup line-numbers">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -262,6 +265,7 @@
                 you will remember the HTML and CSS we use much better if you
                 do ;)
             </p>
+            <p>Also, check your page on Live Server as you go to make sure it is showing up OK. Images will be added later.</p>
             </div>
             </li>
             <li>
@@ -270,13 +274,15 @@
               <p>Let's add a container for the hero image and message. The role of a hero image is to welcome your visitors with the first glimpse of your company or organization.</p>
               <p>It is something unique to only the home page of your website. We won't see this section, with a large image like this, on any of the other pages and we are going to also keep it separate from the main section of the page, for ease in applying CSS to it later.</p>
               <p>Because there isn't a good semantic tag for the hero section, let's use a <code>&lt;div&gt;</code> with <kbd>id="hero"</kbd>.</p>
-              <p>Inside our hero &lt;div&gt; we will have another &lt;div&gt; with <kbd>id="hero-box"</kbd> holding our hero &lt;img&gt; with <kbd>id="hero-img"</kbd>, <kbd>src="images/hero.png"</kbd>, and <kbd>alt="People enjoying rafting"</kbd></p>
-              <p>A &lt;section&gt; will hold the hero message consisting of an &lt;h1&gt; with <kbd>class="home-title"</kbd> and 'Have An Adventure' content. Also an &lt;h4&gt; with content 'Make Memories with Dry Oar'. Lastly, a &lt;div&gt; that will hold a button with a link with <kbd>class="button-box"</kbd>. The &lt;a&gt; will have <kbd>class="book"</kbd> and <kbd>href="contactus.html"</kbd> and content of 'Book Now'.</p>
+              <p>Inside our hero <code>&lt;div&gt;</code> we will have another <code>&lt;div&gt;</code> with <kbd>id="hero-box"</kbd> holding our hero &lt;img&gt; with <kbd>id="hero-img"</kbd>, <kbd>src="images/hero.png"</kbd>, and <kbd>alt="People enjoying rafting"</kbd></p>
+              <p>A <code>&lt;section&gt;</code> will hold the hero message consisting of an <code>&lt;h1&gt;</code> with <kbd>class="home-title"</kbd> and 'Have An Adventure' content. Also an <code>&lt;h4&gt;</code> with content 'Make Memories with Dry Oar'. Lastly, a <code>&lt;div&gt;</code> that will hold a button with a link with <kbd>class="button-box"</kbd>. The <code>&lt;a&gt;</code> will have <kbd>class="book"</kbd> and <kbd>href="contactus.html"</kbd> and content of 'Book Now'.</p>
+              <p>Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them <em>inside</em> of another element; like we have with the section hero-msg.</p>
+              <p>Feel free to change any of the text content between tags. But leave the attributes and values, class, id and element names as instructed.</p>
               <pre><code class="lang-markup line-numbers">
 &lt;body&gt;
 &lt;header&gt;
     &lt;a id="logo_link" href="index.html"&gt;
-        &lt;img class="logo src="img/logo.png alt="Dry Oar Logo&gt;
+        &lt;img class="logo" src="img/logo.png" alt="Dry Oar Logo"&gt;
     &lt;/a&gt;
     &lt;nav&gt;
         &lt;a href="index.html"&gt;Home&lt;/a&gt;
@@ -287,7 +293,7 @@
 &lt;/header&gt;
 &lt;div id="hero"&gt;
     &lt;div id="hero-box"&gt;
-        &lt;img id="hero-img" src="img/hero1.png" alt="People enjoying white water rafting"&gt;
+        &lt;img id="hero-img" src="img/hero.png" alt="People enjoying white water rafting"&gt;
     &lt;/div&gt;
     &lt;section id="hero-msg"&gt;
         &lt;h1 class="home-title"&gt;Have An Adventure&lt;/h1&gt;
@@ -319,7 +325,7 @@
 &lt;body&gt;
 &lt;header&gt;
     &lt;a id="logo_link" href="index.html"&gt;
-        &lt;img class="logo src="img/logo.png alt="Dry Oar Logo&gt;
+        &lt;img class="logo" src="img/logo.png" alt="Dry Oar Logo"&gt;
     &lt;/a&gt;
     &lt;nav&gt;
         &lt;a href="index.html"&gt;Home&lt;/a&gt;
@@ -330,7 +336,7 @@
 &lt;/header&gt;
 &lt;div id="hero"&gt;
     &lt;div id="hero-box"&gt;
-        &lt;img id="hero-img" src="img/hero1.png" alt="People enjoying white water rafting"&gt;
+        &lt;img id="hero-img" src="img/hero.png" alt="People enjoying white water rafting"&gt;
     &lt;/div&gt;
     &lt;section id="hero-msg"&gt;
         &lt;h1 class="home-title"&gt;Have An Adventure&lt;/h1&gt;
@@ -369,6 +375,7 @@
 &lt;/main&gt;
 </code></pre>
         <p>Below the card sections we will have an <code>&lt;img&gt;</code> and a <code>&lt;section&gt;</code> containing an <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code> with the classes and attributes as shown below:</p>
+        <p>Again, feel free to change the title, paragraph, and button to say whatever you want it to.</p>
         <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
@@ -402,12 +409,12 @@
             <p>
             Finally we need one more container on our page. This one will
             hold the footer information. Add one below
-            <code>&lt;/main&gt;</code> with all the attributes as shown below.
+            <code>&lt;/main&gt;</code> with all the attributes as shown below. To make the copyright symbol, that is right before the date, we use a special code, there are many of these, but we will just learn this one today: <kbd>&amp;copy;</kbd> Fill in the current year instead of 'XX' and put your first and last name after the year.
             </p>
               <pre><code class="lang-markup line-numbers">
 &lt;/main&gt;
 &lt;footer&gt;
-    &lt;h3&gt;Dry Oar &amp;copy 2021&lt;/h3&gt;
+    &lt;h3&gt;Dry Oar &amp;copy 20XX - Your First and Last Name Here&lt;/h3&gt;
     &lt;h3&gt;&lt;a href="site-plan-rafting.html"&gt;Site Plan&lt;/a&gt;&lt;/h3&gt;
     &lt;h3&gt;&lt;a href="contactus.html"&gt;Contact Us&lt;/a&gt;&lt;/h3&gt;
     &lt;div class="social"&gt;
@@ -466,13 +473,38 @@
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/MELKuexR3sQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/85X16eLvNYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
-                <p>Here are the links to all the images on the home page. Just right click the images and choose 'Save Images As..' and then same them into your images folder in your project folder.</p>
-
+                <p>Here are the links to all the images on the home page. Once you open the link and see the image, just right click the images and choose 'Save Images As..' and then same them into your images folder in your project folder.</p>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" target="_blank">Logo</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/hero.png" target="_blank">Hero</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/rivers.jpg" target="_blank">Rivers</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/river_icon.png" target="_blank">River icon</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/camping.jpg" target="_blank">Camping</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/fire_icon.png" target="_blank">Fire icon</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/rapids.jpg" target="_blank">Rapids</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/oars.png" target="_blank">Oars icon</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/mountains.jpg" target="_blank">Mountains</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" target="_blank">Facebook</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" target="_blank">Twitter</a>
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" target="_blank">Instagram</a>
+                <div class="callout">You could always link them directly to the external area where they are on the Internet. For example <code>&lt;img src="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" alt="Logo"&gt;</code> But this is called 'hot linking' and is not advised because you have no control over those images and they could be gone or changed at any time. It's always best to download the files into your own project in your images folder. Then your image elements would look like this: <code>&lt;img src="images/logo.png" alt="Logo"&gt;</code></div>
 
 
                 <div class="callout">   
                     <p>Your Git repository will notice all the new files coming in and you'll see the little blue circle with the numbers on your Source Control icon in VSCode. Git will also notice that we have been editing and adding to index.html. You will need to commit all the changed and added files and push them to the repository. (see the end of last week's assignments if you've forgotten how to do that.</p>
                 </div>
+                </li>
+                <li>
+                  <!-- START STEP -->
+                  <h3>Validate your HTML</h3>  
+                  <p>Go to <a href="https://validator.w3.org/">https://validator.w3.org/</a> and validate your HTML and fix any error you find. Get help if you don't understand some of the errors. They can be tricky sometimes.</p>
+                </li>
+                <li>
+                  <!-- START STEP -->
+                  <h3>Submit your URL in Ilearn</h3>
+                  <p>Once validated, make sure you've pushed the latest version of your project to GitHub. Then submit your URL that shows your home page live on the Internet so your instructor can see it.</p>
+                  <p>Always check the URL before you submit.</p>
+                  <p>Your page won't be pretty yet. It will look something like this:</p>
+                  <img src="https://byui-wdd.github.io/wdd130/rafting_images/html-home-page.jpg" alt="sample html home page">
                 </li>
             </li>
             </ol>  
