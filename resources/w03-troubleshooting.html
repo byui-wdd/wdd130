@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Troubleshooting with Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+</head>
+
+<body>
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1>
+                    <span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+        </header>
+        <main>
+            <h1>Troubleshooting</h1>
+            <h2>IT'S NOT WORKING!!!!</h2>
+            <p>Not sure if you can relate to the headline above...but what should you do if nothing you try seems to work?</p>
+            <ol>
+                <li>Validate your HTML! Because HTML is a standard, programs can be written to check for errors or poorly
+                    written code. Whenever things aren't working the way the activity says they should and you can't find the reason ... you should validate.
+                    <p class="callout">Validating is easy. Go to <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>,
+                        then enter in the same url that you would submit in iLearn for your site. It will check for any HTML
+                        errors and tell you where they are. Don't panic if it comes back with some really high number. One
+                        error can often cascade and create many others. I recommend fixing the first, then re-validating
+                        until all are gone.</p>
+                </li>
+                <li>Validate your CSS! There is also a CSS standard, so you can validate that as well to check for errors.
+                    The process is similar, you just need to go to a different site. The CSS validator can be found at: <a
+                        href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a>.
+                    Follow the same steps...fix the first error then re-validate until clean.</li>
+                <li>Communicate with classmates and the instructor. If you are spending multiple hours on any activity you
+                    are most likely stuck! Get in touch with someone that can help and have them look at your code.</li>
+                <li>I can't stress this enough. <strong>Don't wait too long to get help!</strong> Everything we do builds
+                    on what we have done before. Don't let yourself get behind because one or two early concepts aren't making
+                    sense and you didn't ask for help!</li>
+            </ol>
+            <h2>Practice: HTML Validation</h2>
+            <ol>
+                    <p> Click on <a href="https://byui-wdd.github.io/wdd130/resources/w03-dryoar-index-errors.html" target="_blank">this link</a>, then right-click 
+                    and select "Show Page source" or "View Source". This should show you the code that makes the page. (If
+                    you are in Edge and you don't see the View Source option try typing ctrl-u...or switch to Chrome :) ).
+                    Click inside the window that shows the code and select it all (cmd-a on Mac, ctrl-a on Windows) and copy the
+                    contents (cmd/ctrl-c). Go to your project and create a new file. Call it <kbd>troubleshooting.html</kbd> and
+                    paste the code into it (cmd/ctrl-v).</li>
+                <li>Select all the code again and copy it. Visit <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+                    and and select the "Validate by Direct Input" tab. Paste your HTML code into the box. Hit "Check" </li>
+                <li>You should see a list of several errors that are in the HTML of that file. Find and correct all of the
+                    errors. Help each other out! Each time you fix errors in your editor you will need to copy the code in
+                    the editor and paste them into the box in the validator.</li>
+            </ol>
+            <h2>Tips</h2>
+            <ul>
+                <li>Start with the top of the list and work down. Often fixing one issue will resolve multiple errors.</li>
+                <li>As you fix an error copy/paste the corrected code into the validator and re-check.</li>
+                <li>Remember that an Element is: an opening tag, closing tag, and everything in between. Look at this example:
+                    <pre><code class="lang-markup">&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;Contact Us&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                    <p>The entire block of code is a "nav element" since everything is inside of the opening and closing
+                        <code>nav</code> tags. <code>&lt;li&gt;Home&lt;/li&gt;</code> is also an element and would be called
+                        an "li element". </p>
+                </li>
+                <li>Elements are often nested (placed inside of each other).</li>
+                <li>An element inside of another element would be considered a <em>child</em> of the parent element. Referring
+                    to our example above, The <code>li</code> elements are the <em>children</em> of the <code>&lt;ul&gt;</code>                    element,
+                    and the <code>&lt;ul&gt;</code> element is the <em>child</em> of the <code><code>&lt;nav&gt;</code></code></li>
+                <li>Note that the validator will tell you the line and column where it found the error. Use this as a starting
+                    point when searching out the issues.</li>
+            </ul>
+            <!-- end #article -->
+        </main>
+        <script src="../js/course.js"></script>
+        <script src="../js/prism.js"></script>
+    </div>
+</body>
+
+</html>
