@@ -1,93 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <title>Getting Started: Create the Home Page in HTML</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="../css/prism-light.css" />
-    <link rel="stylesheet" href="../css/course.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Getting Started: Create the Home Page in HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <div id="content">
-      <header class="headerBanner">
-        <div>
-          <h1><span>WEB</span> Fundamentals</h1>
-          <h2>WDD 130</h2>
-        </div>
-      </header>
-      <main>
-        <h1>Create the HTML for the Home Page</h1>
-        <hr />
-        <div class="activityContent">
-          <h2>Activity Directions</h2>
-          <p><span class="highlight">Estimated Time</span>:&nbsp;60 minutes</p>
-          <div class="callout">
-              <p>w3schools.com is a great reference site for HTML and CSS. Here are a list of concepts to brush up on for this assignment. These should be a review from past preparation materials and assignments.</p>
-            <ul>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_basic.asp"
-                  target="_blank"
-                  >HTML Basics</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_elements.asp"
-                  target="_blank"
-                  >HTML Elements</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_attributes.asp"
-                  target="_blank"
-                  >HTMl Attributes</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_headings.asp"
-                  target="_blank"
-                  >HTML Headings</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_paragraphs.asp"
-                  target="_blank"
-                  >HTML Paragraphs</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_images.asp"
-                  target="_blank"
-                  >HTML Images</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.w3schools.com/html/html_lists.asp"
-                  target="_blank"
-                  >HTML Lists</a
-                >
-              </li>
-            </ul>
-          </div>
+  <link rel="stylesheet" href="../css/prism-light.css" />
+  <link rel="stylesheet" href="../css/course.css" />
+</head>
 
-          <ol class="bigSteps">
+<body>
+  <div id="content">
+    <header class="headerBanner">
+      <div>
+        <h1><span>WEB</span> Fundamentals</h1>
+        <h2>WDD 130</h2>
+      </div>
+    </header>
+    <main>
+      <h1>Create the HTML for the Home Page</h1>
+      <hr />
+      <div class="activityContent">
+        <h2>Activity Directions</h2>
+        <p><span class="highlight">Estimated Time</span>:&nbsp;60 minutes</p>
+        <div class="callout">
+          <p>w3schools.com is a great reference site for HTML and CSS. Here are a list of concepts to brush up on for
+            this assignment. These should be a review from past preparation materials and assignments.</p>
+          <ul>
             <li>
-              <h3 id="step1">Verify Setup</h3>
-              <p>
-                If you completed the GitHub Pages Hosting activity you should already
-                have an html file ready called index.html. It should look
-                something like this:
-              </p>
-              
-              <pre><code class="lang-markup line-numbers">&lt;!DOCTYPE html&gt;
+              <a href="http://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a>
+            </li>
+            <li>
+              <a href="http://www.w3schools.com/html/html_elements.asp" target="_blank">HTML Elements</a>
+            </li>
+            <li>
+              <a href="http://www.w3schools.com/html/html_attributes.asp" target="_blank">HTMl Attributes</a>
+            </li>
+            <li>
+              <a href="http://www.w3schools.com/html/html_headings.asp" target="_blank">HTML Headings</a>
+            </li>
+            <li>
+              <a href="http://www.w3schools.com/html/html_paragraphs.asp" target="_blank">HTML Paragraphs</a>
+            </li>
+            <li>
+              <a href="http://www.w3schools.com/html/html_images.asp" target="_blank">HTML Images</a>
+            </li>
+            <li>
+              <a href="http://www.w3schools.com/html/html_lists.asp" target="_blank">HTML Lists</a>
+            </li>
+          </ul>
+        </div>
+
+        <ol class="bigSteps">
+          <li>
+            <h3 id="step1">Verify Setup</h3>
+            <p>
+              If you completed the GitHub Pages Hosting activity you should already
+              have an html file ready called index.html. It should look
+              something like this:
+            </p>
+
+            <pre><code class="lang-markup line-numbers">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -104,135 +78,148 @@
 &lt;/html&gt;
             </code></pre>
 
+            <p>
+              If you don't have that code, copy this code into the index.html file.
+            </p>
+
+          </li>
+          <li>
+            <h3 id="step3">Change the title</h3>
+            <p>
+              Let's go ahead and change the title next. The
+              <code>&lt;title&gt;</code> of the page shows at the top of the
+              browser window or on the tab of a browser window, and in the
+              search listing for a site. Let's pick something that will make
+              sure people know what the site is, and what page they are
+              currently on. Something like "Whitewater Rafting Vacations | Dry
+              Oar Boating | Home".
+            </p>
+            <div class="callout">
               <p>
-                If you don't have that code, copy this code into the index.html file.
-              </p>
-              
-            </li>
-            <li>
-              <h3 id="step3">Change the title</h3>
-              <p>
-                Let's go ahead and change the title next. The
-                <code>&lt;title&gt;</code> of the page shows at the top of the
-                browser window or on the tab of a browser window, and in the
-                search listing for a site. Let's pick something that will make
-                sure people know what the site is, and what page they are
-                currently on. Something like "Whitewater Rafting Vacations | Dry
-                Oar Boating | Home".
-              </p>
-              <div class="callout">
-                <p>
-                  We know from the&nbsp;
-                  <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" target="_blank"
-                    >wireframe</a
-                  >&nbsp;for the home page for the Dry Oar site that there will
-                  be a combination of images, headlines, and text on the page. You can
-                  refer back to the wireframe and site plan document throughout
-                  this activity. The instructions will make much
-                  more sense if you are looking at the blueprint!
-                </p>
-                <p>
-                  As you look at the wireframe you will notice a few things.
-                  First a box with an X through it indicates an image will go
-                  there.  
-                </p>
-                <p>
-                  The wireframe also indicates where our headlines and
-                  paragraphs will be. Elements are organized into groups.
-                  It will be important that we include html markup to represent
-                  those groups, as well as the content on the page.
-                </p>
-              </div>
-              <div class="callout">
-                <h3>Note!</h3>
-                <p>
-                  We will <strong>NOT</strong> be adding colors and other styles
-                  this week. So no CSS. Our only goal is to get all of the content onto the
-                  page that is shown on the wireframe. Our Page will
-                  <strong>NOT</strong> look like the wireframe when we finish
-                  this week. We are only using it as a guide to get the right HTML elements and content. Each week will get us closer, but our page will not
-                  look exactly like the wireframe for several weeks, so patience
-                  will be required :)
-                </p>
-              </div>
-            </li>
-            <li>
-              <h3 id="step4">"Framing" with semantic elements</h3>
-              <p>
-                Building a website is actually a lot like building a house. You
-                start with a blueprint (wireframe) and then you build the
-                foundation and frame for the house. We have already built the
-                foundation. We did that when when the
-                <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
-                <code>&lt;body&gt;</code> elements were added. The framing takes the
-                rooms outlined on the blueprint and creates a real space to put
-                them. We need to do the same thing for our webpage, except for
-                instead of rooms we are looking at content areas.
+                We know from the&nbsp;
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png"
+                  target="_blank">wireframe</a>&nbsp;for the home page for the Dry Oar site that there will
+                be a combination of images, headlines, and text on the page. You can
+                refer back to the wireframe and site plan document throughout
+                this activity. The instructions will make much
+                more sense if you are looking at the blueprint!
               </p>
               <p>
-                The way we "frame" in our webpage is by looking carefully at our
-                wireframe to see what "rooms" we have. Then we use some special
-                HTML tags to define them.
-              </p>
-              <div class="callout">
-                <p>
-                  Take a moment to review the
-                  <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" target="_blank"
-                    >wireframe</a>
-                  again to help remember what we are trying to do. We need to add some markup to create
-                  containers in our html.
-                </p>
-                <p>
-                  HTML has several tags specifically for this purpose. Some have
-                  specific semantic meanings and others don't. Here is a
-                  list of some of the more common of these tags:&nbsp;
-                  <code>&lt;header&gt;</code>,&nbsp;
-                  <code>&lt;footer&gt;</code>,&nbsp;
-                  <code>&lt;main&gt;</code>,&nbsp;
-                  <code>&lt;section&gt;</code>,&nbsp;
-                  <code>&lt;nav&gt;</code>,&nbsp; <code>&lt;article&gt;</code>,
-                  <code>&lt;figure&gt;</code>,&nbsp;
-                  <code>&lt;aside&gt;</code>,&nbsp; <code>&lt;div&gt;</code>,
-                  and&nbsp; <code>&lt;span&gt;</code>.
-                </p>
-                <p>
-                  w3schools.com explains what these elements contain in: 
-                  <a
-                    href="https://www.w3schools.com/html/html5_semantic_elements.asp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >HTML Semantics </a
-                  >.
-                </p>
-                
-                <p>
-                  All of these elements are used to show
-                  different sections of the page. Try to use the more specific
-                  ones first, using a generic&nbsp;
-                  <code>&lt;div&gt;</code>&nbsp;only if none of the others seems
-                  to apply to the content you are boxing in.
-                </p>
-              </div>
-              <li>
-                <!-- START STEP -->
-                <h3>Header</h3>
-              <p>
-                Add HTML elements to your body to start outlining content areas. Make sure and indent child elements within parent elements. As the page gets larger you will be happy you did. It helps a lot with organization and being able to see mistakes quickly.
+                As you look at the wireframe you will notice a few things.
+                First a box with an X through it indicates an image will go
+                there.
               </p>
               <p>
-                The first element we need is at the top of the page. Notice that there
-                is a box around the logo and navigation bar. Those elements are
-                related and form the header of the page. Lucky for us if you
-                look in the list of tags above you will see that there already is a
-                <code>&lt;header&gt;</code> tag!
-                If you have the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements inside the header, let's delete them. We are going to have an <code>&lt;a&gt;</code> and <code>&lt;nav&gt;</code> element as the children inside of  the &lt;header&gt; instead.
+                The wireframe also indicates where our headlines and
+                paragraphs will be. Elements are organized into groups.
+                It will be important that we include html markup to represent
+                those groups, as well as the content on the page.
               </p>
-              <p>Add an <code>&lt;img&gt;</code> element for the logo. Let's give it a class, <kbd>class="logo"</kbd>. We want to differentiate this <code>&lt;img&gt;</code> tag from all others on the page. We will eventually have the logo inside the images folder and it will be called logo.png. It won't show up on the screen until we do that. There are two required attributes for images. We will add the source attribute and value as <kbd>src="images/logo.png"</kbd>. And we always need an alt attribute with every images so add <kbd>alt="Dry Oar Logo"</kbd></p>
-              <p>User usually expect the logo to take them to the home page of the site so we will make the <code>&lt;img&gt;</code> element the content of an <code>&lt;a&gt;</code> element with the hypertext reference of going to the home page <kbd>href="index.html"</kbd> and add <kbd>id="logo_link"</kbd></p>
-              <p>The <code>&lt;nav&gt;</code> element is the perfect semantic tag for the navigation or menu. We will have 4 pages eventually. So we will add 4 <code>&lt;a&gt;</code> elements inside the <code>&lt;nav&gt;</code></p>
-              <p>We know the hypertext reference for the home page, and we will all have a contactus.html page eventually, and we'll include our site plan as well, but we don't know the name of our second page so we'll leave the value of the href with a placeholder of a hashtag # and the content as Page 2 for now.  </p>
-              <p>Home pages are always expect as the first link and Contact or About Us pages are usually last on a menu.</p>
-              <pre><code class="lang-markup line-numbers">
+            </div>
+            <div class="callout">
+              <h3>Note!</h3>
+              <p>
+                We will <strong>NOT</strong> be adding colors and other styles
+                this week. So no CSS. Our only goal is to get all of the content onto the
+                page that is shown on the wireframe. Our Page will
+                <strong>NOT</strong> look like the wireframe when we finish
+                this week. We are only using it as a guide to get the right HTML elements and content. Each week will
+                get us closer, but our page will not
+                look exactly like the wireframe for several weeks, so patience
+                will be required :)
+              </p>
+            </div>
+          </li>
+          <li>
+            <h3 id="step4">"Framing" with semantic elements</h3>
+            <p>
+              Building a website is actually a lot like building a house. You
+              start with a blueprint (wireframe), and then you build the
+              foundation and frame for the house. We have already built the
+              foundation. We did that when when the
+              <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
+              <code>&lt;body&gt;</code> elements were added. The framing takes the
+              rooms outlined on the blueprint and creates a real space to put
+              them. We need to do the same thing for our webpage, except for
+              instead of rooms we are looking at content areas.
+            </p>
+            <p>
+              The way we "frame" in our webpage is by looking carefully at our
+              wireframe to see what "rooms" we have. Then we use some special
+              HTML tags to define them.
+            </p>
+            <div class="callout">
+              <p>
+                Take a moment to review the
+                <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png"
+                  target="_blank">wireframe</a>
+                again to help remember what we are trying to do. We need to add some markup to create
+                containers in our html.
+              </p>
+              <p>
+                HTML has several tags specifically for this purpose. Some have
+                specific semantic meanings and others don't. Here is a
+                list of some of the more common of these tags:&nbsp;
+                <code>&lt;header&gt;</code>,&nbsp;
+                <code>&lt;footer&gt;</code>,&nbsp;
+                <code>&lt;main&gt;</code>,&nbsp;
+                <code>&lt;section&gt;</code>,&nbsp;
+                <code>&lt;nav&gt;</code>,&nbsp; <code>&lt;article&gt;</code>,
+                <code>&lt;figure&gt;</code>,&nbsp;
+                <code>&lt;aside&gt;</code>,&nbsp; <code>&lt;div&gt;</code>,
+                and&nbsp; <code>&lt;span&gt;</code>.
+              </p>
+              <p>
+                w3schools.com explains what these elements contain in:
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank"
+                  rel="noopener noreferrer">HTML Semantics </a>.
+              </p>
+
+              <p>
+                All of these elements are used to show
+                different sections of the page. Try to use the more specific
+                ones first, using a generic&nbsp;
+                <code>&lt;div&gt;</code>&nbsp;only if none of the others seems
+                to apply to the content you are boxing in.
+              </p>
+            </div>
+          <li>
+            <!-- START STEP -->
+            <h3>Header</h3>
+            <p>
+              Add HTML elements to your body to start outlining content areas. Make sure and indent child elements
+              within parent elements. As the page gets larger you will be happy you did. It helps a lot with
+              organization and being able to see mistakes quickly.
+            </p>
+            <p>
+              The first element we need is at the top of the page. Notice that there
+              is a box around the logo and navigation bar. Those elements are
+              related and form the header of the page. Lucky for us if you
+              look in the list of tags above you will see that there already is a
+              <code>&lt;header&gt;</code> tag!
+              If you have the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements inside the header, let's
+              delete them. We are going to have an <code>&lt;a&gt;</code> and <code>&lt;nav&gt;</code> element as the
+              children inside of the &lt;header&gt; instead.
+            </p>
+            <p>Add an <code>&lt;img&gt;</code> element for the logo. Let's give it a class, <kbd>class="logo"</kbd>. We
+              want to differentiate this <code>&lt;img&gt;</code> tag from all others on the page. We will eventually
+              have the logo inside the images folder and it will be called logo.png. It won't show up on the screen
+              until we do that. There are two required attributes for images. We will add the source attribute and value
+              as <kbd>src="images/logo.png"</kbd>. And we always need an alt attribute with every images so add
+              <kbd>alt="Dry Oar Logo"</kbd></p>
+            <p>Users usually expect the logo to take them to the home page of the site so we will make the
+              <code>&lt;img&gt;</code> element the content of an <code>&lt;a&gt;</code> element with the hypertext
+              reference of going to the home page <kbd>href="index.html"</kbd> and add <kbd>id="logo_link"</kbd></p>
+            <p>The <code>&lt;nav&gt;</code> element is the perfect semantic tag for the navigation or menu. We will have
+              4 pages eventually. So we will add 4 <code>&lt;a&gt;</code> elements inside the <code>&lt;nav&gt;</code>
+            </p>
+            <p>We know the hypertext reference for the home page, and we will all have a contactus.html page eventually,
+              and we'll include our site plan as well, but we don't know the name of our second page so we'll leave the
+              value of the href with a placeholder of a hashtag # and the content as Page 2 for now. </p>
+            <p>Home pages are always expected as the first link, and Contact or About Us pages are usually last on a
+              menu.
+            </p>
+            <pre><code class="lang-markup line-numbers">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -256,29 +243,43 @@
 &lt;/body&gt;
 &lt;/html&gt;
                             </code></pre>
-        <div class="callout">
-            <h4>Tip!</h4>
-            <p>
+            <div class="callout">
+              <h4>Tip!</h4>
+              <p>
                 There will be a lot of code examples in this and other
                 lessons. Avoid the temptation to just copy/paste them into
                 your page. Type them out! This might seem like a bother, but
                 you will remember the HTML and CSS we use much better if you
                 do ;)
-            </p>
-            <p>Also, check your page on Live Server as you go to make sure it is showing up OK. Images will be added later.</p>
+              </p>
+              <p>Also, check your page on Live Server as you go to make sure it is showing up OK. Images will be added
+                later.</p>
             </div>
-            </li>
-            <li>
-                <!-- START STEP -->
-                <h3>Hero</h3>
-              <p>Let's add a container for the hero image and message. The role of a hero image is to welcome your visitors with the first glimpse of your company or organization.</p>
-              <p>It is something unique to only the home page of your website. We won't see this section, with a large image like this, on any of the other pages and we are going to also keep it separate from the main section of the page, for ease in applying CSS to it later.</p>
-              <p>Because there isn't a good semantic tag for the hero section, let's use a <code>&lt;div&gt;</code> with <kbd>id="hero"</kbd>.</p>
-              <p>Inside our hero <code>&lt;div&gt;</code> we will have another <code>&lt;div&gt;</code> with <kbd>id="hero-box"</kbd> holding our hero &lt;img&gt; with <kbd>id="hero-img"</kbd>, <kbd>src="images/hero.png"</kbd>, and <kbd>alt="People enjoying rafting"</kbd></p>
-              <p>A <code>&lt;section&gt;</code> will hold the hero message consisting of an <code>&lt;h1&gt;</code> with <kbd>class="home-title"</kbd> and 'Have An Adventure' content. Also an <code>&lt;h4&gt;</code> with content 'Make Memories with Dry Oar'. Lastly, a <code>&lt;div&gt;</code> that will hold a button with a link with <kbd>class="button-box"</kbd>. The <code>&lt;a&gt;</code> will have <kbd>class="book"</kbd> and <kbd>href="contactus.html"</kbd> and content of 'Book Now'.</p>
-              <p>Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them <em>inside</em> of another element; like we have with the section hero-msg.</p>
-              <p>Feel free to change any of the text content between tags. But leave the attributes and values, class, id and element names as instructed.</p>
-              <pre><code class="lang-markup line-numbers">
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Hero</h3>
+            <p>Let's add a container for the hero image and message. The role of a hero image is to welcome your
+              visitors with the first glimpse of your company or organization.</p>
+            <p>It is something unique to only the home page of your website. We won't see this section, with a large
+              image like this, on any of the other pages and we are going to also keep it separate from the main section
+              of the page, for ease in applying CSS to it later.</p>
+            <p>Because there isn't a good semantic tag for the hero section, let's use a <code>&lt;div&gt;</code> with
+              <kbd>id="hero"</kbd>.</p>
+            <p>Inside our hero <code>&lt;div&gt;</code> we will have another <code>&lt;div&gt;</code> with
+              <kbd>id="hero-box"</kbd> holding our hero <code>&lt;img&gt;</code> with <kbd>id="hero-img"</kbd>,
+              <kbd>src="images/hero.png"</kbd>, and <kbd>alt="People enjoying rafting"</kbd>.</p>
+            <p>A <code>&lt;section&gt;</code> with
+              <kbd>id="hero-msg"</kbd> will hold the hero message consisting of an <code>&lt;h1&gt;</code> with
+              <kbd>class="home-title"</kbd> and 'Have An Adventure' content. Also an <code>&lt;h4&gt;</code> with
+              content 'Make Memories with Dry Oar'. Lastly, a <code>&lt;div&gt;</code> that will hold a button with a
+              link with <kbd>class="button-box"</kbd>. The <code>&lt;a&gt;</code> will have <kbd>class="book"</kbd> and
+              <kbd>href="contactus.html"</kbd> and content of 'Book Now'.</p>
+            <p>Whenever you want to move multiple elements together, like all the hero text, you should group them by
+              placing them <em>inside</em> of another element; like we have with the section hero-msg.</p>
+            <p>Feel free to change any of the text content between tags. But leave the attributes and values, class, id
+              and element names as instructed.</p>
+            <pre><code class="lang-markup line-numbers">
 &lt;body&gt;
 &lt;header&gt;
     &lt;a id="logo_link" href="index.html"&gt;
@@ -307,21 +308,27 @@
 
                 
 </code></pre>
-            
-        <div class="callout">
-            <p>So you might be asking, how do you know if you use a &lt;section&gt; or a &lt;div&gt;? If you look at what a section contains on <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools.org</a> it says a section is a thematic grouping of content, typically with a heading. So that fits the hero text but not the image. I also know later that I will be using a grid to lay the page out and these groupings will help with the grid. As you become more proficient with HTML and CSS you will be able to predict these things better.</p>
-        </div>
-        </li>
-        <li>
+
+            <div class="callout">
+              <p>So you might be asking, how do you know if you use a &lt;section&gt; or a &lt;div&gt;? If you look at
+                what a section contains on <a
+                  href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools.org</a> it says a section
+                is a thematic grouping of content, typically with a heading. So that fits the hero text but not the
+                image. I also know later that I will be using a grid to lay the page out and these groupings will help
+                with the grid. As you become more proficient with HTML and CSS you will be able to predict these things
+                better.</p>
+            </div>
+          </li>
+          <li>
             <!-- START STEP -->
             <h3>Main</h3>
-        <p>
-            Next let's add an area where the main content for this page will
-            go. Add a
-            <code>&lt;main&gt;</code> element to your page right below the hero
-            <code>&lt;div&gt;</code>. It will have <kbd>class="home-grid"</kbd>
-        </p>
-              <pre><code class="lang-markup line-numbers">
+            <p>
+              Next let's add an area where the main content for this page will
+              go. Add a
+              <code>&lt;main&gt;</code> element to your page right below the hero
+              <code>&lt;div&gt;</code>. It will have <kbd>class="home-grid"</kbd>
+            </p>
+            <pre><code class="lang-markup line-numbers">
 &lt;body&gt;
 &lt;header&gt;
     &lt;a id="logo_link" href="index.html"&gt;
@@ -351,10 +358,13 @@
 &lt;/main&gt;
 &lt;/body&gt;                 
             </code></pre>
-    <p>
-        The first things we need inside our new
-        <code>&lt;main&gt;</code> element is the three cards, each with an image, icon and title. We'll use &lt;section&gt; elements to hold each card's content, which consists of 2 <code>&lt;img&gt;</code>s and an <code>&lt;h2&gt;</code>. Use the classes and attributes as shown below.
-        </p>
+            <p>
+              The first things we need inside our new
+              <code>&lt;main&gt;</code> element is the three cards, each with an image, icon, and title. We'll use
+              <code>&lt;section&gt;</code> elements to hold each card's content, which consists of 2
+              <code>&lt;img&gt;</code>s and an
+              <code>&lt;h2&gt;</code>. Use the classes and attributes as shown below.
+            </p>
             <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
@@ -374,9 +384,11 @@
     &lt;/section&gt;
 &lt;/main&gt;
 </code></pre>
-        <p>Below the card sections we will have an <code>&lt;img&gt;</code> and a <code>&lt;section&gt;</code> containing an <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code> with the classes and attributes as shown below:</p>
-        <p>Again, feel free to change the title, paragraph, and button to say whatever you want it to.</p>
-        <pre><code class="lang-markup line-numbers">
+            <p>Below the card sections we will have an <code>&lt;img&gt;</code> and a <code>&lt;section&gt;</code>
+              containing an <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code> with the classes
+              and attributes as shown below:</p>
+            <p>Again, feel free to change the title, paragraph, and button to say whatever you want it to.</p>
+            <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
         &lt;img class="mountain" src="images/rivers.jpg" alt="river in forest"&gt;
@@ -398,20 +410,23 @@
         &lt;h2&gt;More Than Just The Thrill&lt;/h2&gt;
         &lt;p&gt;Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. &lt;/p&gt;
         &lt;a class='join' href="rivers.html"&gt;Join Us&lt;/a&gt;
-        &lt;/section&gt;
+    &lt;/section&gt;
 &lt;/main&gt;
             </code></pre>
 
-        </li>
-        <li>
+          </li>
+          <li>
             <!-- START STEP -->
-            <h3>Footer</h3>      
+            <h3>Footer</h3>
             <p>
-            Finally we need one more container on our page. This one will
-            hold the footer information. Add one below
-            <code>&lt;/main&gt;</code> with all the attributes as shown below. To make the copyright symbol, that is right before the date, we use a special code, there are many of these, but we will just learn this one today: <kbd>&amp;copy;</kbd> Fill in the current year instead of 'XX' and put your first and last name after the year.
+              Finally we need one more container on our page. This one will
+              hold the footer information. Add one below
+              <code>&lt;/main&gt;</code> with all the attributes as shown below. To make the copyright symbol, that is
+              right before the date, we use a special code, there are many of these, but we will just learn this one
+              today: <kbd>&amp;copy;</kbd> Fill in the current year instead of 'XX' and put your first and last name
+              after the year.
             </p>
-              <pre><code class="lang-markup line-numbers">
+            <pre><code class="lang-markup line-numbers">
 &lt;/main&gt;
 &lt;footer&gt;
     &lt;h3&gt;Dry Oar &amp;copy; 20XX - Your First and Last Name Here&lt;/h3&gt;
@@ -430,90 +445,114 @@
     &lt;/div&gt;
 &lt;/footer&gt;
             </code></pre>
-              
-              
-              <div class="callout">
-                <p>If we look at our page now with Live Server, all our images will be broken (not showing up).</p>
-                <p>We have referenced all these images that we don't have in our images folder yet.</p>
-              </div>
-            </li>
-            <li>
-              <!-- START STEP -->
-              <h3>Adding images</h3>
+
+
+            <div class="callout">
+              <p>If we look at our page now with Live Server, all our images will be broken (not showing up).</p>
+              <p>We have referenced all these images that we don't have in our images folder yet.</p>
+            </div>
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Adding images</h3>
+            <p>
+              There are images provided for this home page, but you are welcome to add your own images to your page.
+              Just remember to change your code to reference your images.
+            </p>
+            <div class="callout">
+              <h3>Finding your own Images</h3>
               <p>
-                There are images provided for this home page, but you are welcome to add your own images to your page. Just remember to change your code to reference your images.
+                If you opt to look for your own images here are a couple
+                of things to keep in mind:
               </p>
-                  <div class="callout">
-                    <h3>Finding your own Images</h3>
-                    <p>
-                      If you opt to look for your own images here are a couple
-                      of things to keep in mind:
-                    </p>
-                    <ul>
-                      <li>
-                        Make sure the image is not restricted for use. These
-                        would include images from other whitewater rafting
-                        company sites and photographer's sites.
-                      </li>
-                      <li>
-                        You can have Google help you try to avoid those and find
-                        images that are free to use by searching something like
-                        <kbd>rafting</kbd> in Google...then select the
-                        <kbd>Images</kbd> tab. At the top of the screen you will
-                        see a <kbd>Tools</kbd> button that will show a sub-menu. Select
-                        <kbd>Usage Rights</kbd> from that menu. Click the <kbd>Creative Commons licenses</kbd> option to show images that are available to use. A few, however, may still have copyrights, so be careful. 
-                      </li>
-                      <li>
-                        Many of the images you will find will be very large!
-                        Don't worry, you can optimize them. See the videos below for information about images and optimizing images.
-                      </li>
-                    </ul>
-                  </div>
-                  <p>Whether you are using the images provided or your own images, watch the two videos below to learn more about images. You will not have images provided for any other pages on this site or for your personal website you make later, so you will need this information about images.</p>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/MELKuexR3sQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/85X16eLvNYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-                <p>Here are the links to all the images on the home page. Once you open the link and see the image, just right click the images and choose 'Save Images As..' and then same them into your images folder in your project folder.</p>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" target="_blank">Logo</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/hero.png" target="_blank">Hero</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/rivers.jpg" target="_blank">Rivers</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/river_icon.png" target="_blank">River icon</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/camping.jpg" target="_blank">Camping</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/fire_icon.png" target="_blank">Fire icon</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/rapids.jpg" target="_blank">Rapids</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/oars.png" target="_blank">Oars icon</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/mountains.jpg" target="_blank">Mountains</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" target="_blank">Facebook</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" target="_blank">Twitter</a>
-                <a href="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" target="_blank">Instagram</a>
-                <div class="callout">You could always link them directly to the external area where they are on the Internet. For example <code>&lt;img src="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" alt="Logo"&gt;</code> But this is called 'hot linking' and is not advised because you have no control over those images and they could be gone or changed at any time. It's always best to download the files into your own project in your images folder. Then your image elements would look like this: <code>&lt;img src="images/logo.png" alt="Logo"&gt;</code></div>
-
-
-                <div class="callout">   
-                    <p>Your Git repository will notice all the new files coming in and you'll see the little blue circle with the numbers on your Source Control icon in VSCode. Git will also notice that we have been editing and adding to index.html. You will need to commit all the changed and added files and push them to the repository. (see the end of last week's assignments if you've forgotten how to do that.</p>
-                </div>
+              <ul>
+                <li>
+                  Make sure the image is not restricted for use. These
+                  would include images from other whitewater rafting
+                  company sites and photographer's sites.
                 </li>
                 <li>
-                  <!-- START STEP -->
-                  <h3>Validate your HTML</h3>  
-                  <p>Go to <a href="https://validator.w3.org/">https://validator.w3.org/</a> and validate your HTML and fix any error you find. Get help if you don't understand some of the errors. They can be tricky sometimes.</p>
+                  You can have Google help you try to avoid those and find
+                  images that are free to use by searching something like
+                  <kbd>rafting</kbd> in Google...then select the
+                  <kbd>Images</kbd> tab. At the top of the screen you will
+                  see a <kbd>Tools</kbd> button that will show a sub-menu. Select
+                  <kbd>Usage Rights</kbd> from that menu. Click the <kbd>Creative Commons licenses</kbd> option to show
+                  images that are available to use. A few, however, may still have copyrights, so be careful.
                 </li>
                 <li>
-                  <!-- START STEP -->
-                  <h3>Submit your URL in Ilearn</h3>
-                  <p>Once validated, make sure you've pushed the latest version of your project to GitHub. Then submit your URL that shows your home page live on the Internet so your instructor can see it.</p>
-                  <p>Always check the URL before you submit.</p>
-                  <p>Your page won't be pretty yet. It will look something like this:</p>
-                  <img src="https://byui-wdd.github.io/wdd130/rafting_images/html-home-page.jpg" alt="sample html home page">
+                  Many of the images you will find will be very large!
+                  Don't worry, you can optimize them. See the videos below for information about images and optimizing
+                  images.
                 </li>
-            </li>
-            </ol>  
+              </ul>
+            </div>
+            <p>Whether you are using the images provided or your own images, watch the two videos below to learn more
+              about images. You will not have images provided for any other pages on this site or for your personal
+              website you make later, so you will need this information about images.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MELKuexR3sQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/85X16eLvNYY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
 
-        </div>
-        <!-- end #article -->
-      </main>
-      <script src="../js/course.js"></script>
-      <script src="../js/prism.js"></script>
-    </div>
-  </body>
+            <p>Here are the links to all the images on the home page. Once you open the link and see the image, just
+              right click the images and choose 'Save Images As..' and then same them into your images folder in your
+              project folder.</p>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" target="_blank">Logo</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/hero.png" target="_blank">Hero</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/rivers.jpg" target="_blank">Rivers</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/river_icon.png" target="_blank">River icon</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/camping.jpg" target="_blank">Camping</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/fire_icon.png" target="_blank">Fire icon</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/rapids.jpg" target="_blank">Rapids</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/oars.png" target="_blank">Oars icon</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/mountains.jpg" target="_blank">Mountains</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" target="_blank">Facebook</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" target="_blank">Twitter</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" target="_blank">Instagram</a>
+            <div class="callout">You could always link them directly to the external area where they are on the
+              Internet. For example <code>&lt;img src="https://byui-wdd.github.io/wdd130/rafting_images/logo.png"
+                alt="Logo"&gt;</code> But this is called 'hot linking' and is not advised because you have no control
+              over those images and they could be gone or changed at any time. It's always best to download the files
+              into your own project in your images folder. Then your image elements would look like this: <code>&lt;img
+                src="images/logo.png" alt="Logo"&gt;</code></div>
+
+
+            <div class="callout">
+              <p>Your Git repository will notice all the new files coming in and you'll see the little blue circle with
+                the numbers on your Source Control icon in VSCode. Git will also notice that we have been editing and
+                adding to index.html. You will need to commit all the changed and added files and push them to the
+                repository. (see the end of last week's assignments if you've forgotten how to do that.</p>
+            </div>
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Validate your HTML</h3>
+            <p>Go to <a href="https://validator.w3.org/">https://validator.w3.org/</a> and validate your HTML and fix
+              any error you find. Get help if you don't understand some of the errors. They can be tricky sometimes.</p>
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Submit your URL in Ilearn</h3>
+            <p>Once validated, make sure you've pushed the latest version of your project to GitHub. Then submit your
+              URL that shows your home page live on the Internet so your instructor can see it.</p>
+            <p>Always check the URL before you submit.</p>
+            <p>Your page won't be pretty yet. It will look something like this:</p>
+            <img src="https://byui-wdd.github.io/wdd130/rafting_images/html-home-page.jpg" alt="sample html home page">
+          </li>
+          </li>
+        </ol>
+
+      </div>
+      <!-- end #article -->
+    </main>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </div>
+</body>
+
 </html>
