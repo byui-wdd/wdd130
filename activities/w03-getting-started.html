@@ -358,21 +358,22 @@
         The first things we need inside our new
         <code>&lt;main&gt;</code> element is the three cards, each with an image, icon and title. We'll use &lt;section&gt; elements to hold each card's content, which consists of 2 <code>&lt;img&gt;</code>s and an <code>&lt;h2&gt;</code>. Use the classes and attributes as shown below.
         </p>
+        <p>We will use the same class name for the card and icon images because the CSS will be similar for all of them. </p>
             <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
-        &lt;img class="mountain" src="images/rivers.jpg" alt="river in forest"&gt;
-        &lt;img class="river" src="images/river_icon.png" alt="river icon"&gt;
+        &lt;img class="card-img" src="images/rivers.jpg" alt="river in forest"&gt;
+        &lt;img class="icon" src="images/river_icon.png" alt="river icon"&gt;
         &lt;h2>Rivers&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="camping-card"&gt;
-        &lt;img class="camp" src="images/camping.jpg" alt="tent in mountains"&gt;
-        &lt;img class="fire" src="images/fire_icon.png" alt="fire icon"&gt;
+        &lt;img class="card-img" src="images/camping.jpg" alt="tent in mountains"&gt;
+        &lt;img class="icon" src="images/fire_icon.png" alt="fire icon"&gt;
         &lt;h2>Camping&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="rapids-card"&gt;
-        &lt;img class="boat" src="images/rapids.jpg" alt="rafting boat"&gt;
-        &lt;img class="oars" src="images/oars.png" alt="oars icon"&gt;
+        &lt;img class="card-img" src="images/rapids.jpg" alt="rafting boat"&gt;
+        &lt;img class="icon" src="images/oars.png" alt="oars icon"&gt;
         &lt;h2>Rapids&lt;/h2&gt;
     &lt;/section&gt;
 &lt;/main&gt;
@@ -382,18 +383,18 @@
         <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
-        &lt;img class="mountain" src="images/rivers.jpg" alt="river in forest"&gt;
-        &lt;img class="river" src="images/river_icon.png" alt="river icon"&gt;
+        &lt;img class="card-img" src="images/rivers.jpg" alt="river in forest"&gt;
+        &lt;img class="icon" src="images/river_icon.png" alt="river icon"&gt;
         &lt;h2>Rivers&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="camping-card"&gt;
-        &lt;img class="camp" src="images/camping.jpg" alt="tent in mountains"&gt;
-        &lt;img class="fire" src="images/fire_icon.png" alt="fire icon"&gt;
+        &lt;img class="card-img" src="images/camping.jpg" alt="tent in mountains"&gt;
+        &lt;img class="icon" src="images/fire_icon.png" alt="fire icon"&gt;
         &lt;h2>Camping&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="rapids-card"&gt;
-        &lt;img class="boat" src="images/rapids.jpg" alt="rafting boat"&gt;
-        &lt;img class="oars" src="images/oars.png" alt="oars icon"&gt;
+        &lt;img class="card-img" src="images/rapids.jpg" alt="rafting boat"&gt;
+        &lt;img class="icon" src="images/oars.png" alt="oars icon"&gt;
         &lt;h2>Rapids&lt;/h2&gt;
     &lt;/section&gt;
     &lt;img class="mountains" src="images/mountains.jpg" alt="Misty mountains"&gt;
