@@ -134,7 +134,7 @@
             <h3 id="step4">"Framing" with semantic elements</h3>
             <p>
               Building a website is actually a lot like building a house. You
-              start with a blueprint (wireframe), and then you build the
+              start with a blueprint (wireframe) and then you build the
               foundation and frame for the house. We have already built the
               foundation. We did that when when the
               <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
@@ -207,7 +207,7 @@
               until we do that. There are two required attributes for images. We will add the source attribute and value
               as <kbd>src="images/logo.png"</kbd>. And we always need an alt attribute with every images so add
               <kbd>alt="Dry Oar Logo"</kbd></p>
-            <p>Users usually expect the logo to take them to the home page of the site so we will make the
+            <p>User usually expect the logo to take them to the home page of the site so we will make the
               <code>&lt;img&gt;</code> element the content of an <code>&lt;a&gt;</code> element with the hypertext
               reference of going to the home page <kbd>href="index.html"</kbd> and add <kbd>id="logo_link"</kbd></p>
             <p>The <code>&lt;nav&gt;</code> element is the perfect semantic tag for the navigation or menu. We will have
@@ -216,8 +216,7 @@
             <p>We know the hypertext reference for the home page, and we will all have a contactus.html page eventually,
               and we'll include our site plan as well, but we don't know the name of our second page so we'll leave the
               value of the href with a placeholder of a hashtag # and the content as Page 2 for now. </p>
-            <p>Home pages are always expected as the first link, and Contact or About Us pages are usually last on a
-              menu.
+            <p>Home pages are always expect as the first link and Contact or About Us pages are usually last on a menu.
             </p>
             <pre><code class="lang-markup line-numbers">
 &lt;!DOCTYPE html&gt;
@@ -267,10 +266,9 @@
             <p>Because there isn't a good semantic tag for the hero section, let's use a <code>&lt;div&gt;</code> with
               <kbd>id="hero"</kbd>.</p>
             <p>Inside our hero <code>&lt;div&gt;</code> we will have another <code>&lt;div&gt;</code> with
-              <kbd>id="hero-box"</kbd> holding our hero <code>&lt;img&gt;</code> with <kbd>id="hero-img"</kbd>,
-              <kbd>src="images/hero.png"</kbd>, and <kbd>alt="People enjoying rafting"</kbd>.</p>
-            <p>A <code>&lt;section&gt;</code> with
-              <kbd>id="hero-msg"</kbd> will hold the hero message consisting of an <code>&lt;h1&gt;</code> with
+              <kbd>id="hero-box"</kbd> holding our hero &lt;img&gt; with <kbd>id="hero-img"</kbd>,
+              <kbd>src="images/hero.png"</kbd>, and <kbd>alt="People enjoying rafting"</kbd></p>
+            <p>A <code>&lt;section&gt;</code> will hold the hero message consisting of an <code>&lt;h1&gt;</code> with
               <kbd>class="home-title"</kbd> and 'Have An Adventure' content. Also an <code>&lt;h4&gt;</code> with
               content 'Make Memories with Dry Oar'. Lastly, a <code>&lt;div&gt;</code> that will hold a button with a
               link with <kbd>class="button-box"</kbd>. The <code>&lt;a&gt;</code> will have <kbd>class="book"</kbd> and
@@ -317,6 +315,10 @@
                 image. I also know later that I will be using a grid to lay the page out and these groupings will help
                 with the grid. As you become more proficient with HTML and CSS you will be able to predict these things
                 better.</p>
+              <p>Here is a
+                <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" target="_blank">flowchart</a>
+                that might help to pick out the most semantic element. Always use the tag that best describes the
+                content.</p>
             </div>
           </li>
           <li>
@@ -360,26 +362,27 @@
             </code></pre>
             <p>
               The first things we need inside our new
-              <code>&lt;main&gt;</code> element is the three cards, each with an image, icon, and title. We'll use
-              <code>&lt;section&gt;</code> elements to hold each card's content, which consists of 2
-              <code>&lt;img&gt;</code>s and an
+              <code>&lt;main&gt;</code> element is the three cards, each with an image, icon and title. We'll use
+              &lt;section&gt; elements to hold each card's content, which consists of 2 <code>&lt;img&gt;</code>s and an
               <code>&lt;h2&gt;</code>. Use the classes and attributes as shown below.
             </p>
+            <p>We will use the same class name for the card and icon images because the CSS will be similar for all of
+              them. </p>
             <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
-        &lt;img class="mountain" src="images/rivers.jpg" alt="river in forest"&gt;
-        &lt;img class="river" src="images/river_icon.png" alt="river icon"&gt;
+        &lt;img class="card-img" src="images/rivers.jpg" alt="river in forest"&gt;
+        &lt;img class="icon" src="images/river_icon.png" alt="river icon"&gt;
         &lt;h2>Rivers&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="camping-card"&gt;
-        &lt;img class="camp" src="images/camping.jpg" alt="tent in mountains"&gt;
-        &lt;img class="fire" src="images/fire_icon.png" alt="fire icon"&gt;
+        &lt;img class="card-img" src="images/camping.jpg" alt="tent in mountains"&gt;
+        &lt;img class="icon" src="images/fire_icon.png" alt="fire icon"&gt;
         &lt;h2>Camping&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="rapids-card"&gt;
-        &lt;img class="boat" src="images/rapids.jpg" alt="rafting boat"&gt;
-        &lt;img class="oars" src="images/oars.png" alt="oars icon"&gt;
+        &lt;img class="card-img" src="images/rapids.jpg" alt="rafting boat"&gt;
+        &lt;img class="icon" src="images/oars.png" alt="oars icon"&gt;
         &lt;h2>Rapids&lt;/h2&gt;
     &lt;/section&gt;
 &lt;/main&gt;
@@ -391,18 +394,18 @@
             <pre><code class="lang-markup line-numbers">
 &lt;main class="home-grid"&gt;
     &lt;section class="rivers-card"&gt;
-        &lt;img class="mountain" src="images/rivers.jpg" alt="river in forest"&gt;
-        &lt;img class="river" src="images/river_icon.png" alt="river icon"&gt;
+        &lt;img class="card-img" src="images/rivers.jpg" alt="river in forest"&gt;
+        &lt;img class="icon" src="images/river_icon.png" alt="river icon"&gt;
         &lt;h2>Rivers&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="camping-card"&gt;
-        &lt;img class="camp" src="images/camping.jpg" alt="tent in mountains"&gt;
-        &lt;img class="fire" src="images/fire_icon.png" alt="fire icon"&gt;
+        &lt;img class="card-img" src="images/camping.jpg" alt="tent in mountains"&gt;
+        &lt;img class="icon" src="images/fire_icon.png" alt="fire icon"&gt;
         &lt;h2>Camping&lt;/h2&gt;
     &lt;/section&gt;
     &lt;section class="rapids-card"&gt;
-        &lt;img class="boat" src="images/rapids.jpg" alt="rafting boat"&gt;
-        &lt;img class="oars" src="images/oars.png" alt="oars icon"&gt;
+        &lt;img class="card-img" src="images/rapids.jpg" alt="rafting boat"&gt;
+        &lt;img class="icon" src="images/oars.png" alt="oars icon"&gt;
         &lt;h2>Rapids&lt;/h2&gt;
     &lt;/section&gt;
     &lt;img class="mountains" src="images/mountains.jpg" alt="Misty mountains"&gt;

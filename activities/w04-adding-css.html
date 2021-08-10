@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adding more HTML- Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+</head>
+
+<body>
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1>
+                    <span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+
+        </header>
+        <main>
+            <h1>Adding More HTML and CSS</h1>
+            <hr />
+            <h2>Activity Directions</h2>
+            <p>Estimated time: 60 minutes</p>
+            <p>This week we will continue with the webpage we started in the previous activities. Open up the
+                index.html
+                file from last week in your editor to begin.</p>
+
+
+            <div class="callout">
+                <p>We got all the content in our page last week....but you might of noticed it doesn't look too great.
+                    Remember
+                    that HTML is responsible to get content on a page, but to style it we use CSS.</p>
+                <p>By the end of this activity, it won't look too much better, it will still take a few weeks before it looks like the wireframe.</p>
+            </div>
+            <div class="callout">
+                <p>The first part of this activity will use the following html concepts or properties (review the links if you need to):</p>
+                <ul>
+                    <li>
+                        <a href="http://www.w3schools.com/html/html5_new_elements.asp" target="_blank">HTML5 Elements</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">HTML
+                            Semantics</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/html/html_blocks.asp" target="_blank">HTMl Block and Inline</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/html/html_links.asp" target="_blank">HTML Links</a>
+                    </li>
+                </ul>
+            </div>
+            <ol class="bigSteps">
+                <li>
+                    <!-- START STEP -->
+                    <h3>Review Wireframe</h3>
+                    <p>First review the&nbsp;
+                        <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" target="_blank">wireframe</a>&nbsp;again to help
+                        remember
+                        what we are trying to eventually do. Last week we added all of our content to our page, along with some
+                        extra
+                        HTML to group up related content as necessary.</p>
+                    
+
+                    <h2>Note</h2>
+                    <p>At this point do not expect your page to
+                        <em>look</em> like the wireframe. We are laying a foundation, but have not learned how to
+                        position
+                        elements yet. Don't worry if your page does not look like the wireframe at the end of the activity.</p>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Internal links</h3>
+                    <p>Your page has <code>&lt;a&gt;</code> tags to link to your other internal web pages that belong to your website. The <code>&lt;nav&gt;</code> element contains these links. You
+                        will rename one of the pages later for the child pages that you will be completing.</p>
+                        
+                        <p>It is often considered a good practice if you have a link that takes you away from the
+                            current
+                            site to have it open in a new window or tab. This can be done with the&nbsp;
+                            <kbd>target="_blank"</kbd>&nbsp;attribute.</p>
+                    
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>External links</h3>
+
+                    <p>There are also some external links in the footer to social media sites. In this case it was appropriate to make the
+                        images
+                        the link instead of text.</p>
+                    <p>Make
+                        sure the all the social media links open in a new window/tab of the browser with the <kbd>target="_blank"</kbd>&nbsp;attribute added to the opening tag of each <code>&lt;a&gt;</code>. Since these are external sites, it's good practice to open them in a new tab.</p>
+                        <p>More on the target attribute at: <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">w3schools target attribute</a>.</p>
+                        <p>For example:</p>
+                        <pre><code class="lang-markup line-numbers">
+&lt;a href="https://facebook.com"&gt;
+    &lt;img src="images/facebook.png" alt="fb icon" target="_blank"&gt;
+&lt;/a&gt;
+                                        </code></pre>                    
+                    
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Adding CSS</h3>
+                    <p>We've been doing a lot with HTML so far...and in fact we have now added almost all the html we
+                        will
+                        need! I think it's high time we got to CSS!</p>
+                    <div class="callout">
+
+                        <p>The second half of the activity will use the following html/css concepts or tags (review
+                            the
+                            links if they are new to you or if you do not remember them:</p>
+                        <ul>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_howto.asp" target="_blank">External Style
+                                    Sheet</a>
+                            </li>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_syntax.asp" target="_blank">CSS Syntax</a>
+                                (Including
+                                class and id selectors) </li>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_background.asp" target="_blank">Background
+                                    Colors</a>
+                            </li>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_text.asp" target="_blank">Text Colors</a>
+                            </li>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_dimension.asp" target="_blank">CSS Width</a>
+                            </li>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">CSS Margin</a>
+                            </li>
+                            <li>
+                                <a href="http://www.w3schools.com/css/css_align.asp" target="_blank">CSS Centering</a>
+                                (Top
+                                half of the page)</li>
+                        </ul>
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>External Stylesheets</h3>
+                    <p>We will use an external stylesheet.</p>
+                    <p>We will add a line in your HTML that looks like this:</p>
+                    <pre><code class="lang-markup">
+&lt;link rel="stylesheet" href="styles/style.css"&gt;</code></pre>
+                    <p>The
+                    <kbd>link</kbd> tag tells the html file where to find the CSS it should use to style the page.
+                    We
+                    will enter all of our CSS in the
+                    <kbd>style.css</kbd> file.
+                    <p>Make sure the <kbd>link</kbd> element in the <code>&lt;head&gt;</code> section. </p>
+                    <p>We now need to actually make this file called <kbd>style.css</kbd>. And from the path we see that the css file will be inside the styles folder.</p>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Creating the CSS File</h3>
+                    <p>We will create a stylesheet inside the styles folder. Make sure you are on the Explorer icon in Visual Studio and that your project is listed there. Click on the styles folder and the 'New File' icon. Name the file style.css</p>
+                    <div class="fig-block">
+                        <figure>
+                          <img alt="Make a CSS file" src="https://byui-wdd.github.io/wdd130/images/w04/style_css.png"
+                            title="Make a CSS file" />
+                          <figcaption>Make a CSS file</figcaption>
+                      </figure>
+                      </div>
+                    <div class="callout">
+                        <p>This CSS file will provide the styles for every page of our rafting website.</p>
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Adding a container for our entire page</h3>
+                    <p>There comes a point on larger monitors that our page will seem overwhelming with our large hero image and other content. We need to set a max-width so when our page gets so big, it will stop growing in size. To do this we will need a container to target in CSS that we can give a max-width to.</p>
+                    <pre><code class="lang-markup">
+&lt;body&gt;
+    &lt;div id="content"&gt;
+        &lt;header&gt;
+    . . .
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+                    <p>The div will wrap around the entire page, or in other words, the entire contents of the body. The opening <code>&lt;div&gt;</code> tag will be after the opening <code>&lt;body&gt; tag and close before the closing <code>&lt;body&gt; tag</code></code></p>
+                    <!-- END STEP -->
+                </li>
+
+                <li>
+                    <!-- START STEP -->
+                    <h3>Setting a width</h3>
+                    <p>Apply a width to your whole page to keep it from stretching across the whole browser window on very large monitors by
+                        making
+                        a css rule for the div we added in the last step with the id of
+                        <kbd>content</kbd>. In that rule let's set the max-width of the page to 1600px. Doing it on that
+                        <code>&lt;div&gt;</code> will make sure that no element on the page can be wider than that.</p>
+                    <div class="callout">
+                        <p>Why <kbd>max-width</kbd> instead of just <kbd>width</kbd> you may be asking yourself?
+                            Setting
+                            a <kbd>width</kbd> on an element will make it so that it is ALWAYS that size. We never know
+                            what
+                            size of a screen someone might be looking at our page with...so forcing something to always
+                            be
+                            a size is a bit dangerous. The fact is that we don't care what size the content of our page
+                            is,
+                            as long as it's not <em>wider</em> than 1600px. It can certainly be narrower. Using <kbd>max-width</kbd>
+                            allows for that. Our page can be whatever size the screen is...unless the screen is wider
+                            than our limit...then it will stop
+                            growing!
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Centering the page</h3>
+                    <div class="callout">
+                        <p>We set the max-width, but the page still wouldn't look right on large monitors because the whole page would be left aligned. It would look better if it were
+                            centered. Block elements are centered by setting
+                            a
+                            width and adjusting the left and right margin (
+                            <a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank">Margin</a> is the
+                            space
+                            between elements on a page, or between the element and the edge of the browser window.
+                            Inline
+                            elements are centered by using the
+                            <a href="http://www.w3schools.com/cssref/pr_text_text-align.asp" target="_blank">text-align</a>
+                            property.</p>
+                    </div>
+                    <p>Let's center our content. The
+                        <kbd>&lt;div&gt;</kbd> we set the width on, is a block element, that means we will need to use
+                        <kbd>margin</kbd> to center it. The idea is to set a width (we did this in the last step), then
+                        tell
+                        the browser to take whatever margin is available and split it between the left and right of the
+                        element.
+                        Add
+                        <kbd>margin: 0 auto;</kbd> to the CSS rule for
+                        <kbd>#content</kbd>. We gave it 2 values. The first says to set the top and bottom margins to 0
+                        and
+                        the second says to set the left and right margins to auto: meaning to split any margin
+                        available
+                        between the left and right.
+                    </p>
+                    <div class="callout">
+                        <p>You many not see any difference when you set the max-width and center with margin: 0 auto. This is probably because the monitor you are using to view the page is not wider than 1600px. </p>
+                        <p>This is why it's always important to view your page on many different types of devices. If you want to take a quick look to see if it worked; you can zoom out of the browser page with a Ctrl- (minus sign) until it's small enough to see the margins on either side. Use Ctrl+ (plus sign) to get it back to 100% zoom when you are done.</p>
+                    </div>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>More Centering</h3>
+                    <p>While we are centering, notice with the wireframe that many elements are centered within their parent elements. Start a CSS rule for each of the following and apply the
+                        <kbd>text-align: center;</kbd> style to the following selectors:<br><br>
+                        <kbd>nav a</kbd><br>
+                        <kbd>#hero-msg h1, #hero-msg h4</kbd><br>
+                        <kbd>.button-box</kbd><br>
+                        <kbd>main section</kbd><br>
+                    </p>
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Adding a container for our message background</h3>
+                    <p>We will be using an empty <code>&lt;div&gt;</code> tag to hold a background color for our message. Add a <code>&lt;div&gt;</code> element below the ending <code>&lt;/section&gt;</code> tag and above the <code>&lt;img&gt;</code> tag. We will give it an id of <kdb>background</kdb> because that is all it will do--just serve as a background container. There will be no content.</p>
+                    <pre><code class="lang-markup">
+&lt;section class="rapids-card"&gt;
+    &lt;img class="boat" src="images/rapids.jpg" alt="rafting boat"&gt;
+    &lt;img class="oars" src="images/oars.png" alt="oars icon"&gt;
+    &lt;h2>Rapids&lt;/h2&gt;
+&lt;/section>
+&lt;div id="background"&gt;&lt;/div&gt; <!-- new div -->
+&lt;img class="mountains" src="images/mountains.jpg" alt="Misty mountains"&gt;
+&lt;section class="msg"&gt;
+    &lt;h2&gt;More Than Just The Thrill&lt;/h2&gt;
+    &lt;p&gt;Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. &lt;/p&gt;
+    &lt;a class='join' href="rivers.html"&gt;Join Us&lt;/a&gt;
+&lt;/section&gt;</code></pre>
+                <p>Start a new rule in CSS targeting the new div with the id of background and give it a declaration of height: 725px;. Later we will be giving it a background color as well.</p>
+                <p>For example:</p>
+                <pre><code class="lang-markup">
+#background {
+    height: 725px;
+}
+                </code></pre>
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Setting background colors</h3>
+                    <p>Our next step is to add a background colors to liven up our page a bit.</p>
+                    <div class="callout">
+                        <p>As you apply background colors and text colors make sure you pick colors with a good contrast. Go to your site plan for colors that you had in mind for the site. Use <kbd>background-color</kbd> for backgrounds and <kbd>color</kbd> for text or font colors.</p>
+                    </div>
+                    <p>Add background-color values to the following selectors: (Remember some of them already have a rule from the centering above, just add to that rule, don't make a new one.)<br>
+                        <kbd>body</kbd> 
+                        <kbd>header</kbd><br>
+                        <kbd>nav a:hover</kbd><br>
+                        <kbd>.book, .join</kbd><br>
+                        <kbd>.book:hover, .join:hover</kbd><br>
+                        <kbd>#background</kbd><br>
+                        <kbd>.msg</kbd><br>
+                        <kbd>footer</kbd>
+                    </p>
+                    <p>For example:</p>
+                    <pre><code class="lang-css">
+body {
+    background-color: #fcfbfb; 
+}
+header {
+    background-color:rgba(20,30,13, .7);
+}
+nav a {
+    text-align: center;
+    color: #d9c2a3;
+}
+                    </code></pre>
+                    <p>Use your own colors from your site plan, not the colors in the examples.</p>
+                    <p>A different shade of white was used for the background in this example. </p>
+                    <p>An rgba was used in the example for the header because eventually we want to see the hero image through the header. But you can choose what you want. You can always change it later.</p>
+                    <p>These colors will need to have good contrast with the colors we set in the next step.</p>
+                    
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Foreground colors</h3>
+                    <p>The color you changed the backgrounds to, may make it hard to read the text in the foreground. Use the
+                        <kbd>color</kbd> property for the text.
+                        Again replace the colors with those from your chosen palette in the site plan. Pick
+                        something
+                        that looks good with the background color and that is easily readable and has good contrast.</p>
+                        <p>Change the color property for all these selectors:</p>
+                        <kbd>nav a</kbd><br>
+                        <kbd>nav a:hover</kbd><br>
+                        <kbd>.book, .join</kbd><br>
+                        <kbd>.book:hover, .join:hover</kbd><br>
+                        <kbd>.msg h2</kbd><br>
+                        <kbd>.msg p</kbd><br>
+                        <kbd>footer h3</kbd><br>
+                        <kbd>footer a</kbd><br>
+                        <kbd>footer a:hover</kbd><br>
+                        <p>For example:</p>
+                    <pre><code class="lang-css">
+nav a {
+    color: #fcfbfb;
+}    
+        </code></pre>
+                    </p>
+                        
+                    
+                    <!-- END STEP -->
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Add a Few Widths</h3>
+                    <p>Let's add a few widths to some elements.</p>
+                    <p>Add a width of 80px to the logo and each icon image that goes with the cards. I would use the .logo class as the selector for the logo, otherwise all your images might get that width.</p>
+                    <p>Use .icon as the selector for all the card icons.</p>
+                    <p>Let's give a more responsive width to our hero image. Let's give it a width of 100%. Again use the #hero-img selector so you don't effect any other images by mistake.</p>
+                    <p>For example:</p>
+                    <pre><code class="lang-css">
+.icon {
+    width: 80px;
+}
+                </code></pre>
+                    <p>We will set more width in later weeks as we work with layout.</p>
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Take off or add the default underline of links</h3>
+                    <p>Underlines aren't always necessary with all links, especially the links we have that will eventually look like buttons or with links that have a hover effect. We will take the underline off with the <kbd>text-decoration</kbd> property and set it to a value of none. We will also add the underline value to a hover as well.</p>
+                    <p>Add the <kbd>text-decoration</kbd> property with a value of <kbd>none</kbd> to the following selectors:<br>
+                    <kbd>nav a</kbd><br>
+                    <kbd>.book, .join</kbd><br>
+                    <kbd>footer a</kbd><br>
+                    <p>For example:</p>
+                    <pre> <code class="lang-css">
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}    
+                    </code></pre>
+                    <div class="callout">
+                        <p>If you already have the selector targeted in your CSS file, just add the new declarations to it. You should <strong>not</strong> have more than one rule applying to the same selector.</p>
+                    </div>
+                    <p>Add the <kbd>text-decoration</kbd> property with a value of <kbd>underline</kbd> to the following selectors:<br></p>
+                    <kbd>footer a:hover</kbd>
+                </li>
+                <li>
+                    <!-- START STEP -->
+                    <h3>Check your work</h3>
+                    <p>Publish your site and check the sharable link to make sure the web page displays correctly. Check all the hover pseudo-classes to make sure they work and look good. Once verified, submit the URL for your
+                        page
+                        to iLearn.</p>
+                    <div class="callout">
+                        <p>Make sure to
+                            <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix
+                            any
+                            errors that show.</p>
+                        
+                        <!-- END STEP -->
+                    </div>
+                    <p>Your page still won't be pretty yet. It will look something like this:</p>
+                  <img src="https://byui-wdd.github.io/wdd130/rafting_images/html_css_added_homepage.jpg" alt="sample html home page">
+                </li>
+            </ol>
+        </main>
+        <!-- end #article -->
+    </div>
+
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+
+</body>
+
+</html>
