@@ -1,0 +1,66 @@
+	
+	.garamond {
+    font-family: 'Cormorant Garamond', serif;
+	}
+	.darker {
+    font-family: 'Darker Grotesque', sans-serif;
+    }
+    h1.darker {
+    	font-size:60px;
+    	color:white;
+    }
+    body{
+    	background-color:#fba6c9;
+    }
+	.top {
+		color:white;
+	}
+	.top h1 {
+		text-align: center;
+	}
+	.top h1:hover {
+		color: black;
+	}
+	.top p {
+		font-size:1.25em;
+		line-height:1.6em;
+		text-align: center;
+	}
+	.top p.darker {
+		font-size:1.4em;
+		font-weight:bold;
+		margin-top:19px;
+	}
+	.darker span {
+		letter-spacing:-2px;
+		display:inline-block;
+		width:50px;
+	}
+	main {
+		max-width:600px;
+		margin: 0 auto;
+	}
+	ol li {
+		font-weight:600;
+	    font-family: 'Darker Grotesque', sans-serif;
+	    letter-spacing:-1px;		
+	    font-size:23px;
+		line-height: 2em;
+	}
+	img {
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+	}
+	blockquote {
+		font-size:52px;
+		font-family: 'Cormorant Garamond', serif;
+		color:white;
+		text-align:center;
+		line-height:1.3em;
+	}
+	figcaption.darker {
+		text-align:center;
+		color:black;
+		font-size:1.4em;
+	}

@@ -89,7 +89,7 @@
                     <!-- START STEP -->
                     <h3>External links</h3>
 
-                    <p>There are also some external links in the footer to social media sites. In this case it was appropriate to make the
+                    <p>There are some external links in the footer to social media sites. In this case it was appropriate to make the
                         images
                         the link instead of text.</p>
                     <p>Make
@@ -157,7 +157,7 @@
                     We
                     will enter all of our CSS in the
                     <kbd>style.css</kbd> file.
-                    <p>Make sure the <kbd>link</kbd> element in the <code>&lt;head&gt;</code> section. </p>
+                    <p>Make sure the <kbd>link</kbd> element is in the <code>&lt;head&gt;</code> section. </p>
                     <p>We now need to actually make this file called <kbd>style.css</kbd>. And from the path we see that the css file will be inside the styles folder.</p>
                     <!-- END STEP -->
                 </li>
@@ -198,7 +198,7 @@
                     <h3>Setting a width</h3>
                     <p>Apply a width to your whole page to keep it from stretching across the whole browser window on very large monitors by
                         making
-                        a css rule for the div we added in the last step with the id of
+                        a css rule for the <code>&lt;div&gt;</code> we added in the last step with the id of
                         <kbd>content</kbd>. In that rule let's set the max-width of the page to 1600px. Doing it on that
                         <code>&lt;div&gt;</code> will make sure that no element on the page can be wider than that.</p>
                     <div class="callout">
@@ -257,12 +257,12 @@
                     <!-- START STEP -->
                     <h3>More Centering</h3>
                     <p>While we are centering, notice with the wireframe that many elements are centered within their parent elements. Start a CSS rule for each of the following and apply the
-                        <kbd>text-align: center;</kbd> style to the following selectors:<br><br>
+                        <kbd>text-align: center;</kbd> style to the following selectors:</p><br>
                         <kbd>nav a</kbd><br>
                         <kbd>#hero-msg h1, #hero-msg h4</kbd><br>
                         <kbd>.button-box</kbd><br>
                         <kbd>main section</kbd><br>
-                    </p>
+                    
                     <!-- END STEP -->
                 </li>
                 <li>
@@ -297,8 +297,8 @@
                     <div class="callout">
                         <p>As you apply background colors and text colors make sure you pick colors with a good contrast. Go to your site plan for colors that you had in mind for the site. Use <kbd>background-color</kbd> for backgrounds and <kbd>color</kbd> for text or font colors.</p>
                     </div>
-                    <p>Add background-color values to the following selectors: (Remember some of them already have a rule from the centering above, just add to that rule, don't make a new one.)<br>
-                        <kbd>body</kbd> 
+                    <p>Add background-color values to the following selectors:</p>
+                        <kbd>body</kbd><br> 
                         <kbd>header</kbd><br>
                         <kbd>nav a:hover</kbd><br>
                         <kbd>.book, .join</kbd><br>
@@ -306,7 +306,6 @@
                         <kbd>#background</kbd><br>
                         <kbd>.msg</kbd><br>
                         <kbd>footer</kbd>
-                    </p>
                     <p>For example:</p>
                     <pre><code class="lang-css">
 body {
@@ -315,9 +314,8 @@ body {
 header {
     background-color:rgba(20,30,13, .7);
 }
-nav a {
-    text-align: center;
-    color: #d9c2a3;
+nav a:hover {
+    background-color: black;
 }
                     </code></pre>
                     <p>Use your own colors from your site plan, not the colors in the examples.</p>
@@ -334,8 +332,8 @@ nav a {
                         <kbd>color</kbd> property for the text.
                         Again replace the colors with those from your chosen palette in the site plan. Pick
                         something
-                        that looks good with the background color and that is easily readable and has good contrast.</p>
-                        <p>Change the color property for all these selectors:</p>
+                        that looks good with the background color and that is easily readable and has good contrast. You can always use white or black if you need to.</p>
+                        <p>Change the color property for all these selectors: If any selector already has a rule-set, just add the color declaration to it. Don't start a new rule-set.</p>
                         <kbd>nav a</kbd><br>
                         <kbd>nav a:hover</kbd><br>
                         <kbd>.book, .join</kbd><br>
@@ -347,8 +345,9 @@ nav a {
                         <kbd>footer a:hover</kbd><br>
                         <p>For example:</p>
                     <pre><code class="lang-css">
-nav a {
-    color: #fcfbfb;
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
 }    
         </code></pre>
                     </p>
@@ -375,7 +374,7 @@ nav a {
                     <!-- START STEP -->
                     <h3>Take off or add the default underline of links</h3>
                     <p>Underlines aren't always necessary with all links, especially the links we have that will eventually look like buttons or with links that have a hover effect. We will take the underline off with the <kbd>text-decoration</kbd> property and set it to a value of none. We will also add the underline value to a hover as well.</p>
-                    <p>Add the <kbd>text-decoration</kbd> property with a value of <kbd>none</kbd> to the following selectors:<br>
+                    <p>Add the <kbd>text-decoration</kbd> property with a value of <kbd>none</kbd> to the following selectors:</p>
                     <kbd>nav a</kbd><br>
                     <kbd>.book, .join</kbd><br>
                     <kbd>footer a</kbd><br>
