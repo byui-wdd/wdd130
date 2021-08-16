@@ -25,7 +25,7 @@
         <div class="callout">
           <p>
             This activity will use the following new css concepts or properties
-            (review the links if you do not remember these from Khan academy):
+            (review the links if you do not remember them):
           </p>
           <ul>
             <li>
@@ -71,8 +71,7 @@
               href="http://www.w3schools.com/cssref/css_websafe_fonts.asp"
               target="_blank"
               >web-safe list</a
-            >&nbsp;then you can use them just like Khan academy showed you this
-            week. (Here is another list of the web-safe fonts:&nbsp;
+            >&nbsp;then you can use them in the font-family property without @import. (Here is another list of the web-safe fonts:&nbsp;
             <a href="http://www.cssfontstack.com/" target="_blank"
               >http://www.cssfontstack.com/</a
             >)
@@ -103,54 +102,10 @@
             computers. I have to do an extra step to make it available.
           </p>
           <p>
-            Google Fonts makes it very easy to add your fonts. Find your font in
-            Google Fonts and click it: 
+            Google Fonts makes it very easy to add your fonts. Review the font information from when you picked them in your site plan. Here's the <a href="https://youtu.be/WWvX72ZPnMU">video </a> showing how we found them on Google Fonts and copied the @import statement. Or you can always use the same @import you had in the site-plan-rafting.css for the style.css.
           </p>
-          <div class="fig-block">
-            <figure>
-              <img
-                src="../images/google_font_1.png"
-                alt="googlefont"
-                title="googlefont"
-              />
-            </figure>
-          </div>
           <p>
-            Then click on the 'Select this style' to expand it. 
-          </p>
-          <div class="fig-block">
-            <figure>
-              <img
-                src="../images/google_font_2.png"
-                alt="googlefont2"
-                title="googlefont2"
-              />
-            </figure>
-          </div>
-          <p>
-            Then click on the 'Embed' tab and the '@import' tab.
-          </p>
-          <div class="fig-block">
-            <figure>
-              <img
-                src="../images/google_font_3.png"
-                alt="googlefont2"
-                title="googlefont2"
-              />
-            </figure>
-          </div>
-          <p>
-            Copy the line that starts with '@import' and add it to the
-            <strong>top</strong> of your <kbd>style.css</kbd> file. It should
-            look something like this:
-          </p>
-          <pre><code class="lang-markup">
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
-...the rest of your css...            
-</code></pre>
-
-          <p>
-            Now you can use that font just like normal, ie:&nbsp;
+            The @import always goes at the very top of your CSS file, and then you can use that font just like normal, ie:&nbsp;
             <kbd>font-family: 'Rock Salt', cursive;</kbd>
           </p>
         </div>
@@ -162,7 +117,7 @@
               Based on your font choices from your site plan, add the
               appropriate&nbsp; <kbd>font-family:</kbd>, and&nbsp;
               <kbd>@import</kbd>&nbsp;lines to your CSS to change the body font
-              and headline font on your webpage.
+              and headline font on your webpage. For example, the .home-title, or maybe the .msg h2 selector might look good with the headline font you chose. You may already have a rule-set for selectors or you might have to make a new rule.
             </p>
             <!-- END STEP  -->
           </li>
@@ -171,11 +126,7 @@
             <h3>Adjusting font size</h3>
             <p>
               Often the default font sizes are fine...but there are times when
-              they need to be changed. For example it's good for the links used
-              for navigation to be nice and easy to click, so lets increase
-              their size. Let's make it 110% of normal. (Remember the 'em' unit
-              of measurement for fonts. 1em = the normal size of your font...so
-              1.1em = 110%)
+              they need to be changed. Let's increase the default font-size for the whole page with a font-size of 22px for the body. We can then use 2em for the font-size of our .home-title to make it twice as big as our default font size.
             </p>
             <div class="callout" style="overflow:auto;">
               <img
