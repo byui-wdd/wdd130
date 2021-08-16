@@ -99,7 +99,7 @@
             >)
           </p>
           <p>
-            If you chose fonts from Google Fonts or elsewhere then we have to
+            If you chose fonts from Google Fonts. or elsewhere, then we have to
             make the font available to the web page first before we can use
             them.
           </p>
@@ -128,7 +128,7 @@
           </p>
           <p>
             The @import always goes at the very top of your CSS file, and then you can use that font just like normal, ie:&nbsp;
-            <kbd>font-family: 'Rock Salt', cursive;</kbd>
+            <kbd>font-family: 'Rock Salt', 'Bradley Hand', sans-serif;</kbd>
           </p>
         </div>
         <ol class="bigSteps">
@@ -139,9 +139,12 @@
               Based on your font choices from your site plan, add the
               appropriate&nbsp; <kbd>font-family:</kbd>, and&nbsp;
               <kbd>@import</kbd>&nbsp;. The @import will go at the very top of your CSS. Use the font-family property to change the body font
-              and headline font on your webpage. The .home-title, or maybe the .msg h2 selector might look good with the headline font; you chose. You may already have a rule-set for selectors or you might have to make a new rule.
+              and headline font on your webpage. The .home-title, or maybe the .msg h2 selector might look good with the headline font; you chose.
             </p>
-            <p>Check your page and make sure all the text on your page, besides the 2 headlines is the font-family you have for the body. And that your two headlines are rendering as the headline font you chose.</p>
+            <div class="callout">
+              <p>Thoughout this assignment, some selectors may already have a rule-set in your CSS. If that is the case just add the new declarations to the rule-set. But you may need to make new rule-sets for selectors that you don't have yet.</p>
+          </div>
+            <p>Check your page and make sure all the text on your page, besides the 2 headlines, is the font-family you have for chosen the body. And that your two headlines are rendering as the headline font you chose.</p>
             <!-- END STEP  -->
           </li>
           <li>
@@ -151,10 +154,10 @@
               Often the default font sizes are fine...but there are times when
               they need to be changed. Let's increase the default font-size for the whole page with a font-size of 22px for the body. We can then use 2em for the font-size of our <kbd>.home-title</kbd><br> to make it twice as big as our default font size.
             </p>
-            <p>Selectors on the page that could use a different font-size include:</p><br>
-            <kbd>.home-title</kbd><span>2em</span><br>
-            <kbd>.book, .join</kbd><span>18px</span><br>
-            <kbd>.msg p</kbd><span>.8em</span><br>
+            <p>Selectors on the page that could use a different font-size include:</p>
+            <kbd>.home-title</kbd><span> at 2em</span><br>
+            <kbd>.book, .join</kbd><span> at 18px</span><br>
+            <kbd>.msg p</kbd><span> at .8em</span><br>
             <p>For example:</p>
             <pre><code class="lang-css">
 .home-title {
@@ -168,7 +171,7 @@
             <!-- START STEP -->
             <h3>Simple Reset</h3>
             <p>
-              Let's get rid of any browsers default margin and padding from our page. Setting properties to zero, is sometimes called 'reset'. There are much more involved reset CSS that you can add but we will keep it simple and apply it to just the <code>&lt;body&gt;</code> and <code>&lt;h2&gt;</code> elements with ours for now.</p>
+              Let's get rid of any browsers default margin and padding from our page. Setting properties to zero, is sometimes called 'reset'. There are much more involved reset CSS that you can add but we will keep it simple and apply it to just the <code>&lt;body&gt;</code> and <code>&lt;h2&gt;</code> elements with ours.</p>
               <p>Add a 0 padding and margin to the <code>&lt;body&gt;</code> element. And 0 margin to the <code>&lt;h2&gt;</code>.
             </p>
             <p>For example:</p>
@@ -184,9 +187,7 @@ h2 {
     margin: 0;
 }
             </code></pre>
-            <div class="callout">
-                <p>Some selectors may already have a rule-set in your CSS. If that is the case just add the new declarations to the rule-set. But you may need to make new rule-sets for selectors that you don't have yet.</p>
-            </div>
+            
           </li>
           <li>
             <!-- START STEP -->
@@ -196,7 +197,7 @@ h2 {
               any edges or borders where it is needed.
             </p>
             <p>Selectors on the page that could use padding include:</p><br>
-            <kbd>#logo_link</kbd><span>padding-top: 5px;</span><br>
+            <kbd>#logo_link</kbd><span> &nbsp padding-top: 5px;</span><br>
             <kbd>nav a</kbd><span>padding: 35px;</span><br>
             <kbd>.book, .join</kbd><span>padding: 15px 30px;</span><br>
             <kbd>.icon</kbd><span>padding-top: 10px;</span><br>
