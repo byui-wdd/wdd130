@@ -498,14 +498,13 @@
             can really see what they will look like.
           </p>
           <p>
-            If your fonts are from <a href="https://fonts.google.com/" target="_blank">Google</a> then look at the @import in
-            <kbd>site-plan-rafting.css</kbd>. This line lets our page know where to
+            If your fonts are from <a href="https://fonts.google.com/" target="_blank">Google</a> then you will need the @import similar to what is at the top of the css file,          <kbd>site-plan-rafting.css</kbd>. This line lets our page know where to
             find the fonts needed. Change the example font names there to
-            your fonts. Notice that if your font name has any spaces in it you
+            your fonts. Or just replace the @import statement that is there, with the @import statement you got from Google Fonts. Notice that if your font name has any spaces in it you
             should replace them with '+'. Look at my example:
           </p>
           <p>
-            I want to use the following two fonts from Google:
+            The @import that is already in the site plan has two fonts from Google:
             <kbd>IM Fell French Canon SC</kbd> and <kbd>Lato</kbd>
           </p>
           <pre><code class="lang-css">
@@ -517,6 +516,8 @@
             second font was a simple one word font to it was added just as it
             was with a <kbd>|</kbd> (shift + \) separating my fonts.
           </p>
+          <p>You must also change the values of the heading and paragraph font variables to the new font names for you to see the changes on your page. Replace the "IM Fell French Canon SC" value of --heading-font:</kbd> to your headline font. Remember if it has spaces in it, use quotes. Also change the 'Lato, Helvetica, sans-serif' value of 
+            <kbd>--paragraph-font:</kbd> as well to your paragraph font.</p>
 
           <!-- END STEP -->
         </li>
