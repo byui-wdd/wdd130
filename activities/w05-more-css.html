@@ -75,7 +75,7 @@
           No matter which fonts you are using, it is always a good idea to
           list some fall-back fonts in case, for some reason, your first
           choice doesn't work correctly...you can control how it degrades.
-          Your second choice should be similar to your first (and usually
+          With those fall-back fonts, the second choice should be similar to your first (and usually
           web-safe), the third font in the list should usually be one of the
           default font families (serif, sans-serif, fantasy, monospace, or
           script).
@@ -89,7 +89,7 @@
         <p>
           If, however, I wanted to use the font Rock Salt for my headlines,
           that is not a web safe font and will probably not be on most
-          computers. I have to do an extra step to make it available.
+          computers, I have to do an extra step to make it available.
         </p>
         <p>
           Google Fonts makes it very easy to add your fonts. Review the font
@@ -163,9 +163,10 @@
           <!-- START STEP -->
           <h3>Simple Reset</h3>
           <p>
-            Let's get rid of any browsers default <kbd>margin</kbd> and <kbd>padding</kbd> from our
-            page. Setting properties to zero is sometimes called 'reset'.
-            There are much more involved reset CSS that you can add, but we
+            Let's get rid of some browser default <kbd>margin</kbd> and <kbd>padding</kbd> styles from our
+            page. Because by default the browser will give the body a little margin but we want to have the page go right to the edge. So we will zero out some properties to begin with so we can use our own spacing with our CSS rules.</p> 
+            <p>Setting properties to zero, to begin with, is sometimes called 'reset'.
+            There are much more involved reset CSS styles that you can add, but we
             will keep it simple and apply it to just the
             <code>&lt;body&gt;</code> and <code>&lt;h2&gt;</code> elements
             with ours.
@@ -319,12 +320,11 @@ main section img {
           </p>
           <div class="callout">
             <p>
-              Make sure to validate your
+              Make sure to validate the
               <a target="_blank" href="https://validator.w3.org/#validate_by_input">
                 HTML</a>
               and
-              <a target="_blank" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>, fix any errors,
-              then submit the URL to your site in ILearn.
+              <a target="_blank" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a> of your page and fix any errors that show.
             </p>
           </div>
           <p>
