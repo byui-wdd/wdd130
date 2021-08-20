@@ -1,0 +1,226 @@
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+.content1 {
+  /* This is the parent of the activity 1 boxes. */
+
+}
+.red1 { 
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+
+} 
+.green1 {
+  width: 100px; 
+  height: 100px; 
+  background-color: green; 
+
+} 
+.yellow1 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+} 
+.blue1 {
+  width: 100px; 
+  height: 100px; 
+  background-color: blue; 
+} 
+/* Activity 2 styles */ 
+.content2 {
+  /* This is the parent of the activity 2 boxes. */
+}
+.red2 {
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+} 
+.green2 { 
+  width: 100px; 
+  height: 100px; 
+  background-color: green; 
+} 
+.yellow2 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+} 
+.blue2 {
+  width: 100px; 
+  height: 100px; 
+  background-color: blue; 
+} 
+/* Activity 3 styles */ 
+.content3 {
+  /* This is the parent of the activity 3 boxes. */
+}
+.red3 {
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+} 
+.green3 {
+  width: 100px; 
+  height: 100px; 
+  background-color: green;
+} 
+.yellow3 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+} 
+.blue3 {
+  width: 100px;
+  height: 100px; 
+  background-color: blue; 
+} 
+/* Activity 4 styles */ 
+.content4 {
+  /* This is the parent of the activity 4 boxes. */
+  height: 400px;
+}
+.red4 {
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+} 
+.green4 {
+  width: 100px; 
+  height: 100px; 
+  background-color: green; 
+} 
+.yellow4 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+} 
+.blue4 {
+  width: 100px; 
+  height: 100px; 
+  background-color: blue; 
+} 
+/* Activity 5 styles */ 
+.content5 {
+  /* This is the parent of the activity 5 boxes. */
+  height: 400px;
+}
+.red5 { 
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+} 
+.green5 { 
+  width: 100px; 
+  height: 100px; 
+  background-color: green; 
+
+} 
+.yellow5 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+
+} 
+.blue5 {
+  width: 100px; 
+  height: 100px; 
+  background-color: blue; 
+} 
+/* Activity 6 styles */ 
+.content6 {
+  /* This is the parent of the activity 6 boxes. */
+}
+.red6 {
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+} 
+.green6 {
+  width: 100px; 
+  height: 100px; 
+  background-color: green; 
+} 
+.yellow6 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+} 
+.blue6 {
+  width: 100px; 
+  height: 100px; 
+  background-color: blue; 
+} 
+
+
+/* Do not make any changes below here */
+.activity {
+  width: 70%; 
+  margin: 20px auto; 
+  font-family: Arial, sans-serif; 
+  border: 1px solid black; 
+  padding: 10px; 
+  clear:both; 
+  overflow: auto;
+} 
+
+.hint {
+  border: 1px solid grey;
+  background: #e0e0e0;
+  padding: .5em;
+  position: relative;
+  margin: 1em 0;
+}
+.hint h3 {
+  margin: 0;
+}
+.hint:hover {
+  background: #d0d0d0;
+}
+.hint > div {
+  display: none;
+}
+
+.hint input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hint input[type=checkbox]:checked ~ div {
+  display: block;
+}
+
+.hint i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 10px;
+  top: -3px;
+}
+.hint i:before, .hint i:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.hint i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.hint i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type=checkbox]:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.hint input[type=checkbox]:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.hint a {
+  position: relative;
+  z-index: 1;
+}

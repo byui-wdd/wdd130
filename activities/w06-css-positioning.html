@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>WDD 130 | CSS Positioning Activity</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>CSS Positioning Activity</h1>
+        <hr />
+        <h2>Activity&nbsp;Instructions</h2>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3>Get the HTML and CSS file for the activity</h3>
+            <p>To get the files you need 
+                <a href="https://byui-wdd.github.io/wdd130/images/positioning.zip">download the files</a>
+              And save them into your local repository,
+              <kbd>positioning.html</kbd> and <kbd>positionstyles.css</kbd>, as
+              part of your project. Save them at the root level (or in other words, not inside any folders.)
+            </p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Solve the challenges</h3>
+            <p>
+              Modify the css to make the boxes in the html match the patterns in
+              the images for each activity.
+            </p>
+
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Exercise 1</h3>
+            <p>To help get you started we will solve exercise 1 together.</p>
+            <p>
+              Begin by looking at the image indicating what we are trying to do.
+              It should look like the figure below
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img src="https://byui-wdd.github.io/wdd130/images/example1.png" alt="exercise 1 example" />
+                <figcaption>Exercise 1</figcaption>
+              </figure>
+            </div>
+            <p>
+              For this first exercise I've given you a little extra information
+              with the image. It includes the Grid lines so you can easily see
+              how it is structured. We can quickly see that this is a Grid with
+              two columns and 4 rows. There is also a gap between the rows and
+              columns.
+            </p>
+            <p>Take a look also at the HTML we have to work with.</p>
+            <pre><code class="lang-markup">&lt;div class="content1" &gt;
+    &lt;div class="red1" &gt;&lt;/div&gt;
+    &lt;div class="green1" &gt;&lt;/div&gt;
+    &lt;div class="green1" &gt;&lt;/div&gt;
+    &lt;div class="yellow1"&gt;&lt;/div&gt;
+    &lt;div class="yellow1"&gt;&lt;/div&gt;
+    &lt;div class="blue1"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+            <p>
+              The first step with using CSS Grid is to identify which elements
+              we are trying to move (these will be the Grid Items or Children)
+              and then find their parent (this will be the Grid container or
+              parent). CSS Grid is turned on at the parent. Once we do that
+              <em>all</em> of the direct children of that element become Grid
+              Items. Because of this it is helpful if all of the elements we
+              need to position share a common parent.
+            </p>
+            <p>
+              In this case we want to move the colored boxes. (<kbd
+                >red1, green1, yellow1, blue1</kbd
+              >) and lucky for us they all share a common parent already...<kbd
+                >content1</kbd
+              >
+            </p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Adjust the box sizes</h3>
+            <p>
+              Before we start our Grid, let's take a moment and make sure the
+              boxes are all the right size and shape. The image above shows that
+              <kbd>red</kbd> and <kbd>blue</kbd> should be full width. An easy
+              way to make something full width is to set it's
+              <kbd>width</kbd> to <kbd>100%</kbd>. Change the <kbd>px</kbd> on
+              the existing rules to a <kbd>%</kbd>
+            </p>
+            <p>
+              <kbd>green</kbd> and <kbd>yellow</kbd> look to be about twice
+              their current size. So let's change their <kbd>height</kbd> and
+              <kbd>width</kbd> to be <kbd>200px</kbd>
+            </p>
+
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Turn on Css Grid</h3>
+            <div class="callout">
+              For the rest of this activity it will be helpful if you open this
+              link:
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                >CSS-Tricks Guide to Grid</a
+              >
+              and keep it handy.
+            </div>
+            <p>
+              Switch to the CSS file now (<kbd>positionstyles.css</kbd>) and
+              find the section of code for the first exercise. You will find
+              that there is already a rule defined for <kbd>.content1</kbd>.
+              Enable Css Grid for that element by adding the line
+              <kbd>display: grid;</kbd> to that rule.
+            </p>
+            <p>
+              You will notice that nothing changed! We have to define at least
+              the columns of the Grid we need before anything happens. Let's do
+              that next. If you review the example image again you will see that
+              we need two equal columns for our grid. That is easy to do with
+              the <kbd>fr</kbd> unit and the
+              <kbd>grid-template-columns</kbd> property. If we add that our rule
+              should look like the following:
+            </p>
+            <pre><code class="lang-css">.content1 {
+    /* This is the parent of the activity 1 boxes. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+                        </code></pre>
+            <div class="callout">
+              <p>
+                Glitch might mark the <code>grid-template-columns</code> as an
+                error. It's not, if you look at the page you should see that it
+                worked!
+              </p>
+            </div>
+            <p>
+              As soon as you define those columns you should see a change. It
+              should look similar to the figure below:
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  src="https://byui-wdd.github.io/wdd130/images/example1-halfway.png"
+                  alt="exercise 1 example"
+                />
+                <figcaption>Exercise 1 halfway there!</figcaption>
+              </figure>
+            </div>
+            <p>It's actually a lot closer to finished than it might appear!</p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Finishing up</h3>
+            <p>
+              To get our layout to match the image we really only have three
+              steps left. The first is to tell <kbd>red</kbd> and
+              <kbd>blue</kbd> that they should take up <em>two</em> columns
+              instead of the default one. And then we need to adjust the
+              horizontal alignment of the yellow and green boxes. Finally we
+              need to add some space beteen the columns and rows.
+            </p>
+            <p>
+              We can use the <kbd>grid-column</kbd> property to specify how many
+              columns an element should span. Remember that when using this
+              property we specify the column by describing the grid lines it
+              falls between. If you look at the example image again you will
+              notice that there are numbers along the top edge. If we want
+              something in column one, we would place it between line 1 and line
+              2. If we want something to take up all of column 1 <em>and</em> 2
+              then we would place it <em>between</em> lines 1 and 3! Look at the
+              CSS below to see what this would look like for the red box
+            </p>
+            <pre><code class="lang-css">.red1 { 
+    width: 100%; 
+    height: 100px; 
+    background-color: red; 
+    grid-column: 1/3;
+} 
+                        </code></pre>
+            <p>Do the same to the blue box.</p>
+            <p>
+              Horizontal Alignment is controlled with the
+              <kbd>justify-</kbd> properties. In this case the specific one we
+              want is <kbd>justify-items</kbd>. We can add this to our grid
+              container to center the yellow and green boxes. My rule now looks
+              like this:
+            </p>
+            <pre><code class="lang-css">.content1 {
+    /* This is the parent of the activity 1 boxes. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}</code></pre>
+            <p>
+              Almost there now! One last item. We are supposed to have some
+              space (called a gap) between our rows and columns. We can use the
+              <kbd>grid-gap</kbd> property to add this. I think about 20px
+              should be good. My final CSS for my grid container looks like
+              this:
+            </p>
+            <pre><code class="lang-css">.content1 {
+        /* This is the parent of the activity 1 boxes. */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-gap: 20px;
+    }</code></pre>
+            <p>Done!</p>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Exercises 2-6</h3>
+            <p>
+              Now complete the rest of the exercises. Help each other out! Here
+              are a few final tips as well.
+            </p>
+            <div class="callout">
+              <h3>Tips</h3>
+              <ol>
+                <li>
+                  Don't overuse <kbd>position</kbd>. At first it might seem to
+                  be the answer to your positioning prayers, but it can quickly
+                  become a nightmare if overused. Try to solve layout problems
+                  with other methods first...and fallback to position only if
+                  they don't work.
+                </li>
+                <li>
+                  Remember that <kbd>margin</kbd> is a great way to shift things
+                  around short distances (and
+                  <kbd>margin-top: -50px;</kbd> would move an element
+                  <strong>up</strong> by 50px).
+                </li>
+                <li>
+                  When using <kbd>float</kbd> remember that the element that you
+                  are floating must come before the other elements in the HTML.
+                  Also remember to <kbd>clear</kbd> your floats when you want
+                  things to stop floating.
+                </li>
+                <li>
+                  CSS Grid is a great way to position elements. Most of these
+                  can be most easily solved by using it. Remember that to use
+                  css grid first find the elements you want to adjust, then find
+                  their parent. Use <code>display: grid;</code> on that parent.
+                  Also, here are a couple of good resources to help you with CSS
+                  Grid:
+                  <a
+                    href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                    target="_blank"
+                    >CSS-Tricks Guide to Grid</a
+                  >, and
+                  <a href="http://cssgridgarden.com" target="_blank"
+                    >Grid Garden</a
+                  >
+                </li>
+                <li>
+                  You should be able to solve all of these positioning problems
+                  <strong>without</strong> modifying the HTML. If you find
+                  yourself tempted to tweak the HTML you are probably working
+                  too hard :)
+                </li>
+                <li>
+                  If you are struggling with an activity, start by simply making
+                  the boxes the right size and shape. It will often help you to
+                  see where to go next.
+                </li>
+                <li>
+                  ...and did I mention that you
+                  <strong>should not</strong> modify the HTML? I was pretty
+                  serious about that :)
+                </li>
+              </ol>
+            </div>
+            <!-- END STEP  -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Publish</h3>
+            <p>
+              Open your positioning.html
+                website&nbsp;in your browser to make sure the web page displays
+                correctly. Pay special attention to whether your styles&nbsp;are
+                all displaying.
+              Push all the new files and changes to your GitHub Repo. Once it shows up in the GitHub repo, use that URL to submit. Once verified, submit the URL to your page in
+              ILearn.
+            </p>
+            <div class="callout">
+              <p>
+                Your URL will be a little longer this time around. You will
+                start with your normal URL, but this time we don't want the
+                index.html file...we want positioning.html, so your URL should
+                reflect that. For example if I normally submitted
+                <kbd>https://my-repo.github.io/</kbd> as my URL, for this
+                assignment I would submit
+                <kbd>https://my-repo.github.io/</kbd
+                ><strong>positioning.html</strong>
+              </p>
+            </div>
+            <!-- END STEP  -->
+          </li>
+        </ol>
+
+        <div class="rubric">
+          <h3>Grading</h3>
+          <p>This activity will be graded using the rubric.</p>
+        </div>
+        <h3>Code</h3>
+        <p>
+          Here is the code (both html and css) that this activity is based off
+          of. If something has happened to the code you got with the setup at
+          the beginning of the semester you can restore it with this. Create the
+          files as directed below and copy/paste the code.
+        </p>
+        <pre><code class="lang-markup line-numbers">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;!-- HTML - Name: positioning.html --&gt;
+    &lt;title&gt;Positioning Activity&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="positionstyles.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;WDD 130 positioning exercises&lt;/h2&gt;
+        For each activity match make the boxes match the image by modifying the stylesheet.&lt;/div&gt;
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;Activity 1&lt;/h2&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt;&lt;i&gt;&lt;/i&gt; &lt;h3&gt;Hint 1&lt;/h3&gt;&lt;div&gt;&lt;p&gt;Check out the &lt;a href="https://byui-wdd.github.io/wdd130/activities/css-positioning.html" target="_blank"&gt;activity instructions&lt;/a&gt; in Ilearn!&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;
+        &lt;p&gt;Follow the &lt;a href="https://byui-wdd.github.io/wdd130/activities/css-positioning.html" target="_blank"&gt;instructions&lt;/a&gt; to make the boxes match  &lt;a href="https://byui-wdd.github.io/wdd130/images/example1.png" target="_blank"&gt;this&lt;/a&gt; image.&lt;/p&gt;
+        &lt;div class="content1" &gt;
+        &lt;div class="red1" &gt;&lt;/div&gt;
+        &lt;div class="green1" &gt;&lt;/div&gt;
+        &lt;div class="green1" &gt;&lt;/div&gt;
+        &lt;div class="yellow1"&gt;&lt;/div&gt;
+        &lt;div class="yellow1"&gt;&lt;/div&gt;
+        &lt;div class="blue1"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;Activity 2&lt;/h2&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 2&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;Remember that the best way to shift elements around slightly on the page is with Margins.  You could also use Grid.  Either would work for this. If you choose margin remember that you can use a &lt;em&gt;negative&lt;/em&gt; margin. (ie margin-top: -20px;)&lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;margin-top, margin-left&lt;/li&gt;&lt;li&gt;...or...&lt;/li&gt;&lt;li&gt;grid-template-columns: 50px 50px 50px 50px 50px&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        &lt;p&gt;Overlap and stagger the squares like in &lt;a href="https://byui-wdd.github.io/wdd130/images/example2.png" target="_blank"&gt;this&lt;/a&gt; image.&lt;/p&gt;
+        &lt;div class="content2" &gt;
+        &lt;div class="red2" &gt;&lt;/div&gt;
+        &lt;div class="green2" &gt;&lt;/div&gt;
+        &lt;div class="yellow2"&gt;&lt;/div&gt;
+        &lt;div class="blue2"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;Activity 3&lt;/h2&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 3&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;This one is going to be best solved with CSS Grid. Remember to make the boxes the right width first...then start moving them around. &lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;display:grid;&lt;/li&gt;&lt;li&gt;grid-template-columns:&lt;/li&gt;&lt;li&gt;grid-column-gap:&lt;/li&gt;
+        &lt;li&gt;grid-column:&lt;/li&gt;  &lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        Create the 2 column layout like in &lt;a href="https://byui-wdd.github.io/wdd130/images/example3.png" target="_blank"&gt;this&lt;/a&gt;  image.
+        &lt;div class="content3" &gt;
+        &lt;div class="red3" &gt;&lt;/div&gt;
+        &lt;div class="green3" &gt;&lt;/div&gt;
+        &lt;div class="yellow3"&gt;&lt;/div&gt;
+        &lt;div class="blue3"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;Activity 4&lt;/h2&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 4&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;For the others we have been primarily concerned with width. For this one you will need to adjust height as well. &lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;display:grid;&lt;/li&gt;&lt;li&gt;grid-template-columns:&lt;/li&gt;&lt;li&gt;grid-row:&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        Duplicate the positioning in &lt;a href="https://byui-wdd.github.io/wdd130/images/example4.png" target="_blank"&gt;this&lt;/a&gt; image. 
+        &lt;div class="content4" &gt;
+        &lt;div class="red4" &gt;&lt;/div&gt;
+        &lt;div class="green4" &gt;&lt;/div&gt;
+        &lt;div class="yellow4"&gt;&lt;/div&gt;
+        &lt;div class="blue4"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;Activity 5&lt;/h2&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 5&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;Grid is &lt;strong&gt;not&lt;/strong&gt; the right way to do this.  In fact there is only one way to really do that...and that is with float. Remember that we float the thing we want the text to wrap around.  Also remember to start by making all the shapes the right size and shape.&lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;float: left;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        Wrap the text around the square like in &lt;a href="https://byui-wdd.github.io/wdd130/images/example5.png" target="_blank"&gt;this&lt;/a&gt; image. This is one case where Grid is NOT the right way to solve this one and will in fact make it harder if you try to use it!
+        &lt;div class="content5" &gt;
+        &lt;div class="red5" &gt;&lt;/div&gt;
+        &lt;div class="green5" &gt;&lt;/div&gt;
+        &lt;div class="yellow5"&gt;Step 01: Continue creating the main page for your chosen web site by modifying the CSS file you created in week 9's Adding Classes and IDs to Your Website assignment. This week, you will position all of the content on your main page using the CSS positioning techniques taught in KhanAcademy. When you are done, your webpage layout should reflect what you outlined in the wireframe you designed in the assignment Your Own Site Diagram and Wireframe in week 3. &lt;br /&gt;
+            If you have changed your mind on how you want the content of your main page laid out, take an opportunity to update your wireframe before completing this assignment (it is much easier to experiment with different layouts in a wireframe than it is to do so by modifying the CSS). Also, if you find that you are having trouble with using CSS positioning, feel free to review the concepts at the learn layout site: http://learnlayout.com/. You should be able to apply these principles to your site. For futher help, refer back to the Max Design site used in the beginning of the course for an example of how to implement your site design.&lt;/div&gt;
+        &lt;div class="blue5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="activity"&gt;
+        &lt;h2&gt;Activity 6&lt;/h2&gt;
+        &lt;section class="hint"&gt;&lt;input type="checkbox" &gt; &lt;h3&gt;Hint 6&lt;/h3&gt;&lt;i&gt;&lt;/i&gt;&lt;div&gt;&lt;p&gt;This one is all about visualizing the grid behind the layout. If you are having a hard time doing that first: all the sizes are even multiples of 100, and second here is another example with the lines drawn: &lt;a href="https://byui-wdd.github.io/wdd130/images/example6-hint.png" target="_blank"&gt;example 6 with lines&lt;/a&gt;. For this one you will find it easiest if you use px for the column width. You can also use &lt;kbd&gt;z-index&lt;/kbd&gt; to control the element layering.    &lt;/p&gt;&lt;h4&gt;Properties used:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;display:grid;&lt;/li&gt;&lt;li&gt;grid-template-columns:&lt;/li&gt;&lt;li&gt;grid-column:&lt;/li&gt;&lt;li&gt;grid-row:&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.w3schools.com/cssref/pr_pos_z-index.asp" target="_blank"&gt;z-index:&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/section&gt;
+        Duplicate the positioning in &lt;a href="https://byui-wdd.github.io/wdd130/images/example6.png" target="_blank"&gt;this&lt;/a&gt; image.
+        &lt;div class="content6" &gt;
+        &lt;div class="red6" &gt;&lt;/div&gt;
+        &lt;div class="green6" &gt;&lt;/div&gt;
+        &lt;div class="yellow6"&gt;&lt;/div&gt;
+        &lt;div class="blue6"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+   </code></pre>
+        <pre><code class="lang-css line-numbers">  
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+    .content1 {
+        /* This is the parent of the activity 1 boxes. */
+    }
+    .red1 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+    } 
+    .green1 {
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+    } 
+    .yellow1 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+    } 
+    .blue1 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+    } 
+     /* Activity 2 styles */ 
+    .content2 {
+        /* This is the parent of the activity 2 boxes. */
+    }
+    .red2 {
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+    } 
+    .green2 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+     } 
+    .yellow2 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+    } 
+    .blue2 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+    } 
+     /* Activity 3 styles */ 
+    .content3 {
+        /* This is the parent of the activity 3 boxes. */
+    }
+    .red3 {
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+     } 
+    .green3 {
+    width: 100px; 
+    height: 100px; 
+    background-color: green;
+     } 
+    .yellow3 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+     } 
+    .blue3 {
+    width: 100px;
+    height: 100px; 
+    background-color: blue; 
+     } 
+     /* Activity 4 styles */ 
+    .content4 {
+        /* This is the parent of the activity 4 boxes. */
+        height: 400px;
+    }
+    .red4 {
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+     } 
+    .green4 {
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+    } 
+    .yellow4 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+     } 
+    .blue4 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+     } 
+     /* Activity 5 styles */ 
+     .content5 {
+        /* This is the parent of the activity 5 boxes. */
+         height: 400px;
+    }
+    .red5 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+     } 
+    .green5 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+
+     } 
+    .yellow5 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+
+    } 
+    .blue5 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+     } 
+     /* Activity 6 styles */ 
+     .content6 {
+        /* This is the parent of the activity 6 boxes. */
+    }
+    .red6 {
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+    } 
+    .green6 {
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+     } 
+    .yellow6 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+    } 
+    .blue6 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+    } 
+
+
+/* Do not make any changes below here */
+     .activity {
+    width: 600px; 
+    margin: 20px auto; 
+    font-family: Arial, sans-serif; 
+    border: 1px solid black; 
+    padding: 10px; 
+    clear:both; 
+    overflow: auto;
+    } 
+
+.hint {
+    border: 1px solid grey;
+    background: #e0e0e0;
+    padding: .5em;
+    position: relative;
+    margin: 1em 0;
+}
+.hint h3 {
+    margin: 0;
+}
+.hint:hover {
+    background: #d0d0d0;
+}
+.hint > div {
+    display: none;
+}
+
+.hint input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hint input[type=checkbox]:checked ~ div {
+    display: block;
+}
+
+.hint i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 10px;
+    top: -3px;
+}
+.hint i:before, .hint i:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.hint i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.hint i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type=checkbox]:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.hint input[type=checkbox]:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.hint a {
+  position: relative;
+  z-index: 1;
+}
+ </code></pre>
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
