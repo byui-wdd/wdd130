@@ -1,181 +1,182 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <title>WDD 130 | More CSS: Fonts and Spacing- Instructions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/prism-light.css" />
-    <link rel="stylesheet" href="../css/course.css" />
-  </head>
 
-  <body>
-    <div id="content">
-      <header class="headerBanner">
-        <div>
-          <h1><span>WEB</span> Fundamentals</h1>
-          <h2>WDD 130</h2>
-        </div>
-      </header>
-      <main>
-        <h1>More CSS: Fonts and Spacing</h1>
+<head>
+  <meta charset="utf-8" />
+  <title>WDD 130 | More CSS: Fonts and Spacing- Instructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/prism-light.css" />
+  <link rel="stylesheet" href="../css/course.css" />
+</head>
 
-        <hr />
-        <h2>Activity Directions</h2>
-        <p>Estimated Time: 45 minutes</p>
-        <div class="callout">
-          <p>
-            This activity will use the following new css concepts or properties
-            (review the links if you do not remember them):
-          </p>
-          <ul>
-            <li>
-              <a
-                href="http://www.w3schools.com/css/css_font.asp"
-                target="_blank"
-                >CSS Fonts</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://www.w3schools.com/css/css_boxmodel.asp"
-                target="_blank"
-                >CSS Box Model</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://www.w3schools.com/css/css_padding.asp"
-                target="_blank"
-                >CSS Padding</a
-              >
-            </li>
-            <li>
-                <a
-                  href="https://www.w3schools.com/css/css_margin.asp"
-                  target="_blank"
-                  >CSS Margin</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.w3schools.com/css/css_border.asp"
-                  target="_blank"
-                  >CSS Borders</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.w3schools.com/css/css3_borders.asp"
-                  target="_blank"
-                  >CSS Rounded Corners</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.w3schools.com/css/css3_box-sizing.asp"
-                  target="_blank"
-                  >CSS Box Sizing</a
-                >
-              </li>
-              
-          </ul>
-        </div>
-        <div class="callout">
-          <p>
-            Nothing makes a webpage feel like more of a product and less of a
-            project than changing from the default fonts. You should have chosen
-            one or two fonts when you were putting the site plan together for
-            your site. Go review that now.
-          </p>
-          <p>
-            If you chose fonts from among the
-            <a
-              href="http://www.w3schools.com/cssref/css_websafe_fonts.asp"
-              target="_blank"
-              >web-safe list</a
-            >&nbsp;then you can use them in the font-family property without @import. (Here is another list of the web-safe fonts:&nbsp;
-            <a href="http://www.cssfontstack.com/" target="_blank"
-              >http://www.cssfontstack.com/</a
-            >)
-          </p>
-          <p>
-            If you chose fonts from Google Fonts. or elsewhere, then we have to
-            make the font available to the web page first before we can use
-            them.
-          </p>
-          <p>
-            No matter which fonts you are using it is always a good idea to list
-            some fall-back fonts, in case for some reason your first choice
-            doesn't work correctly...you can control how it degrades. Your
-            second choice should be similar to your first (and usually
-            web-safe), the third font in the list should usually be one of the
-            default font families. (serif, san-serif, fantasy, monospace, or
-            script)
-          </p>
-          <p>
-            So for example if I chose Helvetica&nbsp;as my font for body copy I
-            would add something like&nbsp;
-            <kbd>font-family: Helvetica, Arial, sans-serif;</kbd>&nbsp;to a rule
-            modifying the&nbsp; <kbd>body</kbd> of my page.
-          </p>
-          <p>
-            If, however, I wanted to use the font Rock Salt for my headlines,
-            that is not a web safe font and will probably not be on most
-            computers. I have to do an extra step to make it available.
-          </p>
-          <p>
-            Google Fonts makes it very easy to add your fonts. Review the font information from when you picked them in your site plan. Here's the <a href="https://youtu.be/WWvX72ZPnMU">video </a> showing how we found them on Google Fonts and copied the @import statement. Or you can always use the same @import you had in the site-plan-rafting.css for the style.css.
-          </p>
-          <p>
-            The @import always goes at the very top of your CSS file, and then you can use that font just like normal, ie:&nbsp;
-            <kbd>font-family: 'Rock Salt', 'Bradley Hand', sans-serif;</kbd>
-          </p>
-        </div>
-        <ol class="bigSteps">
+<body>
+  <div id="content">
+    <header class="headerBanner">
+      <div>
+        <h1><span>WEB</span> Fundamentals</h1>
+        <h2>WDD 130</h2>
+      </div>
+    </header>
+    <main>
+      <h1>More CSS: Fonts and Spacing</h1>
+
+      <hr />
+      <h2>Activity Directions</h2>
+      <p>Estimated Time: 45 minutes</p>
+      <div class="callout">
+        <p>
+          This activity will use the following new css concepts or properties
+          (review the links if you do not remember them):
+        </p>
+        <ul>
           <li>
-            <!-- START STEP -->
-            <h3>Change your Body and headline fonts</h3>
-            <p>
-              Based on your font choices from your site plan, add the
-              appropriate&nbsp; <kbd>font-family:</kbd>, and&nbsp;
-              <kbd>@import</kbd>&nbsp;. The @import will go at the very top of your CSS. Use the font-family property to change the body font
-              and headline font on your webpage. The .home-title, or maybe the .msg h2 selector might look good with the headline font; you chose.
-            </p>
-            <div class="callout">
-              <p>Thoughout this assignment, some selectors may already have a rule-set in your CSS. If that is the case just add the new declarations to the rule-set. But you may need to make new rule-sets for selectors that you don't have yet.</p>
-          </div>
-            <p>Check your page and make sure all the text on your page, besides the 2 headlines, is the font-family you have for chosen the body. And that your two headlines are rendering as the headline font you chose.</p>
-            <!-- END STEP  -->
+            <a href="http://www.w3schools.com/css/css_font.asp" target="_blank">CSS Fonts</a>
           </li>
           <li>
-            <!-- START STEP -->
-            <h3>Adjusting font sizes</h3>
+            <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">CSS Box Model</a>
+          </li>
+          <li>
+            <a href="http://www.w3schools.com/css/css_padding.asp" target="_blank">CSS Padding</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">CSS Margin</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/css_border.asp" target="_blank">CSS Borders</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/css3_borders.asp" target="_blank">CSS Rounded Corners</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/css3_box-sizing.asp" target="_blank">CSS Box Sizing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p>
+          Nothing makes a webpage feel like more of a product and less of a
+          project than changing from the default fonts. You should have chosen
+          one or two fonts when you were putting the site plan together for
+          your site. Go review that now.
+        </p>
+        <p>
+          If you chose fonts from among the
+          <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">web-safe list</a>&nbsp;then
+          you can use them in the <kbd>font-family</kbd> property without
+          <kbd>@import</kbd>. (Here is another list of the web-safe fonts:&nbsp;
+          <a href="http://www.cssfontstack.com/" target="_blank">http://www.cssfontstack.com/</a>)
+        </p>
+        <p>
+          If you chose fonts from Google Fonts or elsewhere, then we have to
+          make the font available to the web page first before we can use
+          them.
+        </p>
+        <p>
+          No matter which fonts you are using, it is always a good idea to
+          list some fall-back fonts in case, for some reason, your first
+          choice doesn't work correctly...you can control how it degrades.
+          Your second choice should be similar to your first (and usually
+          web-safe), the third font in the list should usually be one of the
+          default font families (serif, sans-serif, fantasy, monospace, or
+          script).
+        </p>
+        <p>
+          So for example if I chose Helvetica as my font for body copy, I
+          would add something like
+          <kbd>font-family: Helvetica, Arial, sans-serif;</kbd> to a rule
+          modifying the <kbd>body</kbd> of my page.
+        </p>
+        <p>
+          If, however, I wanted to use the font Rock Salt for my headlines,
+          that is not a web safe font and will probably not be on most
+          computers. I have to do an extra step to make it available.
+        </p>
+        <p>
+          Google Fonts makes it very easy to add your fonts. Review the font
+          information from when you picked them in your site plan. Here's the
+          <a href="https://youtu.be/WWvX72ZPnMU">video </a> showing how we
+          found them on Google Fonts and copied the <kbd>@import</kbd> statement. Or you
+          can always use the same <kbd>@import</kbd> you had in the site-plan-rafting.css
+          for the style.css.
+        </p>
+        <p>
+          The <kbd>@import</kbd> always goes at the very top of your CSS file, and then
+          you can use that font just like normal, ie:&nbsp;
+          <kbd>font-family: 'Rock Salt', 'Bradley Hand', sans-serif;</kbd>
+        </p>
+      </div>
+      <ol class="bigSteps">
+        <li>
+          <!-- START STEP -->
+          <h3>Change your Body and headline fonts</h3>
+          <p>
+            Based on your font choices from your site plan, add the
+            appropriate&nbsp; <kbd>font-family:</kbd> and&nbsp;
+            <kbd>@import</kbd>&nbsp;. The <kbd>@import</kbd> will go at the very top of
+            your CSS. Use the <kbd>font-family</kbd> property to change the body font and
+            headline font on your webpage. The <kbd>.home-title</kbd> or maybe the <kbd>.msg
+              h2</kbd> selector might look good with the headline font you chose.
+          </p>
+          <div class="callout">
             <p>
-              Often the default font sizes are fine...but there are times when
-              they need to be changed. Let's increase the default font-size for the whole page with a font-size of 22px for the body. We can then use 2em for the font-size of our <kbd>.home-title</kbd><br> to make it twice as big as our default font size.
+              Throughout this assignment, some selectors may already have a
+              rule-set in your CSS. If that is the case, just add the new
+              declarations to the rule-set, but you may need to make new
+              rule-sets for selectors that you don't have yet.
             </p>
-            <p>Selectors on the page that could use a different font-size include:</p>
-            <kbd>.home-title</kbd><span> at 2em</span><br>
-            <kbd>.book, .join</kbd><span> at 18px</span><br>
-            <kbd>.msg p</kbd><span> at .8em</span><br>
-            <p>For example:</p>
-            <pre><code class="lang-css">
+          </div>
+          <p>
+            Check your page and make sure all the text on your page, besides
+            the 2 headlines, is the <kbd>font-family</kbd> you have for chosen the body
+            and that your two headlines are rendering as the headline font you
+            chose.
+          </p>
+          <!-- END STEP  -->
+        </li>
+        <li>
+          <!-- START STEP -->
+          <h3>Adjusting font sizes</h3>
+          <p>
+            Often the default font sizes are fine...but there are times when
+            they need to be changed. Let's increase the default <kbd>font-size</kbd> for
+            the whole page with a <kbd>font-size</kbd> of 22px for the body. We can then
+            use 2em for the <kbd>font-size</kbd> of our <kbd>.home-title</kbd>
+            to make it twice as big as our default font size.
+          </p>
+          <p>
+            Selectors on the page that could use a different <kbd>font-size</kbd>
+            include:
+          </p>
+          <kbd>.home-title</kbd><span> at 2em</span><br />
+          <kbd>.book, .join</kbd><span> at 18px</span><br />
+          <kbd>.msg p</kbd><span> at .8em</span><br />
+          <p>For example:</p>
+          <pre><code class="lang-css">
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
 }
             </code></pre>
-            <!-- END STEP  -->
-          </li>
-          <li>
-            <!-- START STEP -->
-            <h3>Simple Reset</h3>
-            <p>
-              Let's get rid of any browsers default margin and padding from our page. Setting properties to zero, is sometimes called 'reset'. There are much more involved reset CSS that you can add but we will keep it simple and apply it to just the <code>&lt;body&gt;</code> and <code>&lt;h2&gt;</code> elements with ours.</p>
-              <p>Add a 0 padding and margin to the <code>&lt;body&gt;</code> element. And 0 margin to the <code>&lt;h2&gt;</code>.
-            </p>
-            <p>For example:</p>
-            <pre><code class="lang-css">
+          <!-- END STEP  -->
+        </li>
+        <li>
+          <!-- START STEP -->
+          <h3>Simple Reset</h3>
+          <p>
+            Let's get rid of any browsers default <kbd>margin</kbd> and <kbd>padding</kbd> from our
+            page. Setting properties to zero is sometimes called 'reset'.
+            There are much more involved reset CSS that you can add, but we
+            will keep it simple and apply it to just the
+            <code>&lt;body&gt;</code> and <code>&lt;h2&gt;</code> elements
+            with ours.
+          </p>
+          <p>
+            Add a 0 <kbd>padding</kbd> and <kbd>margin</kbd> to the
+            <code>&lt;body&gt;</code> element and a 0 <kbd>margin</kbd> to the
+            <code>&lt;h2&gt;</code>.
+          </p>
+          <p>For example:</p>
+          <pre><code class="lang-css">
 body {
     background-color: #fcfbfb;
     font-family: Raleway, Arial, sans-serif;
@@ -187,26 +188,26 @@ h2 {
     margin: 0;
 }
             </code></pre>
-            
-          </li>
-          <li>
-            <!-- START STEP -->
-            <h3>Adding Padding</h3>
-            <p>
-              Use <kbd>padding</kbd> to space out the content on your page from
-              any edges or borders where it is needed.
-            </p>
-            <p>Selectors on the page that could use padding include:</p><br>
-            <kbd>#logo_link</kbd><span> &nbsp padding-top: 5px;</span><br>
-            <kbd>nav a</kbd><span> &nbsp padding: 35px;</span><br>
-            <kbd>.book, .join</kbd><span> &nbsp padding: 15px 30px;</span><br>
-            <kbd>.icon</kbd><span> &nbsp padding-top: 10px;</span><br>
-            <kbd>.msg</kbd><span> &nbsp padding: 35px;</span><br>
-            <kbd>.msg p</kbd><span> &nbsp padding-bottom: 15px;</span><br>
-            <kbd>footer</kbd><span> &nbsp padding: 25px 50px;</span><br>
-            <kbd>footer .social img</kbd><span> &nbsp padding-top: 15px;</span><br>
-            <p>For example:</p>
-            <pre><code class="lang-css">
+        </li>
+        <li>
+          <!-- START STEP -->
+          <h3>Adding Padding</h3>
+          <p>
+            Use <kbd>padding</kbd> to space out the content on your page from
+            any edges or borders where it is needed.
+          </p>
+          <p>Selectors on the page that could use <kbd>padding</kbd> include:</p>
+          <br />
+          <kbd>#logo_link</kbd><span> &nbsp padding-top: 5px;</span><br />
+          <kbd>nav a</kbd><span> &nbsp padding: 35px;</span><br />
+          <kbd>.book, .join</kbd><span> &nbsp padding: 15px 30px;</span><br />
+          <kbd>.icon</kbd><span> &nbsp padding-top: 10px;</span><br />
+          <kbd>.msg</kbd><span> &nbsp padding: 35px;</span><br />
+          <kbd>.msg p</kbd><span> &nbsp padding-bottom: 15px;</span><br />
+          <kbd>footer</kbd><span> &nbsp padding: 25px 50px;</span><br />
+          <kbd>footer .social img</kbd><span> &nbsp padding-top: 15px;</span><br />
+          <p>For example:</p>
+          <pre><code class="lang-css">
 nav a {
     text-decoration: none;
     color: #fcfbfb;
@@ -214,30 +215,36 @@ nav a {
     padding: 35px;
 }
                     </code></pre>
-            <!-- END STEP  -->
-          </li>
-          
-          <div class="callout">
-            <p>
-                Be aware, as we add margins that when two elements by each other both have top and bottom margins,
-                the browser collapses the smaller margin and keeps the larger. 
-              </p>
-              <p>This is why you might need to address two different elements margins to get your spacing how you'd expect it to be.</p>
-          </div>
-          <li>
-            <!-- START STEP -->
-            <h3>Adding Margins</h3>
-            <p>
-              Use <kbd>margin</kbd> to space out the content on your page beyond the borders of the elements where it is needed.
-            </p>
-            <p>Selectors on the page that could use margins include:</p><br>
-            <kbd>.home-title</kbd><span> &nbsp margin-top: 10px;</span><br>
-            <kbd>.book, .join</kbd><span> &nbsp margin-top: 50px;</span><br>
-            <kbd>main section</kbd><span> &nbsp margin: 200px 0;</span><br>
-            <kbd>.mountains</kbd><span> &nbsp margin-top: 100px;</span><br>
-            <kbd>footer</kbd><span> &nbsp margin-top: 200px;</span><br>
-            <p>For example:</p>
-            <pre><code class="lang-css">
+          <!-- END STEP  -->
+        </li>
+
+        <div class="callout">
+          <p>
+            Be aware, as we add margins, that when two elements by each other
+            both have top and bottom margins, the browser collapses the
+            smaller margin and keeps the larger.
+          </p>
+          <p>
+            This is why you might need to address two different elements
+            margins to get your spacing how you'd expect it to be.
+          </p>
+        </div>
+        <li>
+          <!-- START STEP -->
+          <h3>Adding Margins</h3>
+          <p>
+            Use <kbd>margin</kbd> to space out the content on your page beyond
+            the borders of the elements where it is needed.
+          </p>
+          <p>Selectors on the page that could use margins include:</p>
+          <br />
+          <kbd>.home-title</kbd><span> &nbsp margin-top: 10px;</span><br />
+          <kbd>.book, .join</kbd><span> &nbsp margin-top: 50px;</span><br />
+          <kbd>main section</kbd><span> &nbsp margin: 200px 0;</span><br />
+          <kbd>.mountains</kbd><span> &nbsp margin-top: 100px;</span><br />
+          <kbd>footer</kbd><span> &nbsp margin-top: 200px;</span><br />
+          <p>For example:</p>
+          <pre><code class="lang-css">
 .book, .join {
     background-color: #d9c2a3;
     color: black;
@@ -247,25 +254,45 @@ nav a {
     margin-top: 50px;
 }
                     </code></pre>
-            <!-- END STEP  -->
-          </li>
-          <div class="callout">
-            <p>There may be a few areas that might surprise you. For example,  because the <code>&lt;header&gt;</code> and the <code>&lt;div&gt;</code> with the id of 'hero' don't have any margin; the 35px padding around each <kbd>nav a</kbd> doesn't look like it's not working on the bottom. We will resolve this when we layout the page later.</p>
-            <img src="https://byui-wdd.github.io/wdd130/rafting_images/padding-margin.png"
-                        alt="sample html home page">
-          </div>
-          <li>
-            <!-- START STEP -->
-            <h3>Adding borders, border radius and box-sizing.</h3>
-            <p>
-              Let's add a <kbd>border</kbd> and a <kbd>border-radius</kbd> to a few elements.
-            </p>
-            <p>Add a border-radius of 5px to the <kbd>.book, .join</kbd> selector.</p>
-            <p>Add a border of 10px solid #black to a <kbd>.card-img</kbd> selector.</p>
-            <p>Use one of your colors from your site plan instead of black if you wish.</p>
-            <p>Add box-sizing: border-box; to the <kbd>main section img</kbd> selector. Now the border and image will be included in the size of those images.</p>
-            <p>For example:</p>
-            <pre><code class="lang-css">
+          <!-- END STEP  -->
+        </li>
+        <div class="callout">
+          <p>
+            There may be a few areas that might surprise you. For example,
+            because the <code>&lt;header&gt;</code> and the
+            <code>&lt;div&gt;</code> with the id of 'hero' don't have any
+            <kbd>margin</kbd>, the 35px <kbd>padding</kbd> around each <kbd>nav a</kbd> doesn't look
+            like it's working on the bottom. We will resolve this when we
+            layout the page later.
+          </p>
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/padding-margin.png" alt="sample html home page" />
+        </div>
+        <li>
+          <!-- START STEP -->
+          <h3>Adding borders, border radius and box-sizing.</h3>
+          <p>
+            Let's add a <kbd>border</kbd> and a <kbd>border-radius</kbd> to a
+            few elements.
+          </p>
+          <p>
+            Add a <kbd>border-radius</kbd> of 5px to the
+            <kbd>.book, .join</kbd> selector.
+          </p>
+          <p>
+            Add a <kbd>border</kbd> of 10px solid #black to a
+            <kbd>.card-img</kbd> selector.
+          </p>
+          <p>
+            Use one of your colors from your site plan instead of black if you
+            wish.
+          </p>
+          <p>
+            Add <kbd>box-sizing: border-box;</kbd> to the
+            <kbd>main section img</kbd> selector. Now the <kbd>border</kbd> and image
+            will be included in the size of those images.
+          </p>
+          <p>For example:</p>
+          <pre><code class="lang-css">
 .book, .join {
     background-color: #d9c2a3;
     color: black;
@@ -279,44 +306,40 @@ nav a {
     border: 10px solid #d9c2a3;
 }
 main section img {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
             </code></pre>
-            
-          </li>
-          <li>
-            <!-- START STEP -->
-            <h3>Check your site</h3>
-            <p>
-              Preview your site to make sure the web page displays correctly.
-              Once verified, submit the URL for your page to iLearn.&nbsp;
-            </p>
-            <div class="callout">
+        </li>
+        <li>
+          <!-- START STEP -->
+          <h3>Check your site</h3>
+          <p>
+            Preview your site to make sure the web page displays correctly.
+            Once verified, submit the URL for your page to iLearn.&nbsp;
+          </p>
+          <div class="callout">
             <p>
               Make sure to validate your
-              <a
-                target="_blank"
-                href="https://validator.w3.org/#validate_by_input"
-              >
-                html</a
-              >
+              <a target="_blank" href="https://validator.w3.org/#validate_by_input">
+                HTML</a>
               and
-              <a
-                target="_blank"
-                href="http://jigsaw.w3.org/css-validator/#validate_by_input"
-                >CSS</a
-              >, fix any errors, then submit the URL to your site in ILearn.
+              <a target="_blank" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>, fix any errors,
+              then submit the URL to your site in ILearn.
             </p>
-            </div>
-            <p>Your page still won't look like our wireframe layout, but the spacing is much better. It will look something like this:</p>
-            <img src="https://byui-wdd.github.io/wdd130/rafting_images/margin_padding_homepage.jpg"
-                alt="sample html home page" style="width: 60%">
-            <!-- END STEP  -->
-          </li>
-        </ol>
-      </main>
-    </div>
-    <script src="../js/course.js"></script>
-    <script src="../js/prism.js"></script>
-  </body>
+          </div>
+          <p>
+            Your page still won't look like our wireframe layout, but the
+            spacing is much better. It will look something like this:
+          </p>
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/margin_padding_homepage.jpg"
+            alt="sample html home page" style="width: 60%" />
+          <!-- END STEP  -->
+        </li>
+      </ol>
+    </main>
+  </div>
+  <script src="../js/course.js"></script>
+  <script src="../js/prism.js"></script>
+</body>
+
 </html>

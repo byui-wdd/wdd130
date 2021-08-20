@@ -90,7 +90,7 @@
                         current
                         site to have it open in a new window or tab. This can be done with the&nbsp;
                         <kbd>target="_blank"</kbd>&nbsp;attribute.</p>
-                        <p>We will do that in the next step.</p>
+                    <p>We will do that in the next step.</p>
 
                     <!-- END STEP -->
                 </li>
@@ -198,9 +198,10 @@
                     <!-- START STEP -->
                     <h3>Adding a container for our entire page</h3>
                     <p>There comes a point on larger monitors that our page will seem overwhelming with our large hero
-                        image and other content. We need to set a max-width so when our page gets so big, it will stop
+                        image and other content. We need to set a <kbd>max-width</kbd> so when our page gets so big, it
+                        will stop
                         growing in size. To do this we will need a container to target in CSS that we can give a
-                        max-width to.</p>
+                        <kbd>max-width</kbd> to.</p>
                     <pre><code class="lang-markup">
 &lt;body&gt;
     &lt;div id="content"&gt;
@@ -210,19 +211,22 @@
     &lt;/div&gt;
 &lt;/body&gt;</code></pre>
                     <p>The div will wrap around the entire page, or in other words, the entire contents of the body. The
-                        opening <code>&lt;div&gt;</code> tag will be after the opening <code>&lt;body&gt; tag and close
-                            before the closing <code>&lt;body&gt; tag</code></code></p>
+                        opening <code>&lt;div&gt;</code> tag will be after the opening <code>&lt;body&gt;</code> tag and
+                        close
+                        before the closing <code>&lt;body&gt;</code> tag.</p>
                     <!-- END STEP -->
                 </li>
 
                 <li>
                     <!-- START STEP -->
                     <h3>Setting a width</h3>
-                    <p>Apply a width to your whole page to keep it from stretching across the whole browser window on
+                    <p>Apply a <kbd>width</kbd> to your whole page to keep it from stretching across the whole browser
+                        window on
                         very large monitors by
                         making
                         a css rule for the <code>&lt;div&gt;</code> we added in the last step with the id of
-                        <kbd>content</kbd>. In that rule let's set the max-width of the page to 1600px. Doing it on that
+                        <kbd>content</kbd>. In that rule let's set the <kbd>max-width</kbd> of the page to 1600px. Doing
+                        it on that
                         <code>&lt;div&gt;</code> will make sure that no element on the page can be wider than that.</p>
                     <div class="callout">
                         <p>Why <kbd>max-width</kbd> instead of just <kbd>width</kbd> you may be asking yourself?
@@ -245,36 +249,43 @@
                     <!-- START STEP -->
                     <h3>Centering the page</h3>
                     <div class="callout">
-                        <p>We set the max-width, but the page still wouldn't look right on large monitors because the
+                        <p>We set the <kbd>max-width</kbd>, but the page still wouldn't look right on large monitors
+                            because the
                             whole page would be left aligned. It would look better if it were
                             centered. Block elements are centered by setting
                             a
-                            width and adjusting the left and right margin (
+                            <kbd>width</kbd> and adjusting the left and right <kbd>margin</kbd>. (
                             <a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank">Margin</a> is the
                             space
-                            between elements on a page, or between the element and the edge of the browser window.
+                            between elements on a page or between the element and the edge of the browser window.
                             Inline
                             elements are centered by using the
                             <a href="http://www.w3schools.com/cssref/pr_text_text-align.asp"
                                 target="_blank">text-align</a>
-                            property.</p>
+                            property.)</p>
                     </div>
                     <p>Let's center our content. The
-                        <kbd>&lt;div&gt;</kbd> we set the width on, is a block element, that means we will need to use
-                        <kbd>margin</kbd> to center it. The idea is to set a width (we did this in the last step), then
+                        <kbd>&lt;div&gt;</kbd> we set the <kbd>width</kbd> on, is a block element, that means we will
+                        need to use
+                        <kbd>margin</kbd> to center it. The idea is to set a <kbd>width</kbd> (we did this in the last
+                        step), then
                         tell
-                        the browser to take whatever margin is available and split it between the left and right of the
+                        the browser to take whatever <kbd>margin</kbd> is available and split it between the left and
+                        right of the
                         element.
                         Add
                         <kbd>margin: 0 auto;</kbd> to the CSS rule for
                         <kbd>#content</kbd>. We gave it 2 values. The first says to set the top and bottom margins to 0
                         and
-                        the second says to set the left and right margins to auto: meaning to split any margin
+                        the second says to set the left and right margins to auto: meaning to split any
+                        <kbd>margin</kbd>
                         available
                         between the left and right.
                     </p>
                     <div class="callout">
-                        <p>You may not see any difference when you set the max-width and center with margin: 0 auto.
+                        <p>You may not see any difference when you set the <kbd>max-width</kbd> and center with
+                            <kbd>margin:
+                                0 auto</kbd>.
                             This is probably because the monitor you are using to view the page is not wider than
                             1600px. </p>
                         <p>This is why it's always important to view your page on many different types of devices. If
@@ -302,7 +313,7 @@
                     <h3>Adding a container for our message background</h3>
                     <p>We will be using an empty <code>&lt;div&gt;</code> tag to hold a background color for our
                         message. Add a <code>&lt;div&gt;</code> element below the ending <code>&lt;/section&gt;</code>
-                        tag and above the <code>&lt;img&gt;</code> tag. We will give it an id of <kdb>background</kdb>
+                        tag and above the <code>&lt;img&gt;</code> tag. We will give it an id of <kbd>background</kbd>
                         because that is all it will do--just serve as a background container. There will be no content.
                     </p>
                     <pre><code class="lang-markup">
@@ -318,7 +329,8 @@
     &lt;p&gt;Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. &lt;/p&gt;
     &lt;a class='join' href="rivers.html"&gt;Join Us&lt;/a&gt;
 &lt;/section&gt;</code></pre>
-                    <p>Start a new rule in CSS targeting the new div with the id of background and give it a declaration
+                    <p>Start a new rule in CSS targeting the new div with the id of <kbd>background</kbd> and give it a
+                        declaration
                         of <kbd>height: 725px;</kbd>. Later we will be giving it a background color as well.</p>
                     <p>For example:</p>
                     <pre><code class="lang-css">
@@ -330,14 +342,14 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Setting background colors</h3>
-                    <p>Our next step is to add a background colors to liven up our page a bit.</p>
+                    <p>Our next step is to add background colors to liven up our page a bit.</p>
                     <div class="callout">
                         <p>As you apply background colors and text colors make sure you pick colors with a good
                             contrast. Go to your site plan for colors that you had in mind for the site. Use
                             <kbd>background-color</kbd> for backgrounds and <kbd>color</kbd> for text or font colors.
                         </p>
                     </div>
-                    <p>Add background-color values to the following selectors:</p>
+                    <p>Add <kbd>background-color</kbd> values to the following selectors:</p>
                     <kbd>body</kbd><br>
                     <kbd>header</kbd><br>
                     <kbd>nav a:hover</kbd><br>
@@ -376,8 +388,9 @@ nav a:hover {
                         something
                         that looks good with the background color and that is easily readable and has good contrast. You
                         can always use white or black if you need to.</p>
-                    <p>Change the color property for all these selectors: If any selector already has a rule-set, just
-                        add the color declaration to it. Don't start a new rule-set.</p>
+                    <p>Change the <kbd>color</kbd> property for all these selectors: If any selector already has a
+                        rule-set, just
+                        add the <kbd>color</kbd> declaration to it. Don't start a new rule-set.</p>
                     <kbd>nav a</kbd><br>
                     <kbd>nav a:hover</kbd><br>
                     <kbd>.home-title</kbd><br>
@@ -405,11 +418,13 @@ nav a:hover {
                     <!-- START STEP -->
                     <h3>Add a Few Widths</h3>
                     <p>Let's add a few widths to some elements.</p>
-                    <p>Add a width of 80px to the logo and each icon image that goes with the cards. I would use the
+                    <p>Add a <kbd>width</kbd> of 80px to the logo and each icon image that goes with the cards. I would
+                        use the
                         <kbd>.logo</kbd> class as the selector for the logo, otherwise all your images might get that
-                        width.</p>
+                        <kbd>width</kbd>.</p>
                     <p>Use <kbd>.icon</kbd> as the selector for all the card icons.</p>
-                    <p>Let's give a more responsive width to our hero image. Let's give it a width of 100%. Again use
+                    <p>Let's give a more responsive <kbd>width</kbd> to our hero image. Let's give it a <kbd>width</kbd>
+                        of 100%. Again use
                         the <kbd>#hero-img</kbd> selector so you don't affect any other images by mistake.</p>
                     <p>For example:</p>
                     <pre><code class="lang-css">
@@ -417,7 +432,7 @@ nav a:hover {
     width: 80px;
 }
                 </code></pre>
-                    <p>We will set more width in later weeks as we work with layout.</p>
+                    <p>We will set more <kbd>width</kbd> in later weeks as we work with layout.</p>
                 </li>
                 <li>
                     <!-- START STEP -->
@@ -457,16 +472,13 @@ nav a {
                         page
                         to Canvas.</p>
                     <div class="callout">
-                    <p>Make sure to
-                        <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix
-                        any
-                        errors that show,</p>
+                        <p>Make sure to
+                            <a href="https://validator.w3.org/" target="_blank">validate</a> your page as well and fix
+                            any
+                            errors that show,</p>
                         and
-                        <a
-                            target="_blank"
-                            href="http://jigsaw.w3.org/css-validator/#validate_by_input"
-                            >CSS</a
-                        >, fix any errors, then submit the URL to your site in ILearn.
+                        <a target="_blank" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>, fix any
+                        errors, then submit the URL to your site in ILearn.
                         <!-- END STEP -->
                     </div>
                     <p>Your page still won't be pretty yet. It will look something like this:</p>
