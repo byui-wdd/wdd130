@@ -23,7 +23,7 @@
         <p>Estimated Time: 90 minutes</p>
         <div class="callout">
           <p>
-            This activity will use the following css concepts or properties
+            This activity will use the following CSS concepts or properties
             (review the links if you do not remember these):
           </p>
           <ul>
@@ -44,14 +44,14 @@
               <a
                 href="http://www.w3schools.com/cssref/pr_margin.asp"
                 target="_blank"
-                >margin</a
+                >Margin</a
               >
             </li>
             <li>
               <a
                 href="http://www.w3schools.com/cssref/pr_padding.asp"
                 target="_blank"
-                >padding</a
+                >Padding</a
               >
             </li>
             <li>
@@ -130,13 +130,14 @@
           </p>
         </div>
         <ol class="bigSteps">
+          <li>
             <h3>Header Grid</h3>
             <p>The header wireframe with grid looks like this:</p>
             <div class="fig-block">
               <figure>
                 <img
                   alt="Example Header Grid"
-                  width="50%"
+                  width="70%"
                   src="../rafting_images/header_grid.png"
                   style="display: block; margin-left: auto; margin-right: auto;"
                   title="Example Header Grid"
@@ -147,7 +148,13 @@
                 <code>&lt;header&gt;</code> will be the parent, or grid container. It has two children the <code>&lt;a&gt;</code> that surrounds our logo and the <kbd>nav</kbd> element. They are the only grid items we will be able to place in our grid. It will be a simple two column, one row grid.
             </p>
             <p> 
-                Add the <kbd>display: grid;</kbd> declaration to the header selector. Set up the <kbd>grid-template-columns</kbd> giving the two column values of 150px and auto. This gives the logo 150px and the rest of available space to the navigation.</p>
+                Add the <kbd>display: grid;</kbd> declaration to the <kbd>header</kbd> selector. Set up the <kbd>grid-template-columns</kbd> giving the two column values of 150px and auto. This gives the logo 150px and the rest of available space to the navigation.</p>
+            <pre><code class="lang-css">
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+            </code> </pre>
             <p>
                 The two children will fill up the first row automatically in the right order. We don't need to explicitly place them.</p>
             <p>
@@ -161,7 +168,7 @@ nav {
 }
             </code> </pre>
             <p>
-                There are many ways to align flexbox items. Go here to see the different ways to align flexbox items: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#justify-content">https://css-tricks.com/snippets/css/a-guide-to-flexbox/#justify-content</a></p>
+                There are many ways to align flexbox items. Go here to see the different ways to align flexbox items: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#justify-content" target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/#justify-content</a></p>
             <p>
                 For the last part of the layout for the header, let's center the logo vertically and horizontally with <kbd>justify-self: center</kbd> and <kbd>align-self: center.</kbd></p>
             <pre><code class="lang-css">
@@ -171,9 +178,31 @@ nav {
     align-self: center;
 }
             </code> </pre>
-        </ol>
-        <ol class="bigSteps">
+          </li>
+          <li>
             <h3>Hero Grid</h3>
+            <div class="callout">
+              <p>
+                The HTML for the hero should look similar to this:
+            </p>
+            <pre><code class="lang-markup">
+&lt;div id="hero"&gt;
+  &lt;div id="hero-box"&gt;
+      &lt;img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting"&gt;
+  &lt;/div&gt;
+  &lt;section id="hero-msg"&gt;
+      &lt;h1 class="home-title"&gt;Have An Adventure&lt;/h1&gt;
+      &lt;h4&gt;Make Memories with Dry Oar&lt;/h4&gt;
+      &lt;div id="button-box"&gt;
+          &lt;a class="book" href="rates.html"&gt;Book Now&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+            </code> </pre> 
+            <p>
+                Again, you may have a different image or text.
+            </p> 
+          </div>      
             <p>
                 For the next grid, the <code>&lt;div&gt;</code> with the id of hero will be the grid container, or parent. The two children are the <code>&lt;div&gt;</code> with the id of hero-box containing the image, and the <code>&lt;section&gt;</code> with the id of hero-msg containing the text and button that goes over the image. 
             </p>
@@ -182,33 +211,14 @@ nav {
                 <figure>
                   <img
                     alt="Example Hero Grid"
-                    width="50%"
+                    width="70%"
                     src="../rafting_images/hero_grid.png"
                     style="display: block; margin-left: auto; margin-right: auto;"
                     title="Example Hero Grid"
                   />
                 </figure>
             </div>
-            <p>
-                The HTML for the hero should look similar to this:
-            </p>
-            <pre><code class="lang-markup">
-&lt;div id="hero"&gt;
-    &lt;div id="hero-box"&gt;
-        &lt;img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting"&gt;
-    &lt;/div&gt;
-    &lt;section id="hero-msg"&gt;
-        &lt;h1 class="home-title"&gt;Have An Adventure&lt;/h1&gt;
-        &lt;h4&gt;Make Memories with Dry Oar&lt;/h4&gt;
-        &lt;div id="button-box"&gt;
-            &lt;a class="book" href="rates.html"&gt;Book Now&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-            </code> </pre> 
-            <p>
-                Again, you may have a different image or text.
-            </p>       
+
             <p>
                 Because we want the text message and button to take about 60% of the width we could use 5 fractions and have it take 3 of those 5 fractions. We could use repeat(5, 1fr) and have it span over 3 columns or we could use 1fr 3fr 1fr. We will also implicitly use 2 rows so the message is near the top of the image in the first row. The hero image will cover the entire grid.
             </p>
@@ -244,8 +254,8 @@ nav {
     color: white;
 }
             </code> </pre>
-        </ol>
-        <ol class="bigSteps">
+          </li>
+          <li>
             <h3>Overlap hero with navigation</h3>
             <p>
                 If we want our hero image to overlap with the navigation, while still leaving the navigation layout the same for other pages of our website, we can use a negative top margin on our <code>&lt;div&gt;</code> with the id of hero. Add a margin-top of -100px. This will push the hero image over the navigation by 100px.
@@ -277,8 +287,8 @@ nav {
     z-index: -1;
 }
             </code> </pre>
-        </ol>
-        <ol class="bigSteps">
+          </li>
+          <li>
             <h3>Main Grid</h3>
             <p>
                 The <code>&lt;main&gt;</code> portion of our page will have a grid with many more columns and rows. It will encompass all the rest of the page minus the footer.
@@ -288,7 +298,7 @@ nav {
                 <figure>
                   <img
                     alt="Example Main Grid"
-                    width="50%"
+                    width="70%"
                     src="../rafting_images/main_grid.png"
                     style="display: block; margin-left: auto; margin-right: auto;"
                     title="Example Main Grid"
@@ -381,8 +391,7 @@ nav {
                 .msg from column lines 6 to 10 and row lines 6 to 7
             </p>
             
-        </ol>
-        <ol class="bigSteps">
+        <li>
             <h3>Footer Layout</h3>
             <p>The footer HTML should look something like this:</p>
             <pre><code class="lang-markup">
@@ -418,7 +427,7 @@ nav {
     align-items: center;
 }
         </code> </pre>
-        </ol>      
+      </li>      
 
           <li>
             <!-- start step -->
@@ -536,33 +545,28 @@ nav {
             <p>
               Some grids were turned off with <kbd>display: block</kbd>. And the flex-boxes were changed from rows to columns. The rest is all minor adjustments to make it look good on the smaller screen.
             </p>
-            <p>You may notice <kbd>display: none</kbd> was used on a few selectors to make them disappear. They weren't necessary and it makes it look less cluttered on a small screen without them.</p>
+            <p>You may notice <kbd>display: none</kbd> was used on a few selectors to make them disappear. Those elements weren't necessary and it makes it look less cluttered on a small screen without them.</p>
             <!-- end step -->
           </li>
           <li>
             <!-- start step -->
-            <h3>Validate and submit</h3>
+            <h3>Check, validate, and submit</h3>
             <p>
-              Validate your
-              <a
-                target="_blank"
-                href="https://validator.w3.org/#validate_by_input"
-              >
-                html</a
-              >
-              and
-              <a
-                target="_blank"
-                href="http://jigsaw.w3.org/css-validator/#validate_by_input"
-                >CSS</a
-              >, fix any errors, then submit the URL to your site in ILearn.
+              Preview your site to make sure the web page displays correctly.
+              Once verified, submit the URL for your page to iLearn.&nbsp;
             </p>
-
-            <p>
-              Remember that the URL should look like:
-              http://reponame.github.io
-            </p>
-
+            <div class="callout">
+              <p>
+                Make sure to validate the
+                <a target="_blank" href="https://validator.w3.org/#validate_by_input">
+                  HTML</a>
+                and
+                <a target="_blank" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a> of your page and fix any errors that show.
+              </p>
+            </div>
+            <p>Here is what the finished home page might look like:</p>
+            <img src="https://byui-wdd.github.io/wdd130/rafting_images/w07_home.jpg"
+            alt="sample html home page" style="width: 60%" />
             <!-- end step -->
           </li>
         </ol>
