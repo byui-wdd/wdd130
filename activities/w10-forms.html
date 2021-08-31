@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>WDD 130 | Forms</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Working with HTML Forms</h1>
+        <hr />
+
+        <p>
+          Forms in HTML are a very important topic. They provide the primary
+          means to get input back from the users of our sites. Functional forms
+          would have two parts. The actual HTML form styled with CSS, and then
+          some code running on a server that the form data would get sent to.
+          The Server part is very important to building a <em>working</em> form,
+          but is beyond the scope of this course. We will be focusing on the
+          HTML and CSS part of building forms. Our form will not do much when
+          submitted, and that's ok.
+        </p>
+
+        <h2>Activity Directions</h2>
+        <ol class="bigSteps">
+          <li>
+              <h3>Prepare a page for the form</h3>
+              <p>We need a practice page to put our form on. If you remember, we had a contactus.html page referenced in our rafting site's navigation. It might be fun to actually add that page. I know, you thought we were done with that site. Don't worry we will do all the HTML and CSS here in this activity. We would have had to start a new page anyway, why not use a project we already have.</p>
+              <p>
+                  Create the new file in the wwr repository called contactus.html. Paste the subpage HTML into the new page and delete anything in the <kbd>main</kbd> section of the page, leaving the header and footer. Change the title in the <kbd>head</kbd> to something more meaninful like 'Contact Us' or 'Form'. Inside the <kbd>main</kbd> portion of the page is where you will place the form code from the tutorial.
+              </p>
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>MDN Forms article</h3>
+            <p>
+              The Mozilla Developer Network (<a
+                href="https://developer.mozilla.org/en-US/docs/MDN/About"
+                target="_blank"
+                >MDN</a
+              >) is a great resource for learning more about working with the
+              Web. To begin learning about forms complete this tutorial
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form"
+                target="_blank"
+                >Your First Form</a
+              >
+              on MDN.
+            </p>
+            <p>
+              The <kbd>contactus.html</kbd> is where you will complete the activity above. Also, notice that the tutorial uses embedded CSS. You are welcome to leave it that way (embedded in the head section of the contactus.html), or you can add the CSS to your external CSS file for the site if you'd like (just make sure it's above the media query).
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Functional Forms</h3>
+            <p>
+              Our form currently doesn't do anything (or maybe even gives you an
+              error) if you submit it. If you would like it to do
+              <em>something</em> we need to add a bit of code to your project.
+            </p>
+            <p>
+              Before your form let's add an element to hold a success message
+              when the form has been submitted. This element will be empty and
+              invisible until the form is submitted...then we will use some
+              Javascript to change it. Add a <code>&lt;div&gt;</code> element
+              with an <kbd>id="feedback"</kbd> <strong>above</strong> your form
+              element.
+            </p>
+            <pre><code class="lang-markup">
+&lt;div id="feedback"&gt;&lt/div&gt;
+            </code></pre>
+            <p>
+              The exercise had you create a <code>&lt;style&gt;</code> element
+              to hold the styling it wanted for the form. Add the following CSS
+              to that below the other styles or in the external CSS if use one.
+            </p>
+            <pre><code class="lang-css">
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+                    </code></pre>
+            <p>
+              Finally <strong>below</strong> your form element add the following
+              code:
+            </p>
+            <pre><code class="lang-markup">
+&lt;script&gt;
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+&lt;/script&gt;
+                    </code></pre>
+            <p>
+              If everything is working correctly you should see a message appear
+              at the top of the form upon submission.
+            </p>
+            <div class="callout">
+              <p>
+                The code above is something we have not seen before. It is
+                Javascript. I added lots of comments if you want to try and
+                understand what is going on. Javascript can be used to make our
+                page more interactive, to change based on user actions, but is
+                quite different from HTML and CSS. Don't worry if it doesn't
+                make sense. The purpose of this class is not to teach
+                Javascript, but I wanted to give you a small introduction...and
+                forms are more fun if they <em>do</em> something!
+              </p>
+              <p>Remember we don't have any back-end languages actually processing the data and sending it anywhere however.</p>
+            </div>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Continue learning</h3>
+            <p>
+              We have just scratched the surface with forms. The next two steps
+              in the MDN tutorial are also great and will teach you much more
+              about the details of working with forms. You do not have to
+              complete them, but spend some time reviewing the form elements
+              they introduce.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+
+          <li>
+            <!-- START STEP -->
+            <h3>Publish</h3>
+            <p>
+              Publish your site and submit the link to your
+              <kbd>contactus.html</kbd> to Ilearn.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+        </ol>
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
