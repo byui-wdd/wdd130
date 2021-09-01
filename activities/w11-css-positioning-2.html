@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>WDD 130 | CSS Positioning II Activity</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link href="../css/course.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>CSS Positioning II Activity</h1>
+        <hr />
+        <p>
+          In this activity we will take another look at positioning and layout
+          with CSS.  Both with Grid and without.
+        </p>
+        <h2>Activity&nbsp;Instructions</h2>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h3>Grid Practice</h3>
+            <p>
+              Visit
+              <a href="http://cssgridgarden.com" target="_blank"
+                >CSS Grid Garden</a
+              >
+              and complete all 28 levels. It will probably be helpful to have
+              the
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                >Complete Guide to CSS Grid</a
+              >
+              open in another window for reference. Take a screenshot of the
+              final screen when you are done. This will be one of the two images you will submit to Ilearn.
+            </p>
+            <!-- END STEP -->
+          </li>
+          
+          <li>
+            <!-- START STEP -->
+            <h3>Other ways to align.</h3>
+            <p>
+              Earlier in the semester you were introduced to the concept of
+              <kbd>block</kbd> and <kbd>inline</kbd> elements. Blocks flow
+              vertically down the page by default, and inline flows horizontally
+              across. You were also shown how to align both inline and block
+              elements. Let's review that again now.
+            </p>
+            <div class="callout">
+              <p>
+                For this part of the activity your mind might jump to Grid as a
+                way to solve this. You could actually do it with Grid, but in
+                this case we want to try something different. You will
+                <strong>not</strong> need a Grid for this part.
+              </p>
+              <p>
+                Since we are not using Grid, the alignment properties we studied
+                above (justify-items, justify-content, align-items, and
+                align-content) <strong>will not</strong> work. They only work
+                inside of a Grid!
+              </p>
+            </div>
+            <p>
+              Block elements first: block elements take up 100% of the width
+              available to them. So if we want to align them we first have to
+              set a width of less than 100% on them. Then we can set the left
+              and/or right margin to <kbd>auto</kbd>. For center we would set
+              <em>both</em> left and right to auto (<code>margin: 0 auto;</code
+              >), for right aligned blocks we would set <em>just</em> the left
+              margin to auto (<code>margin-left: auto;</code>). Blocks are left
+              aligned by default so we don't have to do anything for that!.
+            </p>
+            <p>
+              You can use
+              <a href="https://codepen.io/matkat/pen/EObyVY" target="_blank"
+                >this codepen</a
+              >
+              to practice.
+            </p>
+            <p>
+              Take a look at the following screenshot to see what we are trying
+              to do.
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  src="../images/layout2-poem.png"
+                  alt="block/inline alignment"
+                />
+                <figcaption>Poem alignment example</figcaption>
+              </figure>
+            </div>
+            <p>The alignment of the poem can be described like this:</p>
+            <ol>
+              <li>Block 1 should be left aligned</li>
+              <li>Block 2 should be center aligned</li>
+              <li>Block 3 should be right aligned</li>
+              <li>Block 4 should be center aligned</li>
+              <li>
+                The first paragraph in blocks 1,2,3 should be left aligned.
+              </li>
+              <li>
+                The second paragraph in blocks 1,2,3 should be center aligned.
+              </li>
+              <li>
+                The third paragraph in blocks 1,2,3 should be right aligned.
+              </li>
+              <li>The first paragraph in block 4 should be right aligned.</li>
+              <li>The second paragraph in block 4 should be center aligned.</li>
+              <li>
+                The third and fourth paragraphs in block 4 should be left
+                aligned.
+              </li>
+            </ol>
+            <p>
+              All of our blocks are made of
+              <code>&lt;section&gt;</code> elements. Remember that if we want to
+              align a block element (sections are block elements) we need to set
+              a width, then adjust the margins. Set a width of <kbd>50%</kbd> on
+              all of the <code>&lt;section&gt;</code> elements.
+            </p>
+            <p>
+              Then set the alignment of each <kbd>block</kbd> by adjusting the
+              margins appropriately.
+            </p>
+            <p>
+              Next we need to align the paragraphs. We can use the
+              <code>text-align</code> property to align the text inside the
+              paragraphs. We set the <code>text-align</code> property on a block
+              like a <code>p</code> or <code>h1</code> for example and it will
+              affect everything <em>inside</em> of that block.
+            </p>
+            <p>
+              We could add a <kbd>class</kbd> to each paragraph and change them
+              that way...but that is a lot of extra typing, and there is another
+              way. We can take advantage of complex selectors. Specifically the
+              <a
+                href="https://www.w3schools.com/cssref/sel_nth-of-type.asp"
+                target="_blank"
+                >:nth-of-type()</a
+              >
+              pseudo selector.
+            </p>
+            <p>
+              <code>:nth-of-type()</code> counts the number of times a
+              particular element is the child of another element. Here is an
+              example with paragraphs:
+            </p>
+            <pre><code class="lang-css">
+p:nth-of-type(1) { /* first paragraph */}
+p:nth-of-type(2) { /* second paragraph */}
+p:nth-of-type(3) { /* third paragraph */}
+            </code></pre>
+            <p>
+              Using those selectors write the css that will format the text
+              according to the requirements above. Note that block4 is formatted
+              differently than the others. For those paragraphs we will need to
+              be more specific. Target just paragraphs that are in the
+              <code>.block4</code> element.
+            </p>
+            <p>
+              We can use the
+              <a
+                href="https://www.w3schools.com/cssref/sel_element_element.asp"
+                target="_blank"
+                >descendant selector</a
+              >
+              to do this. (&lt;-- If you don't remember what that is check out
+              the link.
+            </p>
+            <p>
+              Still needing help? Try this video:</p><br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/r4r74x36IYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h3>Take a screenshot and submit</h3>
+            <p>
+              Once you get your alignments all right...take a screenshot of the
+              poem and submit it to ILearn. This will be the second of two images you submit.
+              <strong
+                >Note that you may need to adjust the width of your browser
+                window once you are done to get yours to look just like
+                mine.</strong
+              >
+            </p>
+
+            <!-- END STEP -->
+          </li>
+        </ol>
+
+      </main>
+      <!-- end #article -->
+    </div>
+    <script src="../js/course.js"></script>
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
