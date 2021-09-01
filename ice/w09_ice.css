@@ -6,7 +6,7 @@ body {
     font-size:1.9em;
   }
   h4 {
-    color:#00bd3f;
+    color:#3f5b8a;
     text-align:center;
     font-size:.8em;
     margin:0;
@@ -14,7 +14,7 @@ body {
     margin-top:20px;
   }
   .bottom {
-    background-color:#00bd3f;
+    background-color:#3f5b8a;
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     align-items:center;
