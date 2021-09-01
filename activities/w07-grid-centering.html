@@ -1,226 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>WDD 130 | Grid Alignment</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="../css/prism-light.css" />
-    <link href="../css/course.css" rel="stylesheet" />
-  </head>
-<body>
-    <div id="content">
-        <header class="headerBanner">
-          <div>
-            <h1><span>WEB</span> Fundamentals</h1>
-            <h2>WDD 130</h2>
-          </div>
-        </header>
-        <main>
-          <h1>CSS Grid Alignment Activity</h1>
-          <hr />
-          <p>
-            In this activity we will learn about using CSS Grid alignment.
-          </p>
-          <h2>Activity&nbsp;Instructions</h2>
-          <ol class="bigSteps">
-    <li>
-        <!-- START STEP -->
-        <h3>Grid Alignment Concepts</h3>
-        <div class="callout">
-          <p>
-            You may want to review the following short videos before
-            completing the next section.
-          </p>
-          <ol>
-            <li>
-              <a
-                href="https://gridbyexample.com/video/align-grid-items/"
-                target="_blank"
-                >Align grid items</a
-              >
-              (4min)
-            </li>
-            <li>
-              <a
-                href="https://gridbyexample.com/video/align-grid/"
-                target="_blank"
-                >Align the Grid</a
-              >
-              (4min)
-            </li>
-          </ol>
-        </div>
-        <div class="callout">
-          <p>
-            Vocabulary time! There are a few terms we should learn to help
-            make sense of alignment with CSS Grid.
-          </p>
 
-          <dl>
-            <dt><code>justify-content</code></dt>
-            <dd>
-              Aligns the grid container along the inline axis (by default
-              horizontal). This only works when the grid is narrower than
-              the space available.
-            </dd>
-            <dt><code>justify-items</code></dt>
-            <dd>
-              Aligns the grid item contents along the inline axis (by
-              default horizontal). This only works when the contents of a
-              grid cell are narrower than the grid cell.
-            </dd>
-            <dt><code>align-content</code></dt>
-            <dd>
-              Aligns the grid container along the block axis (by default
-              vertical). This only works when the grid is shorter than the
-              space available.
-            </dd>
-            <dt><code>align-items</code></dt>
-            <dd>
-              Aligns the grid item contents along the block axis (by default
-              vertical). This only works when the contents of a grid cell
-              are shorter than the grid cell.
-            </dd>
-          </dl>
-          <p>
-            So to review, <kbd>justify</kbd> aligns horizontal by default,
-            <kbd>align</kbd> takes care of the other direction (vertical
-            alignment by default). If we want to align the grid container we
-            use the <kbd>content</kbd> suffix. If we want to align the
-            contents of the grid items within the grid cells then we use
-            <kbd>items</kbd>
-          </p>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <title>WDD 130 | Grid Alignment</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="../css/prism-light.css" />
+  <link href="../css/course.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="content">
+    <header class="headerBanner">
+      <div>
+        <h1><span>WEB</span> Fundamentals</h1>
+        <h2>WDD 130</h2>
+      </div>
+    </header>
+    <main>
+      <h1>CSS Grid Alignment Activity</h1>
+      <hr />
+      <p>
+        In this activity we will learn about using CSS Grid alignment.
+      </p>
+      <h2>Activity&nbsp;Instructions</h2>
+      <ol class="bigSteps">
+        <li>
+          <!-- START STEP -->
+          <h3>Grid Alignment Concepts</h3>
+          <div class="callout">
+            <p>
+              You may want to review the following short videos before
+              completing the next section.
+            </p>
+            <ol>
+              <li>
+                <a href="https://gridbyexample.com/video/align-grid-items/" target="_blank">Align grid items</a>
+                (4min)
+              </li>
+              <li>
+                <a href="https://gridbyexample.com/video/align-grid/" target="_blank">Align the Grid</a>
+                (4min)
+              </li>
+            </ol>
+          </div>
+          <div class="callout">
+            <p>
+              Vocabulary time! There are a few terms we should learn to help
+              make sense of alignment with CSS Grid.
+            </p>
+
+            <dl>
+              <dt><code>justify-content</code></dt>
+              <dd>
+                Aligns the grid container along the inline axis (by default
+                horizontal). This only works when the grid is narrower than
+                the space available.
+              </dd>
+              <dt><code>justify-items</code></dt>
+              <dd>
+                Aligns the grid item contents along the inline axis (by
+                default horizontal). This only works when the contents of a
+                grid cell are narrower than the grid cell.
+              </dd>
+              <dt><code>align-content</code></dt>
+              <dd>
+                Aligns the grid container along the block axis (by default
+                vertical). This only works when the grid is shorter than the
+                space available.
+              </dd>
+              <dt><code>align-items</code></dt>
+              <dd>
+                Aligns the grid item contents along the block axis (by default
+                vertical). This only works when the contents of a grid cell
+                are shorter than the grid cell.
+              </dd>
+            </dl>
+            <p>
+              So to review, <kbd>justify</kbd> aligns horizontal by default,
+              <kbd>align</kbd> takes care of the other direction (vertical
+              alignment by default). If we want to align the grid container, we
+              use the <kbd>content</kbd> suffix. If we want to align the
+              contents of the grid items within the grid cells, then we use
+              <kbd>items</kbd>.
+            </p>
+          </div>
         </li>
         <li>
-            <h3>Grid Items Aligned</h3>
-        <p>
-          Visit
-          <a href="https://codepen.io/matkat/pen/eQENmb" target="_blank"
-            >this codepen</a
-          >
-          (Codepen is a site that allows you to practice writing HTML and
-          CSS). You should see three sets of four boxes. The boxes have
-          already been positioned into a square using CSS Grid. There are
-          some differences between them however. If you look at the
-          <code>.content1</code> class you will see that the rows and
-          columns have been sized using <kbd>1fr</kbd>. So the grid will use
-          up all the space available in the grid container, and we will end
-          up with 2 equal columns and 2 equal rows.
-        </p>
-        <p>
-          If we look in the browser development tools at the actual grid we
-          see this:
-        </p>
-        <div class="fig-block">
-          <figure>
-            <img
-              src="https://byui-wdd.github.io/wdd130/images/layout2-content1.png"
-              alt="grid lines example"
-            />
-            <figcaption>Grid lines for content1</figcaption>
-          </figure>
-        </div>
-        <p>
-          Let's try centering the grid and grid items. Add the following to
-          <code>.content1</code>
-        </p>
-        <pre><code class="lang-css">
+          <h3>Grid Items Aligned</h3>
+          <p>
+            Visit
+            <a href="https://codepen.io/matkat/pen/eQENmb" target="_blank">this codepen</a>
+            (Codepen is a site that allows you to practice writing HTML and
+            CSS). You should see three sets of four boxes. The boxes have
+            already been positioned into a square using CSS Grid. There are
+            some differences between them however. If you look at the
+            <code>.content1</code> class, you will see that the rows and
+            columns have been sized using <kbd>1fr</kbd>. So the grid will use
+            up all the space available in the grid container, and we will end
+            up with 2 equal columns and 2 equal rows.
+          </p>
+          <p>
+            If we look in the browser development tools at the actual grid we
+            see this:
+          </p>
+          <div class="fig-block">
+            <figure>
+              <img src="https://byui-wdd.github.io/wdd130/images/layout2-content1.png" alt="grid lines example" />
+              <figcaption>Grid lines for content1</figcaption>
+            </figure>
+          </div>
+          <p>
+            Let's try centering the grid and grid items. Add the following to
+            <code>.content1</code>:
+          </p>
+          <pre><code class="lang-css">
 justify-content: center;
 align-content: center;
         </code></pre>
-        <p>
-          You might be surprised to see <strong>nothing</strong> happened
-          until you remember that <kbd>content</kbd> refers to aligning the
-          grid container. The grid container is completely filling the
-          parent element it is in. If something is as big as its parent then
-          it is technically already centered...it <em>can't</em> move.
-        </p>
-        <p>Next add these lines one at a time:</p>
-        <pre><code class="lang-css">
+          <p>
+            You might be surprised to see <strong>nothing</strong> happened
+            until you remember that <kbd>content</kbd> refers to aligning the
+            grid container. The grid container is completely filling the
+            parent element it is in. If something is as big as its parent, then
+            it is technically already centered...it <em>can't</em> move.
+          </p>
+          <p>Next add these lines one at a time:</p>
+          <pre><code class="lang-css">
 justify-items: center;
 align-items: center;
                       </code></pre>
-        <p>
-          Now we see something happen! The boxes centered themselves inside
-          of the grid cell they were in. First horizontally
-          (<kbd>justify</kbd>), then vertically (<kbd>align</kbd>)
-        </p>
-        <p>
-            Take a screen shot of the grid items centered.
-        </p>
+          <p>
+            Now we see something happen! The boxes centered themselves inside
+            of the grid cell they were in. First, horizontally
+            (<kbd>justify</kbd>), then, vertically (<kbd>align</kbd>).
+          </p>
+          <p>
+            Take a screenshot of the grid items centered.
+          </p>
         </li>
         <li>
-            <h3>The Grid Aligned</h3>
-        <p>
-          The next example uses rows and columns of a fixed size.
-          <kbd>150px</kbd> to be exact. This time the contents of the grid
-          is the same size as the grid cell, but the grid itself is smaller
-          than the space it has available. Here is a picture of the grid
-          lines this time.
-        </p>
-        <div class="fig-block">
-          <figure>
-            <img
-              src="https://byui-wdd.github.io/wdd130/images/layout2-content2.png"
-              alt="grid lines example 2"
-            />
-            <figcaption>Grid lines for Content2</figcaption>
-          </figure>
-        </div>
-        <p>
-          This time if we attempt to align the items nothing happens. Try
-          adding the following properties to <code>.content2</code>
-        </p>
-        <pre><code class="lang-css">
+          <h3>The Grid Aligned</h3>
+          <p>
+            The next example uses rows and columns of a fixed size:
+            <kbd>150px</kbd> to be exact. This time the contents of the grid
+            is the same size as the grid cell, but the grid itself is smaller
+            than the space it has available. Here is a picture of the grid
+            lines this time.
+          </p>
+          <div class="fig-block">
+            <figure>
+              <img src="https://byui-wdd.github.io/wdd130/images/layout2-content2.png" alt="grid lines example 2" />
+              <figcaption>Grid lines for Content2</figcaption>
+            </figure>
+          </div>
+          <p>
+            This time if we attempt to align the items, nothing happens. Try
+            adding the following properties to <code>.content2</code>:
+          </p>
+          <pre><code class="lang-css">
 justify-items: center;
 align-items: center;
         </code></pre>
-        <p>
-          ...but now we can align the grid container. Add these one at a
-          time:
-        </p>
-        <pre><code class="lang-css">
+          <p>
+            ...but now we can align the grid container. Add these one at a
+            time:
+          </p>
+          <pre><code class="lang-css">
 justify-content: center;
 align-content: center;
  </code></pre>
-        <p>
-          Last example. For <code>.content3</code>. We have the grid
-          container smaller than the parent, and the grid items smaller than
-          the grid cell.
-        </p>
-        <div class="fig-block">
-          <figure>
-            <img
-              src="https://byui-wdd.github.io/wdd130/images/layout2-content3.png"
-              alt="grid lines example 3"
-            />
-            <figcaption>Grid lines for Content3</figcaption>
-          </figure>
-        </div>
-        <p>
-          Add the following four lines to the <code>.content3</code> rule
-          one at a time and watch what happens.
-        </p>
-        <pre><code class="lang-css">
+          <p>
+            Last example. For <code>.content3</code>, we have the grid
+            container smaller than the parent, and the grid items smaller than
+            the grid cell.
+          </p>
+          <div class="fig-block">
+            <figure>
+              <img src="https://byui-wdd.github.io/wdd130/images/layout2-content3.png" alt="grid lines example 3" />
+              <figcaption>Grid lines for Content3</figcaption>
+            </figure>
+          </div>
+          <p>
+            Add the following four lines to the <code>.content3</code> rule
+            one at a time and watch what happens.
+          </p>
+          <pre><code class="lang-css">
 justify-content: center;
 align-content: center;
 justify-items: center;
 align-items: center;
           </code></pre>
-        <p>Perfectly centered content!</p>
-        
-        <p>
-            Take a screen shot of the centered grid.
-        </p>
+          <p>Perfectly centered content!</p>
+
+          <p>
+            Take a screenshot of the centered grid.
+          </p>
         </li>
         <li>
-            <h3>Submit</h3>
-            <p>
-                Submit both screen shots to Ilearn.
-            </p>
+          <h3>Submit</h3>
+          <p>
+            Submit both screenshots to Ilearn.
+          </p>
         </li>
         <!-- END STEP -->
-      </li>
+        </li>
 </body>
+
 </html>
