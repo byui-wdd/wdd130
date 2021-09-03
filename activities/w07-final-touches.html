@@ -89,8 +89,8 @@
     &lt;nav&gt;
         &lt;a href="index.html"&gt;Home&lt;/a&gt;
         &lt;a href="#"&gt;Page 2&lt;/a&gt;
-        &lt;a href="index.html"&gt;Home&lt;/a&gt;
-        &lt;a href="index.html"&gt;Home&lt;/a&gt;
+        &lt;a href="site-plan-rafting.html"&gt;Site Plan&lt;/a&gt;
+        &lt;a href="contactus.html"&gt;Contact Us&lt;/a&gt;
     &lt;/nav&gt;
 &lt;/header&gt;
 </code> </pre>
@@ -117,7 +117,7 @@
           <p>
             Add the <kbd>display: grid;</kbd> declaration to the <kbd>header</kbd> selector. Set up the
             <kbd>grid-template-columns</kbd> giving the two column values of <kbd>150px</kbd> and <kbd>auto</kbd>. This
-            gives the logo <kbd>150px</kbd>
+            gives <kbd>150px</kbd> to the logo
             and the rest of available space to the navigation.</p>
           <pre><code class="lang-css">
 header {
@@ -167,7 +167,7 @@ nav {
   &lt;section id="hero-msg"&gt;
       &lt;h1 class="home-title"&gt;Have An Adventure&lt;/h1&gt;
       &lt;h4&gt;Make Memories with Dry Oar&lt;/h4&gt;
-      &lt;div id="button-box"&gt;
+      &lt;div class="button-box"&gt;
           &lt;a class="book" href="rates.html"&gt;Book Now&lt;/a&gt;
       &lt;/div&gt;
   &lt;/section&gt;
@@ -231,11 +231,11 @@ nav {
           <p>
             Place the <code>&lt;section&gt;</code> with the id of <kbd>hero-msg</kbd> to spanning column lines 2 to 3
             and row lines
-            1 to 2.
+            1 to 2. Try it without a code example this time.
           </p>
           <p>
-            Notice that since our <code>&lt;h4&gt;</code> text was black that is now hard to read over the dark
-            image. Change the font color to white.
+            Notice certain text colors may not be easy to see now since their background has changed. For example, my <code>&lt;h4&gt;</code> text was black so it was hard to read over the dark
+            image. I would change the font color to white. Check your text and see if you need to change any colors to have a better contrast.
           </p>
           <pre><code class="lang-css">
 #hero-msg h4 {
@@ -281,6 +281,9 @@ nav {
     z-index: -1;
 }
             </code> </pre>
+            <p>
+              The reason we overlapped the image with the header is because you may have used a rgba opacity with the header background color and changing the top margins lets the image show through a bit. If you decided not to use any opacity in your background color of your header, your header may look different than the example at the bottom of the assignment. You may even wish to skip the overlapping step if you wish.
+            </p>
         </li>
         <li>
           <h3>Main Grid</h3>
@@ -414,10 +417,7 @@ nav {
 &lt;/footer&gt;
             </code> </pre>
           <p>
-            Let's use flex-box for our footer as well.
-          </p>
-
-          <p>With <kbd>display: flex</kbd>, <kbd>justify-content: space-around</kbd>, and <kbd>align-items:
+            Let's use flex-box for our footer as well. With <kbd>display: flex</kbd>, <kbd>justify-content: space-around</kbd>, and <kbd>align-items:
               center</kbd>:</p>
           <pre><code class="lang-css">
 .footer {
@@ -444,7 +444,7 @@ nav {
               href="https://www.w3schools.com/css/css3_transitions.asp"
               target="_blank">https://www.w3schools.com/css/css3_transitions.asp</a>
             We are adding a half second transition on our images. The transition happens when the user hovers over the
-            images when the transform property makes the image 110% bigger, and it appears 40% transparent.
+            images. At that point, the transform property makes the image 110% bigger, and it appears 40% transparent.
           </p>
           <p>
             Add a shadow to the image with <kbd>box-shadow</kbd>. Learn more about <kbd>box-shadow</kbd> at: <a
@@ -559,7 +559,7 @@ nav {
             columns. The rest is all minor adjustments to make it look good on the smaller screen.
           </p>
           <p>You may notice <kbd>display: none</kbd> was used on a few selectors to make them disappear. Those elements
-            weren't necessary, and it makes it look less cluttered on a small screen without them.</p>
+            weren't necessary, and not having them on a smaller screen makes it look less cluttered.</p>
           <!-- end step -->
         </li>
         <li>
