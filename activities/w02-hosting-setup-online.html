@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/prism-light.css" />
     <link rel="stylesheet" href="../css/course.css" />
+    <style>
+      /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+    </style>
+    
   </head>
 
   <body>
@@ -75,10 +103,10 @@
               <li>
                 <!-- START STEP -->
                 <h2>Install Git on our computer</h2>
-                <p>Follow only the Windows or the Mac Instructions.</p>
+                <p>Click on and Follow only the Windows, Mac, or Linux Instructions.</p>
                 <ul>
-                  
-                  <li>For Windows Users:
+                  <button class="accordion">For Windows Users:</button>
+                  <div class="panel">
                     <ol>
                       <li>Before downloading, check to make sure you don't already have Git installed on your computer</li>
                       <ul>
@@ -96,31 +124,37 @@
                       <p>While we are still in the Command Prompt we will type in two more commands to get up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
                       <li>The command is listed below, but make sure you use your own text between the "" quotes. It will be different for everyone. Use your actual username and your email you used for the GitHub account. Type:
                         <pre>git config --global user.name "<em>yourusername</em>"</pre>
-                      and then hit enter.
+                      and then hit enter. Nothing will happen if you did it right.
                       And then type:
                         <pre>git config --global user.email "<em>youremail@byui.edu</em>"</pre>
                       and then hit enter again.
                       </li>
                       <p>Now you have configured your Git to recognize your GitHub later.</p>
                     </ol>
-                  </li>
-                  <li>For Mac Users:</li>
-                          
+                  
+                  </div>
+                  <button class="accordion">For Mac Users:</button>
+                  <div class="panel">
                     <ol>
                       <li>Before downloading, check to make sure you don't already have Git installed on your computer</li>
                       <ul>
-                        <li>Click 'Search' icon on your (looks like an magnifying glass) near the top right of your screen.</li>
+                        <li>Click 'Search' icon (looks like an magnifying glass) on your  near the top right of your screen.</li>
                         <li>Type in terminal and open the Terminal app.</li>
                         <li>Type in <pre>git --version</pre> at the prompt and hit enter.</li>
                         <p>You should now either see a git version number come up or a message that says something about 'command not found'. If you have a version number come up, you already have git installed and you don't need to install it. If you get the message that the command is not found, then you need to install it.</p>
                       </ul>
-                      <li>To install Git for Windows. Go to <a href="http://git-scm.com/downloads" target='_blank'>git-scm.com/downloads</a> and click on 'Windows' under Downloads. An .exe file should be downloaded.</li>
-                      <li>Click that .exe file to open it and it will begin the process of installing Git.</li>
-                      <li>Allow it to make changes to your device.</li>
-                      <li>Click 'Next' through all of the setup windows leaving all the defaults as they are. There will be quite a few windows.</li>
-                      <li>The last window will let you click 'Install' and click 'Finish'.</li>
-                      <li>Open up a new Command Prompt window by closing the first Command Prompt window and start a new one by typing 'cmd' at the Windows start button in the bottom left of your screen again. At the prompt, type: <pre>git --version</pre> again if you want to see that it installed. You should now see the version number. (If you don't use a new Command Prompt window, you could get the same message you had before you installed Git.) </li>
-                      <p>While we are still in the Command Prompt we will type in two more commands to get up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
+                      <li>To install Git for Windows. Go to <a href="http://git-scm.com/downloads" target='_blank'>git-scm.com/downloads</a> and click on 'macOS' under Downloads. An .exe file should be downloaded. It will take you to a page with a few options.</li>
+                      <li>Click the 'installer' link under the Binary installer section next to the Tim Harper text. This will take you to a sourceforge.net page.</li>
+                      <li>Don't sign up for anything or click anything except the 'Download' button. This will start a download of a .dmg file. Double-click the file to open it.</li>
+                      <li>You will see a few files, double-click the .pkg file. You should get a message saying it is coming from 'an unidentified developer'. This is a great warning but we will trust this one. Click 'OK'</li>
+                      <li>To allow our system to install Git we will need to go to our System Preferences (gear icon or type System Preferences from our Search magnifying icon). </li>
+                      <li>From System Preferences click the 'Security & Privacy' icon.</li>
+                      <li>From the General tab unlock the lock icon in the bottom right and enter your Mac password (the same password you log in to your Mac with) and click 'Unlock'. </li>
+                      <li>Now you should see the App listed under the 'Allow apps dowloaded from:' section and you can click 'Open Anyway'.</li>
+                      <li>A similar window will pop up like before but you can now click 'Open' </li>
+                      <li>You can now use all the defaults for the installation with 'Continue' on the first screen. Install on the next (it will have you enter your Mac password again), and click Close. It might ask if you want to send the file you downloaded to the Trash and you can keep it with 'Keep' or delete it with 'Move to Trash'. We shouldn't need it again.</li>
+                      <li>Open up the Terminal again. At the prompt, type: <pre>git --version</pre> again if you want to see that it installed. You should now see the version number. (If you don't use a new Terminal window, you could get the same message you had before you installed Git.) </li>
+                      <p>While we are still in Terminal we will type in two more commands to get up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
                       <li>The command is listed below, but make sure you use your own text between the "" quotes. It will be different for everyone. Use your actual username and your email you used for the GitHub account. Type:
                         <pre>git config --global user.name "<em>yourusername</em>"</pre>
                       and then hit enter.
@@ -130,8 +164,11 @@
                       </li>
                       <p>Now you have configured your Git to recognize your GitHub later.</p>
                     </ol>
-                    <li>For Linux Users:</li>
+                    </div>
+                    <button class="accordion">For Linux Users:</button>
+                    <div class="panel">
                           <a href="https://github.com/git-guides/install-git#install-git-on-linux" target="_blank">Linux Git Install</a>
+                    </div>
                     <ol>
                 </ul>
               </li>
@@ -172,5 +209,25 @@
     </div>
     <script src="../js/course.js"></script>
     <script src="../js/prism.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
   </body>
 </html>
