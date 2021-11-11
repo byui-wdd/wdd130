@@ -121,8 +121,8 @@
                       <li>Click 'Next' through all of the setup windows leaving all the defaults as they are. There will be quite a few windows.</li>
                       <li>The last window will let you click 'Install' and click 'Finish'.</li>
                       <li>Open up a new Command Prompt window by closing the first Command Prompt window and start a new one by typing 'cmd' at the Windows start button in the bottom left of your screen again. At the prompt, type: <pre>git --version</pre> again if you want to see that it installed. You should now see the version number. (If you don't use a new Command Prompt window, you could get the same message you had before you installed Git.) </li>
-                      <p>While we are still in the Command Prompt we will type in two more commands to get up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
-                      <li>The command is listed below, but make sure you use your own text between the "" quotes. It will be different for everyone. Use your actual username and your email you used for the GitHub account. Type:
+                      <p>While we are still in the Command Prompt we will type in two more commands to set up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
+                      <li>The command is listed below, but make sure you use your own username and email between the "" quotes. Use the username and your email you used for the GitHub account. It will be different for everyone. Type:
                         <pre>git config --global user.name "<em>yourusername</em>"</pre>
                       and then hit enter. Nothing will happen if you did it right.
                       And then type:
@@ -138,7 +138,7 @@
                     <ol>
                       <li>Before downloading, check to make sure you don't already have Git installed on your computer</li>
                       <ul>
-                        <li>Click 'Search' icon (looks like an magnifying glass) on your  near the top right of your screen.</li>
+                        <li>Click 'Search' icon (looks like an magnifying glass) on your near the top right of your screen.</li>
                         <li>Type in terminal and open the Terminal app.</li>
                         <li>Type in <pre>git --version</pre> at the prompt and hit enter.</li>
                         <p>You should now either see a git version number come up or a message that says something about 'command not found'. If you have a version number come up, you already have git installed and you don't need to install it. If you get the message that the command is not found, then you need to install it.</p>
@@ -149,13 +149,12 @@
                       <li>You will see a few files, double-click the .pkg file. You should get a message saying it is coming from 'an unidentified developer'. This is a great warning but we will trust this one. Click 'OK'</li>
                       <li>To allow our system to install Git we will need to go to our System Preferences (gear icon or type System Preferences from our Search magnifying icon). </li>
                       <li>From System Preferences click the 'Security & Privacy' icon.</li>
-                      <li>From the General tab unlock the lock icon in the bottom right and enter your Mac password (the same password you log in to your Mac with) and click 'Unlock'. </li>
                       <li>Now you should see the App listed under the 'Allow apps dowloaded from:' section and you can click 'Open Anyway'.</li>
-                      <li>A similar window will pop up like before but you can now click 'Open' </li>
+                      <li>A similar window will pop up like before but you can now click 'Open'. </li>
                       <li>You can now use all the defaults for the installation with 'Continue' on the first screen. Install on the next (it will have you enter your Mac password again), and click Close. It might ask if you want to send the file you downloaded to the Trash and you can keep it with 'Keep' or delete it with 'Move to Trash'. We shouldn't need it again.</li>
                       <li>Open up the Terminal again. At the prompt, type: <pre>git --version</pre> again if you want to see that it installed. You should now see the version number. (If you don't use a new Terminal window, you could get the same message you had before you installed Git.) </li>
-                      <p>While we are still in Terminal we will type in two more commands to get up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
-                      <li>The command is listed below, but make sure you use your own text between the "" quotes. It will be different for everyone. Use your actual username and your email you used for the GitHub account. Type:
+                      <p>While we are still in Terminal we will type in two more commands to set up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
+                      <li>The command is listed below, but make sure you use your own username and email between the "" quotes. Use the username and your email you used for the GitHub account. It will be different for everyone. Type:
                         <pre>git config --global user.name "<em>yourusername</em>"</pre>
                       and then hit enter.
                       And then type:
@@ -168,10 +167,34 @@
                     <button class="accordion">For Linux Users:</button>
                     <div class="panel">
                           <a href="https://github.com/git-guides/install-git#install-git-on-linux" target="_blank">Linux Git Install</a>
+                          <p>Install Git and then follow the last few steps from the Windows or Mac to get up your global config username and email settings and match your GitHub account.</p>
                     </div>
                     <ol>
                 </ul>
               </li>
+              <li>
+                <!-- START STEP -->
+                <h2>Set up our project folder with Git and GitHub</h2>
+                <p>Our project folder will hold all our files and resources for our project and keep track of any changes we make. When we are ready, we can then transfer the local files to our remote GitHub account.</p>
+                <p>Before you start, make sure you have the previous step completed with Git installed and your git config username and email settings done.</p>
+                <ol>
+                  <li>Open up Visual Studio Code, if it is not already open.</li>
+                  <li>Click on the View menu option and click on 'Command Palette'</li>
+                  <li>Type 'git clone' into the input box that comes up. You should see a blue bar beneath that says 'Git: Clone'</li>
+                  <li>Click the 'Git: Clone' blue bar. You will notice that your input box now says 'Provide repository URL or pick a repository source." We need the URL from our GitHub Account that we left open earlier in our browser.</li>
+                  <li>In the GitHub Account, there is the green button that says 'Code' we will copy the HTTPS URL from there and paste it back into that input box in VSCode.</li>
+                  <li>A window will open up that wants you to pick a location that your folder will be placed into. It will create a folder with the name of your repository (wdd130) in whatever location you want it to be in. Pick a location such as Documents or a class folder you might already have set up for this folder to be placed into.</li>
+                  <li>You will get a message saying 'Would you like to open the cloned repository, or add it to the current workspace?' You can click 'Open' there or, if you don't see the message or it disappears quickly, you can always open the folder with the File menu option and 'Add Folder to Workspace' and find the wdd130 folder that was just created and click 'Add'.</li>
+                  <li>Now in the Explorer panel on the left you should see the folder with the README.md file inside it. Click the README.md file and add a line of text to it and save the file with a Ctrl-S or Command-S and you will see your Source Control icon on the left will get a little blue circle with a number 1 inside it. This is Git, on your local computer, keeping track of the change you just made to the readme file. Git keeps track of any file inside the wdd130 folder and will create a number for each file changed or added to the folder. It has noticed that we changed the readme file. </li>
+                  <li>We want to now send that change we made to our remote GitHub server. So click the Source Control icon with the blue number 1. This will open the Source Control panel. You should see the README.md file with a few icons to the right of it.</li>
+                  <li>Click the + sign next to the README.md file. This adds it to the </li>
+                </ol>
+
+              </li>
+
+
+
+
 
           </ol>
                 </ul>
