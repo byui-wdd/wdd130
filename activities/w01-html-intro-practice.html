@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+    <title>CSS Intro Practice</title>
+</head>
+
+<body>
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1><span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+        </header>
+        <main>
+            <h1>Understanding HTML</h1>
+
+
+
+
+            <h2 id="html:-hypertext-markup-language" tabindex="-1">HTML: Hypertext Markup Language </h2>
+            <p><strong>HTML</strong> stands for hypertext markup language. Hypertext refers to the way we can place
+                hypertext links in our document that allows our users to move from one page to another. Markup is a set
+                of symbols or codes for displaying content on the Internet. HTML tells web browsers the structure of a
+                web page's words and images. This markup language allows you to code around the content, the browser
+                will use this code to display or render our page correctly. The code or tags we use are the markup.</p>
+            
+            <h2 id="example" tabindex="-1">Example </h2>
+            <p>Let's copy the following code into an html file.</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>BYUI<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+            <p>This is the framework of a beginning HTML page. Notice inside the body tag we have 3 general areas. The
+                body tag has 3 children tags of header, main and footer. Let's start with the header. Let's type in a
+                common element you'd find in the header a nav element.</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span></code></pre>
+            <p>The nav element will contain menu links. These links are created with an a tag.</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>Church of Jesus Christ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>Temples<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>Scriptures<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span></code></pre>
+            <p>If we look at our rendered page now in a browser window, the content of the a tag shows but they are not
+                links. When we click on the content text, nothing happens. We have to add an attribute to the opening a
+                tag that shows where to take the user when they click on the content. Add attributes to each opening a
+                tag as follows.</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Church of Jesus Christ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org/temples<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Temples<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org/study/scriptures<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Scriptures<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+            <p>Now when you look at the rendered page in the browser you can click the text content and it will take you
+                to the right place because we added the href or hypertext reference value for each a link.</p>
+            <h2 id="note" tabindex="-1">Note</h2>
+            <p>Note that the links here are not going to internal website pages but to external website pages. Your
+                navigation link would usuallly be going to other pages in your website not to outside web pages like
+                this.</p>
+            <h2 id="example-continued" tabindex="-1">Example Continued</h2>
+            <p>Let's move on to the main part of our web page with a header level one title for our page using an h1 tag
+                and a paragraph beneath the title using a p tag. Then let's add an img tag. There are two attributes
+                needed for an image. First where is the image located or what is the source (src) and, second what is
+                some alternative text (alt) that can be used if the image can't be seen.</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>My Favorite University<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>BYUI is a great place to learn and grow.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><br>    <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.byui.edu/images/service-sites/map-banner.jpg<span class="token punctuation">"</span></span><br>    <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>BYUI Campus<span class="token punctuation">"</span></span><br>  <span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span></code></pre>
+            <h2 id="note-1" tabindex="-1">Note</h2>
+            <p>Again, we are using an attribute value for the src property that is taking us to an image that is located
+                externally to our site. Normally you would want to use an internal path to your own images folder where
+                your website images are located. Something like src=&quot;images/map-banner.jpg&quot; This would assume
+                that you have a folder called images with a jpg image called 'map-banner.jpg' located in that images
+                folder of your site. But for ease of this prepare practice we will use the external image.</p>
+            <h2 id="example-continued-1" tabindex="-1">Example Continued</h2>
+            <p>Lastly, let's add a p tag to our footer with a bit of information for the bottom of our page.</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>My First Web Page 20XX &amp;copy<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">></span></span></code></pre>
+            <p>The &amp;copy will create an HTML symbol copyright entity for us. See <a
+                    href="https://www.w3schools.com/html/html_symbols.asp">HTML Symbols</a>for more examples.</p>
+            <p>There we have our first simple HTML page. If we had multiple page that we created for the same website,
+                the header and footer section would remain the same for every page of our website and the main section
+                would change from page to page of our website.</p>
+            <p>We've practiced with some of the elements that make up the structure of a simple web page. And we see
+                that some elements need attributes within their opening tags to display and function properly.</p>
+            
+
+
+
+
+        </main>
+    </div>
+</body>
+
+</html>
