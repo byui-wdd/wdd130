@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prism-light.css" />
+  <link rel="stylesheet" href="../css/course.css" />
+    <title>CSS Intro Practice</title>
+</head>
+
+<body>
+    <div id="content">
+        <header class="headerBanner">
+          <div>
+            <h1><span>WEB</span> Fundamentals</h1>
+            <h2>WDD 130</h2>
+          </div>
+        </header>
+        <main>
+    <h1>Understanding CSS</h1>
+
+
+
+
+    <h2 id="css:-cascading-style-sheets" tabindex="-1">CSS Intro: Cascading Style Sheets</h2>
+    <p><strong>CSS</strong> stands for cascading style sheets. It is a style sheet language used to layout and style web
+        pages.</p>
+    
+    <h2 id="example" tabindex="-1">Example </h2>
+    <p>Let's copy the following code into an html file. If you already have this file from a previous learning module,
+        you can use that same file instead.</p>
+    <pre
+        class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Church of Jesus Christ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org/temples<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Temples<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org/study/scriptures<span class="token punctuation">"</span></span><br>          <span class="token punctuation">></span></span>Scriptures<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><br>        <span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Brigham Young University Idaho<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.byui.edu/images/service-sites/map-banner.jpg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>        BYU-Idaho is a comfortable place to learn and grow as a disciple of<br>        Jesus Christ because students, faculty, and employees share a commitment<br>        to live the gospel.<br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>My First Web Page 20XX &amp;copy<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+    <p>Right now, any styling on this page is from browser default CSS styles. For example the h1 element is styled as
+        bigger and bolder. If we want to add our own styles to this page we will use an external CSS file that will link
+        up to the HTML page. We use the link tag inside the HTML to tell which CSS file will be used with that HTML
+        page.</p>
+    <p>Inside the head element, let's add the link tag to the HTML page.</p>
+    <pre
+        class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>My Web Page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>styles/styles.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></code></pre>
+    <p>The link tag has two attributes. The rel specifies the relationship between the current document and the linked
+        document. The href or hypertext reference shows where the document is located. It is inside a styles folder and
+        is called styles.css.</p>
+    <p>Let's create the folder called styles with a CSS file called styles.css inside that folder. The styles folder
+        will be at the same level as our HTML file. Open the styles.css and let's add our first rule-set to the CSS
+        file:</p>
+    <pre
+        class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span><br>  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+    <p>The selector is body and inside the curly braces are all the declarations, or property value pairs, that will
+        affect that selector.<br>
+        If we look at our rendered HTML page now in a browser window, all the body and all the children of the body
+        inherited the alignment of center.</p>
+    <p>Let's add another CSS declarations.</p>
+    <pre
+        class="language-css"><code class="language-css"><span class="token selector">nav</span> <span class="token punctuation">{</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> steelblue<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+    <p>Now when you look at the rendered page in the browser You will see the background of the nav changed colors and a
+        little bit of space, or padding, is added all around the links in the nav. But the links are still really close
+        together and they are hard to read because there is not a good contrast between the text color and the
+        background color. Let's fix that by adding another declaration.</p>
+    <pre
+        class="language-css"><code class="language-css"><span class="token selector">a</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+    <p>The color refers to the font color and the margin gives some space between the a elements.</p>
+    <p>Let's add the rest of the CSS declarations.</p>
+    <pre
+        class="language-css"><code class="language-css"><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> steelblue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 4px solid steelblue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">footer</span> <span class="token punctuation">{</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> steelblue<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+    <p>Don't worry if you don't understand some of the units of measurement like px or the % sign. We will learn more
+        about units of measurement in a different learning module. What we see from this activity is the proper syntax
+        for creating rule-sets in our CSS file and how a little CSS styling can make a difference in how our page looks.
+    </p>
+    </main>
+    </div>
+</body>
+
+</html>
