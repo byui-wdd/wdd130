@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+    <title>Classes and IDs Practice</title>
+</head>
+
+<body>
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1><span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+        </header>
+        <main>
+            <h1>Box Model</h1>
+            <h2 id="box-model" tabindex="-1">Box Model 
+            </h2>
+            <p><strong>CSS Box Model</strong> is a box that wraps around every element. It has content, padding, border
+                and margin.</p>
+            <p><strong>Content</strong> is where text and images appear</p>
+            <p><strong>Padding</strong> is the area around the content.</p>
+            <p><strong>Border</strong> goes around the padding and content.</p>
+            <p><strong>Margin</strong> is the area outside the border.</p>
+            <h2 id="example-1" tabindex="-1">Example 1 
+            </h2>
+            <p>Let's copy the following code into an html file. (If you've completed other learning modules you may
+                already have these files. You can just add to them.)</p>
+            <pre
+                class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>styles/styles.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Church of Jesus Christ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org/temples<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Temples<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.churchofjesuschrist.org/study/scriptures<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Scriptures<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Brigham Young University Idaho<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.byui.edu/images/service-sites/map-banner.jpg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>BYU-Idaho is a comfortable place to learn and grow as a disciple of Jesus Christ because students, faculty, and employees share a commitment to live the gospel.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>My Web Page 20XX &amp;copy<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+            <p>Let's create a CSS file. Create a folder at the same level as our HTML file and call it styles. Within
+                that folder, let's create a styles.css file. Open that styles.css in the editor. (Again, if you already
+                have this CSS file you can just add to it.)</p>
+            <p>In this example we will give our footer some padding.</p>
+            <p>Let's give our footer a background color and change the text in our footer to white if you don't already
+                have it that way.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">footer</span> <span class="token punctuation">{</span><br>    <span class="token property">background-color</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span><br>    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+            <p>Notice that the paragraph in the footer doesn't have a lot of breathing room. The text is right next to
+                the edge of the background color. Let's give the paragraph in the footer 25 pixels of padding to make
+                that look much better.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">footer p</span> <span class="token punctuation">{</span><br>    <span class="token property">padding</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+            <h2 id="example-2" tabindex="-1">Example 2 
+            </h2>
+            <p>In this example we will give our h1 element some margin spacing. It already has some default margins from
+                the browser default styling but perhaps we want to give it a bit more. Let's increase the top and bottom
+                margin to bring it further away from the navigation and the image, but let's leave the left and right
+                margin as zero. We can always center it later if we need to.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">h1</span> <span class="token punctuation">{</span><br>    <span class="token property">margin</span><span class="token punctuation">:</span> 50px 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+            <p>The first value of 50px applies to the top and bottom margins and the 0 applies to the right and left.
+            </p>
+            <h2 id="example-3" tabindex="-1">Example 3 
+            </h2>
+            <p>In this example we will be adding padding to the nav and the list items.</p>
+            <p>Let's give our navigation a background color of navy first if it doesn't already have a background color.
+                And make the text white here too.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">nav</span> <span class="token punctuation">{</span><br>    <span class="token property">background-color</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">a</span> <span class="token punctuation">{</span><br>    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+            <p>Our list items (li) elements need some breathing room. Because I want some space around the links
+                themselves and more of the navy blue color showing I will want padding not only on the (a) elements but
+                also on the nav itself.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">nav</span> <span class="token punctuation">{</span><br>    <span class="token property">padding</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+            <p>And also padding on the links.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">a</span> <span class="token punctuation">{</span><br>    <span class="token property">padding</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+            <p>Now they look so much better with the extra space around them. You can add some space around your main
+                paragraphs as well if it needs some. Depending on what other modules you've done you may already have a
+                margin: 0 auto for your paragraph. You can just change the zero to 50px. For example: margin: 50px auto;
+                Play around with padding and margins of different elements to get it how you like it.</p>
+            <p>You may have noticed that little bit of space all around the edge of the whole page. That is default CSS
+                margins on the body element. If you want your header and footer to start at the very top and stretch out
+                all the way to the left and right with no gap, you can set the body element to a margin of 0.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span><br>    <span class="token property">margin</span><span class="token punctuation">:</span> 0<br><span class="token punctuation">}</span></code></pre>
+            <h2 id="example-4" tabindex="-1">Example 4 
+            </h2>
+            <p>Lastly, let's add a border to our image.</p>
+            <pre
+                class="language-css"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>    <span class="token property">border</span><span class="token punctuation">:</span> 2px solid navy<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
