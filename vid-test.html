@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #vid1 {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section class="help-links">
+        <div class="item1 home-item">
+            <video id="vid1" class="video" loop muted 
+                <source src="images/glass.mp4" type="video/mp4">
+            </video>
+            <h3 id="water-h3">Water</h3>
+            <p id="water-p">How does water consumption relate to my carbon footprint?
+            </p>
+            <a href="water/water.html" class="grow">Find Out More!</a>
+        </div>
+        
+
+    </section>
+    <script>
+        // let water_h3 = document.querySelector('#water-h3');
+        // let water_p = document.querySelector('#water-p');
+        let vid1 = document.querySelector('#vid1');
+        let section = document.querySelector('.help-links');
+
+        section.addEventListener('mouseover', function(){
+            vid1.play();
+        })
+        section.addEventListener('mouseout', function(){
+            vid1.pause();
+        })
+
+        // vid1.addEventListener('mouseover', function(){
+        //     vid1.play();
+        // })
+        // vid1.addEventListener('mouseout', function(){
+        //     vid1.pause();
+        // })
+
+        // water_h3.addEventListener('mouseover', function() {
+        //     console.log('hover h1');
+        //     vid1.play();
+        // });
+        // water_h3.addEventListener('mouseout', function() {
+        //     console.log('hover out');
+        //     vid1.pause();
+        // });
+        // water_p.addEventListener('mouseover', function() {
+        //     console.log('hover h1');
+        //     vid1.play();
+        // });
+        // water_p.addEventListener('mouseout', function() {
+        //     console.log('hover out');
+        //     vid1.pause();
+        // });
+    </script>
+</body>
+</html>
