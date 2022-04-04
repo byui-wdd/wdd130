@@ -149,7 +149,10 @@ li {
 
   align-self: center;
 }
-
+.byui {
+  width: 80%;
+  margin: 0 auto;
+}
 main {
   position: relative;
   padding: 20px;
