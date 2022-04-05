@@ -56,7 +56,7 @@
               the <kbd>&lt;title&gt;</kbd>, and delete the content that is
               specific to the home page (the hero div and everything inside of the main element) and Voila! You have a
               great start on
-              your new page.
+              your new page with the header and footer already done.
             </p>
             <h4>Note</h4>
             <p>
@@ -65,7 +65,11 @@
               important ways because the styles in one file were updated and
               not the other. You should only have <strong>one</strong> .css
               file for your entire site. Add any new styles for this new HTML
-              page to the bottom of your existing .css.
+              page beneath your home page CSS but before any media queries. Media queries are always at the very bottom. Use comments to indicate the start of the new page in CSS.
+            </p>
+            <h4>Another important note</h4>
+            <p>
+              Be careful about targeting generic elements like p, img, h2, etc. in your new subpage CSS. These rules could effect your home page too since they are in the same CSS file. This might be beneficial if you want all your h2's on your whole site to be the same. But it could also make a mess if you didn't mean to change your home page as you style the subpage. Make meaningful class and id names for elements that will be different from your home page elements. For example, instead of using 'home-grid' on your rivers page, use 'rivers-grid'.
             </p>
           </div>
           <!--  END STEP  -->
