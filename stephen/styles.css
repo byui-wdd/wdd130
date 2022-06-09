@@ -1,0 +1,260 @@
+/*https://coolors.co/009fb7-d9fff5-54b65c-1d1e18-94778b*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #009FB7;
+  }
+
+.content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.intro h1 {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-weight: 800;
+  font-size: 300%;
+}
+  
+
+.background h1 {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-weight: 800;
+  font-size: 300%;
+  text-align: center;
+}
+  .topnav {
+    /* overflow: hidden; */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */;
+    position: fixed;
+    width: 100%;
+    
+  }
+  
+  .topnav a {
+    /* float: left; */
+    color: #D9FFF5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #D9FFF5;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #D9FFF5;
+    color: black;
+  }
+
+  .topnav {
+    /* float: left; */
+    
+  }
+  
+  .search-container {
+    /* float: left; */
+    padding-left: 500px;
+  }
+
+
+
+
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    /* float: right; */
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #D9FFF5;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #D9FFF5;
+  }
+
+  .bikini-bottom-img {
+    width: 100%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1D1E18;
+   
+    
+    
+  }
+  
+.map {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 10%;
+  
+  
+  
+  border-radius: 50px 50px 50px 50px;
+  padding: 5px 5px 10px 5px;
+  background-color: black;
+  box-shadow: 0 10px 6px -6px black;
+}
+
+
+
+
+.bikini-bottom-card h1 {
+   
+    position: absolute;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #fefae0;
+    padding: 20px;
+    padding-top: 30px;
+    font-size: 40px;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 40%;
+    margin-left: 30%;
+    font-family: 'Fuzzy Bubbles', cursive;
+   
+  }
+
+
+.intro  {
+  margin-top: 50px;
+  text-align: center;
+  
+  
+  
+}
+
+.bikini_atoll, .bikini_atoll_map {
+  width: 30%;
+  
+  margin-left: 13%;
+  margin-top: 30px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 5px 5px 10px 5px;
+  background-color: black;
+  box-shadow: 0 10px 6px -6px black;
+  
+
+  
+}
+
+.bikini_atoll_map {
+  height: 325px;
+
+}
+
+.background {
+  background-color: #54B65C;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 50px;
+  
+
+}
+
+.background2 {
+  background-color: #C2D6D7;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 10px 6px -6px black;
+  
+
+}
+
+.background2 p {
+  padding-left: 5px;
+  padding-right: 5px;
+  
+
+}
+
+
+.jellyfish-img, .goo-img, .glove-img {
+  
+  
+  width: 100%;
+  
+  border-radius: 50px 50px 50px 50px;
+  padding: 5px 5px 10px 5px;
+  background-color: black;
+  box-shadow: 0 10px 6px -6px black;
+  
+  
+
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+
+#jellyfish {
+  grid-column: 2/4;
+  
+}
+
+#jellyfish p, #goo p, #glove p {
+  text-align: center;
+}
+
+#goo {
+  grid-column: 5/7;
+}
+
+#glove {
+  grid-column: 8/10;
+}
+
+.glove-img {
+  height: 60%;
+}
+
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  background-color: white;
+}
+
+.footer-img {
+  width: 20%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 50px 50px 50px 50px;
+  background-color: aqua;
+}
