@@ -207,6 +207,12 @@ footer a:hover{
    justify-self: center;
    align-self: center;
 }
+
+/* RIVERS PAGE CSS */
+h1 {
+   
+}
+
 @media screen and (max-width: 900px) {
    #hero, .home-grid {
        display: block;
