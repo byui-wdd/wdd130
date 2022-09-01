@@ -68,7 +68,7 @@
         <ol class="bigSteps">
           <li>
             <!-- START STEP -->
-            <h2>Sign up for a GitHub Account:</h2>
+            <h2>Sign up for a GitHub Account</h2>
             <ol>
               <li>Visit the
                 <a
@@ -79,7 +79,7 @@
                 website.
               </li> 
               <li>Select the <b>Sign Up</b> button.</li>
-              <li>You'll enter an email. Then select <b>Continue</b>.</li> <li>Create a password that has to be at least 15 characters or 8 characters with a number and lowercase letter. Then click 'Continue'.</li>
+              <li>You'll enter an email. Then select <b>Continue</b>.</li> <li>Create a password that has to be at least 15 characters or 8 characters with a number and lowercase letter. Then select <b>Continue</b>.</li>
               <li>Enter a username all in lowercase. <em>Use a professional name since this username will show up in the domain of your web projects.</em> You might show these links to future prospective employers. If you get a red 'X' to the left of your username, then someone else has already used that username and you need to choose a different one. <em>Don't forget the email, password, and username you used for this new GitHub account.</em> We will need them later.</li>
               <li>Enter 'n' for the next step unless you want email from them.</li>
               <li>At this point it wants to make sure you are human, so it has you solve a few simple puzzles. Select <b>Start puzzle</b> and follow the directions. Select <b>Create account</b>.</li>
@@ -94,8 +94,8 @@
               <li>
                
                 <!-- START STEP -->
-                <h2>Install Git on our computer</h2>
-                <p>Select and Follow only the Windows, Mac, or Linux Instructions.</p>
+                <h2>Install Git on your computer</h2>
+                <p>Select and follow only the Windows, Mac, or Linux Instructions.</p>
                 <ul>
                   <button class="accordion">For Windows Users</button>
                   <div class="panel">
@@ -104,22 +104,22 @@
                       <ul>
                         <li>Select the <b>Start</b> window icon on your computer in the bottom left of your screen.</li>
                         <li>Type 'cmd' to open the Command Prompt app. You should get the Command Prompt terminal to open. It doesn't matter what your prompt path is.</li>
-                        <li>Type in <pre>git --version</pre> and select enter.</li>
-                        <p>You should now either see a git version number come up or a message that says something about how 'git' is not recognized. If you have a version number come up, you already have git installed and you don't need to install it. If you get the message that git is not recognized, then you need to install it.</p>
+                        <li>Type in <pre>git --version</pre> and select <b>Enter</b>.</li>
+                        <p>You should now either see a git version number come up or a message that says something about how 'git' is not recognized. If you have a version number come up, you already have Git installed and you don't need to install it. If you get the message that git is not recognized, then you need to install it.</p>
                       </ul>
-                      <li>To install Git for Windows. Go to <a href="http://git-scm.com/downloads" target='_blank'>git-scm.com/downloads</a> and select 'Windows' under Downloads. An .exe file should be downloaded.</li>
+                      <li>To install Git for Windows. Go to <a href="http://git-scm.com/downloads" target='_blank'>git-scm.com/downloads</a> and select <b>Windows</b> under Downloads. An .exe file should be downloaded.</li>
                       <li>Select that .exe file to open it and it will begin the process of installing Git.</li>
                       <li>Allow it to make changes to your device.</li>
                       <li>Select <b>Next</b> through all of the setup windows leaving all the defaults as they are. There will be quite a few windows.</li>
                       <li>The last window will let you select <b>Install</b> and select <b>Finish</b>.</li>
-                      <li>Open up a new Command Prompt window by closing the first Command Prompt window and start a new one by typing 'cmd' at the Windows start button in the bottom left of your screen again. At the prompt, type: <pre>git --version</pre> again to see that it installed. You should now see the version number. (If you don't use a new Command Prompt window, you could get the same message you had before you installed Git.) </li>
+                      <li>Open up a new Command Prompt window by closing the first Command Prompt window and start a new one by typing 'cmd' at the Windows start button in the bottom left of your screen again. At the prompt, type the following: <pre>git --version</pre> again to see that it installed. You should now see the version number. (If you don't use a new Command Prompt window, you could get the same message you had before you installed Git.) </li>
                       <p>While we are still in the Command Prompt, we will type in two more commands to set up our username and email that are associated with our GitHub account. Again, it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
                       <li>The command is listed below, but make sure you use your own username and email between the "" quotes. Use the username and your email you used for the GitHub account. It will be different for everyone. Type the following:
                         <pre>git config --global user.name "<em>yourusername</em>"</pre>
-                      and then select enter. Nothing will happen if you did it right.
+                        and then select <b>Enter</b>. Nothing will happen if you did it right.
                       And then type the following:
                         <pre>git config --global user.email "<em>youremail@byui.edu</em>"</pre>
-                      and then select enter again.
+                      and then select <b>Enter</b> again.
                       </li>
                       <li>If you want to check the global configurations, you can always type <pre>git config --list</pre> and you can see the user.name and user.email should have your new username and email values. Don't worry about all the other configurations.</li>
                       <p>Now you have configured your Git to recognize your GitHub later.</p>
@@ -130,28 +130,28 @@
                   <button class="accordion">For Mac Users</button>
                   <div class="panel">
                     <ol>
-                      <li>Before downloading, check to make sure you don't already have Git installed on your computer</li>
+                      <li>Before downloading, check to make sure you don't already have Git installed on your computer.</li>
                       <ul>
                         <li>Select the <b>Search</b> icon (it looks like an magnifying glass) on your screen near the top right of your screen.</li>
-                        <li>Type in 'Terminal' and open the Terminal app. It doesn't matter what path our command prompt is showing. All the commands we type will work anywhere.</li>
-                        <li>Type in <pre>git --version</pre> at the prompt and hit enter.</li>
-                        <li>You should now either see a git version number come up or a pop up window that says something about 'The git command requires the command line developer tools...'. If you have a version number come up, you already have git installed and you don't need to install it. (But you will want to set your config setting as shown below.) If you get the pop-up message, <strong>select install and agree.</strong></li>
-                        <li>The installation may take quite a few mintues. You will get a set of development tools which includes git.</li>
-                        <li>Type in <pre>git --version</pre> at the prompt and select enter. You should now see the version number.</li>
+                        <li>Type in 'Terminal' and open the Terminal app. It doesn't matter what path our Command Prompt is showing. All the commands we type will work anywhere.</li>
+                        <li>Type in <pre>git --version</pre> at the prompt and select <b>Enter</b>.</li>
+                        <li>You should now either see a git version number come up or a pop up window that says something about 'The git command requires the command line developer tools...'. If you have a version number come up, you already have git installed and you don't need to install it. (But you will want to set your config setting as shown below.) If you get the pop-up message, <strong>select <b>Install and Agree</b>.</strong></li>
+                        <li>The installation may take quite a few minutes. You will get a set of development tools, which includes Git.</li>
+                        <li>Type in <pre>git --version</pre> at the prompt and select <b>Enter</b>. You should now see the version number.</li>
                         <p>While we are still in the Command Prompt, we will type in two more commands (or configuration settings) to set up our username and email that are associated with our GitHub account. Again it doesn't matter what the path prompt is. These are global settings so you can type them from any path prompt.</p> 
-                        <li>The command is listed below, but make sure you use your own username and email between the "" quotes. Use the username and your email you used for the GitHub account. It will be different for everyone. Type:
+                        <li>The command is listed below, but make sure you use your own username and email between the "" quotes. Use the username and your email you used for the GitHub account. It will be different for everyone. Type the following:
                           <pre>git config --global user.name "<em>yourusername</em>"</pre>
                         and then select enter. Nothing will happen if you did it right.
                         And then type the following:
                           <pre>git config --global user.email "<em>youremail@byui.edu</em>"</pre>
-                        and then select enter again.
+                          and then select <b>Enter</b> again.
                         </li>
                         <li>If you want to check the global configurations, you can always type <pre>git config --list</pre> and you can see the user.name and user.email should have your new username and email values. Don't worry about all the other configurations.</li>
                         <p>Now you have configured your Git to recognize your GitHub later.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kJLYtoj4VpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </ul>
                     </div>
-                    <button class="accordion">For Linux Users:</button>
+                    <button class="accordion">For Linux Users</button>
                     <div class="panel">
                           <a href="https://github.com/git-guides/install-git#install-git-on-linux" target="_blank">Linux Git Install</a>
                           <p>Install Git with the link above and then follow the last few steps from the Windows or Mac instructions to set up your global config username and email settings to match your GitHub account.</p>
@@ -163,24 +163,24 @@
                 <!-- START STEP -->
                 <h2>Set up Visual Studio Code with Git and GitHub</h2>
                 <p>Our wdd130 folder will hold all our files and resources for all our projects and keep track of any changes we make. When we are ready, we want to then transfer the local files to our remote GitHub account.</p>
-                <p>Before you start, make sure you have the previous step completed with Git installed and your git config username and email settings done.</p>
+                <p>Before you start, make sure you have the previous step completed with Git installed and your Git config username and email settings done.</p>
                 <p>
                   Let's use the folder we set up last week called 'wdd130' to become a repository in GitHub so we can eventually see our website online.</p>
                   <p>Remember we already had the 'aboutme' folder within wdd130 that contained our aboutme project. We had an index.html file and folder(s). The images folder had an image file in it.                </p>
                 <ol>
-                  <li>Make sure the wdd130 folder is open in VSCode if it's not already open. If you have other folders open in VSCode that use git make sure you close them. You only want the one wdd130 folder open, otherwise you won't see the button you need to see in the next few steps. (It may ask if you trust the file source. It's your folder and files so you can trust it.)</li>
-                  <li>Click the 'Source Control' icon in VSCode. (It's the 3rd one from the top on the left.)</li>
+                  <li>Make sure the wdd130 folder is open in VSCode if it's not already open. If you have other folders open in VSCode that use Git make sure you close them. You only want the one wdd130 folder open, otherwise you won't see the button you need to see in the next few steps. (It may ask if you trust the file source. It's your folder and files so you can trust it.)</li>
+                  <li>Select the <b>Source Control</b> icon in VSCode. (It's the 3rd one from the top on the left.)</li>
                   <img src="../images/source_control_icon.png" alt="Source Control Icon" width="300px">
-                  <li>Click the blue button that says 'Publish to GitHub'. If you don't see this button, make sure you have all other git repo folders closed.</li>
+                  <li>Select the blue button that says <b>Publish to GitHub</b>. If you don't see this button, make sure you have all other Git repo folders closed.</li>
                   <img src="../images/publish_github_button.png" alt="Publish GitHub Blue Button" width="300px">
-                  <li>Click 'Allow' if you get a message saying 'The extension 'GitHub' wants to sign in using GitHub.'</li>
-                  <li>If you are prompted for an authorization for Visual Studio Code to Access GitHub, click 'Continue'.</li>
-                  <li>If you are asked to allow the page to open 'Visual Studio Code', click 'Allow'. </li>
-                  <li>You may also be asked to allow an extension to open this URI, click 'Open'.</li>
+                  <li>Select <b>Allow</b> if you get a message saying 'The extension 'GitHub' wants to sign in using GitHub.'</li>
+                  <li>If you are prompted for an authorization for Visual Studio Code to Access GitHub, select <b>Continue</b>.</li>
+                  <li>If you are asked to allow the page to open 'Visual Studio Code', select <b>Allow</b>. </li>
+                  <li>You may also be asked to allow an extension to open this URI, select <b>Open</b>.</li>
                   <li>VSCode will choose the folder you have open, the wdd130 folder as the the repository and give you the option to 'Publish to GitHub public repository'. <strong>Choose the one that says 'public', not 'private'.</strong> This will make a new public repository in our GitHub account.</li>
                   <img src="../images/public_repo_option.png" alt="Source Control Icon" width="600px">
                   <li>It will show a list of all the files in the wdd130 folder. They will all be selected by default so just click 'OK' to include all files in the new respository.</li>
-                  <li>You may get a prompt to 'Authorize Git Credential Manager' here. Click 'Authorize'.</li>
+                  <li>You may get a prompt to 'Authorize Git Credential Manager' here. Select <b>Authorize</b>.</li>
                   <li>If you get a message asking if you'd like to periodically run fetch you can say 'Yes', but it's not necessary.</li>
                   <li>You can see in your GitHub account (at Github.com) the new repository there and the files there that now mirror the files in the wdd130 folder you have on your computer</li>
                   <li>Now we will only have to 'push' any changes or additions to GitHub.</li>
@@ -194,11 +194,11 @@
               <li>
                 <!-- START STEP -->
                 <h2>Starting our Home Page</h2>
-                <p>Let's start a new index.html page (Home Page) inside our repository. Remember use all lowercase letters and no spaced in file names,</p>
+                <p>Let's start a new index.html page (Home Page) inside our repository. Remember to use all lowercase letters and no spaces in file names.</p>
                 <ol>
-                  <li>In VSCode open the Explorer panel and add a file to the wdd130 folder called index.html. This index.html is different from the index.html inside of aboutme. It will be the home page of our entire repository (wdd130) folder.</li>
+                  <li>In VSCode, open the Explorer panel and add a file to the wdd130 folder called index.html. This index.html is different from the index.html inside of aboutme. It will be the home page of our entire repository (wdd130) folder.</li>
                   <img src="../images/wdd130_index.png" alt="new index page" width="400">
-                  <li>Open the file and start a new HTML document with an exclamation mark '!' and hit enter. This will start a new file for you.</li>
+                  <li>Open the file and start a new HTML document with an exclamation mark '!' and select <b>Enter</b>. This will start a new file for you.</li>
                   <li>Change the default title text of 'Document' to 'WDD130 Home Page'</li>
                   <li>Add the following code inside the body:
                   <pre><code class="lang-markup">
@@ -213,17 +213,17 @@
 &lt;/nav&gt;
                   </code></pre>
                   </li>
-                  <li>As you save this file you will notice another blue circle number show up on our Source Control icon. Our local Git noticed a new file in our repository.</li>
-                  <li>Click on the Source Control Icon</li>
-                  <li>Click the + sign next to 'Changes'</li>
+                  <li>As you save this file, you will notice another blue circle number show up on our Source Control icon. Our local Git noticed a new file in our repository.</li>
+                  <li>Select the Source Control Icon.</li>
+                  <li>Select the + sign next to <b>Changes</b>.</li>
                   <img src="../images/changes.png" alt="Changes + image" width="300px">
-                  <li>Now commit the change to our local repository by adding a message to the 'Message' input box that describes what changes we've made. Something like: 'Added the home page for wdd130'.</li>
+                  <li>Now commit the change to our local repository by adding a message to the 'Message' input box that describes what changes we've made. Something like 'Added the home page for wdd130'.</li>
                   <img src="../images/message.png" alt="Message Input" width="300px">
-                  <li>Click the check mark to the right of your repository name.</li>
+                  <li>Select the check mark to the right of your repository name.</li>
                   <img src="../images/commit.png" alt="Source Control Icon" width="100px">
-                  <li>Now send those changes to the remote repository by clicking the 'More actions' ... (3 dots) and choose 'Push' from the pop up menu. This will send the index.html to GitHub.</li>
+                  <li>Now send those changes to the remote repository by selecting the 'More actions' ... (3 dots) and choose <b>Push</b> from the pop up menu. This will send the index.html to GitHub.</li>
                   <img src="../images/push.png" alt="Source Control Icon" width="150px">
-                  <li>When you go to your GitHub account you should now see the index.html file in the repository there.</li>
+                  <li>When you go to your GitHub account, you should now see the index.html file in the repository there.</li>
                 </ol>
                 </li>
                 <li>
@@ -233,11 +233,11 @@
                   <ol>
                     
                   <li>Let's see this page live on the Internet by setting up GitHub pages. Go back to the GitHub.com account. Click 'Settings' with the gear icon. In the submenu that appears to the left choose 'Pages'</li>
-                  <li>In the 'Source' section click the button that says 'None' and change it to the 'main' branch, leave the next one at 'root' and click 'Save'. Your branch could be named 'master' instead of 'main' and that's fine. You will only have one branch to choose from there.</li>
-                  <li>Above that a section you will get a colored area that says 'Your site is ready to be published at ...' with the name of your URL that can be used by anyone to see your website. Woo Hoo! We did it.</li>
+                  <li>In the <b>Source</b> section, select the button that says <b>None</b> and change it to the 'main' branch, leave the next one at 'root' and select <b>Save</b>. Your branch could be named 'master' instead of 'main' and that's fine. You will only have one branch to choose from there.</li>
+                  <li>Above that section, you will get a colored area that says 'Your site is ready to be published at ...' with the name of your URL that can be used by anyone to see your website. Woo Hoo! We did it!</li>
                   <li>Give it a few minutes for your home page to show up. You might need to refresh the page after a few minutes.</li>
                 </ol>
-                <p>The following video demonstrates the steps of GitHub Pages.</p>
+                <p>The following video demonstrates the steps of GitHub Pages:</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_jzY3dryS5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="callout">
                   <p>You might want to bookmark that new github.io website address so you can easily see your home page each week.</p>
@@ -253,7 +253,7 @@
                 <p>Let's add another HTML element to our page to see how we will push our edits and additions of our project to GitHub</p>
                 <p>This step is all you will need to do from this point on as you edit and make additions to your projects. All previous steps were just setup.</p>
                 <ol>
-                  <li>In VSCode open the Explorer panel and let's add a paragraph to the index.html. You can add it below the navigation.</li>
+                  <li>In VSCode, open the Explorer panel and add a paragraph to the index.html. You can add it below the navigation.</li>
                   <pre><code class="lang-markup">
 &lt;h1&gt;Welcome to WDD130 Web Projects&lt;/h1&gt;
 &lt;nav>
@@ -265,14 +265,14 @@
 &lt;/nav&gt;  
 &lt;p&gt;Your Name Here - WDD130&lt;/p&gt;                
                   </code></pre>
-                  <li>As you save this file you will notice another blue circle number show up on our Source Control icon. Our local Git noticed the change in our file in our repository.</li>
-                  <li>Click the + sign next to the index.html file.</li>
-                  <li>Now commit the change to our local repository by adding a message to the 'Message' input box that describes what changes we've made. Something like: 'Added a paragraph to the home page'.</li>
-                  <li>Click the check mark to the right of your repository name.</li>
-                  <li>Now send those changes to the remote repository by clicking the 'More actions' ... (3 dots) and choose 'Push' from the pop up menu. This will send the index.html to GitHub.</li>
+                  <li>As you save this file, you will notice another blue circle number show up on our Source Control icon. Our local Git noticed the change in our file in our repository.</li>
+                  <li>Select the + sign next to the index.html file.</li>
+                  <li>Now commit the change to our local repository by adding a message to the 'Message' input box that describes what changes we've made. Something like 'Added a paragraph to the home page'.</li>
+                  <li>Select the check mark to the right of your repository name.</li>
+                  <li>Now send those changes to the remote repository by selecting the <b>More actions</b> ... (3 dots) and choose <b>Push</b> from the pop up menu. This will send the index.html to GitHub.</li>
                   <li>Give it a few minutes to update on GitHub, but when you go to your GitHub Pages URL (web address) you should see the changes to the index.html.</li>
                   
-                <p>The following video demonstrates pushing to our GitHub repository from Visual Studio Code.</p>
+                <p>The following video demonstrates pushing to our GitHub repository from Visual Studio Code:</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QMBidV_Qo3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
               </li>
               
@@ -287,7 +287,7 @@
             </div>
             <!-- END STEP -->
           </li>
-          <p>We did it! That was a lot of set up but worth it to have free hosting. And from here on out you just have to commit and push any changes you make in your wdd130 repo from VSCode.</p>
+          <p>We did it! That was a lot of set up but worth it to have free hosting. And from here on out, you just have to commit and push any changes you make in your wdd130 repo from VSCode.</p>
         </div>
       </main>
       <!-- end #article -->
