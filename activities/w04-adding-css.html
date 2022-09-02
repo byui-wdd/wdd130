@@ -24,20 +24,20 @@
             <hr />
             <h2>Activity Directions</h2>
             <p>Estimated time: 60 minutes</p>
-            <p>This week we will continue with the webpage we started in the previous activities. Open up the
+            <p>This week, we will continue with the webpage we started in the previous activities. Open up the
                 <kbd>index.html</kbd>
                 file from last week in your editor to begin.</p>
 
 
             <div class="callout">
-                <p>We got all the content in our page last week....but you might have noticed it doesn't look too great.
+                <p>We got all the content in our page last week, but you might have noticed it doesn't look too great.
                     Remember
                     that HTML is responsible to get content on a page, but to style it we use CSS.</p>
                 <p>By the end of this activity, it won't look too much better, it will still take a few weeks before it
                     looks like the wireframe.</p>
             </div>
             <div class="callout">
-                <p>The first part of this activity will use the following html concepts or properties (review the links
+                <p>The first part of this activity will use the following HTML concepts or properties (review the links
                     if you need to):</p>
                 <ul>
                     <li>
@@ -61,7 +61,7 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Review Wireframe</h3>
-                    <p>First review the&nbsp;
+                    <p>First, review the&nbsp;
                         <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png"
                             target="_blank">wireframe</a>&nbsp;again to help
                         remember
@@ -72,7 +72,7 @@
 
 
                     <h2>Note</h2>
-                    <p>At this point do not expect your page to
+                    <p>At this point, do not expect your page to
                         <em>look</em> like the wireframe. We are laying a foundation, but have not learned how to
                         position
                         elements yet. Don't worry if your page does not look like the wireframe at the end of the
@@ -98,7 +98,7 @@
                     <!-- START STEP -->
                     <h3>External links</h3>
 
-                    <p>There are some external links in the footer to social media sites. In this case it was
+                    <p>There are some external links in the footer to social media sites. In this case, it was
                         appropriate to make the
                         images
                         the link instead of text.</p>
@@ -107,9 +107,9 @@
                         <kbd>target="_blank"</kbd>&nbsp;attribute added to the opening tag of each
                         <code>&lt;a&gt;</code>. Since these are external sites, it's good practice to open them in a new
                         tab.</p>
-                    <p>More on the target attribute at: <a href="https://www.w3schools.com/tags/att_a_target.asp"
+                    <p>More on the target attribute at <a href="https://www.w3schools.com/tags/att_a_target.asp"
                             target="_blank">w3schools target attribute</a>.</p>
-                    <p>For example:</p>
+                    <p>Here is an example:</p>
                     <pre><code class="lang-markup line-numbers">
 &lt;a href="https://facebook.com" target="_blank"&gt;
     &lt;img src="images/facebook.png" alt="fb icon"&gt;
@@ -121,12 +121,12 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Adding CSS</h3>
-                    <p>We've been doing a lot with HTML so far...and in fact we have now added almost all the html we
+                    <p>We've been doing a lot with HTML so far. In fact, we have now added almost all the HTML we
                         will
-                        need! I think it's high time we got to CSS!</p>
+                        need! I think it's about time we got to CSS!</p>
                     <div class="callout">
 
-                        <p>The second half of the activity will use the following html/css concepts or tags (review
+                        <p>The second half of the activity will use the following HTML/CSS concepts or tags (review
                             the
                             links if they are new to you or if you do not remember them:</p>
                         <ul>
@@ -180,7 +180,7 @@
                     <!-- START STEP -->
                     <h3>Creating the CSS File</h3>
                     <p>We will create a stylesheet inside the styles folder. Make sure you are on the Explorer icon in
-                        Visual Studio and that your project is listed there. Click on the styles folder and the 'New
+                        Visual Studio and that your project is listed there. Select the styles folder and the 'New
                         File' icon. Name the file style.css</p>
                     <div class="fig-block fm">
                         <figure>
@@ -200,7 +200,7 @@
                     <p>There comes a point on larger monitors that our page will seem overwhelming with our large hero
                         image and other content. We need to set a <kbd>max-width</kbd> so when our page gets so big, it
                         will stop
-                        growing in size. To do this we will need a container to target in CSS that we can give a
+                        growing in size. To do this, we will need a container to target in CSS that we can give a
                         <kbd>max-width</kbd> to.</p>
                     <pre><code class="lang-markup">
 &lt;body&gt;
@@ -224,14 +224,14 @@
                         window on
                         very large monitors by
                         making
-                        a css rule for the <code>&lt;div&gt;</code> we added in the last step with the id of
-                        <kbd>content</kbd>. In that rule let's set the <kbd>max-width</kbd> of the page to 1600px. Doing
+                        a CSS rule for the <code>&lt;div&gt;</code> we added in the last step with the id of
+                        <kbd>content</kbd>. In that rule, let's set the <kbd>max-width</kbd> of the page to 1600px. Doing
                         it on that
                         <code>&lt;div&gt;</code> will make sure that no element on the page can be wider than that.</p>
                     <div class="callout">
                         <p>Why <kbd>max-width</kbd> instead of just <kbd>width</kbd> you may be asking yourself?
                             Setting
-                            a <kbd>width</kbd> on an element will make it so that it is ALWAYS that size. We never know
+                            a <kbd>width</kbd> on an element will make it so that it is <b>always</b> that size. We never know
                             what
                             size of a screen someone might be looking at our page with...so forcing something to always
                             be
@@ -239,7 +239,7 @@
                             is,
                             as long as it's not <em>wider</em> than 1600px. It can certainly be narrower. Using
                             <kbd>max-width</kbd>
-                            allows for that. Our page can be whatever size the screen is...unless the screen is wider
+                            allows for that. Our page can be whatever size the screen...unless the screen is wider
                             than our limit...then it will stop
                             growing!
                         </p>
@@ -275,7 +275,7 @@
                         element.
                         Add
                         <kbd>margin: 0 auto;</kbd> to the CSS rule for
-                        <kbd>#content</kbd>. We gave it 2 values. The first says to set the top and bottom margins to 0
+                        <kbd>#content</kbd>. We gave it two values. The first says to set the top and bottom margins to 0
                         and
                         the second says to set the left and right margins to auto: meaning to split any
                         <kbd>margin</kbd>
@@ -314,7 +314,7 @@
                     <p>We will be using an empty <code>&lt;div&gt;</code> tag to hold a background color for our
                         message. Add a <code>&lt;div&gt;</code> element below the ending <code>&lt;/section&gt;</code>
                         tag and above the <code>&lt;img&gt;</code> tag. We will give it an id of <kbd>background</kbd>
-                        because that is all it will do--just serve as a background container. There will be no content.
+                        because that is all it will do: serve as a background container. There will be no content.
                     </p>
                     <pre><code class="lang-markup">
 &lt;section class="rapids-card"&gt;
@@ -332,7 +332,7 @@
                     <p>Start a new rule in CSS targeting the new div with the id of <kbd>background</kbd> and give it a
                         declaration
                         of <kbd>height: 725px;</kbd>. Later we will be giving it a background color as well.</p>
-                    <p>For example:</p>
+                    <p>Here is an example:</p>
                     <pre><code class="lang-css">
 #background {
     height: 725px;
@@ -342,7 +342,7 @@
                 <li>
                     <!-- START STEP -->
                     <h3>Setting background colors</h3>
-                    <p>Our next step is to add background colors to liven up our page a bit. The <kbd>background-color</kbd> property will set the background color of an element. Right now the background colors default to transparent or whatever the background color of the parent element is. We want the following elements to stand out and have their own background colors.</p>
+                    <p>Our next step is to add background colors to liven up our page a bit. The <kbd>background-color</kbd> property will set the background color of an element. Right now, the background colors default to transparent or whatever the background color of the parent element is. We want the following elements to stand out and have their own background colors.</p>
                     <div class="callout">
                         <p>As you apply background colors and text colors make sure you pick colors with a good
                             contrast. Go to your site plan for colors that you had in mind for the site. Use
@@ -384,11 +384,11 @@ nav a:hover {
                     <p>The color you changed the backgrounds to, may make it hard to read the text in the foreground.
                         Use the
                         <kbd>color</kbd> property for the text. The <kbd>color</kbd> property always refers to the font color.</p>
-                        <p>Again replace the colors with those from your chosen palette in the site plan. Pick
+                        <p>Again, replace the colors with those from your chosen palette in the site plan. Pick
                         something
                         that looks good with the background color and that is easily readable and has good contrast. You
                         can always use white or black if you need to.</p>
-                    <p>Change the <kbd>color</kbd> property for all these selectors: If any selector already has a
+                    <p>Change the <kbd>color</kbd> property for all these selectors. If any selector already has a
                         rule-set, just
                         add the <kbd>color</kbd> declaration to it. Don't start a new rule-set.</p>
                     <kbd>nav a</kbd><br>
@@ -424,7 +424,7 @@ nav a:hover {
                         <kbd>width</kbd>.</p>
                     <p>Use <kbd>.icon</kbd> as the selector for all the card icons.</p>
                     <p>Let's give a more responsive <kbd>width</kbd> to our hero image. Let's give it a <kbd>width</kbd>
-                        of 100%. Again use
+                        of 100%. Again, use
                         the <kbd>#hero-img</kbd> selector so you don't affect any other images by mistake.</p>
                     <p>For example:</p>
                     <pre><code class="lang-css">
@@ -446,7 +446,7 @@ nav a:hover {
                     <kbd>nav a</kbd><br>
                     <kbd>.book, .join</kbd><br>
                     <kbd>footer a</kbd><br>
-                    <p>For example:</p>
+                    <p>Here is an example:</p>
                     <pre> <code class="lang-css">
 nav a {
     text-align: center;
@@ -460,7 +460,7 @@ nav a {
                         </p>
                     </div>
                     <p>Add a larger font size to the footer text.</p>
-                    <p>For example:</p>
+                    <p>Here is an example:</p>
                     <pre> <code class="lang-css">
 footer p {
     text-size: 1.2em;
@@ -469,7 +469,7 @@ footer p {
                     <p>Add the <kbd>text-decoration</kbd> property with a value of <kbd>underline</kbd> to the following
                         selectors:<br></p>
                     <kbd>footer p a:hover</kbd>
-                    <p>For example:</p>
+                    <p>Here is an example:</p>
                     <pre> <code class="lang-css">
 footer p a:hover {
     text-decoration: underline;
