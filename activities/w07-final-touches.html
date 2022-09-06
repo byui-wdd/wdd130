@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Finishing Touches - Instructions</title>
+  <title>Finishing Touches: Instructions</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="stylesheet" href="../css/prism-light.css" />
   <link href="../css/course.css" rel="stylesheet" />
@@ -21,7 +21,7 @@
       <h1>Layout the Home Page</h1>
       <hr />
       <h2>Activity&nbsp;Instructions</h2>
-      <p>Estimated Time: 90 minutes</p>
+      <p>Estimated Time: 90 minutes.</p>
       <div class="callout">
         <p>
           This activity will use the following CSS concepts or properties
@@ -54,7 +54,7 @@
       <p>
         We have made a lot of improvements to our page over the last few
         weeks. This week we finally take on the layout. After we finish the
-        layout of our page it should look very similar to the wireframe, and
+        layout of our page, it should look very similar to the wireframe and
         will be close to complete.
       </p>
       <div class="callout">
@@ -63,9 +63,9 @@
           <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" target="_blank">wireframe</a>
           for the rafting site.
         </p>
-        <p>We will be creating 3 grids for this home page. One in the header, one for the hero portion, and one for the
+        <p>We will be creating three grids for this home page. One in the header, one for the hero portion, and one for the
           main portion.</p>
-        <p>We will also be creating 2 simple flexbox layouts for the nav links and the footer.</p>
+        <p>We will also be creating two simple flexbox layouts for the nav links and the footer.</p>
       </div>
       <div class="fig-block">
         <figure>
@@ -96,7 +96,7 @@
 </code> </pre>
         <p>
           Make any changes necessary to have yours match what is above. (HTML
-          only...your images and text can be different)
+          only. Your images and text can be different.)
         </p>
       </div>
       <ol class="bigSteps">
@@ -195,11 +195,11 @@ nav {
           </div>
 
           <p>
-            Because we want the text message and button to take about 60% of the <kbd>width</kbd> we could use 5
+            Because we want the text message and button to take about 60% of the <kbd>width</kbd> we could use five
             fractions and have
-            it take 3 of those 5 fractions. We could use <kbd>repeat(5, 1fr)</kbd> and have it span over 3 columns or we
+            it take three of those five fractions. We could use <kbd>repeat(5, 1fr)</kbd> and have it span over three columns or we
             could use
-            <kbd>1fr 3fr 1fr</kbd>. We will also implicitly use 2 rows so the message is near the top of the image in
+            <kbd>1fr 3fr 1fr</kbd>. We will also implicitly use two rows so the message is near the top of the image in
             the first
             row. The hero image will cover the entire grid.
           </p>
@@ -215,12 +215,12 @@ nav {
             </code> </pre>
           <p>
             The children get implicitly placed into the first and second spots on the grid. This is not what we had
-            planned so we need to explicitly place them.
+            planned, so we need to explicitly place them.
           </p>
           <p>
             Place the <code>&lt;div&gt;</code> with the id of <kbd>hero-box</kbd> across the entire grid. Spanning
-            column lines 1 to 4 and
-            row lines 1 to 3.
+            column lines 1&ndash;4 and
+            row lines 1&ndash;3.
           </p>
           <pre><code class="lang-css">
 #hero-box {
@@ -229,9 +229,9 @@ nav {
 }
             </code> </pre>
           <p>
-            Place the <code>&lt;section&gt;</code> with the id of <kbd>hero-msg</kbd> to spanning column lines 2 to 3
+            Place the <code>&lt;section&gt;</code> with the id of <kbd>hero-msg</kbd> to spanning column lines 2&ndash;3
             and row lines
-            1 to 2. Try it without a code example this time.
+            1&ndash;2. Try it without a code example this time.
           </p>
           <p>
             Notice certain text colors may not be easy to see now since their background has changed. For example, my <code>&lt;h4&gt;</code> text was black so it was hard to read over the dark
@@ -246,7 +246,7 @@ nav {
         <li>
           <h3>Overlap hero with navigation</h3>
           <p>
-            If we want our hero image to overlap with the navigation, while still leaving the navigation layout the same
+            If we want our hero image to overlap with the navigation while still leaving the navigation layout the same
             for other pages of our website, we can use a negative top margin on our <code>&lt;div&gt;</code> with the id
             of <kbd>hero</kbd>. Add a <kbd>margin-top</kbd> of <kbd>-100px</kbd>. This will push the hero image over the
             navigation by <kbd>100px</kbd>.
@@ -272,7 +272,7 @@ nav {
           <p>
             It seems as if the header disappeared. That's because the hero image has overlapped it. Set a
             <kbd>z-index</kbd> of <kbd>-1</kbd>
-            to the <kbd>#hero-box</kbd> to sent it back a layer on the <kbd>z-axis</kbd>.
+            to the <kbd>#hero-box</kbd> to send it back a layer on the <kbd>z-axis</kbd>.
           </p>
           <pre><code class="lang-css">
 #hero-box {
@@ -333,7 +333,7 @@ nav {
             10 equal columns.
           </p>
           <p>
-            The children are the 3 card <code>&lt;section&gt;</code> elements, the <code>&lt;div&gt;</code> with the id
+            The children are the three card <code>&lt;section&gt;</code> elements, the <code>&lt;div&gt;</code> with the id
             of
             <kbd>background</kbd>, the <code>&lt;img&gt;</code> with the class of <kbd>mountains</kbd>, and the
             <code>&lt;section&gt;</code> with the
@@ -377,22 +377,22 @@ nav {
             Place each of the children as follows:
           </p>
           <p>
-            <kbd>.rivers-card</kbd> from column lines 2 to 4 and row lines 2 to 3
+            <kbd>.rivers-card</kbd> from column lines 2&ndash;4 and row lines 2&ndash;3
           </p>
           <p>
-            <kbd>.camping-card</kbd> from column lines 5 to 7 and row lines 2 to 3
+            <kbd>.camping-card</kbd> from column lines 5&ndash;7 and row lines 2&ndash;3
           </p>
           <p>
-            <kbd>.rapids-card</kbd> from column lines 8 to 10 and row lines 2 to 3
+            <kbd>.rapids-card</kbd> from column lines 8&ndash;10 and row lines 2&ndash;3
           </p>
           <p>
-            <kbd>#background</kbd> from column lines 1 to 11 and row lines 4 to 9
+            <kbd>#background</kbd> from column lines 1&ndash;11 and row lines 4&ndash;9
           </p>
           <p>
-            <kbd>.mountains</kbd> from column lines 2 to 7 and row lines 5 to 8
+            <kbd>.mountains</kbd> from column lines 2&ndash;7 and row lines 5&ndash;8
           </p>
           <p>
-            <kbd>.msg</kbd> from column lines 6 to 10 and row lines 6 to 7
+            <kbd>.msg</kbd> from column lines 6&ndash;10 and row lines 6&ndash;7
           </p>
 
         <li>
@@ -435,7 +435,7 @@ footer {
           <!-- start step -->
           <h3>Enhancements</h3>
           <p>
-            At this point your site is mostly done. There are a few things that could
+            At this point, your site is mostly done. There are a few things that could
             be done to dress it up a bit though.
           </p>
           <p>
@@ -443,14 +443,14 @@ footer {
             haven't seen yet. You can learn more about them here: <a
               href="https://www.w3schools.com/css/css3_transitions.asp"
               target="_blank">https://www.w3schools.com/css/css3_transitions.asp</a>
-            We are adding a half second transition on our images. The transition happens when the user hovers over the
+            We are adding a half-second transition on our images. The transition happens when the user hovers over the
             images. At that point, the transform property makes the image 110% bigger, and it appears 40% transparent.
           </p>
           <p>
             Add a shadow to the image with <kbd>box-shadow</kbd>. Learn more about <kbd>box-shadow</kbd> at: <a
               href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp"
               target="_blank">https://www.w3schools.com/cssref/css3_pr_box-shadow.asp</a>.
-            The 4 values describe the horizontal and vertical offset, the blur, and the color of the shadow. You can use
+            The four values describe the horizontal and vertical offset, the blur, and the color of the shadow. You can use
             a gray or black or a darker color from your color palette.
           </p>
           <pre><code class="lang-css">
@@ -548,7 +548,7 @@ footer {
 }
             </code></pre>
           <p>
-            This could be read: "If the max width of the screen gets smaller
+            This could be read as follows: "If the max width of the screen gets smaller
             than 900px, then use this CSS instead of what you may have seen
             above" for these selectors.
           </p>
@@ -568,7 +568,7 @@ footer {
           <h3>Check, validate, and submit</h3>
           <p>
             Preview your site to make sure the webpage displays correctly.
-            Once verified, submit the URL for your page to iLearn.&nbsp;
+            Once verified, submit the URL for your page to I-Learn.&nbsp;
           </p>
           <div class="callout">
             <p>

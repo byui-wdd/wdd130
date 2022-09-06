@@ -25,7 +25,7 @@
       <p>Estimated Time: 45 minutes</p>
       <div class="callout">
         <p>
-          This activity will use the following new css concepts or properties
+          This activity will use the following new CSS concepts or properties
           (review the links if you do not remember them):
         </p>
         <ul>
@@ -74,14 +74,14 @@
         <p>
           No matter which fonts you are using, it is standard practice to
           list fall-back fonts in case, for some reason, your first
-          choice doesn't work correctly...you can control how it degrades.
+          choice doesn't work correctly, you can control how it degrades.
           With those fall-back fonts, the second choice should be similar to your first (and usually
           web-safe), the third font in the list should usually be one of the
           default font families (serif, sans-serif, fantasy, monospace, or
           script).
         </p>
         <p>
-          So for example if I chose Helvetica as my font for body copy, I
+          For example, if I chose Helvetica as my font for body copy, I
           would add something like
           <kbd>font-family: Helvetica, Arial, sans-serif;</kbd> to a rule
           modifying the <kbd>body</kbd> of my page.
@@ -114,7 +114,7 @@
             appropriate&nbsp; <kbd>font-family:</kbd> and&nbsp;
             <kbd>@import</kbd>&nbsp;. The <kbd>@import</kbd> will go at the very top of
             your CSS. Use the <kbd>font-family</kbd> property to change the body font and
-            headline font on your webpage. Add at least 2 back-up fonts for each as well. The <kbd>.home-title</kbd> or maybe the <kbd>.msg
+            headline font on your webpage. Add at least two back-up fonts for each as well. The <kbd>.home-title</kbd> or maybe the <kbd>.msg
               h2</kbd> selector might look good with the headline font you chose.
           </p>
           <div class="callout">
@@ -127,7 +127,7 @@
           </div>
           <p>
             Check your page and make sure all the text on your page, besides
-            the 2 headlines, is the <kbd>font-family</kbd> you have for chosen the body
+            the two headlines, is the <kbd>font-family</kbd> you have for chosen the body
             and that your two headlines are rendering as the headline font you
             chose.
           </p>
@@ -137,7 +137,7 @@
           <!-- START STEP -->
           <h3>Adjusting font sizes</h3>
           <p>
-            Often the default font sizes are fine...but there are times when
+            Often the default font sizes are fine, but there are times when
             they need to be changed. Let's increase the default <kbd>font-size</kbd> for
             the whole page with a <kbd>font-size</kbd> of 22px for the body. We can then
             use 2em for the <kbd>font-size</kbd> of our <kbd>.home-title</kbd>
@@ -145,12 +145,12 @@
           </p>
           <p>
             Selectors on the page that could use a different <kbd>font-size</kbd>
-            include:
+            include the following:
           </p>
           <kbd>.home-title</kbd><span> at 2em</span><br />
           <kbd>.book, .join</kbd><span> at 18px</span><br />
           <kbd>.msg p</kbd><span> at .8em</span><br />
-          <p>For example:</p>
+          <p>Here is an example:</p>
           <pre><code class="lang-css">
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
@@ -176,7 +176,7 @@
           <h3>Simple Reset</h3>
           <p>
             Let's get rid of some browser default <kbd>margin</kbd> and <kbd>padding</kbd> styles from our
-            page. Because by default the browser will give the body a little margin but we want to have the page go right to the edge. So we will zero out some properties to begin with so we can use our own spacing with our CSS rules.</p> 
+            page. Because by default, the browser will give the body a little margin, but we want to have the page go right to the edge. So we will zero out some properties to begin with so we can use our own spacing with our CSS rules.</p> 
             <p>Setting properties to zero, to begin with, is sometimes called 'reset'.
             There are much more involved reset CSS styles that you can add, but we
             will keep it simple and apply it to just the
@@ -188,7 +188,7 @@
             <code>&lt;body&gt;</code> element and a 0 <kbd>margin</kbd> to the
             <code>&lt;h2&gt;</code>.
           </p>
-          <p>For example:</p>
+          <p>Here is an example:</p>
           <pre><code class="lang-css">
 body {
     background-color: #fcfbfb;
@@ -209,7 +209,7 @@ h2 {
             Use <kbd>padding</kbd> to space out the content on your page from
             any edges or borders where it is needed.
           </p>
-          <p>Selectors on the page that could use <kbd>padding</kbd> include:</p>
+          <p>Selectors on the page that could use <kbd>padding</kbd> include the following:</p>
           <br />
           <kbd>#logo_link</kbd><span> &nbsp padding-top: 5px;</span><br />
           <kbd>nav a</kbd><span> &nbsp padding: 35px;</span><br />
@@ -219,7 +219,7 @@ h2 {
           <kbd>.msg p</kbd><span> &nbsp padding-bottom: 15px;</span><br />
           <kbd>footer</kbd><span> &nbsp padding: 25px 50px;</span><br />
           <kbd>footer .social img</kbd><span> &nbsp padding-top: 15px;</span><br />
-          <p>For example:</p>
+          <p>Here is an example:</p>
           <pre><code class="lang-css">
 nav a {
     text-decoration: none;
@@ -255,7 +255,7 @@ nav a {
           <kbd>.book, .join</kbd><span> &nbsp margin-top: 50px;</span><br />
           <kbd>.rivers-card, .camping-card, .rapids-card</kbd><span> &nbsp margin: 200px 0;</span><br />
           <kbd>footer</kbd><span> &nbsp margin-top: 200px;</span><br />
-          <p>For example:</p>
+          <p>Here is an example:</p>
           <pre><code class="lang-css">
 .book, .join {
     background-color: #d9c2a3;
@@ -303,7 +303,7 @@ nav a {
             <kbd>main section img</kbd> selector. Now the <kbd>border</kbd> and image
             will be included in the size of those images.
           </p>
-          <p>For example:</p>
+          <p>Here is an example:</p>
           <pre><code class="lang-css">
 .book, .join {
     background-color: #d9c2a3;
@@ -327,7 +327,7 @@ main section img {
           <h3>Check, validate, and submit</h3>
           <p>
             Preview your site to make sure the web page displays correctly.
-            Once verified, submit the URL for your page to iLearn.&nbsp;
+            Once verified, submit the URL for your page to I-Learn.&nbsp;
           </p>
           <div class="callout">
             <p>
