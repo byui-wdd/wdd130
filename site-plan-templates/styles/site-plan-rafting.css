@@ -2,7 +2,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -12,7 +12,7 @@ Fonts are separated by a & */
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
+  --heading-font: "IM Fell French Canon";
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
