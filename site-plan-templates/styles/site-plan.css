@@ -55,7 +55,7 @@ hr {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--paragraph-color-on-color);
+  color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
 header > h1, header > h2 {
@@ -64,7 +64,7 @@ header > h1, header > h2 {
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
+  color: var(--paragraph-color-on-color);
   padding: 1em;
 }
 .colors {
