@@ -65,7 +65,7 @@ header > h1, header > h2 {
 }
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-color);
+  color: var(--paragraph-color-on-white);
   padding: 1em;
 }
 .colors {
