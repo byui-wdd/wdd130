@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>WDD 130 | W01 Portal Page - Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/prism-light.css" />
+    <link rel="stylesheet" href="../css/course.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header class="headerBanner">
+        <div>
+          <h1><span>WEB</span> Fundamentals</h1>
+          <h2>WDD 130</h2>
+        </div>
+      </header>
+      <main>
+        <h1>W01:Portal Web Page</h1>
+        <hr />
+        <h2><strong>Overview</strong></h2>
+        <ul>
+          <li>Task: Create a web page using HTML that has links, a picture, and a short biography.</li>
+          <li>Purpose: Introduce the students to HTML. </li>
+        </ul>
+        <h2><strong>Background</strong></h2>
+        <p>
+          This week you will be introduced to HTML. Make sure to read the instructions and their explanations carefully.
+        </p>
+        <h2>Instructions</h2>
+        <p>Estimated Time: 60 minutes</p>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h2>Setup</h2>
+            <p>
+              If you haven&rsquo;t already, make sure to complete the
+              instructions in the&nbsp;
+              <a
+                href="w01-software-setup-online2.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Software Setup</a
+              >&nbsp;activity.
+            </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Our first HTML</h2>
+            <p>
+              Let's write some HTML. Open VSCode, and make sure you are on the Explorer icon so you can see your folders and files. 
+            </p>
+            
+            <p>We will only be using an index.html file and one image for this activity.</p>
+            <p>
+              Create a new file within wdd130 and call it index.html
+            </p>
+            
+            <p>The title tag will show up as the name or tab of the window in the browser. Inside the title tags place the text content of: WDD130 | Home</p>
+<pre><code class="lang-markup">
+    &lt;title&gt;WDD130 | Home&lt;/title&gt;           
+</code></pre>
+            <p>Everything inside the body tags will show up on the web page.</p>
+            <p>Let's add a menu or navigation to our page. Type in the following &lt;nav&gt; and &lt;a&gt; tags with these attributes and content.</p>
+<pre><code class="lang-markup">
+    &lt;nav&gt;
+        &lt;a href="wwr/index.html"&gt;White Water Rafting Website&lt;/a&gt;
+        &lt;a href="wwr/site-plan-rafting.html"&gt;White Water Rafting Siteplan&lt;/a&gt;
+        &lt;a href="positioning.html"&gt;Positioning Activity&lt;/a&gt;
+        &lt;a href="#"&gt;Personal Website&lt;/a&gt;
+        &lt;a href="#"&gt;Personal Siteplan&lt;/a&gt;
+    &lt;/nav&gt;                 
+</code></pre>
+
+            <p>Each page should have one &lt;h1&gt; tag with the main headline of the page.</p>
+            <p>Add the h1 tag with your name.</p>
+<pre><code class="lang-markup">
+    &lt;h1&gt;Firstname Lastname&lt;/h1&gt;           
+</code></pre>
+
+            <p>Add an &lt;img&gt; tag so we can see an image of you on your page.</p>
+            <p>Place an image file of yourself at the same level as index.html.</p>
+            <p>
+              Put your image right after the &lt;h1&gt; line. You will start
+              with the <code>&lt;img&gt;</code> tag. Images require additional
+              information in order to work however. We have to tell the browser
+              where to find the image. We can use an "attribute" for this. The attribute
+              we need is <kbd>src=""</kbd>. Add this right after the word
+              <kbd>img</kbd>. So it will look like this:
+            </p>
+
+            <p>
+              The name and path of your image will go into the "" after the
+              <code>src</code>. Your file name will be whatever you named your image. The final tag should look something like this:
+            </p>
+<pre><code class="language-markup html">&lt;img src="myphoto.jpg" alt="Image of me"&gt;</code></pre>
+            <p>
+              Notice that I included an extra attribute:
+              <strong> <kbd>alt</kbd> </strong>. The <kbd>alt</kbd> attribute
+              should contain a short description of the image. It is shown if
+              the browser can't find the image or it is read for visually
+              impaired visitors to your site. <strong>All</strong> of your
+              images should have an <kbd>alt</kbd> attribute. If a tag has
+              multiple attributes, the order of the attributes does not matter.
+            </p>
+
+            <p>Remember that actual .jpg file needs to also be inside the wdd130 folder at the same level as the index.html. You could place it inside an 'images' folder if you'd like, but it will be the only image for this page so it's OK if you leave it at the same level as index.html.</p>
+            <p>The image may be really large as well. That's OK. We will make it smaller with CSS later.</p>
+
+            <p>Then write a brief paragraph or two using opening and closing &lt;p&gt; tags to tell a little bit about yourself. Here is a list of ideas to talk about to get you
+              started. You don't have to write about all of them. Remember that this will be a public website...so
+              don't put anything too personal or identifying.
+            </p>
+            <div class="callout">
+              <ul>
+                <li>What degree and/or career path are you headed down.</li>
+                <li>What are some of the things you love to do, hobbies.</li>
+                <li>
+                  Are you married, do you have children, grandchildren...&nbsp;
+                </li>
+                <li>
+                  The advantages you see from learning about careers in web
+                  design, why you are taking the course, what you hope to get
+                  out of it, and how you will use the information in your
+                  personal or professional life.
+                </li>
+                <li>
+                  How long have you been a member of the Church of Jesus Christ
+                  of Latter Day Saints?&nbsp; Do you have a favorite quote from
+                  one of the leaders of the church?&nbsp; Do you have a favorite
+                  scripture?
+                </li>
+                <li>Anything else you may want to share.</li>
+              </ul>
+            </div>
+            <p>
+              Each time you want a new paragraph (please break it into more than
+              one paragraph!) Add a new
+              <code>&lt;p&gt;&lt;/p&gt;</code> element.
+            </p>
+
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>View your work</h2>
+            <p>
+              When you have finished adding your paragraphs you will want to
+              view your webpage. To do this right-click anywhere in the html file and from the pop-up menu choose 'Open with Live Server' and your default browser will render the html code and show your page as it would be seen on a browser.
+            </p>
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="Live Server menu option image"
+                  src="../images/live-server-popup.png"
+                  title="Live Server popup"
+                />
+                <figcaption>Menu when you right-click html file</figcaption>
+              </figure>
+            </div>
+            <p>
+              Your HTML might look something like the image below:
+            </p>
+            <!-- ***CHANGE THIS IMAGE*** -->
+            <div class="fig-block">
+              <figure>
+                <img
+                  alt="About me html"
+                  src="../images/aboutme-code-complete.png" 
+                  title="About me html"
+                />
+                <figcaption>HTML example</figcaption>
+              </figure>
+              <p>
+                Your page might look something like the image below:
+              </p>
+              <!-- ***CHANGE THIS IMAGE*** -->
+              <figure>
+                <img
+                  alt="About me page"
+                  src="../images/aboutme-browser.png"
+                  title="About me page"
+                />
+                <figcaption>Resulting page</figcaption>
+              </figure>
+              <p>Take a screenshot of your page as it looks rendered by the browser (not your HTML code).</p>
+              <p>If you don't know how to take a screenshot google it or visit: <a href="https://themeisle.com/blog/how-to-screenshot-on-computer/" target="_blank">Creating screenshots</a></p>
+            </div>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Post to the discussion board</h2>
+            <p>
+              Lastly, go to the Getting to Know You discussion board, which is at the bottom of the assignment, and do the
+              following things:
+            </p>
+            <ol>
+              <li>Click the 'Reply' bar</li>
+              <div class="fig-block">
+                <figure>
+                  <img
+                    alt="Reply bar image"
+                    src="../images/reply-bar.png"
+                    title="Reply bar in discussion board"
+                  />
+                  <figcaption>Reply bar in discussion board</figcaption>
+                </figure>
+              </div>
+              <li>Make a new post.</li>
+              <li>Upload the screenshot of your page.</li>
+                <p>Click on the "Upload Image" icon and place your screenshot image in your post.</p>
+                <div class="fig-block">
+                  <figure>
+                    <img
+                      alt="Upload Image image"
+                      src="../images/upload-image.png"
+                      title="Upload Image to Canvas"
+                    />
+                    <figcaption>Upload your Screenshot in discussion</figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                In the group portion of the assignment, view your fellow
+                student's web pages to get to know those in your class.
+              </li>
+            </ol>
+            <!-- END STEP -->
+          </li>
+        </ol>
+
+        
+        <p><!-- end #article --></p>
+      </main>
+      <script src="../js/course.js"></script>
+      <script src="../js/prism.js"></script>
+    </div>
+  </body>
+</html>
